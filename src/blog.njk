@@ -1,0 +1,77 @@
+---
+layout: layout.njk
+title: Blog
+pagination:
+    data: collections.blog
+    size: 6
+    alias: pageBlogs
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/blog.css">
+<script>
+    window.Blogs = {{ collections.blog | safe }};
+</script>
+
+<section class="hero-section">
+	<div class="up-section">
+	    <div class="blur-box1"></div>
+	    <div class="blur-box"></div>
+		<h1>Blog</h1>
+		<h3>Per scoprire l'Italia e le sue bellezze</h3>
+	</div>
+
+	    <section id="services">
+        <div class="serv-info">  
+          <div class="serv-block">
+        {% for Blogs in pageBlogs %}
+        <div class="serv-block-1">
+            <!-- Изображение -->
+            <span class="circle-image">
+                <img src="/{{ Blogs.data.images[0] | default('/Foto/default.jpg') }}" alt="Service Image">
+            </span>
+            
+            <div class="serv-content">
+            <!-- Заголовок и описание -->
+            <h1 class="serv-h1">{{ Blogs.data.tipo }}</h1>
+            <h3 class="serv-h3">{{ Blogs.data.text | truncate(400) }}</h3>
+            </div>
+
+            <!-- Кнопка -->
+            <div class="cta1">
+                <a href="/blogpage/{{ Blogs.fileSlug }}/" class="glass-link1">
+                    <button class="glass-button1">Scopri di più</button>
+                </a>
+            </div>
+        </div>
+            {% endfor %}
+          </div>
+        </div>  
+           <!-- Пагинация -->
+<div class="pagination">
+    <!-- Кнопка "❮" для предыдущей страницы -->
+    {% if pagination.href.previous %}
+    <button onclick="location.href='{{ pagination.href.previous }}'" title="Предыдущая страница">❮</button>
+    {% else %}
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это первая страница">❮</button>
+    {% endif %}
+
+    <!-- Номера страниц -->
+    {% for pageNumber in (1..pagination.pagesTotal) %}
+    <button 
+        onclick="location.href='/page{{ pageNumber }}'" 
+        {% if pageNumber == pagination.pageNumber %}class="active"{% endif %}
+        title="Страница {{ pageNumber }}"
+    >
+        {{ pageNumber }}
+    </button>
+    {% endfor %}
+
+    <!-- Кнопка "❯" для следующей страницы -->
+    {% if pagination.href.next %}
+    <button onclick="location.href='{{ pagination.href.next }}'" title="Следующая страница">❯</button>
+    {% else %}
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это последняя страница">❯</button>
+    {% endif %}
+</div>
+    </section>
+</section> 

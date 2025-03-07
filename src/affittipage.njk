@@ -1,0 +1,96 @@
+---
+layout: layout.njk
+pagination:
+    data: collections.affitii
+    size: 1
+    alias: afit
+    filter: "{{ afit.fileSlug }}"
+permalink: "/affittipage/{{ afit.fileSlug }}/index.html"
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/affittipage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+<section class="hero-section">
+    <div class="up-section">
+    <h1>Prenota la tua vacanza a Scalea</h1>
+    </div>
+    <div class="center-section">
+        <div class="left">
+            <div class="bloclf">
+                <!-- Верхняя часть -->
+                <div class="sopra">
+                    <div class="sopra-left">
+                        {% if afit.data.images and afit.data.images[0] %}
+                            <img src="/{{ afit.data.images[0] }}" alt="{{ afit.data.nome }}">
+                        {% else %}
+                            <img src="/Foto/default.jpg" alt="Default Image">
+                        {% endif %}
+                    </div>
+                    <div class="sopra-right">
+                        <div class="right-img">
+                            {% if afit.data.images and afit.data.images[1] %}
+                                <img src="/{{ afit.data.images[1] }}" alt="{{ afit.data.nome }}">
+                            {% else %}
+                                <img src="/Foto/default.jpg" alt="Default Image">
+                            {% endif %}
+                            {% if afit.data.images and afit.data.images[2] %}
+                                <img src="/{{ afit.data.images[2] }}" alt="{{ afit.data.nome }}">
+                            {% else %}
+                                <img src="/Foto/default.jpg" alt="Default Image">
+                            {% endif %}
+                        </div>
+                        <div class="right-text">
+                            <h2>{{ afit.data.h1 }}</h2>
+                            <h3>{{ afit.data.h2 }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Нижняя часть -->
+                <div class="sotto">
+                    <h3>{{ afit.data.h3 }}</h3>
+                </div>
+
+                <!-- Кнопка -->
+                <div class="affbut">
+                <a href="{{ afit.data.link }}" class="glass-link">
+                    <button class="glass-button" id="contatButton">Prenota</button>
+                </a>    
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        <!-- Форма обратной связи -->
+            <div class="contact-form" id="contactForm">
+        <!-- Блок ввода данных -->
+        <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname" name="surname" required>
+                         
+            <label for="city">Mail:</label>
+            <input type="mail" id="mail" name="mail" required>         
+
+            <button class="submit-button" id="submitButton" type="button">Inviare</button>
+        </div>
+
+                  <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+            <h3>Grazie per la tua richiesta!</h3>
+            <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+           </div>            
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="/script/valut.js"></script> 

@@ -1,0 +1,163 @@
+<style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .hero-section1 {
+            background-image: url('../Foto/test2.jpg');
+            height: 25vh;        	
+        	margin-top: 80px;
+            background-size: 100% 100%;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            z-index: 1;                     
+        }
+        .text-h1 {
+        	text-align: center;
+        }        
+        .text-h1 h1 {
+        	color: white;
+        	font-size: 40px;
+        }	
+        .text-h1 h2 {
+        	color: white;
+        	font-size: 20px;
+        }
+        .content-section {
+        	margin-bottom: 20px;
+        	margin-top: 20px;
+        	width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            box-sizing: border-box;
+            align-items: center;                            	
+        } 
+        .content-info {
+        	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        	border-radius: 10px;
+        	width: 70%;
+        	align-items: center;
+        	box-sizing: border-box;
+        	display: flex;
+        	flex-direction: column;
+        }	
+        .infoimg {
+        	margin-top: 20px;
+            box-sizing: border-box;
+            flex-direction: row;
+            display: flex;
+            gap: 20px;
+        }        	
+        .img-left {
+           width: 450px;
+           height: 250px;
+        }	
+        .img-right {
+        	width: 250px;
+        	height: 118px;
+        }        
+        .info-h1 {
+        	text-align: center;
+        	width: 70%;
+        }	
+        .info-h1 h1 {
+        	color: rgba(41, 163, 226, 1);
+        }        
+        .info-h1 h2 {
+        	color: #3F585C;
+        }         
+        .info-h1 h3 {
+        	color: #3F585C;
+        }        
+        .info-bottom {
+        	padding: 10px 40px;
+        	background-color: #FF9700;
+        	border-radius: 10px;
+        	margin-bottom: 20px;
+        	transition: transform 0.3s ease;
+        }	
+        .info-bottom:hover {
+        	transform: scale(1.05);
+        }	
+        .info-bottom a {
+        	font-size: 20px;
+            color: white;
+        }	
+        .clickable-image {
+        	border-radius: 10px;
+            cursor: pointer;
+            max-width: 100%; /* Можно задать любую ширину */
+            max-height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .clickable-image:hover {
+            transform: scale(1.03); /* Эффект наведения */
+        }
+        .modal {
+            display: none; /* Сначала скрыто */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 80px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 20px;
+            color: #f1f1f1;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+        }
+              /* Стрелки */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            idth: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+</style>

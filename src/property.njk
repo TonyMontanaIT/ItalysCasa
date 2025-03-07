@@ -1,0 +1,179 @@
+---
+title: Anunci
+layout: layout.njk
+pagination:
+    data: collections.announcements
+    size: 10
+    alias: pageAnnouncements
+---
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/styles/Property.css">
+        <script>
+            window.Announcements = {{ collections.announcements | safe }};
+        </script>
+            
+        <section class="hero-section">
+            <div class="text-but-top">
+                 <a href="#">ItalysCasa</a>
+                 <a href="#">Province di Cosenza</a>
+                 <a href="#">Scalea</a>
+                <div class="counter">
+                 <p> {{ collections.announcements | length }} Case in vendita</p>
+            </div> 
+            <div class="salva-ricerca">
+                 <p>Nuovi annunci nella tua Email</p>
+                 <a href="#" id="saveSearch" class="glass-link">
+                 <button class="glass-button1">Salva Ricerca</button>
+                 </a>
+            </div>
+            </div> 
+                         <div class="vedi-map">
+                 <a href="#" class="glass-link">
+                 <button class="glass-button1">Vedi sulla mappa</button>
+                 </a>
+             </div>
+             <div class="ven-afit">
+                <a href="#">Vendita</a>
+                <a href="/affitti">Affitto</a>
+                <a href="/valut">Vendute</a>                 
+             </div>
+        </section>
+
+        <section id="about">
+<div class="content-section">
+    <!-- Левая секция с картой -->
+    <div class="mapp-container">
+        <div id="map" class="map"></div>
+        <div class="cerca-form">
+            <p>Non hai trovato un immobile adatto?</p>
+            <a href="#" id="openModal" class="glass-link">
+            <button class="glass-button1">Scrivici</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Правая секция с блоками объявлений -->
+        <div class="content-bottom">
+            <!-- Отображаем только 10 блоков на странице -->
+            {% for announcement in pageAnnouncements %}
+            <div class="bottom-block" data-id="{{ announcement.data.riferimento }}">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    {% for image in announcement.data.images %}
+                    <img src="/{{ image }}" class="carousel-image {% if loop.index0 == 0 %}active{% endif %}" alt="Property Image">
+                    {% endfor %}
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.nomeAnunci }}</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/{{ announcement.fileSlug }}/" class="ven-price">{{ announcement.data.prezzo }} €</a>
+                    <a href="/anunci/{{ announcement.fileSlug }}/" class="ven-rif">RIF {{ announcement.data.riferimento }}</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>{{ announcement.data.text | truncate(400) }}</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">{{ announcement.data.zonam2 }}</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">{{ announcement.data.rooms }}</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">{{ announcement.data.elevator }}</span>
+                    <span><img src="/Foto/Icon/terazza.svg">{{ announcement.data.terrazzo }}</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">{{ announcement.data.bagni }}</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">{{ announcement.data.floor }}</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/{{ announcement.fileSlug }}/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+<!-- Пагинация -->
+<div class="pagination">
+    <!-- Кнопка "❮" для предыдущей страницы -->
+    {% if pagination.href.previous %}
+    <button onclick="location.href='{{ pagination.href.previous }}'" title="Предыдущая страница">❮</button>
+    {% else %}
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это первая страница">❮</button>
+    {% endif %}
+
+    <!-- Номера страниц -->
+    {% for pageNumber in (1..pagination.pagesTotal) %}
+    <button 
+        onclick="location.href='/page{{ pageNumber }}'" 
+        {% if pageNumber == pagination.pageNumber %}class="active"{% endif %}
+        title="Страница {{ pageNumber }}"
+    >
+        {{ pageNumber }}
+    </button>
+    {% endfor %}
+
+    <!-- Кнопка "❯" для следующей страницы -->
+    {% if pagination.href.next %}
+    <button onclick="location.href='{{ pagination.href.next }}'" title="Следующая страница">❯</button>
+    {% else %}
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это последняя страница">❯</button>
+    {% endif %}
+</div>
+    </div>
+
+        <div class="map-media">
+        <div id="mapMedia" class="mapMed"></div>
+        </div>
+</div>
+
+          <!-- Форма обратной связи -->
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- Форма обратной связи -->
+        <div class="contact-form" id="contactForm">
+            <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Cognome:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="phone">Telefono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="text">Testo</label>
+                <textarea id="text" name="text" required></textarea>
+
+                <button class="submit-button" id="submitButton" type="button">Inviare</button>
+            </div>
+
+            <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<script src="/script/property.js"></script>  
+

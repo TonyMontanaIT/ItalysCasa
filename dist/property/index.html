@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItalysCasa</title>
+    <link rel="stylesheet" href="/styles/Common.css">
+        
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+            <div class="logo" onclick="scrollToTop()">
+                <img src="/Foto/Logo-colore.svg" alt="Logo">
+            </div>
+            <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="wabutton">
+                    <img src="/Foto/Icon/wanew.svg" alt="WhatsApp Icon" class="icon whatsapp-icon">
+                </a>
+                <a href="tel:+393791080060" class="tellbutton">
+                   <span><img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="icon"></span> 
+                </a>
+            </div>
+
+            <div class="language-selector">
+                <div id="google_translate_element"></div>
+                <span class="custom-language-button">🌍 Language
+                </span>
+            </div>
+            <nav>
+                <a href="/index">HOME</a>
+                <a href="/property">VENDITE</a>
+                <a href="/valut">VALUTAZIONI</a>
+                <a href="/affitti">AFFITTI</a>
+                <a href="/blog">BLOG</a>
+                <a href="/cerca">CERCA AGENZIA</a>
+                <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni." class="emailbutton">eMAIL</a>
+            </nav> 
+
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+</header>
+
+    <main>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/styles/Property.css">
+        <script>
+            window.Announcements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
+        </script>
+            
+        <section class="hero-section">
+            <div class="text-but-top">
+                 <a href="#">ItalysCasa</a>
+                 <a href="#">Province di Cosenza</a>
+                 <a href="#">Scalea</a>
+                <div class="counter">
+                 <p> 13 Case in vendita</p>
+            </div> 
+            <div class="salva-ricerca">
+                 <p>Nuovi annunci nella tua Email</p>
+                 <a href="#" id="saveSearch" class="glass-link">
+                 <button class="glass-button1">Salva Ricerca</button>
+                 </a>
+            </div>
+            </div> 
+                         <div class="vedi-map">
+                 <a href="#" class="glass-link">
+                 <button class="glass-button1">Vedi sulla mappa</button>
+                 </a>
+             </div>
+             <div class="ven-afit">
+                <a href="#">Vendita</a>
+                <a href="/affitti">Affitto</a>
+                <a href="/valut">Vendute</a>                 
+             </div>
+        </section>
+
+        <section id="about">
+<div class="content-section">
+    <!-- Левая секция с картой -->
+    <div class="mapp-container">
+        <div id="map" class="map"></div>
+        <div class="cerca-form">
+            <p>Non hai trovato un immobile adatto?</p>
+            <a href="#" id="openModal" class="glass-link">
+            <button class="glass-button1">Scrivici</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Правая секция с блоками объявлений -->
+        <div class="content-bottom">
+            <!-- Отображаем только 10 блоков на странице -->
+            
+            <div class="bottom-block" data-id="146">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-146/">Appartamento in Centro</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-146/" class="ven-price">2550,000 €</a>
+                    <a href="/anunci/rif-146/" class="ven-rif">RIF 146</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-146/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="146">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/146/rif-146.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-1.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-4.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-5.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-6.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-7.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-8.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-9.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-10.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-11.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-12.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-13.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-14.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-15.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-16.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-17.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-18.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-19.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-20.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-21.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-22.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-23.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-24.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-25.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-26.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-27.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-28.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-29.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-30.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-31.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-32.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-33.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-34.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/146/rif-146-35.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-147/">Villa bifamiliare a Scalea su 2 piani</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-147/" class="ven-price">260.000,00 €</a>
+                    <a href="/anunci/rif-147/" class="ven-rif">RIF 146</a>
+                </div>
+                <div class="moreinfo1">
+                    <p></p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">148 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">No</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">2°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-147/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="145">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-145/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-145/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-145/" class="ven-rif">RIF 145</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-145/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="144">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-144/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-144/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-144/" class="ven-rif">RIF 144</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-144/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="143">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-143/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-143/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-143/" class="ven-rif">RIF 143</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-143/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="142">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-142/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-142/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-142/" class="ven-rif">RIF 142</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-142/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="141">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-141/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-141/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-141/" class="ven-rif">RIF 141</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-141/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="140">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-140/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-140/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-140/" class="ven-rif">RIF 140</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-140/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="139">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-139/">Appartamento in Centro test</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-139/" class="ven-price">250,000 €</a>
+                    <a href="/anunci/rif-139/" class="ven-rif">RIF 139</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">Si</span>
+                    <span><img src="/Foto/Icon/terazza.svg">Si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-139/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="bottom-block" data-id="138">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            <div class="ven-info">
+                <div class="ven-1">
+                    <a href="/anunci/rif-138/">Appartamento in Centro storico</a>
+                </div>
+                <div class="ven-2">
+                    <a href="/anunci/rif-138/" class="ven-price">20,000 €</a>
+                    <a href="/anunci/rif-138/" class="ven-rif">RIF 138</a>
+                </div>
+                <div class="moreinfo1">
+                    <p>Perchè lo utilizziamo? È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo...</p>
+                </div>
+                <div class="ven-icon">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">no</span>
+                    <span><img src="/Foto/Icon/terazza.svg">no</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
+                </div>
+                <div class="cta-container">
+                    <div class="cta">
+                        <a href="/anunci/rif-138/">
+                        <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                        </a>
+                    </div>
+                    <div class="cta-icon">
+                        <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                            <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="waicon">
+                        </a>
+                        <a href="tel:+393791080060">
+                            <img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="pfoneicon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+<!-- Пагинация -->
+<div class="pagination">
+    <!-- Кнопка "❮" для предыдущей страницы -->
+    
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это первая страница">❮</button>
+    
+
+    <!-- Номера страниц -->
+    
+
+    <!-- Кнопка "❯" для следующей страницы -->
+    
+    <button onclick="location.href='/property/1/'" title="Следующая страница">❯</button>
+    
+</div>
+    </div>
+
+        <div class="map-media">
+        <div id="mapMedia" class="mapMed"></div>
+        </div>
+</div>
+
+          <!-- Форма обратной связи -->
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- Форма обратной связи -->
+        <div class="contact-form" id="contactForm">
+            <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Cognome:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="phone">Telefono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="text">Testo</label>
+                <textarea id="text" name="text" required></textarea>
+
+                <button class="submit-button" id="submitButton" type="button">Inviare</button>
+            </div>
+
+            <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<script src="/script/property.js"></script>  
+
+
+    </main>
+        <footer>
+                    <div class="fot-left">
+                <div class="fot-logo">
+                    <img src="/Foto/Logo-Bianco.svg">
+                </div>
+                <div class="fot-icon">
+                    <div class="fot-icon-row">
+                   <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni.">
+                       <img src="/Foto/Icon/Gmail.svg">
+                   </a> 
+                   <a href="https://www.facebook.com/profile.php?id=61551668563870">
+                       <img src="/Foto/Icon/Facebook.svg">
+                   </a> 
+                   <a href="https://www.youtube.com/@ItalysCasa">
+                       <img src="/Foto/Icon/Youtube.svg">
+                   </a> 
+                </div>
+                   <div class="fot-icon-row">
+                   <a href="https://www.instagram.com/italyscasa/">
+                       <img src="/Foto/Icon/Instagram.svg">
+                   </a> 
+                   <a href="https://www.tiktok.com/@italyscasa1">
+                       <img src="/Foto/Icon/Tiktok.svg">
+                   </a> 
+                   <a href="#">
+                       <img src="/Foto/Icon/Telegram.svg">
+                   </a> 
+                </div>
+                </div>
+             </div>
+             <div class="fot-cent">
+                 <h1>Italys Casa</h1>
+                 <a href="/lavoro" class="h2">Lavora con noi</a>
+                 <a href="" class="h2">Chi siamo</a>
+                 <a href="" class="h2">News dal Gruppo Italys Casa</a>
+                 <a href="" class="h2">Responsabilità sociale</a>
+                 <a href="" class="h2">Responsabilità ambientale</a>
+             </div>
+             <div class="fot-cent1">
+                 <a href="https://scarfonesrl.it/" class="h1">Scarfone S.R.L.</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Impresa Edile</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Ristruttazioni</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Idraulico/Elettricista</a>                 
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Tinteggiature</a>
+                 <a href="tel:+393288325437" class="h3">+39 328 832 5437</a>
+             </div>                            
+             <div class="fot-right">
+                 <div class="fot-map">
+                     <img src="/Foto/HomeFoto/footer.jpg">
+                 </div>
+                 <div class="fot-but">
+                     <p>Numero utenti: <span id="visitor-count">79 910</span></p>
+                     <a href="/cookies">Impostazioni Cookies </a>
+                 </div>
+             </div>
+    </footer>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/script/Common.js"></script>
+    <script data-goatcounter="https://YOUR_SITE_NAME.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+---
+tipo: "ESCURSIONI E AVVENTURE NELLA NATURA DELLA RIVIERA DEI CEDRI"
+h1: "Lorem ipsum dolor blog1 "
+text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci"
+images:
+  - "Foto/blog2.jpg"
+  - "Foto/blog1.jpg"
+  - "Foto/blog3.jpg"
+  - "Foto/test1.jpg"
+  - "Foto/test2.jpg"  
+---

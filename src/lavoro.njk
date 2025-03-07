@@ -1,0 +1,45 @@
+---
+layout: layout.njk
+title: Lavoro Con Noi
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/lavoro.css">
+<section class="hero-section">
+        <div class="up-section">
+    	  <div class="up-left">
+    	  	<h1>E allora cosa aspetti?</h1>
+    	  	<h2> Candidati!</h2>
+    	  	<h3>Se hai una formazione superiore o universitaria ed una spiccata attitudine
+    	  	per i rapporti interpersonali, inviaci il tuo Curriculum Vitae. 
+    	  	Potrai iniziare una professione interessante e dinamica, acquisire conoscenze 
+    	  	multidisciplinari ed avere grandi soddisfazioni.</h3>
+    	  </div>
+    	  <div class="up-right">
+    	  	<div class="up-img">
+    	  	</div>
+    	  </div>
+        </div>
+        <div class="dawn-section">
+                <h3>Inviaci il tuo Curriculum Vitae</h3>
+		          <!-- Форма обратной связи -->
+<div class="contact-form" id="contactForm">
+    <div class="form-content" id="inputForm">
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+        <input type="text" id="surname" name="surname" placeholder="Cognome" required>
+        <input type="text" id="mail" name="mail" placeholder="eMail" required>
+        <input type="tel" id="phone" name="phone" placeholder="Telefono" required>
+        <input type="tex" id="zona" name="zona" placeholder="Provincia" required>
+        <input type="tex" id="city" name="city" placeholder="Comune" required>
+        <button class="submit-button" id="submitButton" type="button">Inviare</button>
+    </div>
+                      <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+</div>      
+        </div>
+	
+</section>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="/script/valut.js"></script> 

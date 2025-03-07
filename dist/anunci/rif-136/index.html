@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItalysCasa</title>
+    <link rel="stylesheet" href="/styles/Common.css">
+        
+    <link rel="stylesheet" href="/styles/anunci.css"> <!-- Стиль для страниц объявления -->
+        
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+            <div class="logo" onclick="scrollToTop()">
+                <img src="/Foto/Logo-colore.svg" alt="Logo">
+            </div>
+            <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="wabutton">
+                    <img src="/Foto/Icon/wanew.svg" alt="WhatsApp Icon" class="icon whatsapp-icon">
+                </a>
+                <a href="tel:+393791080060" class="tellbutton">
+                   <span><img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="icon"></span> 
+                </a>
+            </div>
+
+            <div class="language-selector">
+                <div id="google_translate_element"></div>
+                <span class="custom-language-button">🌍 Language
+                </span>
+            </div>
+            <nav>
+                <a href="/index">HOME</a>
+                <a href="/property">VENDITE</a>
+                <a href="/valut">VALUTAZIONI</a>
+                <a href="/affitti">AFFITTI</a>
+                <a href="/blog">BLOG</a>
+                <a href="/cerca">CERCA AGENZIA</a>
+                <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni." class="emailbutton">eMAIL</a>
+            </nav> 
+
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+</header>
+
+    <main>
+        
+        <link rel="stylesheet" type="text/css" href="/styles/anunci.css">
+        <link rel="icon" src="/Foto/Icon/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+        <script>
+            window.Announcements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<div class="content-section">
+    <div class="up-section">
+        <div class="up-left">
+            <div class="up-left-up">
+                <div class="street-rif">
+                    <h1>Appartamento in Centro storico</h1>
+                </div>
+                <div class="street-viale">
+                    <h1>Viale Calabria</h1>
+                </div>                      
+            </div>
+            <div class="up-left-down">
+                <p><strong>Città:</strong> Roma</p> 
+                <p><strong>Via:</strong> Via Mulino, 12</p>
+            </div>
+        </div>
+        <div class="up-icon">
+            <div class="up-icon-left">
+                <div class="street-rif">
+                    <h3>RIF:136</h3>
+                </div>
+                <div class="street-viale1">
+                    <h1>€20,000</h1>
+                </div>                         
+            </div>
+            <div class="up-icon-right">
+                <a href="/vendite">Lista Annunci</a>
+                <a href="#" class="share-link"> <img src="/Foto/Icon/share.svg"> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-section">
+        <div class="center-left">
+            <!-- Карусель -->
+            <div class="carousel-container">
+                
+                    <img src="/Foto/Galeri/1.jpg" class="carousel-image active" alt="Property Image">
+                
+                    <img src="/Foto/Galeri/2.jpg" class="carousel-image " alt="Property Image">
+                
+                    <img src="/Foto/Galeri/3.jpg" class="carousel-image " alt="Property Image">
+                
+                <!-- Иконки -->
+                <div class="icon-container">
+                    <a href="#" class="open-modal" data-index="0"><img src="/Foto/Icon/cameraFoto.svg" alt="Foto" class="anunci-icon"></a>
+                    <a href=""><img src="/Foto/Icon/cameraVideo.svg" alt="Video" class="anunci-icon"></a>
+                    <a href=""><img src="/Foto/Icon/camera360.svg" alt="360" class="anunci-icon"></a>
+                    <a href="#"><img src="/Foto/Icon/geomappa.svg" alt="Mappa" class="anunci-icon"></a>
+                </div>
+                <!-- Стрелки -->
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+<!-- Модальное окно для просмотра изображений -->
+<div class="modal" id="imageModal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <button class="modal-btn prev" id="modalPrev">&#10094;</button>
+        <img src="" id="modalImage" alt="Full Image">
+        <button class="modal-btn next" id="modalNext">&#10095;</button>
+    </div>
+    <div class="modal-thumbnails">
+        <!-- Превью для модального окна -->
+        
+            <img src="/Foto/Galeri/1.jpg" class="modal-thumbnail active" alt="Thumbnail" data-index="0">
+        
+            <img src="/Foto/Galeri/2.jpg" class="modal-thumbnail " alt="Thumbnail" data-index="1">
+        
+            <img src="/Foto/Galeri/3.jpg" class="modal-thumbnail " alt="Thumbnail" data-index="2">
+        
+    </div>
+</div>
+
+
+        <div class="center-center">
+                    <div class="cen-info">
+                        <div class="caratter">
+                            <img src="/Foto/Icon/caracter.svg">
+                         <p>Caratteristiche:</p>
+                        </div>
+                <div class="property-info">
+                    <div class="info-item">
+                     <p><strong>RIF:</strong> 135</p> 
+                     <p><strong>Tipo:</strong> Appartamento</p> 
+                     <p><strong>Camere da letto:</strong> 3</p> 
+                     <p><strong>Locali:</strong> </p> 
+                     <p><strong>Bagni:</strong> 2</p> 
+                     <p><strong>Mq commerciali:</strong> 85 m²</p> 
+                     <p><strong>Piano:</strong> 3°</p> 
+                     <p><strong>Ascensore:</strong> no</p> 
+                     <p><strong>Terrazzo:</strong> no</p> 
+                     <p><strong>Giardino:</strong> </p> 
+                     <p><strong>Box Auto:</strong> </p> 
+                     <p><strong>Prezzo: €:</strong> 20,000</p> 
+                    </div>
+                    <div class="info-window">
+                        <a href="#" id="openModalButton" class="glass-link">
+                        <bottom class="glass-button1">Vedi tutte</bottom></a>
+                    </div>                   
+                </div>
+                    </div>
+        </div>
+        <div class="center-right">
+            <div class="mapp-container">
+                <div id="map-small" class="map"></div>
+            </div>
+        </div>
+    </div>
+            <div class="dawn">
+              <div class="content-block">
+            <div class="descrizione">
+                <div class="des-info">
+                    <div class="des-info-start">
+                <img src="/Foto/Icon/description.svg">
+                <h1></h1>
+                    </div>
+                     <div class="des-info-text">
+                       <p class="pclassH2"></p>
+                       <p class="pclassText"></p>
+                       <p class="pclassH2"></p>
+                       <p class="pclassText"></p>
+                       <p class="pclassH2"></p>
+                       <p class="pclassText"></p>
+                       <p class="pclassH2"></p>
+                       <p class="pclassText"></p>
+                       <p class="pclassH2"></p>
+                       <p class="pclassText"></p>
+                       <p class="pclassH2"></p>
+                       <p class="pclassText"></p>
+                       <p class="pclassH2">Prezzo richiesto: €20,000</p>
+                       <p class="pclassText1"><span class="pclassH2">Contattaci</span> al numero <a href="tel:+393791080060" class="telYelow">393791080060</a> o visita il nostro sito web <a href="#" class="telYelow">italyscasa.com</a></p>
+                       <p class="pclassText1">Visita le nostre pagine:</p>
+                       <p class="pclassText1">Instagram:<a href="https://www.instagram.com/italyscasa/" class="telYelow">italyscasa,</a> Facebook:<a href="https://www.facebook.com/profile.php?id=61551668563870" class="telYelow">Italys casa,</a>YouTube:<a href="https://www.youtube.com/@ItalysCasa" class="telYelow">italyscasa</a> e TikTok:<a href="https://www.tiktok.com/@italyscasa1" class="telYelow">italyscasa1.</a></p>
+                     </div>                     
+                </div>
+         </div>   
+         <div class="map-big">
+             <div id="map-big" class="map"></div>
+         </div>         
+            <div class="button-video">
+                    <!-- Кнопка для обычного видео -->
+                
+
+                    <!-- Кнопка для видео 360 -->
+                
+
+                <a href="tel:+393791080060" class="abuttel"><img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="iconphone">
+                Chiamata
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="awhats">
+                WhatsApp
+                </a>
+            </div>
+
+   <section id="random">
+    <div class="serv-info">
+        <div class="serv-text">
+            Proposte selezionate per te!
+        </div>  
+        <div class="serv-block">
+            
+            
+                
+                    <div class="serv-block-1">
+                        <!-- Изображение -->
+                        <span class="circle-image">
+                            <img src="/Foto/Galeri/1.jpg" alt="Service Image">
+                        </span>
+                        <div class="random-info">
+                        <!-- Заголовок и описание -->
+                        <div class="random-nome">
+                        <p class="serv-h1">Appartamento in Centro storico</p>
+                        </div>
+                        <div class="random-prezzo">
+                            <a href="/anunci/rif-135/">€ 20,000</a>
+                            <span>RIF:135</span>
+                        </div>
+                        <div class="random-icon">
+                        <span><img src="/Foto/Icon/bagno.svg" alt=""> 2</span>
+                        <span><img src="/Foto/Icon/mq.svg"> 85 m²</span>
+                        <span><img src="/Foto/Icon/locale.svg"> 3</span>
+                        <span><img src="/Foto/Icon/terazza.svg"> no</span>
+                        </div>
+                        </div>
+                        <!-- Кнопка -->
+                        <div class="cta1">
+                            <a href="/anunci/rif-135/">
+                            <button class="glass-button">Scopri di più</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                
+            
+                
+                    <div class="serv-block-1">
+                        <!-- Изображение -->
+                        <span class="circle-image">
+                            <img src="/Foto/Galeri/1.jpg" alt="Service Image">
+                        </span>
+                        <div class="random-info">
+                        <!-- Заголовок и описание -->
+                        <div class="random-nome">
+                        <p class="serv-h1">Appartamento in Centro storico</p>
+                        </div>
+                        <div class="random-prezzo">
+                            <a href="/anunci/rif-136/">€ 20,000</a>
+                            <span>RIF:135</span>
+                        </div>
+                        <div class="random-icon">
+                        <span><img src="/Foto/Icon/bagno.svg" alt=""> 2</span>
+                        <span><img src="/Foto/Icon/mq.svg"> 85 m²</span>
+                        <span><img src="/Foto/Icon/locale.svg"> 3</span>
+                        <span><img src="/Foto/Icon/terazza.svg"> no</span>
+                        </div>
+                        </div>
+                        <!-- Кнопка -->
+                        <div class="cta1">
+                            <a href="/anunci/rif-136/">
+                            <button class="glass-button">Scopri di più</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                
+            
+                
+                    <div class="serv-block-1">
+                        <!-- Изображение -->
+                        <span class="circle-image">
+                            <img src="/Foto/Galeri/1.jpg" alt="Service Image">
+                        </span>
+                        <div class="random-info">
+                        <!-- Заголовок и описание -->
+                        <div class="random-nome">
+                        <p class="serv-h1">Appartamento in Centro test</p>
+                        </div>
+                        <div class="random-prezzo">
+                            <a href="/anunci/rif-139/">€ 250,000</a>
+                            <span>RIF:134</span>
+                        </div>
+                        <div class="random-icon">
+                        <span><img src="/Foto/Icon/bagno.svg" alt=""> 2</span>
+                        <span><img src="/Foto/Icon/mq.svg"> 85 m²</span>
+                        <span><img src="/Foto/Icon/locale.svg"> 3</span>
+                        <span><img src="/Foto/Icon/terazza.svg"> Si</span>
+                        </div>
+                        </div>
+                        <!-- Кнопка -->
+                        <div class="cta1">
+                            <a href="/anunci/rif-139/">
+                            <button class="glass-button">Scopri di più</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    </div>  
+</section>
+          </div>
+
+<!-- Модальное окно -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content1">
+        <button class="close-button" id="closeModalButton">X</button>
+        <div class="info-items">
+            <div class="info-item1">
+                <p><strong>RIF:</strong> 135</p>
+                <p><strong>Tipo:</strong> Appartamento</p>
+                <p><strong>Camere da letto:</strong> 3</p> 
+                <p><strong>Locali:</strong> </p>
+                <p><strong>Bagni:</strong> 2</p>
+                <p><strong>Mq commerciali:</strong> 85 m²</p>
+                <p><strong>Piano:</strong> 3°</p>
+                <p><strong>Ascensore:</strong> no</p>
+                <p><strong>Terrazzo:</strong> no</p>
+                <p><strong>Prezzo: €:</strong> 20,000</p>
+            </div>
+            <div class="info-item1">
+                <p><strong>Città:</strong> Roma</p>
+                <p><strong>Nome:</strong> Appartamento in Centro storico</p>
+                <p><strong>Zona:</strong> Viale Calabria</p>
+                <p><strong>Via:</strong> Via Mulino, 12</p>
+            </div>            
+            <!-- Добавь еще блоки, если нужно, каждый с классом info-item -->
+        </div>
+    </div>
+</div>
+
+          <!-- Форма обратной связи -->
+            <div class="contact-form" id="contactForm">
+                         <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" required>
+             
+            <label for="text">Testo</label>
+            <textarea id="text" name="text" required></textarea>
+            
+
+            <button class="submit-button" id="submitButton" type="button">Inviare</button>
+        </div>
+
+                  <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+           </div>
+         </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="/script/anunci.js"></script> 
+    </main>
+        <footer>
+                    <div class="fot-left">
+                <div class="fot-logo">
+                    <img src="/Foto/Logo-Bianco.svg">
+                </div>
+                <div class="fot-icon">
+                    <div class="fot-icon-row">
+                   <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni.">
+                       <img src="/Foto/Icon/Gmail.svg">
+                   </a> 
+                   <a href="https://www.facebook.com/profile.php?id=61551668563870">
+                       <img src="/Foto/Icon/Facebook.svg">
+                   </a> 
+                   <a href="https://www.youtube.com/@ItalysCasa">
+                       <img src="/Foto/Icon/Youtube.svg">
+                   </a> 
+                </div>
+                   <div class="fot-icon-row">
+                   <a href="https://www.instagram.com/italyscasa/">
+                       <img src="/Foto/Icon/Instagram.svg">
+                   </a> 
+                   <a href="https://www.tiktok.com/@italyscasa1">
+                       <img src="/Foto/Icon/Tiktok.svg">
+                   </a> 
+                   <a href="#">
+                       <img src="/Foto/Icon/Telegram.svg">
+                   </a> 
+                </div>
+                </div>
+             </div>
+             <div class="fot-cent">
+                 <h1>Italys Casa</h1>
+                 <a href="/lavoro" class="h2">Lavora con noi</a>
+                 <a href="" class="h2">Chi siamo</a>
+                 <a href="" class="h2">News dal Gruppo Italys Casa</a>
+                 <a href="" class="h2">Responsabilità sociale</a>
+                 <a href="" class="h2">Responsabilità ambientale</a>
+             </div>
+             <div class="fot-cent1">
+                 <a href="https://scarfonesrl.it/" class="h1">Scarfone S.R.L.</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Impresa Edile</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Ristruttazioni</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Idraulico/Elettricista</a>                 
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Tinteggiature</a>
+                 <a href="tel:+393288325437" class="h3">+39 328 832 5437</a>
+             </div>                            
+             <div class="fot-right">
+                 <div class="fot-map">
+                     <img src="/Foto/HomeFoto/footer.jpg">
+                 </div>
+                 <div class="fot-but">
+                     <p>Numero utenti: <span id="visitor-count">79 910</span></p>
+                     <a href="/cookies">Impostazioni Cookies </a>
+                 </div>
+             </div>
+    </footer>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/script/Common.js"></script>
+    <script data-goatcounter="https://YOUR_SITE_NAME.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

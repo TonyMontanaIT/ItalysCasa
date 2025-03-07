@@ -1,0 +1,64 @@
+---
+layout: layout.njk
+title: Cerca Agenzia
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/cerca.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+<section class="hero-section">
+	<div class="up-section">
+	</div>
+	<div class="center-section">
+<div class="left">
+    <div class="block-agen">
+        {% for infoAgen in collections.agenzia %}
+            <div class="block block{{ loop.index }}">
+                <div class="block-content">
+                    <h3>Regione: {{ infoAgen.data.region }}</h3>
+                    <h3>Città: {{ infoAgen.data.cita }}</h3>
+                    <h3>Via: {{ infoAgen.data.via }}</h3>
+                    <a href="tel:{{ infoAgen.data.tel }}">Tel: {{ infoAgen.data.tel }}</a>
+                    <a href="mailto:{{ infoAgen.data.mail }}">Mail: {{ infoAgen.data.mail }}</a>
+                </div>
+                <a href="tel:{{ infoAgen.data.tel }}">
+                <button class="glass-button">Chiama</button>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+		<div class="right">
+					          <!-- Форма обратной связи -->
+            <div class="contact-form" id="contactForm">
+                         <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname" name="surname" required>
+                         
+            <label for="city">Mail:</label>
+            <input type="mail" id="mail" name="mail" required>         
+
+            <button class="submit-button" id="submitButton" type="button">Inviare</button>
+        </div>
+
+                  <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+           </div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="/script/valut.js"></script> 

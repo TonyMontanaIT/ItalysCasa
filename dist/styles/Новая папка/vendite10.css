@@ -1,0 +1,386 @@
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .hero-section1 {
+        	margin-top: 80px;
+            background-size: 100% 100%;
+            background-position: center;
+            background-attachment: fixed;
+            background-image: url('../Foto/beach.jpeg');
+            height: 25vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            z-index: 1;
+        }
+        .content-section {
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
+            justify-content: left;
+            box-sizing: border-box;
+        }         
+        .text-but-top {
+        	position: relative;
+        	margin-top: 20px;
+        	margin-bottom: auto;
+        	margin-right: auto;
+            margin-left: 40px;
+            box-sizing: border-box;
+        }	
+        .text-but-top a {
+        	margin-top: 0px;
+        	font-weight: bold;
+        	font-size: 12px;
+        	padding: 0px 6px;
+        	color: #FFFFFF;
+        }	
+        .counter {
+            position: relative;
+            margin-top: 10px;
+            margin-right: auto;
+        }	
+        .counter p {
+        	font-size: 25px;
+        	font-weight: bold;
+        	color: #FFFFFF;
+        	padding: 0px 10px;
+        }    
+        .salva-ricerca {
+        	text-align: center;
+        	position: relative;
+        	padding: 0px;
+        	top: 0px;
+        	background-color: #29A3E2;
+        	border-radius: 15px;
+        	width: 250px;
+        	height: 120px;
+        }	
+        .salva-ricerca p {
+        	display: inline-block;
+        	color: #FFFFFF;
+        	font-size: 18px;
+        	font-weight: bold;
+        	margin-top: auto 20px;
+        	position: relative;
+        }   
+        .salva-ricerca a {
+        	position: absolute;
+        	margin-top: 75px;
+        	margin-left: 50px;
+            left: 0;
+            width: 60%;
+        	text-align: center;
+        	color: #FFFFFF;
+        	z-index: 2;
+        	font-size: 16px;
+            font-weight: bold;
+        	background-color: #FF9700;
+        	border-radius: 10px;
+        	padding: 6px 0px;
+        	text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .salva-ricerca a:hover {
+            transform: scale(1.03);
+        }    
+        .vedi-map {
+        	position: absolute;
+        	right: 40px;
+        	bottom: 20px;
+            transition: transform 0.3s ease;
+        }	
+        .vedi-map a {
+        	font-size: 20px;
+        	color: #FFFFFF;
+        	background-color: #FF9700;
+        	border-radius: 10px;
+        	padding: 10px 15px;
+        }	
+        .vedi-map:hover {
+            transform: scale(1.03);
+        }    
+        .ven-afit {
+        	position: absolute;
+        	left: 350px;
+        	bottom: 0px;
+        }	
+        .ven-afit a {
+        	display: inline-block;
+        	padding: 0px 10px;
+        	color: #FFFFFF;
+        	font-size: 18px;
+        	font-weight: bold;
+        	transition: color 0,3 ease, transform 0,3 ease;
+        }	
+        .ven-afit a:hover {
+        	transform: scale(1.03);
+        	color: #524E4E;
+        }	        
+        .mapp-container1 {
+           margin-left: 40px;
+           margin-top: 100px;
+           height: 300px;
+           background-color: #e0e0e0;
+           border-radius: 10px;
+           position: sticky;
+           top: 100px;
+        }
+        .map1 {
+            border-radius: 10px;
+            height: 300px;
+            width: 250px;
+        } 
+        .cerca-form { 
+            box-sizing: border-box;
+            display: block;
+            text-align: center;
+            background-color: #29A3E2; 
+            width: 250px;
+            height: 110px;
+            border-radius: 10px;
+        }   
+        .cerca-form p { 
+            color: #FFFFFF;
+            font-size: 16px;
+            padding: 10px 20px;
+        } 
+        .cerca-form a { 
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #FF9700;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            font-weight: bold;
+
+        }    
+        .announcement-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Промежуток между блоками */
+    justify-content: center; /* Центрирование блоков */
+}         
+        .ven-anun {
+            margin-top: 10px;
+            border-radius: 10px;
+            margin-left: auto;
+            max-height: 400px; /* Максимальная высота */
+            max-width: 1000px; /* Максимальная ширина */
+            width: 100%; /* Блок занимает всю доступную ширину до max-width */
+            display: flex; /* Включаем flex-разметку для внутренних блоков */
+            flex-direction: row; /* Элементы в одну строку */
+            gap: 10px; /* Отступ между блоками */
+            box-sizing: border-box; /* Учитываем padding в размерах */
+            background-color: #ffffff; /* Фоновый цвет */
+            border: 1px solid #e0e0e0; /* Граница для визуализации */
+            overflow: hidden; /* Обрезаем содержимое, выходящее за пределы */     
+        }      
+        .ven-foto {
+            height: 400px;
+            position: relative;
+            width: calc(50% - 5px);
+        } 
+        .ven-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px 0px 0px;
+            transition: transform 0,5 ease;
+        }    
+        .ven-foto img:hover {
+            transform: scale(1.02);
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%; /* Кнопки по центру вертикально */
+            transform: translateY(-50%); /* Корректировка положения */
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 40px;
+        }
+
+        .prev-button {
+            left: 10px; /* Кнопка "вперед" слева */
+        }
+
+        .next-button {
+            right: 10px; /* Кнопка "назад" справа */
+        }    
+        .ven-info { 
+            margin-right: 10px;
+            display: flex;
+            max-height: 390px;
+            width: calc(50% - 5px);
+            flex-direction: column; /* Размещаем элементы вертикально */
+        }
+        .ven-1 { 
+            height: 40%;    
+            max-height: 120px;
+            height: auto;         
+            display: block;
+            align-items: center;
+            overflow: hidden;
+            padding: 5px;
+            box-sizing: border-box;
+        }        
+        .ven-1 a{    
+            color: black;
+            font-weight: bold;
+            flex-shrink: 0;
+            height: clamp(60px, 40%, 120px);
+            display: block;
+            font-size: 25px;
+            white-space: normal;     
+            word-break: break-word;
+            overflow-wrap: break-word;
+            box-sizing: border-box;
+            overflow: hidden;
+        }   
+        .ven-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }    
+        .ven-price {
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }   
+        .ven-rif {
+            color: #3C3C3C;
+            background-color: #E9E9E9;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }    
+        .ven-info .ven-icon {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .ven-info .ven-icon span {
+            margin-right: 5px;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+        }
+        .ven-info .ven-icon span img {
+            width: 30px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 10px;
+            border-radius: 0px;
+        }
+        .cta-container {
+            display: flex; /* Включаем flex-разметку */
+            justify-content: space-between; /* Располагаем элементы по краям */
+            align-items: center; /* Выравниваем элементы по центру вертикально */
+            margin-top: auto; /* Отправляем контейнер в самый низ */
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .ven-info .cta {
+            padding: 10px;
+            margin-top: auto;
+            text-align: left;
+        }
+        .ven-info .cta a {
+            display: inline-block;
+            background-color: #29A3E2;
+            color: #FFFFFF;
+            padding: 5px 80px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }  
+        .ven-info .cta a:hover {
+             transform: scale(1.1);   
+        }    
+        .cta-icon  { 
+            padding: 5px;
+            text-align: right;
+            margin-top: auto;
+        } 
+        .cta-icon img {
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        } 
+        .cta-icon img:hover {
+            transform: scale(1.1);
+        }    
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination-button {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pagination-button:hover,
+        .pagination-button.active {
+            background-color: #0097B2;
+            color: white;
+            border-color: #0097B2;
+        }
+
+
+
+        .waicon {
+            filter: invert(42%) sepia(93%) saturate(5266%) hue-rotate(94deg) brightness(94%) contrast(96%);
+        }  
+        .pfoneicon { 
+            filter: invert(16%) sepia(53%) saturate(4237%) hue-rotate(201deg) brightness(96%) contrast(88%);
+        }    
+            @media (max-width: 768px) {
+            .ven-anun {
+            flex-direction: column; /* Элементы в столбик */
+        }
+
+            .ven-info {
+            flex-direction: column; /* Элементы в столбик */
+            align-items: flex-start; /* Выравниваем элементы слева */
+        }
+
+            .ven-icon {
+            justify-content: flex-start; /* Выравниваем иконки слева */
+            }
+       }
+            @media (max-width: 768px) {
+            .cta-container {
+            flex-direction: column; /* Элементы в столбик */
+            align-items: flex-start; /* Выравниваем элементы слева */
+            gap: 10px; /* Отступ между элементами */
+        }
+
+            .cta-icon {
+            margin-left: auto; /* Отправляем иконки вправо */
+            }
+        }
+
+        
+</style>

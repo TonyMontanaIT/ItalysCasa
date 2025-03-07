@@ -1,0 +1,85 @@
+---
+layout: layout.njk
+title: Valutationi
+---
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+<link rel="stylesheet" type="text/css" href="/styles/valut.css">
+<section class="hero-section">
+	<div class="block-left">
+		        <div class="valut-info">
+                  <div class="valut-info1">
+                    <h1>Vuoi vendere il tuo immobile?</h1>
+                  </div>
+                  <div class="valut-info2">
+                    <h2>Affidati alla nostra agenzia per avere una valutazione gratuita!</h2>
+                 </div>
+                </div>
+	</div>
+	<div class="block-right">
+            <div class="media-info">
+              <h1>Vuoi vendere il tuo immobile?</h1>
+              <h2>Affidati alla nostra agenzia per avere una valutazione gratuita!</h2>
+            </div>
+		          <!-- Форма обратной связи -->
+            <div class="contact-form" id="contactForm">
+                         <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname" name="surname" required>
+                         
+            <label for="city">Città:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="street">Via:</label>
+            <input type="text" id="street" name="street" required>            
+
+            <label for="property-type">Tipo di proprietà:</label>
+            <select id="property-type" name="property-type" required>
+            <option value="house">Casa</option>
+            <option value="apartment">Appartamenti</option>
+            <option value="land">Terreno</option>
+            <option value="townhouse">Casa a schiera</option>
+            </select>
+
+            <label class="labtime" for="call-time">Orario preferito per la chiamata:</label>
+            <input class="labtime" type="time" id="call-time" name="call-time" required>            
+            <div class="button-container">
+            <button class="submit-button" id="submitButton" type="button">Invia</button>
+                  <div class="icons1">
+                  <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank">
+                  <img src="/Foto/Icon/whats.svg" alt="WhatsApp Icon" class="icon whatsapp-icon1">
+                  </a>
+                  </div>
+            </div>      
+        </div>
+
+                  <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+           </div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="/script/valut.js"></script> 

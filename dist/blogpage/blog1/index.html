@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItalysCasa</title>
+    <link rel="stylesheet" href="/styles/Common.css">
+        
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+            <div class="logo" onclick="scrollToTop()">
+                <img src="/Foto/Logo-colore.svg" alt="Logo">
+            </div>
+            <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="wabutton">
+                    <img src="/Foto/Icon/wanew.svg" alt="WhatsApp Icon" class="icon whatsapp-icon">
+                </a>
+                <a href="tel:+393791080060" class="tellbutton">
+                   <span><img src="/Foto/Icon/tel.svg" alt="Phone Icon" class="icon"></span> 
+                </a>
+            </div>
+
+            <div class="language-selector">
+                <div id="google_translate_element"></div>
+                <span class="custom-language-button">🌍 Language
+                </span>
+            </div>
+            <nav>
+                <a href="/index">HOME</a>
+                <a href="/property">VENDITE</a>
+                <a href="/valut">VALUTAZIONI</a>
+                <a href="/affitti">AFFITTI</a>
+                <a href="/blog">BLOG</a>
+                <a href="/cerca">CERCA AGENZIA</a>
+                <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni." class="emailbutton">eMAIL</a>
+            </nav> 
+
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+</header>
+
+    <main>
+        
+<link rel="stylesheet" type="text/css" href="/styles/blog.css">
+
+<script>
+    window.Blogs = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
+</script>
+
+<section class="hero-section1">
+        <div class="up-section">
+        <div class="blur-box1"></div>
+        <div class="blur-box"></div>
+        <h1>Blog</h1>
+        <h3>Per scoprire la Scalea e le sue bellezze</h3>
+    </div>
+            <div class="center-section">
+            <div class="center">
+<div class="content-foto">
+    <!-- Большое фото -->
+    <div class="foto-big">
+        
+            <img src="/Foto/blog2.jpg" alt="Main Image">
+        
+    </div>
+
+    <!-- Маленькие фото -->
+    <div class="foto-smal">
+        <div class="smal-1">
+            
+                <img src="/Foto/blog1.jpg" alt="Small Image 1">
+            
+        </div>
+        <div class="smal-2">
+            
+                <img src="/Foto/blog3.jpg" alt="Small Image 2">
+            
+        </div>
+    </div>
+</div>
+                <div class="content-info">
+                    <h1>ESCURSIONI E AVVENTURE NELLA NATURA DELLA RIVIERA DEI CEDRI</h1>
+                    <h2>Lorem ipsum dolor blog1 </h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci</h3>
+                </div>
+            <div class="cta1">
+                <a href="/blog">
+                <button class="glass-button">Ritorna al Blog</button>
+                </a>
+            </div>                
+            </div>
+            </div>
+<!-- Модальное окно -->
+<div id="imageModal" class="modal">
+    <span id="closeModal" class="close">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Full Image">
+    </div>
+    <div class="modal-navigation">
+        <button id="modalPrev">❮</button>
+        <button id="modalNext">❯</button>
+    </div>
+    <div id="modalThumbnails" class="modal-thumbnails"></div>
+</div>
+           
+</section>
+
+<script src="/script/blog.js"></script>
+    </main>
+        <footer>
+                    <div class="fot-left">
+                <div class="fot-logo">
+                    <img src="/Foto/Logo-Bianco.svg">
+                </div>
+                <div class="fot-icon">
+                    <div class="fot-icon-row">
+                   <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni.">
+                       <img src="/Foto/Icon/Gmail.svg">
+                   </a> 
+                   <a href="https://www.facebook.com/profile.php?id=61551668563870">
+                       <img src="/Foto/Icon/Facebook.svg">
+                   </a> 
+                   <a href="https://www.youtube.com/@ItalysCasa">
+                       <img src="/Foto/Icon/Youtube.svg">
+                   </a> 
+                </div>
+                   <div class="fot-icon-row">
+                   <a href="https://www.instagram.com/italyscasa/">
+                       <img src="/Foto/Icon/Instagram.svg">
+                   </a> 
+                   <a href="https://www.tiktok.com/@italyscasa1">
+                       <img src="/Foto/Icon/Tiktok.svg">
+                   </a> 
+                   <a href="#">
+                       <img src="/Foto/Icon/Telegram.svg">
+                   </a> 
+                </div>
+                </div>
+             </div>
+             <div class="fot-cent">
+                 <h1>Italys Casa</h1>
+                 <a href="/lavoro" class="h2">Lavora con noi</a>
+                 <a href="" class="h2">Chi siamo</a>
+                 <a href="" class="h2">News dal Gruppo Italys Casa</a>
+                 <a href="" class="h2">Responsabilità sociale</a>
+                 <a href="" class="h2">Responsabilità ambientale</a>
+             </div>
+             <div class="fot-cent1">
+                 <a href="https://scarfonesrl.it/" class="h1">Scarfone S.R.L.</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Impresa Edile</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Ristruttazioni</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Idraulico/Elettricista</a>                 
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Tinteggiature</a>
+                 <a href="tel:+393288325437" class="h3">+39 328 832 5437</a>
+             </div>                            
+             <div class="fot-right">
+                 <div class="fot-map">
+                     <img src="/Foto/HomeFoto/footer.jpg">
+                 </div>
+                 <div class="fot-but">
+                     <p>Numero utenti: <span id="visitor-count">79 910</span></p>
+                     <a href="/cookies">Impostazioni Cookies </a>
+                 </div>
+             </div>
+    </footer>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/script/Common.js"></script>
+    <script data-goatcounter="https://YOUR_SITE_NAME.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

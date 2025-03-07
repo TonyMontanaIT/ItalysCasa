@@ -1,0 +1,81 @@
+---
+layout: layout.njk
+pagination:
+    data: collections.blog
+    size: 1
+    alias: Blogs
+    filter: "{{ Blogs.fileSlug }}"
+permalink: "/blogpage/{{ Blogs.fileSlug }}/index.html"
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/blog.css">
+
+<script>
+    window.Blogs = {{ collections.blog | safe }};
+</script>
+
+<section class="hero-section1">
+        <div class="up-section">
+        <div class="blur-box1"></div>
+        <div class="blur-box"></div>
+        <h1>Blog</h1>
+        <h3>Per scoprire la Scalea e le sue bellezze</h3>
+    </div>
+            <div class="center-section">
+            <div class="center">
+<div class="content-foto">
+    <!-- Большое фото -->
+    <div class="foto-big">
+        {% if Blogs.data.images and Blogs.data.images[0] %}
+            <img src="/{{ Blogs.data.images[0] }}" alt="Main Image">
+        {% else %}
+            <img src="/Foto/default.jpg" alt="Default Image">
+        {% endif %}
+    </div>
+
+    <!-- Маленькие фото -->
+    <div class="foto-smal">
+        <div class="smal-1">
+            {% if Blogs.data.images and Blogs.data.images[1] %}
+                <img src="/{{ Blogs.data.images[1] }}" alt="Small Image 1">
+            {% else %}
+                <img src="/Foto/default.jpg" alt="Default Image">
+            {% endif %}
+        </div>
+        <div class="smal-2">
+            {% if Blogs.data.images and Blogs.data.images[2] %}
+                <img src="/{{ Blogs.data.images[2] }}" alt="Small Image 2">
+            {% else %}
+                <img src="/Foto/default.jpg" alt="Default Image">
+            {% endif %}
+        </div>
+    </div>
+</div>
+                <div class="content-info">
+                    <h1>{{ Blogs.data.tipo }}</h1>
+                    <h2>{{ Blogs.data.h1 }}</h2>
+                    <h3>{{ Blogs.data.text }}</h3>
+                </div>
+            <div class="cta1">
+                <a href="/blog">
+                <button class="glass-button">Ritorna al Blog</button>
+                </a>
+            </div>                
+            </div>
+            </div>
+<!-- Модальное окно -->
+<div id="imageModal" class="modal">
+    <span id="closeModal" class="close">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Full Image">
+    </div>
+    <div class="modal-navigation">
+        <button id="modalPrev">❮</button>
+        <button id="modalNext">❯</button>
+    </div>
+    <div id="modalThumbnails" class="modal-thumbnails"></div>
+</div>
+           
+</section>
+
+<script src="/script/blog.js"></script>

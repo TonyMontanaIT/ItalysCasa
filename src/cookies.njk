@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+title: Cookies
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/cookies.css">
+
+<section class="hero-section">
+    <div class="up-section">
+    	
+    </div>
+	<div class="center">
+<div class="info-cookie">
+    {% for service in collections.services %}
+        {% if loop.index == 4 %} 
+            <div class="cookie-block">
+                <h1>{{ service.data.h1 }}</h1>
+                <h2>{{ service.data.h2 }}</h2>
+                <h3>{{ service.data.h3 }}</h3>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+	</div>
+</section>
