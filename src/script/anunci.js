@@ -2,21 +2,13 @@ function addMarkersToMap(map, announcementsData) {
     announcementsData.forEach(function (announcement) {
         const { latitude, longitude, nomeAnunci, prezzo, riferimento } = announcement.data;
         if (latitude && longitude) {
-const customIcon = L.icon({
-    iconUrl: '/Foto/Icon/favicon.svg', // Укажи путь к SVG
-    iconSize: [30, 30], // Размер иконки (можно менять)
-    iconAnchor: [20, 40], // Точка привязки (обычно центр)
-    popupAnchor: [0, -40] // Смещение попапа (чтобы не накладывался)
-});
-
-L.marker([latitude, longitude], { icon: customIcon })
-    .addTo(map)
-    .bindPopup(`
-        <strong>${nomeAnunci}</strong><br>
-        Цена: ${prezzo} €<br>
-        RIF: ${riferimento}
-    `);
-
+            L.marker([latitude, longitude])
+                .addTo(map)
+                .bindPopup(`
+                    <strong>${nomeAnunci}</strong><br>
+                    Цена: ${prezzo} €<br>
+                    RIF: ${riferimento}
+                `);
         } else {
             console.warn(`Координаты отсутствуют для объявления: ${riferimento}`);
         }
