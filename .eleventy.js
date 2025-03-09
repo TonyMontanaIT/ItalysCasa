@@ -9,6 +9,11 @@ module.exports = function (eleventyConfig) {
         return value.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
     });
 
+    // Фильтр для JSON
+    eleventyConfig.addFilter("json", function(value) {
+        return JSON.stringify(value, null, 2);
+    });    
+
     // Создаём коллекцию для объявлений
     eleventyConfig.addCollection('announcements', function (collection) {
         return collection.getFilteredByGlob('./src/_announcements/*.md')
@@ -41,6 +46,17 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection('agenzia', function (collection) {
         return collection.getFilteredByGlob('./src/_announcements4/*.md');
     });
+
+eleventyConfig.addCollection("mapData", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/_announcements/*.md").map(item => ({
+        lat: item.data.latitude,
+        lon: item.data.longitude,
+        nomeAnunci: item.data.nomeAnunci,
+        prezzo: item.data.prezzo,
+        rif: item.data.riferimento,
+        slug: item.fileSlug // Динамическая ссылка на объявление
+    }));   
+});
 
     return {
         dir: {
