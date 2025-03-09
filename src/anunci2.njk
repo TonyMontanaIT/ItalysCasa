@@ -14,6 +14,9 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
         <script>
             window.Announcements = {{ collections.announcements | safe }};
         </script>
+        <script>
+            window.Announcements = {{ collections.mapData | json | safe }};
+        </script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <div class="content-section">
