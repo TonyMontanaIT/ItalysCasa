@@ -2,13 +2,13 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "../Foto/"
-public_folder: "../Foto/"
+media_folder: "src/Foto/Galeri"
+public_folder: "Foto/Galeri"
 
 collections:
   - name: "announcements"
     label: "Annunci"
-    folder: "_announcements"
+    folder: "src/_announcements"
     create: true
     slug: "{{slug}}"
     fields:
@@ -45,5 +45,8 @@ collections:
       - { label: "text6", name: "text6", widget: "text" }
       - { label: "Video", name: "video", widget: "text" }
       - { label: "Video360", name: "video360", widget: "text" }
+      - { label: "Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+      - { label: "Latitude", name: "latitude", widget: "number" }
+      - { label: "Longitude", name: "longitude", widget: "number" }
 
 

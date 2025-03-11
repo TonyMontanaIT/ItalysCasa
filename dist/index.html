@@ -57,11 +57,11 @@
     <main>
         <link rel="stylesheet" type="text/css" href="/styles/Home.css">
         <script>
-            window.Announcements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
+            window.Announcements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
         </script>
         <script>
           // Используем существующую коллекцию и безопасную сериализацию
-          window.AllAnnouncements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
+          window.AllAnnouncements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
         </script>
         <script>
             window.Announcements = [
@@ -150,6 +150,12 @@
     "prezzo": "2550,000",
     "rif": "146",
     "slug": "rif-146"
+  },
+  {
+    "nomeAnunci": "Test Nome anunci",
+    "prezzo": "450 000",
+    "rif": "155",
+    "slug": "test"
   }
 ];
         </script>
@@ -193,6 +199,42 @@
                 </a>
             </div> 
             <!-- Отображаем только 10 блоков на странице -->
+            
+            <div class="bottom-block" data-id="155" data-riferimento="155" data-city="Scalea" data-zona="Baia del carpino" data-tipo="Appartamente">
+                <!-- Карусель -->
+                <div class="carousel-container">
+                    
+                    <img src="/Foto/Galeri/10.webp" class="carousel-image active" alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/1.webp" class="carousel-image " alt="Property Image">
+                    
+                    <img src="/Foto/Galeri/4.webp" class="carousel-image " alt="Property Image">
+                    
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+                <!-- Информация об объекте -->
+                <a class="info-block1" href="/anunci/test/">
+                    <div class="info-anunci">Test Nome anunci</div>
+                </a>
+                <div class="price">
+                    <a class="euro" href="/anunci/test/">450 000 €</a>
+                    <a class="rif" href="/anunci/test/">RIF 155</a>
+                </div>
+                <div class="details">
+                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">12</span>
+                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">4</span>
+                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">no</span>
+                    <span><img src="/Foto/Icon/terazza.svg">si</span>
+                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">1</span>
+                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">1</span>
+                </div>
+                <div class="cta">
+                    <a href="/anunci/test/" class="glass-link">
+                    <button class="glass-button" id="contatButton">Vedi Immobile</button>
+                    </a>
+                </div>
+            </div>
             
             <div class="bottom-block" data-id="146" data-riferimento="146" data-city="Scalea" data-zona="Via Piano Lettieri" data-tipo="Villa">
                 <!-- Карусель -->
@@ -579,42 +621,6 @@
                 </div>
                 <div class="cta">
                     <a href="/anunci/rif-139/" class="glass-link">
-                    <button class="glass-button" id="contatButton">Vedi Immobile</button>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="bottom-block" data-id="138" data-riferimento="138" data-city="Roma" data-zona="Viale Calabria" data-tipo="Appartamento">
-                <!-- Карусель -->
-                <div class="carousel-container">
-                    
-                    <img src="/Foto/Galeri/1.webp" class="carousel-image active" alt="Property Image">
-                    
-                    <img src="/Foto/Galeri/2.webp" class="carousel-image " alt="Property Image">
-                    
-                    <img src="/Foto/Galeri/3.webp" class="carousel-image " alt="Property Image">
-                    
-                    <button class="carousel-btn prev">&#10094;</button>
-                    <button class="carousel-btn next">&#10095;</button>
-                </div>
-                <!-- Информация об объекте -->
-                <a class="info-block1" href="/anunci/rif-138/">
-                    <div class="info-anunci">Appartamento in Centro storico</div>
-                </a>
-                <div class="price">
-                    <a class="euro" href="/anunci/rif-138/">20,000 €</a>
-                    <a class="rif" href="/anunci/rif-138/">RIF 138</a>
-                </div>
-                <div class="details">
-                    <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">85 m²</span>
-                    <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">3</span>
-                    <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">no</span>
-                    <span><img src="/Foto/Icon/terazza.svg">no</span>
-                    <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">2</span>
-                    <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">3°</span>
-                </div>
-                <div class="cta">
-                    <a href="/anunci/rif-138/" class="glass-link">
                     <button class="glass-button" id="contatButton">Vedi Immobile</button>
                     </a>
                 </div>

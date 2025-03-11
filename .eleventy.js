@@ -57,8 +57,9 @@ eleventyConfig.addCollection("mapData", function (collectionApi) {
         slug: item.fileSlug // Динамическая ссылка на объявление
     }));   
 });
-
-eleventyConfig.addPassthroughCopy('./src/admin');
+eleventyConfig.addPassthroughCopy('src/admin');
+eleventyConfig.addPassthroughCopy('src/_announcements');
+eleventyConfig.addPassthroughCopy('src/Foto');
     return {
         dir: {
             input: 'src',
