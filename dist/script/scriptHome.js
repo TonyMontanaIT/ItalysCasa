@@ -16,29 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Инициализация карты
-// Добавление меток на карту
-document.addEventListener('DOMContentLoaded', function () {
-    const mapElement = document.getElementById('map');
-    if (!mapElement) {
-        console.error('Элемент #map не найден!');
-        return;
-    }
-
-    var map = L.map('map').setView([39.8060500, 15.7963500], 13);
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
-    // Получаем данные объявлений
-    const announcementsData = window.Announcements || [];
-    console.log('Данные объявлений:', announcementsData);
-
+function addMarkersToMap(map, announcementsData) {
     announcementsData.forEach(function (announcement) {
-        const { latitude, longitude, nomeAnunci, prezzo, riferimento } = announcement.data;
-
+        const { lat: latitude, lon: longitude, nomeAnunci, prezzo, rif: riferimento } = announcement;
         if (latitude && longitude) {
             L.marker([latitude, longitude])
                 .addTo(map)
@@ -51,44 +31,32 @@ document.addEventListener('DOMContentLoaded', function () {
             console.warn(`Координаты отсутствуют для объявления: ${riferimento}`);
         }
     });
-});
+}
 
-
-// Инициализация карты
-// Добавление меток на карту
 document.addEventListener('DOMContentLoaded', function () {
-    const mapElement = document.getElementById('mapMedia');
-    if (!mapElement) {
-        console.error('Элемент #map не найден!');
-        return;
+    const announcementsData = window.Announcements || [];
+
+    // Инициализация первой карты
+    const mapSmallElement = document.getElementById('map');
+    if (mapSmallElement) {
+        var mapSmall = L.map('map').setView([39.8060500, 15.7963500], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(mapSmall);
+        addMarkersToMap(mapSmall, announcementsData);
     }
 
-    var map = L.map('mapMedia').setView([39.8060500, 15.7963500], 13);
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
-    // Получаем данные объявлений
-    const announcementsData = window.Announcements || [];
-    console.log('Данные объявлений:', announcementsData);
-
-    announcementsData.forEach(function (announcement) {
-        const { latitude, longitude, nomeAnunci, prezzo, riferimento } = announcement.data;
-
-        if (latitude && longitude) {
-            L.marker([latitude, longitude])
-                .addTo(map)
-                .bindPopup(`
-                    <strong>${nomeAnunci}</strong><br>
-                    Цена: ${prezzo} €<br>
-                    RIF: ${riferimento}
-                `);
-        } else {
-            console.warn(`Координаты отсутствуют для объявления: ${riferimento}`);
-        }
-    });
+    // Инициализация второй карты
+    const mapBigElement = document.getElementById('mapMedia');
+    if (mapBigElement) {
+        var mapBig = L.map('mapMedia').setView([39.8060500, 15.7963500], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(mapBig);
+        addMarkersToMap(mapBig, announcementsData);
+    }
 });
 
 // Карусель изображений с поддержкой свайпов
@@ -172,28 +140,52 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-        function updateSearchQuery(query, button) {
-            const searchInput = document.getElementById('searchInput');
-            searchInput.value = ''; 
-            searchInput.value = query;
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('searchInput');
+  const clearButton = document.getElementById('clearSearch');
+  const contentBottom = document.querySelector('.content-bottom');
+  const allBlocks = Array.from(document.querySelectorAll('.bottom-block'));
+  const pagination = document.querySelector('.pagination');
+  
+  // Сохраняем исходные данные
+  const originalHTML = contentBottom.innerHTML;
 
-            const activeUnderline = document.querySelector('.active-underline');
-            const options = document.querySelectorAll('.search-bar-options span');
+  // Фильтрация
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim().toLowerCase();
+    clearButton.style.display = query ? 'block' : 'none';
+    pagination.style.display = query ? 'none' : 'flex';
 
-            options.forEach((option, index) => {
-                if (button === option.textContent.trim()) {
-                    const rect = option.getBoundingClientRect();
-                    const containerRect = document.querySelector('.search-bar-options').getBoundingClientRect();
+    if (!query) {
+      contentBottom.innerHTML = originalHTML;
+      initializeCarousels();
+      return;
+    }
 
-                    // Позиционируем активную линию под выбранной кнопкой
-                    activeUnderline.style.width = '24%'; 
-                    activeUnderline.style.left = `${rect.left - containerRect.left}px`;
-                    activeUnderline.style.backgroundColor = '#FFFFFF';
-                }
-            });
-        }
+    const filteredBlocks = allBlocks.filter(block => {
+      const { riferimento, city, zona, tipo } = block.dataset;
+      return [riferimento, city, zona, tipo].some(field => 
+        String(field).toLowerCase().includes(query)
+      );
+    });
 
-        window.onload = function() {
-            const defaultButton = document.querySelector('.search-bar-options span:first-child');
-            updateSearchQuery('Vendita Provincia, Comune, Zona, Riferimento', defaultButton.textContent.trim());
-        };
+    // Очистка контейнера перед вставкой
+    contentBottom.innerHTML = '';
+    
+    // Добавляем отфильтрованные блоки
+    filteredBlocks.forEach(block => {
+      contentBottom.appendChild(block.cloneNode(true));
+    });
+
+    initializeCarousels(); // Реинициализация каруселей
+  });
+
+  // Сброс
+  clearButton.addEventListener('click', () => {
+    searchInput.value = '';
+    contentBottom.innerHTML = originalHTML;
+    clearButton.style.display = 'none';
+    pagination.style.display = 'flex';
+    initializeCarousels();
+  });
+});

@@ -18,7 +18,7 @@
   // Функция для получения данных GoatCounter
   async function fetchVisitorCount() {
     try {
-      const response = await fetch('https://YOUR_SITE_NAME.goatcounter.com/api/v0/stats/total?start=2023-01-01');
+      const response = await fetch('https://229988.goatcounter.com/api/v0/stats/total?start=2023-01-01');
       const data = await response.json();
       document.getElementById('visitor-count').innerText = data.total.visitors;
     } catch (error) {

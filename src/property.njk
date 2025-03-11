@@ -11,7 +11,9 @@ pagination:
         <script>
             window.Announcements = {{ collections.announcements | safe }};
         </script>
-            
+        <script>
+            window.Announcements = {{ collections.mapData | json | safe }};
+        </script>
         <section class="hero-section">
             <div class="text-but-top">
                  <a href="#">ItalysCasa</a>

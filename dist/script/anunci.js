@@ -1,6 +1,6 @@
 function addMarkersToMap(map, announcementsData) {
     announcementsData.forEach(function (announcement) {
-        const { latitude, longitude, nomeAnunci, prezzo, riferimento } = announcement.data;
+        const { lat: latitude, lon: longitude, nomeAnunci, prezzo, rif: riferimento } = announcement;
         if (latitude && longitude) {
             L.marker([latitude, longitude])
                 .addTo(map)

@@ -191,7 +191,7 @@
             display: flex;
             flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
             width: 775px;
-            justify-content: 10px; /* Расположение блоков с равным отступом между ними */
+            justify-content: space-between; /* Расположение блоков с равным отступом между ними */
         }
         .info-anunci {
             margin-top: 10px;
@@ -204,7 +204,8 @@
             color: #29A3E2;
         }
         .bottom-block {
-            width: calc(49% - 5px); /* Каждый блок занимает 50% ширины минус отступы */
+            width: 46%;
+            margin: 1%;
             background: linear-gradient(135deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
             border-radius: 10px;
             font-size: 14px;
@@ -213,7 +214,7 @@
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             transition: width 0.3s ease; /* Плавный переход для адаптивности */
-            min-height: 450px;
+            min-height: 550px;
         }
         .bottom-block img {
             transition: transform 0.3s ease;
@@ -441,7 +442,8 @@
             margin-left: 10px;
             display: flex;
             justify-content: left;
-            width: 100%;            
+            width: auto;            
+            height: auto;
         }    
         .glass-link {
             display: inline-block; /* Чтобы button корректно работал внутри */
@@ -579,6 +581,26 @@
         .map-media {
             display: none;
         } 
+        .icons1 {
+            display: none;
+        } 
+
+        .search-clear {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #FFF;
+            background-color: red;
+            border-radius: 10px;
+            padding: 3px 8px;
+            font-size: 30px;
+            cursor: pointer;
+            display: none; /* Скрываем по умолчанию */
+        }
+
 @media (max-width: 768px) {
 
     .hero-section {
@@ -693,7 +715,7 @@
     }    
     .icons1 {
         display: flex;
-        position: fixed;
+        position: sticky;
         bottom: 10px;
         right: 10px;
         gap: 10px;
