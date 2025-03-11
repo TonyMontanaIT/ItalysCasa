@@ -7,7 +7,7 @@
             overflow-x: hidden;
         }
         .hero-section {
-            background-image: url('/Foto/HomeFoto/Home2.jpg');
+            background-image: url('/Foto/HomeFoto/Home2.webp');
             background-size: 100% 100%;
             background-position: center;
             background-attachment: fixed;
@@ -28,43 +28,43 @@
         }         
 
         .hero-section.bg1 {
-            background-image: url('/Foto/HomeFoto/Home1.jpg');
+            background-image: url('/Foto/HomeFoto/Home1.webp');
         }
 
         .hero-section.bg2 {
-            background-image: url('/Foto/HomeFoto/Home2.jpg');
+            background-image: url('/Foto/HomeFoto/Home2.webp');
         }
 
         .hero-section.bg3 {
-            background-image: url('/Foto/HomeFoto/Home3.jpg');
+            background-image: url('/Foto/HomeFoto/Home3.webp');
         }
 
         .hero-section.bg4 {
-            background-image: url('/Foto/HomeFoto/Home4.jpg');
+            background-image: url('/Foto/HomeFoto/Home4.webp');
         }
 
         .hero-section.bg5 {
-            background-image: url('/Foto/HomeFoto/Home5.jpg');
+            background-image: url('/Foto/HomeFoto/Home5.webp');
         }
 
         .hero-section.bg6 {
-            background-image: url('/Foto/HomeFoto/Home6.jpg');
+            background-image: url('/Foto/HomeFoto/Home6.webp');
         }
 
         .hero-section.bg7 {
-            background-image: url('/Foto/HomeFoto/Home7.jpg');
+            background-image: url('/Foto/HomeFoto/Home7.webp');
         }
 
         .hero-section.bg8 {
-            background-image: url('/Foto/HomeFoto/Home8.jpg');
+            background-image: url('/Foto/HomeFoto/Home8.webp');
         }
 
         .hero-section.bg9 {
-            background-image: url('/Foto/HomeFoto/Home9.jpg');
+            background-image: url('/Foto/HomeFoto/Home9.webp');
         }
 
         .hero-section.bg10 {
-            background-image: url('/Foto/HomeFoto/Home10.jpg');
+            background-image: url('/Foto/HomeFoto/Home10.webp');
         }
 
         .search-bar-container {

@@ -58,6 +58,7 @@ eleventyConfig.addCollection("mapData", function (collectionApi) {
     }));   
 });
 
+eleventyConfig.addPassthroughCopy('./src/admin');
     return {
         dir: {
             input: 'src',

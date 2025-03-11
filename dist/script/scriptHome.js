@@ -124,7 +124,11 @@ document.addEventListener('DOMContentLoaded', function () {
 // Google Places API для рейтинга
 function initMap() {
     const placeId = 'ChIJIdDb8nYfPxMRpHYqAa3wyz4'; // Замени на свой ID места
+    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
     const service = new google.maps.places.PlacesService(document.createElement('div'));
+       } else {
+    console.error("Google Maps API не загружен!");
+        }
     service.getDetails({ placeId: placeId }, function (place, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             document.getElementById('rating').textContent = place.rating || 'Нет данных';
@@ -168,6 +172,11 @@ document.addEventListener('DOMContentLoaded', function() {
         String(field).toLowerCase().includes(query)
       );
     });
+
+        window.onload = function() {
+            const defaultButton = document.querySelector('.search-bar-options span:first-child');
+            updateSearchQuery('Vendita Provincia, Comune, Zona, Riferimento', defaultButton.textContent.trim());
+        };
 
     // Очистка контейнера перед вставкой
     contentBottom.innerHTML = '';
