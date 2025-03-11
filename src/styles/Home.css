@@ -714,8 +714,9 @@
         display: none;   
     }    
     .icons1 {
+        z-index: 1001;
         display: flex;
-        position: sticky;
+        position: fixed;
         bottom: 10px;
         right: 10px;
         gap: 10px;
