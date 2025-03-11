@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: TonyMontanaIT/ItalysCasa
   branch: main
 
 media_folder: "src/Foto/Galeri"
