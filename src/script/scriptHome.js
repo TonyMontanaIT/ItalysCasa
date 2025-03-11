@@ -198,3 +198,21 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCarousels();
   });
 });
+
+document.addEventListener("scroll", function () {
+    const icons = document.querySelector(".icons1");
+    const stopPosition = 200; // Высота от низа страницы, где кнопки должны остановиться
+
+    // Получаем текущую позицию скролла
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    // Если достигнута заданная высота от низа страницы
+    if (scrollPosition >= pageHeight - stopPosition) {
+        icons.style.position = "absolute";
+        icons.style.bottom = `${stopPosition}px`;
+    } else {
+        icons.style.position = "fixed";
+        icons.style.bottom = "10px"; // Возвращаем исходное положение
+    }
+});
