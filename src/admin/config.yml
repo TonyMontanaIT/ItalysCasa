@@ -11,7 +11,7 @@ collections:
     label: "Annunci"
     folder: "src/_announcements"
     create: true
-    slug: "{{slug}}"
+    slug: "rif-{{fields.riferimento}}"
     fields:
       - { label: "RIF", name: "riferimento", widget: "string" }
       - { label: "RIF", name: "RIF1", widget: "string" }                           
