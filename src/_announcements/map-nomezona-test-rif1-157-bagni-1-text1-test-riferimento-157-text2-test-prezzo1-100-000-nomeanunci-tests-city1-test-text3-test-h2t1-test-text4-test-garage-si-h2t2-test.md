@@ -1,0 +1,40 @@
+---
+riferimento: "157"
+RIF1: "157"
+nomeAnunci: Tests
+nomeZona: Test
+city1: Test
+street1: Test
+prezzo1: 100,000
+tipo: Appartamente
+totalrooms: "4"
+rooms: "3"
+bagni: "1"
+zonam2: Si
+floor: "2"
+elevator: no
+terrazzo: no
+prezzo: 100,000
+giardino: no
+garage: si
+descrizione: Test
+h2t1: Test
+text1: Test
+h2t2: Test
+text2: Test
+h2t3: Test
+text3: Test
+h2t4: Test
+text4: Test
+h2t5: Test
+text5: Test
+h2t6: Test
+text6: Test
+video: No
+video360: No
+images:
+  - Foto/Galeri/2.webp
+  - Foto/Galeri/7.webp
+latitude: 39802767
+longitude: 15795309
+---
