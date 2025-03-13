@@ -1,17 +1,72 @@
-function addMarkersToMap(map, announcementsData) {
+// Координаты статических маркеров (агентств)
+const staticAgencies = [
+    { lat: 39.808384, lng: 15.793641, name: "Agenzia immobiliare a Scalea", phone: "3791080060"},
+    { lat: 53.479002, lng: -2.232827, name: "Agenzia immobiliare a Manchester", phone: "3791080060" },
+    { lat: 41.896139, lng: 12.478197, name: "Agenzia immobiliare a Roma", phone: "3791080060" },
+    { lat: 40.8518, lng: 14.2681, name: "Agenzia immobiliare a Napoli", phone: "3791080060" }
+];
+
+// Функция для добавления динамических маркеров
+function addDynamicMarkers(map, announcementsData) {
+    // Создаём стандартную синюю иконку для динамических маркеров
+    const blueIcon = L.icon({
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+    });
+
     announcementsData.forEach(function (announcement) {
-        const { lat: latitude, lon: longitude, nomeAnunci, prezzo, rif: riferimento } = announcement;
+        const { lat: latitude, lon: longitude, nomeAnunci, prezzo, rif: riferimento, fileSlug } = announcement;
         if (latitude && longitude) {
-            L.marker([latitude, longitude])
+            // Используем `fileSlug`, если он есть, или `rif` как резервное значение
+            const slug = fileSlug || riferimento;
+
+            // Создаём HTML-содержимое для всплывающего окна
+            const popupContent = `
+                <strong>${nomeAnunci}</strong><br>
+                Prezzo:€ ${prezzo}<br>
+                RIF: ${riferimento}<br>
+                <a href="/anunci/rif-${slug}/" style="text-decoration: none;">
+                    <button style="margin-top: 10px; padding: 5px 10px; background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8)); color: white; border: none; border-radius: 30px; cursor: pointer;">
+                        Vedi Immobile
+                    </button>
+                </a>
+            `;
+
+            // Добавляем маркер на карту
+            L.marker([latitude, longitude], { icon: blueIcon })
                 .addTo(map)
-                .bindPopup(`
-                    <strong>${nomeAnunci}</strong><br>
-                    Цена: ${prezzo} €<br>
-                    RIF: ${riferimento}
-                `);
+                .bindPopup(popupContent); // Привязываем всплывающее окно с кнопкой
         } else {
             console.warn(`Координаты отсутствуют для объявления: ${riferimento}`);
         }
+    });
+}
+
+// Функция для добавления статических маркеров
+function addStaticMarkers(map, agencies) {
+    // Создаём красную иконку для статических маркеров
+    const redIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+    });
+
+    agencies.forEach(agency => {
+        // Создаём HTML-содержимое для всплывающего окна
+        const popupContent = `
+            <strong>${agency.name}</strong><br>
+            <button style="margin-top: 10px; padding: 5px 10px; background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8)); color: white; border: none; border-radius: 30px; cursor: pointer;">
+                <a href="tel:+39${agency.phone}" style="color: white; text-decoration: none;">Chiamata</a>
+            </button>
+        `;
+
+        // Добавляем маркер на карту
+        L.marker([agency.lat, agency.lng], { icon: redIcon })
+            .addTo(map)
+            .bindPopup(popupContent); // Привязываем всплывающее окно с кнопкой
     });
 }
 
@@ -26,7 +81,12 @@ document.addEventListener('DOMContentLoaded', function () {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(mapSmall);
-        addMarkersToMap(mapSmall, announcementsData);
+
+        // Добавляем динамические маркеры
+        addDynamicMarkers(mapSmall, announcementsData);
+
+        // Добавляем статические маркеры
+        addStaticMarkers(mapSmall, staticAgencies);
     }
 
     // Инициализация второй карты
@@ -37,7 +97,12 @@ document.addEventListener('DOMContentLoaded', function () {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(mapBig);
-        addMarkersToMap(mapBig, announcementsData);
+
+        // Добавляем динамические маркеры
+        addDynamicMarkers(mapBig, announcementsData);
+
+        // Добавляем статические маркеры
+        addStaticMarkers(mapBig, staticAgencies);
     }
 });
 
