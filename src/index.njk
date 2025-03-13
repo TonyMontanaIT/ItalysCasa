@@ -93,6 +93,13 @@ pagination:
 
 <!-- Пагинация -->
 <div class="pagination">
+    <!-- Кнопка "<<" для первой страницы -->
+    {% if pagination.pageNumber > 1 %}
+    <button onclick="location.href='/page1'" title="Первая страница"><<</button>
+    {% else %}
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это первая страница"><<</button>
+    {% endif %}
+
     <!-- Кнопка "❮" для предыдущей страницы -->
     {% if pagination.href.previous %}
     <button onclick="location.href='{{ pagination.href.previous }}'" title="Предыдущая страница">❮</button>
@@ -101,7 +108,23 @@ pagination:
     {% endif %}
 
     <!-- Номера страниц -->
-    {% for pageNumber in (1..pagination.pagesTotal) %}
+    {% set startPage = pagination.pageNumber - 1 %}
+    {% set endPage = pagination.pageNumber + 1 %}
+
+    <!-- Корректировка границ -->
+    {% if startPage < 1 %}
+        {% set startPage = 1 %}
+        {% set endPage = 3 %}
+    {% endif %}
+    {% if endPage > pagination.pagesTotal %}
+        {% set endPage = pagination.pagesTotal %}
+        {% set startPage = pagination.pagesTotal - 2 %}
+    {% endif %}
+    {% if startPage < 1 %}
+        {% set startPage = 1 %}
+    {% endif %}
+
+    {% for pageNumber in (startPage..endPage) %}
     <button 
         onclick="location.href='/page{{ pageNumber }}'" 
         {% if pageNumber == pagination.pageNumber %}class="active"{% endif %}
@@ -116,6 +139,13 @@ pagination:
     <button onclick="location.href='{{ pagination.href.next }}'" title="Следующая страница">❯</button>
     {% else %}
     <button disabled style="opacity: 0.5; cursor: default;" title="Это последняя страница">❯</button>
+    {% endif %}
+
+    <!-- Кнопка ">>" для последней страницы -->
+    {% if pagination.pageNumber < pagination.pagesTotal %}
+    <button onclick="location.href='/page{{ pagination.pagesTotal }}'" title="Последняя страница">>></button>
+    {% else %}
+    <button disabled style="opacity: 0.5; cursor: default;" title="Это последняя страница">>></button>
     {% endif %}
 </div>
         </div>
