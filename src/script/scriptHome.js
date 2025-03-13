@@ -98,13 +98,13 @@ document.addEventListener('DOMContentLoaded', function () {
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+        }).addTo(mapSmall);
 
         // Добавляем динамические маркеры
-        addDynamicMarkers(map, announcementsData);
+        addDynamicMarkers(mapSmall, announcementsData);
 
         // Добавляем статические маркеры
-        addStaticMarkers(map, staticAgencies);
+        addStaticMarkers(mapSmall, staticAgencies);
     }
 
     // Инициализация второй карты
@@ -114,15 +114,16 @@ document.addEventListener('DOMContentLoaded', function () {
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(mapMedia);
+        }).addTo(mapBig);
 
         // Добавляем динамические маркеры
-        addDynamicMarkers(mapMedia, announcementsData);
+        addDynamicMarkers(mapBig, announcementsData);
 
         // Добавляем статические маркеры
-        addStaticMarkers(mapMedia, staticAgencies);
+        addStaticMarkers(mapBig, staticAgencies);
     }
 });
+
 // Карусель изображений с поддержкой свайпов
 document.addEventListener('DOMContentLoaded', function () {
     const carouselContainers = document.querySelectorAll('.carousel-container');
@@ -262,6 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCarousels();
   });
 });
+
 
 document.addEventListener("scroll", function () {
     const icons = document.querySelector(".icons1");
