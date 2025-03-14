@@ -367,7 +367,8 @@
         }
 
         .pagination button.active {
-            background-color: #FF9700;
+            background-color: rgba(41, 163, 226, 0.5); /* 50% прозрачность фона */
+            color: white; /* Цвет текста */
         }
 
         .pagination button:hover {

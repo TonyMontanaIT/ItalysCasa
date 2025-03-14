@@ -101,14 +101,35 @@ pagination:
     {% endif %}
 
     <!-- Номера страниц -->
-    {% for pageNumber in (1..pagination.pagesTotal) %}
-    <button 
-        onclick="location.href='/page{{ pageNumber }}'" 
-        {% if pageNumber == pagination.pageNumber %}class="active"{% endif %}
-        title="Страница {{ pageNumber }}"
-    >
-        {{ pageNumber }}
-    </button>
+    {% set currentPage = pagination.pageNumber %}
+    {% set totalPages = pagination.pagesTotal %}
+    
+    <!-- Логика для отображения трёх кнопок (всегда включает текущую страницу) -->
+    {% set startPage = currentPage - 1 %}
+    {% set endPage = currentPage + 1 %}
+
+    <!-- Корректировка границ, чтобы не выходить за пределы общего количества страниц -->
+    {% if startPage < 1 %}
+        {% set startPage = 1 %}
+        {% set endPage = 3 %}
+    {% endif %}
+    {% if endPage > totalPages %}
+        {% set endPage = totalPages %}
+        {% set startPage = totalPages - 2 %}
+    {% endif %}
+    {% if startPage < 1 %}
+        {% set startPage = 1 %}
+    {% endif %}
+
+    <!-- Генерация кнопок -->
+    {% for pageNumber in range(startPage, endPage + 1) %}
+        <button 
+            onclick="location.href='/{{ pageNumber }}'" 
+            {% if pageNumber == currentPage %}class="active"{% endif %}
+            title="Страница {{ pageNumber }}"
+        >
+            {{ pageNumber }}
+        </button>
     {% endfor %}
 
     <!-- Кнопка "❯" для следующей страницы -->
@@ -118,6 +139,8 @@ pagination:
     <button disabled style="opacity: 0.5; cursor: default;" title="Это последняя страница">❯</button>
     {% endif %}
 </div>
+
+
         </div>
         <div class="map-media">
         <div id="mapMedia" class="mapMed"></div>
