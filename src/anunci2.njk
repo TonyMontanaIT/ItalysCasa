@@ -18,8 +18,123 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
             window.Announcements = {{ collections.mapData | json | safe }};
         </script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <meta name="description" content="Immobilienagentur in der Region Kalabrien, Kauf und Verkauf, Miete, Papierkram, Unterstützung in allen Phasen der Transaktion"> 
 
 <div class="content-section">
+        <div class="offscreen">
+            <!-- italia -->
+            <h2>Ville in vendita</h2>
+            <ul>
+                <li>Investire in immobili</li>
+                <li>Proprieta commerciali</li>
+                <li>Centro storico di Scalea</li>
+                <li>Case con vista mozzafiato</li>
+                <li>Appartemente da restaurare</li>
+                <li>Ville con giardino </li>
+                <li>Affitto lungo termine</li>
+                <li>Vendere casa senza agenzia</li>
+                <li>Finanziamento per aquisto casa</li>
+                <li>Prezzo di mercato</li>
+            </ul>
+            <!-- England -->
+            <h2>Italian real estate market</h2>
+            <ul>
+                <li>Villas in Italy</li>
+                <li>Real estate agency in Italy</li>
+                <li>Luxury homes in Italy</li>
+                <li>Mortgage options in Italy</li>
+                <li>Italian real estate trends</li>
+                <li>Off-plan properties in Italy</li>
+                <li>Villas in Cosenza</li>
+                <li>Investment opportunities in Southern Italy</li>
+                <li>Villas in Florence</li>
+                <li>Property in Milan</li>
+            </ul>
+            <!-- Germania -->
+            <h2>Immobilienmarkt in Italien</h2>
+            <ul>
+                <li>Immobilienpreise in Italien</li>
+                <li>Rechtliche Aspekte beim Immobilienerwerb</li>
+                <li>Wohnungen mit Meerblick</li>
+                <li>Villen in Cosenza</li>
+                <li>Immobilien mit Panoramablick</li>
+                <li>Immobilien an der Amalfiküste</li>
+                <li>Villen auf Sardinien</li>
+                <li>Villa</li>
+                <li>Moderne Villa</li>
+                <li>Studio-Wohnung</li>
+            </ul>
+            <!-- Russia -->
+            <h2>Дома на продажу в Италии</h2>
+            <ul>
+                <li>Жизнь в Италии</li>
+                <li>Оценка недвижимости в Италии</li>
+                <li>Аренда в Италии</li>
+                <li>Пляжная недвижимость в Калабрии</li>
+                <li>Недвижимость у моря</li>
+                <li>Виллы на Сардинии</li>
+                <li>Квартира на последнем этаже</li>
+                <li>Вид на горы</li>
+                <li>Меблированный</li>
+                <li>Высокие потолки</li>
+            </ul>
+            <!-- Finlandia -->
+            <h2>Asuntojen myynti Italiassa</h2>
+            <ul>
+                <li>Arvokkaat kiinteistöt Italiassa</li>
+                <li>Maaseutualueet Italiassa</li>
+                <li>Rantakahvilat Tropea</li>
+                <li>Villat Kosenzassa</li>
+                <li>Kerrostalo</li>
+                <li>Puutarha</li>
+                <li>Autotalli</li>
+                <li>Kiinteistöarviointi</li>
+                <li>Airbnb-kiinteistöt</li>
+                <li>Parveke</li>
+            </ul>
+            <!-- Chechia -->
+            <h2>Prodej nemovitostí v Itálii</h2>
+            <ul>
+                <li>Vily v Itálii</li>
+                <li>Vily v Reggio Calabria</li>
+                <li>Jih Itálie</li>
+                <li>Historická budova</li>
+                <li>Zahrada</li>
+                <li>Daňové povinnosti</li>
+                <li>Právní poradenství</li>
+                <li>Pronájem bytu v Itálii</li>
+                <li>Moderní vybavení</li>
+                <li>Byt</li>
+            </ul>
+            <!-- Polonia -->
+            <h2>Sprzedaż nieruchomości we Włoszech</h2>
+            <ul>
+                <li>Wille we Włoszech</li>
+                <li>Ceny nieruchomości</li>
+                <li>Życie we Włoszech</li>
+                <li>Południowe Włochy</li>
+                <li>Apartament</li>
+                <li>Budynki historyczne</li>
+                <li>Taras</li>
+                <li>Krótkoterminowy wynajem</li>
+                <li>Podatki od nieruchomości</li>
+                <li>Garaż</li>
+            </ul>
+            <!-- Lituania -->
+            <h2>Vilos Italijoje</h2>
+            <ul>
+                <li>Gyvenimas Italijoje</li>
+                <li>Turto vertės įvertinimas</li>
+                <li>Istorinis pastatas</li>
+                <li>Moderni villa</li>
+                <li>Sodas</li>
+                <li>Jūros vaizdas</li>
+                <li>Garažas</li>
+                <li>Oro kondicionierius</li>
+                <li>Paskolos užsieniečiams</li>
+                <li>Mokesčiai Italijoje</li>
+            </ul>                                                                                    
+        </div>
     <div class="up-section">
         <div class="up-left">
             <div class="up-left-up">
@@ -56,7 +171,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
             <!-- Карусель -->
             <div class="carousel-container">
                 {% for image in announcement.data.images %}
-                    <img src="/{{ image }}" class="carousel-image {% if loop.index0 == 0 %}active{% endif %}" alt="Property Image">
+                    <img alt="I migliori appartamenti in Italia" src="/{{ image }}" class="carousel-image {% if loop.index0 == 0 %}active{% endif %}" alt="Property Image">
                 {% endfor %}
                 <!-- Иконки -->
                 <div class="icon-container">
@@ -76,13 +191,13 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
     <div class="modal-content">
         <span class="close-modal" id="closeModal">&times;</span>
         <button class="modal-btn prev" id="modalPrev">&#10094;</button>
-        <img src="" id="modalImage" alt="Full Image">
+        <img alt="Una foto della villa" src="" id="modalImage" alt="Full Image">
         <button class="modal-btn next" id="modalNext">&#10095;</button>
     </div>
     <div class="modal-thumbnails">
         <!-- Превью для модального окна -->
         {% for image in announcement.data.images %}
-            <img src="/{{ image }}" class="modal-thumbnail {% if loop.index0 == 0 %}active{% endif %}" alt="Thumbnail" data-index="{{ loop.index0 }}">
+            <img alt="Appartamento con una bellissima vista" src="/{{ image }}" class="modal-thumbnail {% if loop.index0 == 0 %}active{% endif %}" alt="Thumbnail" data-index="{{ loop.index0 }}">
         {% endfor %}
     </div>
 </div>
@@ -91,7 +206,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
         <div class="center-center">
                     <div class="cen-info">
                         <div class="caratter">
-                            <img src="/Foto/Icon/caracter.svg">
+                            <img alt="immobiliare verificato" src="/Foto/Icon/caracter.svg">
                          <p>Caratteristiche:</p>
                         </div>
                 <div class="property-info">
@@ -127,7 +242,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
             <div class="descrizione">
                 <div class="des-info">
                     <div class="des-info-start">
-                <img src="/Foto/Icon/description.svg">
+                <img alt="informazioni sugli immobili" src="/Foto/Icon/description.svg">
                 <h1>{{ announcement.data.descrizione }}</h1>
                     </div>
                      <div class="des-info-text">
@@ -188,7 +303,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
                     <div class="serv-block-1">
                         <!-- Изображение -->
                         <span class="circle-image">
-                            <img src="/{{ Random.data.images[0] | default('/Foto/default.jpg') }}" alt="Service Image">
+                            <img alt="I migliori immobili in Italia" src="/{{ Random.data.images[0] | default('/Foto/default.jpg') }}" alt="Service Image">
                         </span>
                         <div class="random-info">
                         <!-- Заголовок и описание -->
@@ -200,10 +315,10 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
                             <span>RIF:{{ Random.data.RIF1 }}</span>
                         </div>
                         <div class="random-icon">
-                        <span><img src="/Foto/Icon/bagno.svg" alt=""> {{ Random.data.bagni }}</span>
-                        <span><img src="/Foto/Icon/mq.svg"> {{ Random.data.zonam2 }}</span>
-                        <span><img src="/Foto/Icon/locale.svg"> {{ Random.data.rooms }}</span>
-                        <span><img src="/Foto/Icon/terazza.svg"> {{ Random.data.terrazzo }}</span>
+                        <span><img alt="Bagno" src="/Foto/Icon/bagno.svg" alt=""> {{ Random.data.bagni }}</span>
+                        <span><img alt="Casa" src="/Foto/Icon/mq.svg"> {{ Random.data.zonam2 }}</span>
+                        <span><img alt="Camere da letto" src="/Foto/Icon/locale.svg"> {{ Random.data.rooms }}</span>
+                        <span><img alt="Terazza" src="/Foto/Icon/terazza.svg"> {{ Random.data.terrazzo }}</span>
                         </div>
                         </div>
                         <!-- Кнопка -->
