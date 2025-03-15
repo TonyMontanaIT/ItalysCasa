@@ -163,11 +163,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Добавляем обработку свайпов для мобильных устройств
         container.addEventListener('touchstart', (e) => {
             startX = e.touches[0].clientX;
-        });
+        }, { passive: true });
 
         container.addEventListener('touchmove', (e) => {
             endX = e.touches[0].clientX;
-        });
+        }, { passive: true });
 
         container.addEventListener('touchend', () => {
             let swipeThreshold = 50; // Минимальная длина свайпа для срабатывания
@@ -186,99 +186,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Google Places API для рейтинга
-function initMap() {
-    const placeId = 'ChIJIdDb8nYfPxMRpHYqAa3wyz4'; // Замени на свой ID места
-    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
-    const service = new google.maps.places.PlacesService(document.createElement('div'));
-       } else {
-    console.error("Google Maps API не загружен!");
-        }
-    service.getDetails({ placeId: placeId }, function (place, status) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-            document.getElementById('rating').textContent = place.rating || 'Нет данных';
-        } else {
-            console.error('Ошибка при получении данных рейтинга:', status);
-        }
-    });
-}
-
-// Вызов функции получения рейтинга
-document.addEventListener('DOMContentLoaded', function () {
-    initMap();
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const searchInput = document.getElementById('searchInput');
-  const clearButton = document.getElementById('clearSearch');
-  const contentBottom = document.querySelector('.content-bottom');
-  const allBlocks = Array.from(document.querySelectorAll('.bottom-block'));
-  const pagination = document.querySelector('.pagination');
-  
-  // Сохраняем исходные данные
-  const originalHTML = contentBottom.innerHTML;
-
-  // Фильтрация
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.trim().toLowerCase();
-    clearButton.style.display = query ? 'block' : 'none';
-    pagination.style.display = query ? 'none' : 'flex';
-
-    if (!query) {
-      contentBottom.innerHTML = originalHTML;
-      initializeCarousels();
-      return;
-    }
-
-    const filteredBlocks = allBlocks.filter(block => {
-      const { riferimento, city, zona, tipo } = block.dataset;
-      return [riferimento, city, zona, tipo].some(field => 
-        String(field).toLowerCase().includes(query)
-      );
-    });
-
-        window.onload = function() {
-            const defaultButton = document.querySelector('.search-bar-options span:first-child');
-            updateSearchQuery('Vendita Provincia, Comune, Zona, Riferimento', defaultButton.textContent.trim());
-        };
-
-    // Очистка контейнера перед вставкой
-    contentBottom.innerHTML = '';
-    
-    // Добавляем отфильтрованные блоки
-    filteredBlocks.forEach(block => {
-      contentBottom.appendChild(block.cloneNode(true));
-    });
-
-    initializeCarousels(); // Реинициализация каруселей
-  });
-
-  // Сброс
-  clearButton.addEventListener('click', () => {
-    searchInput.value = '';
-    contentBottom.innerHTML = originalHTML;
-    clearButton.style.display = 'none';
-    pagination.style.display = 'flex';
-    initializeCarousels();
-  });
-});
-
-
-document.addEventListener("scroll", function () {
-    const icons = document.querySelector(".icons1");
-    const stopPosition = 200; // Высота от низа страницы, где кнопки должны остановиться
-
-    // Получаем текущую позицию скролла
-    const scrollPosition = window.innerHeight + window.scrollY;
-    const pageHeight = document.documentElement.scrollHeight;
-
-    // Если достигнута заданная высота от низа страницы
-    if (scrollPosition >= pageHeight - stopPosition) {
-        icons.style.position = "absolute";
-        icons.style.bottom = `${stopPosition}px`;
-    } else {
-        icons.style.position = "fixed";
-        icons.style.bottom = "10px"; // Возвращаем исходное положение
-    }
-});

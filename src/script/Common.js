@@ -35,3 +35,9 @@ function toggleMenu() {
     nav.classList.toggle("nav-active");
     burger.classList.toggle("active");
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mapScript = document.createElement('script');
+    mapScript.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    document.body.appendChild(mapScript);
+});
