@@ -601,6 +601,11 @@
             cursor: pointer;
             display: none; /* Скрываем по умолчанию */
         }
+        .offscreen {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }    
 
 @media (max-width: 768px) {
 
