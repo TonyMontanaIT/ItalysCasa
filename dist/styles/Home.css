@@ -141,10 +141,10 @@
         .search-bar::before {
             content: '';
             position: absolute;
-            left: 8vh;
+            left: 7vh;
             top: 50%;
             transform: translateY(-50%);
-            height: 6.4vh;
+            height: 4.4vh;
             width: 2px;
             background-color: #545454;
         }
@@ -700,15 +700,7 @@
         font-size: 15px;
         border-radius: 5px;
         right: 20%;
-    }
-    .underline {
-        position: absolute;
-        bottom: -5px;
-        height: 2px;
-        width: 30%;
-        background-color: #FFFFFF;
-        transition: width 0.3s ease, left 0.3s ease;
-    }    
+    }   
 
     /* Блоки объявлений по одному в ряд */
     .content-bottom {
@@ -719,7 +711,7 @@
     .bottom-block {
         width: 90%;
         margin: 10px auto;
-        min-height: 88vh;
+        min-height: 80vh;
     }
 
     /* Блоки serv-info по два в ряд */
