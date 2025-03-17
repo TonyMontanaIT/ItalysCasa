@@ -54,9 +54,9 @@ collections:
     label: "Blog"
     folder: "src/_announcements3"
     create: true
-    slug: "{{fields.tipo}}"
+    slug: "blog-{{fields.tipo}}"
     fields:
-      - { label: "Tipo", name: "tipo", widget: "string" }
-      - { label: "H1", name: "h1", widget: "string" }
+      - { label: "Tipo", name: "tipo", widget: "text" }
+      - { label: "H1", name: "h1", widget: "text" }
       - { label: "Text", name: "text", widget: "text" }
       - { label: "Imagine", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
