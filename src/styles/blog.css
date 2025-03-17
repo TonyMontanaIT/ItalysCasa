@@ -10,7 +10,7 @@
         .up-section {
         	position: relative;
         	margin-top: 80px;
-        	background-image: url(/Foto/test8.jpg);
+        	background-image: url(/Foto/test8.webp);
         	background-position: bottom;
         	background-repeat: no-repeat;
         	background-size: cover;
@@ -206,7 +206,7 @@
         .center-section {
             background-position: center;
             background-attachment: fixed;            
-            background-image: url(/Foto/test6.jpg);
+            background-image: url(/Foto/test6.webp);
             object-fit: cover;
             background-repeat: no-repeat;
             display: flex;

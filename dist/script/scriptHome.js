@@ -186,3 +186,116 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('searchInput');
+    const clearButton = document.getElementById('clearSearch');
+    const allBlocks = Array.from(document.querySelectorAll('.bottom-block'));
+
+    // Функция для фильтрации блоков
+    function filterBlocks(query) {
+        query = query.trim().toLowerCase();
+
+        if (!query) {
+            // Если поле поиска пустое, восстанавливаем исходное состояние
+            allBlocks.forEach((block, index) => {
+                block.style.display = index < 10 ? 'block' : 'none';
+            });
+            clearButton.style.display = 'none';
+            return;
+        }
+
+        // Скрываем все блоки
+        allBlocks.forEach(block => {
+            block.style.display = 'none';
+        });
+
+        // Фильтруем блоки по данным
+        const filteredBlocks = allBlocks.filter(block => {
+            const { riferimento, city, zona, tipo } = block.dataset;
+            return [riferimento, city, zona, tipo].some(field =>
+                String(field).toLowerCase().includes(query)
+            );
+        });
+
+        // Показываем только отфильтрованные блоки
+        filteredBlocks.forEach(block => {
+            block.style.display = 'block';
+        });
+
+        // Если результатов нет, показываем сообщение
+        if (filteredBlocks.length === 0) {
+            alert('Nessun risultato trovato.');
+        }
+    }
+
+    // Обработчик ввода текста
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim().toLowerCase();
+        filterBlocks(query);
+        clearButton.style.display = query ? 'block' : 'none';
+    });
+
+    // Обработчик сброса поиска
+    clearButton.addEventListener('click', () => {
+        searchInput.value = '';
+        allBlocks.forEach((block, index) => {
+            block.style.display = index < 10 ? 'block' : 'none';
+        });
+        clearButton.style.display = 'none';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const allBlocks = Array.from(document.querySelectorAll('.bottom-block'));
+    const loadMoreButton = document.getElementById('loadMoreButton');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+    let displayedCount = 0; // Счётчик отображённых объявлений
+
+    // Функция для отображения следующих 10 объявлений
+    function showNextBatch() {
+        const start = displayedCount;
+        const end = displayedCount + 10;
+
+        // Показываем следующие 10 объявлений
+        allBlocks.slice(start, end).forEach(block => {
+            block.style.display = 'block';
+        });
+
+        // Обновляем счётчик
+        displayedCount += 10;
+
+        // Если все объявления показаны, скрываем кнопку
+        if (displayedCount >= allBlocks.length) {
+            loadMoreButton.style.display = 'none';
+            loadMoreContainer.textContent = 'Все объявления показаны!';
+        }
+    }
+
+    // Инициализация: показываем первые 10 объявлений
+    showNextBatch();
+
+    // Обработчик для кнопки "Показать ещё"
+    loadMoreButton.addEventListener('click', showNextBatch);
+});
+
+
+document.addEventListener("scroll", function () {
+    const icons = document.querySelector(".icons1");
+    const stopPosition = 200; // Высота от низа страницы, где кнопки должны остановиться
+
+    // Получаем текущую позицию скролла
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    // Если достигнута заданная высота от низа страницы
+    if (scrollPosition >= pageHeight - stopPosition) {
+        icons.style.position = "absolute";
+        icons.style.bottom = `${stopPosition}px`;
+    } else {
+        icons.style.position = "fixed";
+        icons.style.bottom = "10px"; // Возвращаем исходное положение
+    }
+});

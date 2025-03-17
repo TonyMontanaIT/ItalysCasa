@@ -10,7 +10,7 @@
         .up-section {
         	position: relative;
         	margin-top: 80px;
-        	background-image: url(/Foto/HomeFoto/Home5.jpg);
+        	background-image: url(/Foto/HomeFoto/Home5.webp);
         	background-position: center;
         	background-repeat: no-repeat;
         	background-size: cover;
@@ -71,16 +71,16 @@
 
         /* Фоновые изображения для блоков */
         .block1 {
-            background-image: url(../Foto/scalea.jpg);
+            background-image: url(../Foto/scalea.webp);
         }
         .block2 {
-            background-image: url(../Foto/roma.jpg);
+            background-image: url(../Foto/roma.webp);
         }
         .block3 {
-            background-image: url(../Foto/london.jpg);
+            background-image: url(../Foto/london.webp);
         }
         .block4 {
-            background-image: url(../Foto/napoli.jpeg);
+            background-image: url(../Foto/napoli.webp);
         }
 
         .block-content {

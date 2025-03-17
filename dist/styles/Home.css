@@ -9,7 +9,7 @@
         .hero-section {
             background-image: url('/Foto/HomeFoto/Home2.webp');
             background-size: 100% 100%;
-            background-position: center;
+            background-position: bottom;
             background-attachment: fixed;
             height: 100vh;
             display: flex;
@@ -348,32 +348,34 @@
 
           /*Пагинация*/
 
-        .pagination {
-            margin-left: 360px;
+        .button-anunci {
+            margin-left: 280px;
             display: flex;
             justify-content: center;
             gap: 10px;
             margin-top: 40px;
         }
 
-        .pagination button {
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #29A3E2;
+        .button-anunci button {
+            box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8));
             color: white;
             border: none;
             cursor: pointer;
             transition: transform 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
         }
 
-        .pagination button.active {
-            background-color: rgba(41, 163, 226, 0.5); /* 50% прозрачность фона */
-            color: white; /* Цвет текста */
-        }
-
-        .pagination button:hover {
+        .button-anunci button:hover {
+            color: #FFC300;
+            border-color: #F5D76E;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(89, 142, 200, 0.5);
             transform: scale(1.03);
-        }
+        }        
         .serv-text {
             color: #0097B2;
             margin-top: 30px;
@@ -601,29 +603,62 @@
             cursor: pointer;
             display: none; /* Скрываем по умолчанию */
         }
-        .offscreen {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-        }    
+
 
 @media (max-width: 768px) {
 
-    .hero-section {
-        width: 100%;
-        height: 40vh;
-        background-size: cover;        
-        background-image: url('/Foto/HomeFoto/Home2.jpg');
-        background-position: bottom;
+    .hero-section {       
+        background-image: url('/Foto/HomeFoto/Home2med.webp');
+        background-size: cover;
+        background-position: center bottom;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        overflow: hidden;        
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         z-index: 1;
-        transition: background-image 2s ease-in-out;
+        transition: background-image 2s ease-in-out;;
     }
+        .hero-section.bg1 {
+            background-image: url('/Foto/HomeFoto/Home1med.webp');
+        }
+
+        .hero-section.bg2 {
+            background-image: url('/Foto/HomeFoto/Home2med.webp');
+        }
+
+        .hero-section.bg3 {
+            background-image: url('/Foto/HomeFoto/Home3med.webp');
+        }
+
+        .hero-section.bg4 {
+            background-image: url('/Foto/HomeFoto/Home4med.webp');
+        }
+
+        .hero-section.bg5 {
+            background-image: url('/Foto/HomeFoto/Home5med.webp');
+        }
+
+        .hero-section.bg6 {
+            background-image: url('/Foto/HomeFoto/Home6med.webp');
+        }
+
+        .hero-section.bg7 {
+            background-image: url('/Foto/HomeFoto/Home7med.webp');
+        }
+
+        .hero-section.bg8 {
+            background-image: url('/Foto/HomeFoto/Home8.webp');
+        }
+
+        .hero-section.bg9 {
+            background-image: url('/Foto/HomeFoto/Home9.webp');
+        }
+
+        .hero-section.bg10 {
+            background-image: url('/Foto/HomeFoto/Home10.webp');
+        }    
     .mapp-container {
         display: none;
     }
@@ -661,6 +696,19 @@
     .search-bar input {
         font-size: 10px;
     }
+    .search-clear {
+        font-size: 15px;
+        border-radius: 5px;
+        right: 20%;
+    }
+    .underline {
+        position: absolute;
+        bottom: -5px;
+        height: 2px;
+        width: 30%;
+        background-color: #FFFFFF;
+        transition: width 0.3s ease, left 0.3s ease;
+    }    
 
     /* Блоки объявлений по одному в ряд */
     .content-bottom {
@@ -684,11 +732,14 @@
         width: 90%;
         margin: 0 auto;
     }
-    .pagination {
+    .button-anunci {
         margin: 0 auto;
         margin-bottom: 10px;
         margin-top: 30px;
     }   
+    .button-anunci {
+        font-size: 14px;
+    }
 
     .serv-block-1 {
         width: 80%;

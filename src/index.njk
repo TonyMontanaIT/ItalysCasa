@@ -1,10 +1,6 @@
 ---
 title: Home
 layout: layout.njk
-pagination:
-    data: collections.announcements
-    size: 10
-    alias: pageAnnouncements
 ---
 <link rel="stylesheet" type="text/css" href="/styles/Home.css">
         <script>
@@ -34,6 +30,10 @@ pagination:
 <li>Portali immobiliariTerreni edificabili in vendita a Cosenza</li> 
 <li>Terreni edificabili in vendita a Cosenza</li> 
 <li>Consulenza immobiliare</li> 
+<li>Compra Prima o Seconda casa</li> 
+<li>Riviera del cedri</li>
+<li>Parco del pollino</li>
+<li>Fiume Lao Scalea</li>
 </ul>
 <!-- England -->
 <h2>Real estate in Italy</h2>
@@ -173,91 +173,60 @@ pagination:
                 </a>
             </div> 
             <!-- Отображаем только 10 блоков на странице -->
-            {% for announcement in pageAnnouncements %}
-            <div class="bottom-block" data-id="{{ announcement.data.riferimento }}" data-riferimento="{{ announcement.data.riferimento }}" data-city="{{ announcement.data.city1 }}" data-zona="{{ announcement.data.nomeZona }}" data-tipo="{{ announcement.data.tipo }}">
-                <!-- Карусель -->
-                <div class="carousel-container">
-                    {% for image in announcement.data.images %}
-                    <img loading="lazy" alt="Immobiliare in Italia" src="/{{ image }}" class="carousel-image {% if loop.index0 == 0 %}active{% endif %}" alt="Property Image">
-                    {% endfor %}
-                    <button class="carousel-btn prev">&#10094;</button>
-                    <button class="carousel-btn next">&#10095;</button>
-                </div>
-                <!-- Информация об объекте -->
-                <a class="info-block1" href="/anunci/{{ announcement.fileSlug }}/">
-                    <div class="info-anunci">{{ announcement.data.nomeAnunci }}</div>
-                </a>
-                <div class="price">
-                    <a class="euro" href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.prezzo }} €</a>
-                    <a class="rif" href="/anunci/{{ announcement.fileSlug }}/">RIF {{ announcement.data.riferimento }}</a>
-                </div>
-                <div class="details">
-                    <span><img alt="Casa" src="/Foto/Icon/mq.svg" alt="Area Icon">{{ announcement.data.zonam2 }}</span>
-                    <span><img alt="Camere da letto" src="/Foto/Icon/locale.svg" alt="Rooms Icon">{{ announcement.data.rooms }}</span>
-                    <span><img alt="Ascensore" src="/Foto/Icon/lift.svg" alt="Elevator Icon">{{ announcement.data.elevator }}</span>
-                    <span><img alt="Terazza" src="/Foto/Icon/terazza.svg">{{ announcement.data.terrazzo }}</span>
-                    <span><img alt="Bagno" src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">{{ announcement.data.bagni }}</span>
-                    <span><img alt="Pavimento" src="/Foto/Icon/piano.svg" alt="Floor Icon">{{ announcement.data.floor }}</span>
-                </div>
-                <div class="cta">
-                    <a href="/anunci/{{ announcement.fileSlug }}/" class="glass-link">
-                    <button class="glass-button" id="contatButton">Vedi Immobile</button>
-                    </a>
-                </div>
-            </div>
+{% set count = 0 %}
+{% for announcement in collections.announcements %}
+    <div class="bottom-block" 
+         data-id="{{ announcement.data.riferimento }}" 
+         data-riferimento="{{ announcement.data.riferimento }}" 
+         data-city="{{ announcement.data.city1 }}" 
+         data-zona="{{ announcement.data.nomeZona }}" 
+         data-tipo="{{ announcement.data.tipo }}"
+         {% if count < 10 %}
+             style="display: block;"
+         {% else %}
+             style="display: none;"
+         {% endif %}>
+        <!-- Карусель -->
+        <div class="carousel-container">
+            {% for image in announcement.data.images %}
+                <img loading="lazy" alt="Immobiliare in Italia" 
+                     src="/{{ image }}" 
+                     class="carousel-image {% if loop.index0 == 0 %}active{% endif %}" 
+                     alt="Property Image">
             {% endfor %}
-
-<!-- Пагинация -->
-<div class="pagination">
-    <!-- Кнопка "❮" для предыдущей страницы -->
-    {% if pagination.href.previous %}
-    <button onclick="location.href='{{ pagination.href.previous }}'" title="Предыдущая страница">❮</button>
-    {% else %}
-    <button disabled style="opacity: 0.5; cursor: default;" title="Это первая страница">❮</button>
-    {% endif %}
-
-    <!-- Номера страниц -->
-    {% set currentPage = pagination.pageNumber %}
-    {% set totalPages = pagination.pagesTotal %}
-    
-    <!-- Логика для отображения трёх кнопок (всегда включает текущую страницу) -->
-    {% set startPage = currentPage - 1 %}
-    {% set endPage = currentPage + 1 %}
-
-    <!-- Корректировка границ, чтобы не выходить за пределы общего количества страниц -->
-    {% if startPage < 1 %}
-        {% set startPage = 1 %}
-        {% set endPage = 3 %}
-    {% endif %}
-    {% if endPage > totalPages %}
-        {% set endPage = totalPages %}
-        {% set startPage = totalPages - 2 %}
-    {% endif %}
-    {% if startPage < 1 %}
-        {% set startPage = 1 %}
-    {% endif %}
-
-    <!-- Генерация кнопок -->
-    {% for pageNumber in range(startPage, endPage + 1) %}
-        <button 
-            onclick="location.href='/{{ pageNumber }}'" 
-            {% if pageNumber == currentPage %}class="active"{% endif %}
-            title="Страница {{ pageNumber }}"
-        >
-            {{ pageNumber }}
-        </button>
-    {% endfor %}
-
-    <!-- Кнопка "❯" для следующей страницы -->
-    {% if pagination.href.next %}
-    <button onclick="location.href='{{ pagination.href.next }}'" title="Следующая страница">❯</button>
-    {% else %}
-    <button disabled style="opacity: 0.5; cursor: default;" title="Это последняя страница">❯</button>
-    {% endif %}
-</div>
-
-
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
         </div>
+        <!-- Информация об объекте -->
+        <a class="info-block1" href="/anunci/{{ announcement.fileSlug }}/">
+            <div class="info-anunci">{{ announcement.data.nomeAnunci }}</div>
+        </a>
+        <div class="price">
+            <a class="euro" href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.prezzo }} €</a>
+            <a class="rif" href="/anunci/{{ announcement.fileSlug }}/">RIF {{ announcement.data.riferimento }}</a>
+        </div>
+        <div class="details">
+            <span><img alt="Casa" src="/Foto/Icon/mq.svg">{{ announcement.data.zonam2 }}</span>
+            <span><img alt="Camere da letto" src="/Foto/Icon/locale.svg">{{ announcement.data.rooms }}</span>
+            <span><img alt="Ascensore" src="/Foto/Icon/lift.svg">{{ announcement.data.elevator }}</span>
+            <span><img alt="Terrazza" src="/Foto/Icon/terazza.svg">{{ announcement.data.terrazzo }}</span>
+            <span><img alt="Bagno" src="/Foto/Icon/bagno.svg">{{ announcement.data.bagni }}</span>
+            <span><img alt="Pavimento" src="/Foto/Icon/piano.svg">{{ announcement.data.floor }}</span>
+        </div>
+        <div class="cta">
+            <a href="/anunci/{{ announcement.fileSlug }}/" class="glass-link">
+                <button class="glass-button" id="contatButton">Vedi Immobile</button>
+            </a>
+        </div>
+    </div>
+    {% set count = count + 1 %}
+{% endfor %}
+
+<!-- Кнопка "Показать ещё" -->
+<div class="button-anunci" id="loadMoreContainer">
+    <button id="loadMoreButton">Mostra altri annunci</button>
+</div>
+    </div>
         <div class="map-media">
         <div id="mapMedia" class="mapMed"></div>
         </div>

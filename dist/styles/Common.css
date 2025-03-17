@@ -178,6 +178,7 @@
         .fot-logo img {
             margin-left: -15px;
             height: 145px;
+            width: 200px;
         }       
         .fot-icon {
             display: flex;
@@ -304,7 +305,11 @@
         .emailbutton {
             display:none        
         }  
-
+        .offscreen {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }    
 
 
 
