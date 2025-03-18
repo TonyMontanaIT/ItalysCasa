@@ -12,10 +12,7 @@
 
             function scrollToTop() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
-            }  
-
-  // Запускаем функцию при загрузке страницы
-  fetchVisitorCount();        
+            }          
 
 function toggleMenu() {
     let nav = document.querySelector("nav");
