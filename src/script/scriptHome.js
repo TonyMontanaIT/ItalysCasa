@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Запускаем функцию сразу при загрузке страницы
     changeBackgroundImage();
     // Время смены картинки
-    setInterval(changeBackgroundImage, 4000);
+    setInterval(changeBackgroundImage, 3000);
 });
 
 
