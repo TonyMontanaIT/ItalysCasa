@@ -607,19 +607,10 @@
 
 @media (max-width: 768px) {
 
-    .hero-section {       
+    .hero-section {     
         background-image: url('/Foto/HomeFoto/Home2med.webp');
-        background-size: cover;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        overflow: hidden;        
         height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-        transition: background-image 2s ease-in-out;;
-    }
+    }    
         .hero-section.bg1 {
             background-image: url('/Foto/HomeFoto/Home1med.webp');
         }
@@ -629,7 +620,7 @@
         }
 
         .hero-section.bg3 {
-            background-image: url('/Foto/HomeFoto/Home3med.webp');
+            background-image: url('/Foto/HomeFoto/Home10med.webp');
         }
 
         .hero-section.bg4 {
@@ -649,15 +640,15 @@
         }
 
         .hero-section.bg8 {
-            background-image: url('/Foto/HomeFoto/Home8.webp');
+            background-image: url('/Foto/HomeFoto/Home8med.webp');
         }
 
         .hero-section.bg9 {
-            background-image: url('/Foto/HomeFoto/Home9.webp');
+            background-image: url('/Foto/HomeFoto/Home9med.webp');
         }
 
         .hero-section.bg10 {
-            background-image: url('/Foto/HomeFoto/Home10.webp');
+            background-image: url('/Foto/HomeFoto/Home10med.webp');
         }    
     .mapp-container {
         display: none;

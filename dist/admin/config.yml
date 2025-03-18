@@ -50,4 +50,13 @@ collections:
       - { label: "Latitude", name: "latitude", widget: "string" }
       - { label: "Longitude", name: "longitude", widget: "string" }
 
-
+  - name: "blog"
+    label: "Blog"
+    folder: "src/_announcements3"
+    create: true
+    slug: "blog-{{fields.tipo}}"
+    fields:
+      - { label: "Tipo", name: "tipo", widget: "text" }
+      - { label: "H1", name: "h1", widget: "text" }
+      - { label: "Text", name: "text", widget: "text" }
+      - { label: "Imagine", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
