@@ -11,3 +11,9 @@
   for = "/admin/*"
   [headers.values]
     Content-Security-Policy = "frame-ancestors 'self';"
+
+[[redirects]]
+  from = "/api/goatcounter"
+  to = "https://229988.goatcounter.com/api/v0/stats/total"
+  status = 200
+  force = true
