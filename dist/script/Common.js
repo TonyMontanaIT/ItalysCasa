@@ -12,22 +12,7 @@
 
             function scrollToTop() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
-            }  
-
-
-  // Функция для получения данных GoatCounter
-  async function fetchVisitorCount() {
-    try {
-      const response = await fetch('https://229988.goatcounter.com/api/v0/stats/total?start=2023-01-01');
-      const data = await response.json();
-      document.getElementById('visitor-count').innerText = data.total.visitors;
-    } catch (error) {
-      console.error('Ошибка при получении данных GoatCounter:', error);
-    }
-  }
-
-  // Запускаем функцию при загрузке страницы
-  fetchVisitorCount();        
+            }          
 
 function toggleMenu() {
     let nav = document.querySelector("nav");

@@ -41,6 +41,45 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('mapModal');
+    const openModalBtn = document.querySelector('.glass-button2'); // Кнопка
+    const closeModalBtn = document.querySelector('.close-btn1'); // Кнопка закрытия
+    let mapPopup = null;
+
+    openModalBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Чтобы не было перезагрузки страницы
+
+        modal.style.display = 'flex'; // Показываем модальное окно
+
+        // Проверяем, была ли карта уже создана
+        if (!mapPopup) {
+            setTimeout(() => {
+                mapPopup = L.map('mapPopup').setView([39.8060500, 15.7963500], 13);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(mapPopup);
+                addMarkersToMap(mapPopup, window.Announcements || []);
+            }, 100); // Даем время модальному окну появиться
+        } else {
+            setTimeout(() => mapPopup.invalidateSize(), 300); // Фикс для корректного отображения карты
+        }
+    });
+
+    closeModalBtn.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+
 // Карусель изображений с поддержкой свайпов
 document.addEventListener('DOMContentLoaded', function () {
     const carouselContainers = document.querySelectorAll('.carousel-container');

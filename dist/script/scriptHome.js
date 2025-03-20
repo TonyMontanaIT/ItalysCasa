@@ -1,19 +1,73 @@
-// Смена фонового изображения
 document.addEventListener('DOMContentLoaded', function () {
     const heroSection = document.querySelector('.hero-section');
-    let currentImage = 1;
 
-    function changeBackgroundImage() {
-        currentImage = (currentImage % 10) + 1;
-        heroSection.classList.remove(`bg${(currentImage - 1 === 0) ? 10 : currentImage - 1}`);
-        heroSection.classList.add(`bg${currentImage}`);
+    const desktopImages = [
+        '/Foto/HomeFoto/Home1.webp',
+        '/Foto/HomeFoto/Home2.webp',
+        '/Foto/HomeFoto/Home3.webp',
+        '/Foto/HomeFoto/Home4.webp',
+        '/Foto/HomeFoto/Home5.webp',
+        '/Foto/HomeFoto/Home6.webp',
+        '/Foto/HomeFoto/Home7.webp',
+        '/Foto/HomeFoto/Home8.webp',
+        '/Foto/HomeFoto/Home9.webp',
+        '/Foto/HomeFoto/Home10.webp'
+    ];
+
+    const mediaImages = [
+        '/Foto/HomeFoto/Home1med.webp',
+        '/Foto/HomeFoto/Home2med.webp',
+        '/Foto/HomeFoto/Home3med.webp',
+        '/Foto/HomeFoto/Home4med.webp',
+        '/Foto/HomeFoto/Home5med.webp',
+        '/Foto/HomeFoto/Home6med.webp',
+        '/Foto/HomeFoto/Home7med.webp',
+        '/Foto/HomeFoto/Home8med.webp',
+        '/Foto/HomeFoto/Home9med.webp',
+        '/Foto/HomeFoto/Home10med.webp'
+    ];
+
+    function getCurrentImages() {
+        return window.matchMedia("(max-width: 768px)").matches ? mediaImages : desktopImages;
     }
 
-    // Запускаем функцию сразу при загрузке страницы
-    changeBackgroundImage();
-    // Время смены картинки
-    setInterval(changeBackgroundImage, 10000);
+    let images = getCurrentImages();
+    let currentIndex = 0;
+
+    function changeBackgroundImage() {
+        const nextIndex = (currentIndex + 1) % images.length;
+
+        heroSection.style.setProperty('--next-image', `url('${images[nextIndex]}')`);
+        heroSection.classList.add('switch');
+
+        setTimeout(() => {
+            heroSection.style.setProperty('--current-image', `url('${images[nextIndex]}')`);
+            heroSection.classList.remove('switch');
+            currentIndex = nextIndex;
+        }, 2000);
+    }
+
+    // Устанавливаем начальное изображение
+    heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
+    heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
+
+    // Запускаем смену фона
+    setTimeout(changeBackgroundImage, 4000);
+    setInterval(changeBackgroundImage, 4000);
+
+    // Следим за изменением ширины экрана и обновляем массив изображений
+    window.addEventListener("resize", () => {
+        const newImages = getCurrentImages();
+        if (newImages !== images) {
+            images = newImages;
+            currentIndex = 0;
+            heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
+            heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
+        }
+    });
 });
+
+
 
 
 // Координаты статических маркеров (агентств)
@@ -124,7 +178,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Карусель изображений с поддержкой свайпов
 document.addEventListener('DOMContentLoaded', function () {
     const carouselContainers = document.querySelectorAll('.carousel-container');
 
@@ -139,52 +192,49 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         let currentIndex = 0;
-        let startX = 0;
-        let endX = 0;
 
-        function updateCarousel(index) {
-            images.forEach((image, i) => {
-                image.classList.toggle('active', i === index);
-            });
+        function updateCarousel(newIndex) {
+            images[currentIndex].classList.remove('active');
+            images[newIndex].classList.add('active');
+            currentIndex = newIndex;
         }
 
         // Листаем влево
         prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateCarousel(currentIndex);
+            let newIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel(newIndex);
         });
 
         // Листаем вправо
         nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateCarousel(currentIndex);
+            let newIndex = (currentIndex + 1) % images.length;
+            updateCarousel(newIndex);
         });
 
         // Добавляем обработку свайпов для мобильных устройств
+        let startX = 0;
+
         container.addEventListener('touchstart', (e) => {
             startX = e.touches[0].clientX;
         }, { passive: true });
 
-        container.addEventListener('touchmove', (e) => {
-            endX = e.touches[0].clientX;
-        }, { passive: true });
-
-        container.addEventListener('touchend', () => {
+        container.addEventListener('touchend', (e) => {
+            let endX = e.changedTouches[0].clientX;
             let swipeThreshold = 50; // Минимальная длина свайпа для срабатывания
             if (startX - endX > swipeThreshold) {
-                // Свайп влево
-                currentIndex = (currentIndex + 1) % images.length;
+                let newIndex = (currentIndex + 1) % images.length;
+                updateCarousel(newIndex);
             } else if (endX - startX > swipeThreshold) {
-                // Свайп вправо
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                let newIndex = (currentIndex - 1 + images.length) % images.length;
+                updateCarousel(newIndex);
             }
-            updateCarousel(currentIndex);
         });
 
         // Инициализация первой картинки
-        updateCarousel(0);
+        images[0].classList.add('active');
     });
 });
+
 
 
 

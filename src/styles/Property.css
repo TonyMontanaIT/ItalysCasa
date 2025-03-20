@@ -72,7 +72,46 @@
             right: 40px;
             bottom: 1px;
             transition: transform 0.3s ease;
-        }      
+        }     
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn1 {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+
+}
+
+#mapPopup {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}         
         .ven-afit {
             position: absolute;
             left: 350px;
@@ -121,6 +160,7 @@
             padding: 10px 20px;
         }    
         /* Основная кнопка */
+        .glass-button2,
         .glass-button1 {
             margin-bottom: 10px;
             position: relative;
@@ -143,6 +183,7 @@
         }
 
         /* Эффект блика */
+        .glass-button2::before,
         .glass-button1::before {
             content: "";
             position: absolute;
@@ -157,12 +198,14 @@
         }
 
         /* При наведении */
+        .glass-button2:hover::before,
         .glass-button1:hover::before {
             left: 100%;
             width: 100%;
         }
 
         /* Фикс теней */
+        .glass-button2:hover, 
         .glass-button1:hover {
             color: #FFC300;
             border-color: #F5D76E;
@@ -615,7 +658,7 @@
         width: 100%;
         height: 40vh;
         background-size: cover;        
-        background-image: url('/Foto/beach.jpeg');
+        background-image: url('/Foto/beach.webp');
         background-position: bottom;
         background-repeat: no-repeat;
         background-attachment: fixed;
