@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItalysCasa</title>
+    <link rel="stylesheet" href="/styles/Common.css">
+        
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="icon" href="/Foto/Icon/favicon.svg" type="image/svg+xml">
+            <link rel="alternate icon" href="/Foto/Icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+            <div class="logo" onclick="scrollToTop()">
+                <img alt="Agenzia immobiliare" src="/Foto/Logo-colore.svg" alt="Logo">
+            </div>
+            <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="wabutton">
+                    <img alt="Contatto diretto con l'agenzia" src="/Foto/Icon/wanew.svg" class="icon whatsapp-icon">
+                </a>
+                <a href="tel:+393791080060" class="tellbutton">
+                   <span><img alt="Numero dell'agenzia" src="/Foto/Icon/tel.svg" class="icon"></span> 
+                </a>
+            </div>
+
+            <div class="language-selector">
+                <div id="google_translate_element"></div>
+                <span class="custom-language-button">🌍 Language
+                </span>
+            </div>
+            <nav>
+                <a href="/index">HOME</a>
+                <a href="/property">VENDITE</a>
+                <a href="/valut">VALUTAZIONI</a>
+                <a href="/affitti">AFFITTI</a>
+                <a href="/blog">BLOG</a>
+                <a href="/cerca">CERCA AGENZIA</a>
+                <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni." class="emailbutton">eMAIL</a>
+            </nav> 
+
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+</header>
+
+    <main>
+        
+<link rel="stylesheet" type="text/css" href="/styles/lavoro.css">
+<meta name="description" content="Gníomhaireacht eastáit réadaigh sa réigiún Calabria, ceannach agus díol, cíos, páipéarachas, cúnamh ag gach céim den idirbheart"> 
+<section class="hero-section">
+        <div class="offscreen">
+            <!-- italia -->
+            <h2>Immobili nel centro storico </h2>
+            <ul>
+                <li>Come pubblicizare corretamente immobile</li>
+                <li>Vendere casa velocemente</li>
+                <li>Come fare un annuncio per vendere casa</li>
+                <li>Quanto costa vendere una casa</li>
+                <li>Vendere casa senza commissioni</li>
+                <li>Contratto di vendita casa</li>
+                <li>Scalea immobili</li>
+                <li>Case in vendita a Scalea</li>
+                <li>Spiagge di Tropea</li>
+                <li>Prezzo competitivo</li>
+            </ul>
+            <!-- England -->
+            <h2>Beachfront properties in Calabria</h2>
+            <ul>
+                <li>Apartments in Reggio Calabria</li>
+                <li>Mountain properties in Calabria</li>
+                <li>Real estate near the sea in Italy</li>
+                <li>Properties with sea views in Calabria</li>
+                <li>Top-floor apartments</li>
+                <li>Commercial properties</li>
+                <li>Property inspection</li>
+                <li>Transfer of ownership</li>
+                <li>Italian lifestyle</li>
+                <li>How to buy a house in Italy as a foreigner</li>
+            </ul>
+            <!-- Germania -->
+            <h2>Immobilienmakler in Italien</h2>
+            <ul>
+                <li>Luxushäuser in Italien</li>
+                <li>Günstige Wohnungen in Italien</li>
+                <li>Ferienwohnungen in Italien</li>
+                <li>Strandimmobilien in Kalabrien</li>
+                <li>Appartement</li>
+                <li>Historisches Gebäude</li>
+                <li>Luxusvilla</li>
+                <li>Penthouse</li>
+                <li>Erdgeschosswohnung</li>
+                <li>Finanzierungsoptionen für Ausländer</li>
+            </ul>
+            <!-- Russia -->
+            <h2>Квартиры в Сицилии</h2>
+            <ul>
+                <li>Недвижимость на Амальфитанском побережье</li>
+                <li>Вилла</li>
+                <li>Отдельно стоящий дом</li>
+                <li>Фермерский дом</li>
+                <li>Юридические требования для иностранцев</li>
+                <li>Финансовые варианты для иностранцев</li>
+                <li>Передача права собственности</li>
+                <li>Курсы итальянского языка</li>
+                <li>Как купить дом в Италии как иностранец?</li>
+                <li>Самые дешевые регионы для покупки дома в Италии</li>
+            </ul>
+            <!-- Finlandia -->
+            <h2>Vanhat perinteiset talot</h2>
+            <ul>
+                <li>Maisemakohteen ostaminen</li>
+                <li>Talon arviointi ennen ostoa</li>
+                <li>Asuntojen verotus Italiassa</li>
+                <li>Nettisivut kiinteistöjen myynnille</li>
+                <li>Kiinteistönvälittäjän palvelut</li>
+                <li>Asuntojen varustelu</li>
+                <li>Autotallin saatavuus</li>
+                <li>Ympäristöystävälliset kodit</li>
+                <li>Asuntojen energiamerkinnät</li>
+                <li>Talon sisäilman laatu</li>
+            </ul>
+            <!-- Chechia -->
+            <h2>Nemovitosti pro investice</h2>
+            <ul>
+                <li>Byty blízko pláže</li>
+                <li>Domy s terasou</li>
+                <li>Prodej vil u jezera</li>
+                <li>Byty s balkonem</li>
+                <li>Nemovitosti s historickou hodnotou</li>
+                <li>Novostavby v klidných oblastech</li>
+                <li>Luxusní apartmány v centru</li>
+                <li>Domy s více koupelnami</li>
+                <li>Byty s vysokými stropy</li>
+                <li>Rodinné domy s krbem</li>
+            </ul>
+            <!-- Polonia -->
+            <h2>Historia i tło domu</h2>
+            <ul>
+                <li>Domek w spokoju lasu</li>
+                <li>Porównanie cen nieruchomości</li>
+                <li>Lokalizacja domu na mapie</li>
+                <li>Społeczność sąsiadów</li>
+                <li>Rok budowy domu</li>
+                <li>Oferty wyposażenia mieszkań</li>
+                <li>Chatki blisko jezior</li>
+                <li>Akustyka domu</li>
+                <li>Spokojne obszary mieszkalne</li>
+                <li>Oświetlenie mieszkań</li>
+            </ul>
+            <!-- Lituania -->
+            <h2>Nekilnojamojo turto mokesčiai Italijoje</h2>
+            <ul>
+                <li>Internetinės svetainės nekilnojamajam turtui</li>
+                <li>Turto agentų paslaugos</li>
+                <li>Garažo galimybė</li>
+                <li>Ekologiški namai</li>
+                <li>Butų energijos klasės</li>
+                <li>Oro kokybė name</li>
+                <li>Balkonu turintis butas</li>
+                <li>Namo istorija ir fonas</li>
+                <li>Sodyba miško tyloje</li>
+                <li>Nekilnojamojo turto kainų palyginimas</li>
+            </ul>                                                                                    
+        </div>
+        <div class="up-section">
+    	  <div class="up-left">
+    	  	<h1>E allora cosa aspetti?</h1>
+    	  	<h2> Candidati!</h2>
+    	  	<h3>Se hai una formazione superiore o universitaria ed una spiccata attitudine
+    	  	per i rapporti interpersonali, inviaci il tuo Curriculum Vitae. 
+    	  	Potrai iniziare una professione interessante e dinamica, acquisire conoscenze 
+    	  	multidisciplinari ed avere grandi soddisfazioni.</h3>
+    	  </div>
+    	  <div class="up-right">
+    	  	<div class="up-img">
+    	  	</div>
+    	  </div>
+        </div>
+        <div class="dawn-section">
+                <h3>Inviaci il tuo Curriculum Vitae</h3>
+		          <!-- Форма обратной связи -->
+<div class="contact-form" id="contactForm">
+    <div class="form-content" id="inputForm">
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+        <input type="text" id="surname" name="surname" placeholder="Cognome" required>
+        <input type="text" id="mail" name="mail" placeholder="eMail" required>
+        <input type="tel" id="phone" name="phone" placeholder="Telefono" required>
+        <input type="tex" id="zona" name="zona" placeholder="Provincia" required>
+        <input type="tex" id="city" name="city" placeholder="Comune" required>
+        <button class="submit-button" id="submitButton" type="button">Inviare</button>
+    </div>
+                      <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+</div>      
+        </div>
+	
+</section>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="/script/valut.js"></script> 
+    </main>
+        <footer>
+                    <div class="fot-left">
+                <div class="fot-logo">
+                    <img alt="immobiliare a Scalea" src="/Foto/Logo-Bianco.svg">
+                </div>
+                <div class="fot-icon">
+                    <div class="fot-icon-row">
+                   <a href="mailto:italyscasa@libero.it?subject=Richiesta%20di%20informazioni&body=Ciao,%20vorrei%20avere%20maggiori%20informazioni.">
+                       <img alt="lasciare una richiesta immobiliare" src="/Foto/Icon/Gmail.svg">
+                   </a> 
+                   <a href="https://www.facebook.com/profile.php?id=61551668563870">
+                       <img alt="Immobiliare e Facebook" src="/Foto/Icon/Facebook.svg">
+                   </a> 
+                   <a href="https://www.youtube.com/@ItalysCasa">
+                       <img alt="Appartamenti e Ville, Video" src="/Foto/Icon/Youtube.svg">
+                   </a> 
+                </div>
+                   <div class="fot-icon-row">
+                   <a href="https://www.instagram.com/italyscasa/">
+                       <img alt="Alloggi in Italia su Instagram" src="/Foto/Icon/Instagram.svg">
+                   </a> 
+                   <a href="https://www.tiktok.com/@italyscasa1">
+                       <img alt="Le migliori soluzioni abitative in Italia" src="/Foto/Icon/Tiktok.svg">
+                   </a> 
+                   <a href="#">
+                       <img alt="Forum sulla vita in Italia" src="/Foto/Icon/Telegram.svg">
+                   </a> 
+                </div>
+                </div>
+             </div>
+             <div class="fot-cent">
+                 <h1>Italys Casa</h1>
+                 <a href="/lavoro" class="h2">Lavora con noi</a>
+                 <a href="" class="h2">Chi siamo</a>
+                 <a href="" class="h2">News dal Gruppo Italys Casa</a>
+                 <a href="" class="h2">Responsabilità sociale</a>
+                 <a href="" class="h2">Responsabilità ambientale</a>
+             </div>
+             <div class="fot-cent1">
+                 <a href="https://scarfonesrl.it/" class="h1">Scarfone S.R.L.</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Impresa Edile</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Ristruttazioni</a>
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Idraulico/Elettricista</a>                 
+                 <a href="https://scarfonesrl.it/perizie-immobiliare/" class="h2">Tinteggiature</a>
+                 <a href="tel:+393288325437" class="h3">+39 328 832 5437</a>
+             </div>                            
+             <div class="fot-right">
+                 <div class="fot-map">
+                     <img alt="Real estate agency in Italy" src="/Foto/HomeFoto/footer.webp">
+                 </div>
+                 <div class="fot-but">
+                     <p>Numero utenti: <span id="visitor-count">79 910</span></p>
+                     <a href="/cookies">Impostazioni Cookies </a>
+                 </div>
+             </div>
+    </footer>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/script/Common.js"></script>
+</body>
+</html>
