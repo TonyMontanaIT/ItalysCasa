@@ -5,10 +5,11 @@ on:
     branches:
       - main
     paths:
-      - 'src/Foto/**' # Путь к изображениям
+      - 'src/Foto/Galeri/**' # Триггер на изменения в этой папке
   pull_request:
     branches:
       - main
+  workflow_dispatch: # Ручной запуск
 
 jobs:
   optimize:
