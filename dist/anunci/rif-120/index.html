@@ -65,7 +65,14 @@
         <link rel="icon" src="/Foto/Icon/favicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
         <script>
-            window.Announcements = [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object];
+            window.CurrentAnnouncement = {
+                lat: 39.805326,
+                lon: 15.798820,
+                nomeAnunci: "Appartamento su 2 piani",
+                prezzo: "37.000",
+                rif: "120",
+                fileSlug: "rif-120"
+            };
         </script>
         <script>
             window.Announcements = [
@@ -510,8 +517,10 @@
                 </div>                         
             </div>
             <div class="up-icon-right">
-                <a href="/vendite">Lista Annunci</a>
-                <a href="#" class="share-link"> <img src="/Foto/Icon/share.svg"> </a>
+                <a href="/property">Lista Annunci</a>
+                <a href="#" id="copyLinkButton" class="share-link">
+                <img src="/Foto/Icon/share.svg" alt="Invia bellissimi immobili">
+                </a>
             </div>
         </div>
     </div>
@@ -564,7 +573,9 @@
                     <a href="#" class="open-modal" data-index="0"><img src="/Foto/Icon/cameraFoto.svg" alt="Foto" class="anunci-icon"></a>
                     <a href="."><img src="/Foto/Icon/cameraVideo.svg" alt="Video" class="anunci-icon"></a>
                     <a href="."><img src="/Foto/Icon/camera360.svg" alt="360" class="anunci-icon"></a>
-                    <a href="#"><img src="/Foto/Icon/geomappa.svg" alt="Mappa" class="anunci-icon"></a>
+                    <a href="#" id="scrollToMapButton">
+                    <img src="/Foto/Icon/geomappa.svg" alt="Mappa" class="anunci-icon">
+                    </a>
                 </div>
                 <!-- Стрелки -->
                 <button class="carousel-btn prev">&#10094;</button>
@@ -699,7 +710,7 @@ L&#39;immobile necessita di ristrutturazione, offrendo così la possibilità di 
                      </div>                     
                 </div>
          </div>   
-         <div class="map-big">
+         <div class="map-big" id="mapBig">
              <div id="map-big" class="map"></div>
          </div>         
             <div class="button-video">
@@ -903,7 +914,7 @@ L&#39;immobile necessita di ristrutturazione, offrendo così la possibilità di 
           </div>
 
 <!-- Модальное окно -->
-<div class="modal-overlay" id="modalOverlay">
+<div class="modal-overlay" id="modalOverlay" style="display: none;">
     <div class="modal-content1">
         <button class="close-button" id="closeModalButton">X</button>
         <div class="info-items">

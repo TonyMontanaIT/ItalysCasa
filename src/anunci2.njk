@@ -12,7 +12,14 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
         <link rel="icon" src="/Foto/Icon/favicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
         <script>
-            window.Announcements = {{ collections.announcements | safe }};
+            window.CurrentAnnouncement = {
+                lat: {{ announcement.data.latitude }},
+                lon: {{ announcement.data.longitude }},
+                nomeAnunci: "{{ announcement.data.nomeAnunci }}",
+                prezzo: "{{ announcement.data.prezzo }}",
+                rif: "{{ announcement.data.riferimento }}",
+                fileSlug: "{{ announcement.fileSlug }}"
+            };
         </script>
         <script>
             window.Announcements = {{ collections.mapData | json | safe }};
@@ -160,8 +167,10 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
                 </div>                         
             </div>
             <div class="up-icon-right">
-                <a href="/vendite">Lista Annunci</a>
-                <a href="#" class="share-link"> <img src="/Foto/Icon/share.svg"> </a>
+                <a href="/property">Lista Annunci</a>
+                <a href="#" id="copyLinkButton" class="share-link">
+                <img src="/Foto/Icon/share.svg" alt="Invia bellissimi immobili">
+                </a>
             </div>
         </div>
     </div>
@@ -178,7 +187,9 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
                     <a href="#" class="open-modal" data-index="0"><img src="/Foto/Icon/cameraFoto.svg" alt="Foto" class="anunci-icon"></a>
                     <a href="{{ announcement.data.video }}"><img src="/Foto/Icon/cameraVideo.svg" alt="Video" class="anunci-icon"></a>
                     <a href="{{ announcement.data.video360 }}"><img src="/Foto/Icon/camera360.svg" alt="360" class="anunci-icon"></a>
-                    <a href="#"><img src="/Foto/Icon/geomappa.svg" alt="Mappa" class="anunci-icon"></a>
+                    <a href="#" id="scrollToMapButton">
+                    <img src="/Foto/Icon/geomappa.svg" alt="Mappa" class="anunci-icon">
+                    </a>
                 </div>
                 <!-- Стрелки -->
                 <button class="carousel-btn prev">&#10094;</button>
@@ -265,7 +276,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
                      </div>                     
                 </div>
          </div>   
-         <div class="map-big">
+         <div class="map-big" id="mapBig">
              <div id="map-big" class="map"></div>
          </div>         
             <div class="button-video">
@@ -337,7 +348,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
           </div>
 
 <!-- Модальное окно -->
-<div class="modal-overlay" id="modalOverlay">
+<div class="modal-overlay" id="modalOverlay" style="display: none;">
     <div class="modal-content1">
         <button class="close-button" id="closeModalButton">X</button>
         <div class="info-items">
