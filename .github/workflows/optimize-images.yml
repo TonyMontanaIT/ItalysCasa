@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'src/Foto/Galeri/**' # Триггер на изменения в этой папке
+      - 'src/Foto/**' # Триггер на изменения в этой папке
   pull_request:
     branches:
       - main
