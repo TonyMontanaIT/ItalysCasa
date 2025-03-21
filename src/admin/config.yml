@@ -31,6 +31,9 @@ collections:
       - { label: "Prezzo Finale", name: "prezzo", widget: "string" }
       - { label: "Giardino", name: "giardino", widget: "string" }   
       - { label: "Garage", name: "garage", widget: "string" }           
+      - { label: "Arredamenti", name: "arredamenti", widget: "text" }
+      - { label: "Patio", name: "patio", widget: "text" }
+      - { label: "Corte Esterna", name: "corte", widget: "text" }
       - { label: "Descrizione", name: "descrizione", widget: "text" }
       - { label: "h2t1", name: "h2t1", widget: "text" }
       - { label: "text1", name: "text1", widget: "text" }
