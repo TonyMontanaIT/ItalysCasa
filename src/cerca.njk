@@ -1,0 +1,178 @@
+---
+layout: layout.njk
+title: Cerca Agenzia
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/cerca.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+<meta name="description" content="Agencja nieruchomości w regionie Kalabria, kupno i sprzedaż, wynajem, formalności, pomoc na każdym etapie transakcji"> 
+<section class="hero-section">
+        <div class="offscreen">
+            <!-- italia -->
+            <h2>Immobili in vendita</h2>
+            <ul>
+                <li>Casa con giardino </li>
+                <li>Appartamenti con giardino </li>
+                <li>Ville esclusive VIP </li>
+                <li>Castelli</li>
+                <li>Contratto di vendita case/appartamenti</li>
+                <li>Come vendere la casa</li>
+                <li>Annuncio vendita casa</li>
+                <li>Fasi per vendere casa</li>
+                <li>Tecnico immobiliare</li>
+                <li>Trilocale</li>
+            </ul>
+            <!-- England -->
+            <h2>Property investment in Italy</h2>
+            <ul>
+                <li>Italian property guide</li>
+                <li>Property prices in Italy</li>
+                <li>Affordable housing in Italy</li>
+                <li>Legal process of buying property in Italy</li>
+                <li>Renting vs buying in Italy</li>
+                <li>Property purchase process</li>
+                <li>Notary fees in Italy</li>
+                <li>Legal requirements for foreigners</li>
+                <li>Tax benefits for property owners</li>
+                <li>Capital gains tax in Italy</li>
+            </ul>
+            <!-- Germania -->
+            <h2>Villen in Italien</h2>
+            <ul>
+                <li>Kaufvertrag in Italien</li>
+                <li>Notargebühren in Italien</li>
+                <li>Steuervorteile für Eigentümer</li>
+                <li>Hypothekenzinssätze in Italien</li>
+                <li>Rechtsberatung beim Immobilienkauf</li>
+                <li>Vertragsunterzeichnung</li>
+                <li>Eigentumsübertragung</li>
+                <li>Immobilienprüfung</li>
+                <li>Anzahlungserfordernisse</li>
+                <li>Erbschaftssteuer in Italien</li>
+            </ul>
+            <!-- Russia -->
+            <h2>Квартиры на продажу в Италии</h2>
+            <ul>
+                <li>Агентство недвижимости в Италии</li>
+                <li>Элитные дома в Италии</li>
+                <li>Виллы в Италии</li>
+                <li>Квартиры с видом на море</li>
+                <li>Договор купли-продажи в Италии</li>
+                <li>Регистрация недвижимости</li>
+                <li>Покупка недвижимости как нерезидент</li>
+                <li>Наследственный налог в Италии</li>
+                <li>Осмотр недвижимости</li>
+                <li>Услуги нотариуса в Италии</li>
+            </ul>
+            <!-- Finlandia -->
+            <h2>Luxuskiinteistöt Italiassa</h2>
+            <ul>
+                <li>Moderni asunto Italiassa</li>
+                <li>Asuntojen hintataso Italiassa</li>
+                <li>Omakotitalot alueilla</li>
+                <li>Tilava keittiö merinäkymillä</li>
+                <li>Kaksikerroksinen mökki</li>
+                <li>Tyylikäs paritalo</li>
+                <li>Keskustan asunnot</li>
+                <li>Hiljainen naapurusto</li>
+                <li>Maisemallinen sijainti</li>
+                <li>Kodit lähellä julkisia palveluita</li>
+            </ul>
+            <!-- Chechia -->
+            <h2>Dvoupodlažní chalupa</h2>
+            <ul>
+                <li>Stylový dvojdomek</li>
+                <li>Byty ve městě</li>
+                <li>Tichá čtvrť</li>
+                <li>Krajinářská poloha</li>
+                <li>Domovy blízko veřejných služeb</li>
+                <li>Údržba nemovitostí</li>
+                <li>Nezařízené byty</li>
+                <li>Chalupy pro dovolenou</li>
+                <li>Bezpečnost oblasti</li>
+                <li>Topné systémy domů</li>
+            </ul>
+            <!-- Polonia -->
+            <h2>Domy w spokojnych okolicach</h2>
+            <ul>
+                <li>Mieszkania w mieście</li>
+                <li>Krajobrazowa lokalizacja</li>
+                <li>Dom blisko usług publicznych</li>
+                <li>Nieumeblowane mieszkania</li>
+                <li>Bezpieczeństwo okolicy</li>
+                <li>System ogrzewania domu</li>
+                <li>Energooszczędne budynki</li>
+                <li>Rodzinne domy dla dzieci</li>
+                <li>Możliwości rowerowe</li>
+                <li>Mieszkania na sprzedaż</li>
+            </ul>
+            <!-- Lituania -->
+            <h2>Nekilnojamasis turtas su dideliu sklypu</h2>
+            <ul>
+                <li>Modernūs butai centre</li>
+                <li>Nekilnojamojo turto kainos Italijoje</li>
+                <li>Namai tyloje vietovėje</li>
+                <li>Platus virtuvės plotas su vaizdu</li>
+                <li>Dviejų aukštų sodyba</li>
+                <li>Elegantiškas dvibutis</li>
+                <li>Miesto butai</li>
+                <li>Tyli miesto teritorija</li>
+                <li>Kraštovaizdžio vieta</li>
+                <li>Nekilnojamojo turto priežiūra</li>
+            </ul>                                                                                    
+        </div>
+	<div class="up-section">
+	</div>
+	<div class="center-section">
+<div class="left">
+    <div class="block-agen">
+        {% for infoAgen in collections.agenzia %}
+            <div class="block block{{ loop.index }}">
+                <div class="block-content">
+                    <h3>Regione: {{ infoAgen.data.region }}</h3>
+                    <h3>Città: {{ infoAgen.data.cita }}</h3>
+                    <h3>Via: {{ infoAgen.data.via }}</h3>
+                    <a href="tel:{{ infoAgen.data.tel }}">Tel: {{ infoAgen.data.tel }}</a>
+                    <a href="mailto:{{ infoAgen.data.mail }}">Mail: {{ infoAgen.data.mail }}</a>
+                </div>
+                <a href="tel:{{ infoAgen.data.tel }}">
+                <button class="glass-button">Chiama</button>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+		<div class="right">
+					          <!-- Форма обратной связи -->
+            <div class="contact-form" id="contactForm">
+                         <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3>Facci una domanda</h3>
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname" name="surname" required>
+                         
+            <label for="city">Mail:</label>
+            <input type="mail" id="mail" name="mail" required>         
+
+            <button class="submit-button" id="submitButton" type="button">Inviare</button>
+        </div>
+
+                  <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3>Grazie per la tua richiesta!</h3>
+                <p>Il nostro responsabile ti contatterà a breve per una consulenza più dettagliata..</p>
+            </div>
+           </div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="/script/valut.js"></script> 
