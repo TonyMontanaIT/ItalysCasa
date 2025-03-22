@@ -37,19 +37,23 @@ document.addEventListener('DOMContentLoaded', function () {
     function changeBackgroundImage() {
         const nextIndex = (currentIndex + 1) % images.length;
 
-        // Меняем фоновое изображение
-        heroSection.style.backgroundImage = `url('${images[nextIndex]}')`;
+        heroSection.style.setProperty('--next-image', `url('${images[nextIndex]}')`);
+        heroSection.classList.add('switch');
 
-        // Обновляем индекс
-        currentIndex = nextIndex;
+        setTimeout(() => {
+            heroSection.style.setProperty('--current-image', `url('${images[nextIndex]}')`);
+            heroSection.classList.remove('switch');
+            currentIndex = nextIndex;
+        }, 2000);
     }
 
     // Устанавливаем начальное изображение
-    heroSection.style.backgroundImage = `url('${images[0]}')`;
+    heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
+    heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
 
     // Запускаем смену фона
-    setTimeout(changeBackgroundImage, 3000); // Первый запуск через 4 секунды
-    setInterval(changeBackgroundImage, 3000); // Каждые 4 секунды
+    setTimeout(changeBackgroundImage, 4000);
+    setInterval(changeBackgroundImage, 4000);
 
     // Следим за изменением ширины экрана и обновляем массив изображений
     window.addEventListener("resize", () => {
@@ -57,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (newImages !== images) {
             images = newImages;
             currentIndex = 0;
-            heroSection.style.backgroundImage = `url('${images[0]}')`;
+            heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
+            heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
         }
     });
 });
