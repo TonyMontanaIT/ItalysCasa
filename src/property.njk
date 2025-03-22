@@ -261,13 +261,13 @@ pagination:
 
     <!-- Генерация кнопок -->
     {% for pageNumber in range(startPage, endPage + 1) %}
-        <button 
-            onclick="location.href='/{{ pageNumber }}'" 
-            {% if pageNumber == currentPage %}class="active"{% endif %}
-            title="Страница {{ pageNumber }}"
-        >
-            {{ pageNumber }}
-        </button>
+<button 
+    onclick="location.href='/property/{{ pageNumber }}/'" 
+    {% if pageNumber == currentPage %}class="active"{% endif %}
+    title="Страница {{ pageNumber }}"
+>
+    {{ pageNumber }}
+</button>
     {% endfor %}
 
     <!-- Кнопка "❯" для следующей страницы -->
