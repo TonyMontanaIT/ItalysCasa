@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Если все объявления показаны, скрываем кнопку
         if (displayedCount >= allBlocks.length) {
             loadMoreButton.style.display = 'none';
-            loadMoreContainer.textContent = 'Все объявления показаны!';
+            loadMoreContainer.textContent = 'Tutti gli annunci vengono mostrati!';
         }
     }
 
