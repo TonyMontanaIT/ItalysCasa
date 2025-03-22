@@ -49,11 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <strong>${announcement.nomeAnunci}</strong><br>
                 Prezzo: €${announcement.prezzo}<br>
                 RIF: ${announcement.rif}<br>
-                <a href="/anunci/rif-${announcement.fileSlug}/" style="text-decoration: none;">
-                <button style="margin-top: 10px; padding: 5px 10px; background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8)); color: white; border: none; border-radius: 30px; cursor: pointer;">
-                Vedi Immobile
-                </button>
-                </a>
             `);
     }
 
