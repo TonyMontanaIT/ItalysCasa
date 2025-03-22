@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () { // Ждём полной загрузки страницы
     const heroSection = document.querySelector('.hero-section');
 
     const desktopImages = [
@@ -47,11 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 2000);
     }
 
-    // Устанавливаем начальное изображение
+    // После полной загрузки меняем фон через JS
     heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
     heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
 
-    // Запускаем смену фона
+    // Убираем фоновое изображение
+    setTimeout(() => {
+        heroSection.style.backgroundImage = 'none';
+    }, 100); // Через 100мс после загрузки, можно увеличить
+
+    // Запускаем смену фона через 4 секунды
     setTimeout(changeBackgroundImage, 4000);
     setInterval(changeBackgroundImage, 4000);
 
@@ -66,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
 
 
 

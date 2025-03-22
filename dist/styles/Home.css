@@ -5,15 +5,17 @@
             overflow-x: hidden;
         }
 .hero-section {
+    background-color: #FFF;
+    background-image: url('/Foto/HomeFoto/Home1.webp'); /* Фоновое изображение для мгновенной загрузки */
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 2s ease-in-out; /* Плавный переход */
+    transition: background-image 0.5s ease-in-out;
 }
         .content-section {
             margin-right: auto;
@@ -22,6 +24,41 @@
             justify-content: left;
             box-sizing: border-box;
         }         
+
+.hero-section::before,
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  z-index: 1;
+}
+
+.hero-section::before {
+  background-image: var(--current-image); /* Текущее изображение */
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-section::after {
+  background-image: var(--next-image); /* Следующее изображение */
+  z-index: 1;
+}
+
+.hero-section.switch::before {
+  opacity: 0; /* Скрыть текущее изображение */
+}
+
+.hero-section.switch::after {
+  opacity: 1; /* Показать следующее изображение */
+}
+
         .search-bar-container {
             z-index: 5;
             display: flex;
