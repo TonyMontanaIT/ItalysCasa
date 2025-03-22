@@ -192,16 +192,20 @@ layout: layout.njk
              style="display: none;"
          {% endif %}>
         <!-- Карусель -->
-        <div class="carousel-container">
-            {% for image in announcement.data.images %}
-                <img loading="lazy" alt="Immobiliare in Italia" 
-                     src="/{{ image }}" 
-                     class="carousel-image {% if loop.index0 == 0 %}active{% endif %}" 
-                     alt="Property Image">
-            {% endfor %}
-            <button class="carousel-btn prev">&#10094;</button>
-            <button class="carousel-btn next">&#10095;</button>
-        </div>
+<!-- Карусель -->
+<div class="carousel-container">
+    {% set images = announcement.data.images %}
+    {% for i in range(0, 3) %}
+        {% if images[i] %}
+            <img loading="lazy" alt="Immobiliare in Italia" 
+                 src="/{{ images[i] }}" 
+                 class="carousel-image {% if i == 0 %}active{% endif %}" 
+                 alt="Property Image">
+        {% endif %}
+    {% endfor %}
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+</div>
         <!-- Информация об объекте -->
         <a class="info-block1" href="/anunci/{{ announcement.fileSlug }}/">
             <div class="info-anunci">{{ announcement.data.nomeAnunci }}</div>
