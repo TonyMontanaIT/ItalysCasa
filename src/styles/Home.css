@@ -60,6 +60,7 @@
 }
 
         .search-bar-container {
+            width: 40%;
             z-index: 5;
             display: flex;
             flex-direction: column;
@@ -105,7 +106,7 @@
         .search-bar-options span {
             font-weight: bold;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 1rem;
             color: #FFFFFF;
             transition: color 0.3s ease;
         }
@@ -120,7 +121,7 @@
         }
 
         .search-bar {
-            width: 96vh;
+            width: 100%;
             height: 8vh;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 25px;
@@ -169,27 +170,28 @@
             margin-top: 10px;
             margin-left: 8px;
             margin-right: 8px;
-            height: 500px;
+            width: 40%;
+            height: 80vh;
             background-color: #e0e0e0;
             border-radius: 10px;
             position: sticky;
-            top: 100px;
+            top: 16vh;
         }
         .map {
             border-radius: 10px;
-            height: 500px;
-            width: 550px;
+            height: 80vh;
+            width: 100%;
         }            
         .content-bottom {
             display: flex;
             flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
-            width: 775px;
+            width: 58%;
             justify-content: space-between; /* Расположение блоков с равным отступом между ними */
         }
         .info-anunci {
             margin-top: 10px;
             margin-bottom: 10px;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: #000000;
             transition: color 0.3s ease;
         }
@@ -201,13 +203,13 @@
             margin: 1%;
             background: linear-gradient(135deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
             border-radius: 10px;
-            font-size: 14px;
+            font-size: 0.875rem;
             margin-top: 10px;
             margin-left: 5px; /* Убираем лишний отступ слева */
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             transition: width 0.3s ease; /* Плавный переход для адаптивности */
-            min-height: 550px;
+            min-height: 88vh;
         }
         .bottom-block img {
             transition: transform 0.3s ease;
@@ -227,7 +229,7 @@
         }
         .bottom-block .details span {
             margin-right: 5px;
-            font-size: 17px;
+            font-size: 1.0625rem;
             display: flex;
             align-items: center;
         }
@@ -240,19 +242,19 @@
             border-radius: 0px;
         }
         .bottom-block .price {
-            font-size: 25px;
+            font-size: 1.5625rem;
             margin-right: 10px;
             margin-left: 10px;
             font-weight: bold;
         }
         .bottom-block .price .euro {
             color: black;
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         .bottom-block .price .rif {
             color: #3C3C3C;
-            font-size: 12px;
-            margin-left: 40px;
+            font-size: 0.75rem;
+            margin-left: 6.4vh;
             background-color: #E9E9E9;
             border-radius: 5px;
             padding: 3px;
@@ -280,7 +282,7 @@
         .botom-anunci .anunci-cifre {
             color: black;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-            font-size: 18px;
+            font-size: 1.125rem;
             padding: 10px;
             border-radius: 5px;
             background-color: #FFFFFF;
@@ -296,7 +298,7 @@
         .carousel-container {
             position: relative;
             width: 100%;
-            height: 350px;
+            height: 56vh;
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -330,7 +332,7 @@
             background-color: transparent;
             color: white;
             border: none;
-            font-size: 30px;
+            font-size: 1.875rem;
             padding: 10px;
             cursor: pointer;
             z-index: 10;
@@ -350,7 +352,7 @@
           /*Пагинация*/
 
         .button-anunci {
-            margin-left: 280px;
+            margin-left: 44.8vh;
             display: flex;
             justify-content: center;
             gap: 10px;
@@ -359,7 +361,7 @@
 
         .button-anunci button {
             box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
-            font-size: 20px;
+            font-size: 1.25rem;
             padding: 10px 20px;
             border-radius: 50px;
             background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8));
@@ -381,7 +383,7 @@
             color: #0097B2;
             margin-top: 30px;
             margin-bottom: 20px;
-            font-size: 50px;
+            font-size: 3rem;
             font-weight: bold;
             text-align: center;
         }  
@@ -416,8 +418,8 @@
             margin-top: 10px;
             border-radius: 50%;
             overflow: hidden;
-            width: 220px;
-            height: 220px;
+            width: 35.2vh;
+            height: 35.2vh;
         }
         .circle-image img {
             width: 100%;
@@ -610,6 +612,7 @@
 
     .hero-section {     
         height: 50vh;
+        background-image: url('/Foto/HomeFoto/Home1med.webp');
     }       
     .mapp-container {
         display: none;
