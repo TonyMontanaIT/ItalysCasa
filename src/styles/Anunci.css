@@ -383,8 +383,8 @@
             z-index: 0;
         }        
         .dawn {
-            margin-top: 40px;
-            margin-bottom: 20px;
+            margin-top: 6.4vh;
+            margin-bottom: 3.2vh;
             width: 100%;
             min-height: 180vh;
             display: flex;
@@ -397,9 +397,9 @@
             gap: 20px; /* Пробел между блоками */
         }        
         .descrizione {
-            margin-left: 10px;
+            margin-left: 1.6vh;
             width: 100%;
-            min-height: 300px;
+            min-height: 48vh;
             display: flex;
             margin-bottom: 5px;
             border-radius: 10px;
@@ -424,22 +424,22 @@
         }    
         .des-info-start h3 { 
             color: #524E4E;
-            font-size: 25px;
+            font-size: 1.5625rem;
         }  
         .des-info-text {
             padding: 0px 10px;
         }   
         .pclassH2 {
-            font-size: 18px;   
+            font-size: 1.125rem;   
             font-weight: bold;
             margin-bottom: 10px;
         } 
         .pclassText {
-            font-size: 14px;
+            font-size: 0.875rem;
         } 
         .pclassText1 {
             margin-top: 20px;
-            font-size: 14px;
+            font-size: 0.875rem;
         }         
         .telYelow {
             font-size: 16px;
@@ -451,7 +451,7 @@
             margin-left: 10px;
             border-radius: 10px;
             width: 100%;
-            height: 300px;
+            height: 48vh;
             z-index: 0;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
         }     
@@ -485,7 +485,7 @@
             background: linear-gradient(90deg, #0097B2 20%, #598EC8 40%, #8BBFF8 80%);
             color: white;
             margin-left: 10px;
-            font-size: 25px;
+            font-size: 1.5625rem;
             padding: 10px 30px;
             transition: transform 0.3s ease;
         }       
