@@ -677,5 +677,46 @@
         
 
 }    
+@media (min-width: 1024px) and (max-width: 1266px) {
+    /* Стили для нетбуков */
+    body {
+        font-size: 0.75rem;
+    }
+    .ven-1 a {
+        font-size: 1rem;
+    }
+    .ven-price {    
+        font-size: 1.25rem;
+    }
+    .ven-rif {
+        font-size: 0.75rem;
+    }
+    .ven-icon span {
+        font-size: 0.6875rem;
+    }
+    .glass-button {
+        font-size: 0.6875rem;
+    }
+}
 
-
+@media (min-width: 1920px) {
+    /* Стили для больших мониторов */
+    body {
+        font-size: 1.25rem;
+    }
+    .ven-1 a {
+        font-size: 1.75rem;
+    }    
+    .ven-price {    
+        font-size: 2.1875rem;
+    }
+    .ven-rif {
+        font-size: 1.375rem;
+    }
+    .ven-icon span {
+        font-size: 1.25rem;
+    }
+    .glass-button {
+        font-size: 1.375rem;
+    }
+}

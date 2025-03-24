@@ -195,7 +195,7 @@
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             position: relative;
             width: 100%;
-            height: 80vh; /* Высота блока */
+            height: 98%; /* Высота блока */
             overflow: hidden;
             border: 1px solid #ddd; /* Опционально: рамка для красоты */
             border-radius: 8px; /* Опционально: закруглённые углы */
@@ -265,9 +265,10 @@
         .center-center { 
             padding: 10px;
             width: 15%;
-            height: 100%;
+            height: 91%;
         } 
         .cen-info {
+            height: 100%;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             padding: 10px;
             border-radius: 10px;
@@ -368,7 +369,7 @@
         .center-right {
             padding: 10px;
         	width: 23%;
-        	height: 100%;
+        	height: 95%;
         }
         .mapp-container {
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -523,7 +524,7 @@
             border-radius: 10px; 
             color: white;
             margin-left: 5px;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             padding: 13px 30px;
             transition: transform 0.3s ease;                        
@@ -572,9 +573,9 @@
             width: 20px;
         }    
         .contact-form {
-            margin-right: 20px;
-            height: 470px;
-            top: 90px;
+            margin-right: 3.2vh;
+            height: 75.2vh;
+            top: 14.4vh;
             flex-basis: 30%;
             box-sizing: border-box;
             position: sticky; /* Убираем fixed */
@@ -596,9 +597,9 @@
         }
         #text {
             resize: none;
-            height: 100px; /* Высота поля ввода */
+            height: 16vh; /* Высота поля ввода */
             padding: 10px; /* Внутренние отступы */
-            font-size: 16px; /* Размер шрифта */
+            font-size: 1rem; /* Размер шрифта */
             border: 1px solid #ccc; /* Граница */
             border-radius: 5px; /* Закругление углов */
             width: 100%; /* Ширина занимает всё доступное пространство */
@@ -629,7 +630,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding: 12px 60px;
             border-radius: 50px;
             cursor: pointer;
@@ -685,13 +686,13 @@
             color: #0097B2;
             margin-top: 30px;
             margin-bottom: 20px;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: bold;
             text-align: left;
             margin-left: 20px;
         }  
         .serv-block {           
-            margin-top: 50px;
+            margin-top: 8vh;
             display: flex;
             justify-content: center; /* Расположение блоков с равным отступом между ними */
             flex-wrap: wrap;
@@ -700,11 +701,11 @@
         .serv-block-1 { 
             display: flex;
             flex-direction: column;
-            margin: 15px;
+            margin: 10px;
             margin-top: 20px;
             transition: transform 0.3s ease;  
-            width: 250px;       
-            min-height: 380px;
+            width: 30%;       
+            min-height: 60.8vh;
             border-radius: 15px;
             align-items: center;
             background: #f0f0f0;
@@ -719,7 +720,7 @@
             display: inline-block;
             overflow: hidden;
             width: 100%;
-            height: 180px;
+            height: 28.8vh;
         }
         .circle-image img {
             border-radius: 15px 15px 0px 0px; 
@@ -736,7 +737,7 @@
         }        
         .random-nome p {
             cursor: default;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             color: #0097B2;
         }       
@@ -749,7 +750,7 @@
             font-weight: bold;
             color: #00BF63;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 1.25rem;
         }   
         .random-prezzo span {
             cursor: default;
@@ -757,7 +758,7 @@
             background-color: #FFF;
             border-radius: 5px;
             padding: 5px;
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-weight: bold;
         }    
         .random-icon {
@@ -786,7 +787,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 12px;
+            font-size: 0.75rem;
             padding: 10px 30px;
             border-radius: 50px;
             cursor: pointer;
@@ -841,11 +842,11 @@
         }
 
         .modal-content1 {
-            min-height: 400px;
+            min-height: 64vh;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            max-width: 450px;
+            max-width: 72vh;
             width: 100%;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             display: flex;
@@ -874,7 +875,7 @@
         /* Закрывающая кнопка */
         .close-button {
             background-color: transparent;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: black;
             border: none;
             cursor: pointer;
@@ -910,7 +911,7 @@
     }  
     .up-left-up,
     .up-left-down {
-        font-size: 14px;
+        font-size: 0.875rem;
         gap: 15px;
         width: 100%; /* Занимать всю ширину контейнера */
         padding: 0;
@@ -967,7 +968,7 @@
 
     .carousel-container {
         width: 100%;
-        height: 250px;
+        height: 40vh;
     }
 
     .ven-info {
@@ -983,7 +984,7 @@
 
     .glass-button {
         width: 100%;
-        font-size: 16px;
+        font-size: 1rem;
         padding: 10px;
     }
     .dawn {
@@ -1053,7 +1054,7 @@
     }
 
     .info-item1 p {
-        font-size: 13px;
+        font-size: 0.8125rem;
         margin: 5px 0;
         border-bottom: 1px solid #ccc; /* Полоса-разделитель */
         padding-bottom: 5px;
