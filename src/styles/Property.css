@@ -28,23 +28,23 @@
             margin-top: 15vh;
             margin-bottom: auto;
             margin-right: auto;
-            margin-left: 40px;
+            margin-left: 6.4vh;
             box-sizing: border-box;
         }   
         .text-but-top a {
             margin-top: 0px;
             font-weight: bold;
-            font-size: 12px;
+            font-size: 0.75rem;
             padding: 0px 6px;
             color: #FFFFFF;
         }   
         .counter {
             position: relative;
-            margin-top: 10px;
+            margin-top: 1.6vh;
             margin-right: auto;
         }   
         .counter p {
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-weight: bold;
             color: #FFFFFF;
             padding: 0px 10px;
@@ -56,13 +56,13 @@
             top: 0px;
             background-color: #29A3E2;
             border-radius: 15px;
-            width: 250px;
-            height: 130px;
+            width: 60%;
+            height: 20.8vh;
         }   
         .salva-ricerca p {
             display: inline-block;
             color: #FFFFFF;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             margin-top: auto 20px;
             position: relative;
@@ -88,12 +88,12 @@
 }
 
 .modal-content1 {
-    margin-top: 70px;
+    margin-top: 11.2vh;
     background-color: transparent;
     padding: 30px;
     border-radius: 10px;
     width: 90%;
-    max-width: 700px;
+    max-width: 112vh;
     position: relative;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -110,19 +110,19 @@
 
 #mapPopup {
     width: 100%;
-    height: 500px;
+    height: 80vh;
     border-radius: 10px;
 }         
         .ven-afit {
             position: absolute;
-            left: 350px;
+            left: 56vh;
             bottom: 0px;
         }   
         .ven-afit a {
             display: inline-block;
             padding: 0px 10px;
             color: #FFFFFF;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             transition: color 0,3 ease, transform 0,3 ease;
         }   
@@ -131,18 +131,19 @@
             color: #524E4E;
         }        
         .mapp-container {
-            margin-left: 40px;
-            margin-top: 80px;
-            height: 450px;
+            width: 20%;
+            margin-left: 6.4vh;
+            margin-top: 12.8vh;
+            height: 72vh;
             background-color: #FFF;
             border-radius: 10px;
             position: sticky;
-            top: 100px;
+            top: 16vh;
         }
         .map {
             border-radius: 10px;
-            height: 300px;
-            width: 250px;
+            height: 48vh;
+            width: 100%;
         }
         .cerca-form {
             margin-top: 10px;
@@ -150,14 +151,14 @@
             display: block;
             text-align: center;
             background-color: #29A3E2;
-            width: 250px;
-            height: 110px;
+            width: 100%;
+            height: 17.6vh;
             border-radius: 10px;
         }
         .cerca-form p {
             margin: 0;
             color: #FFFFFF;
-            font-size: 16px;
+            font-size: 1rem;
             padding: 10px 20px;
         }    
         /* Основная кнопка */
@@ -172,7 +173,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding: 12px 40px;
             border-radius: 50px;
             cursor: pointer;
@@ -222,8 +223,8 @@
             margin-top: 10px;
             border-radius: 10px;
             margin-left: auto;
-            max-height: 400px;
-            max-width: 1000px;
+            max-height: 64vh;
+            max-width: 160vh;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -238,7 +239,7 @@
 
         .carousel-container {
             overflow: hidden;
-            height: 400px;
+            height: 64vh;
             position: relative;
             width: calc(50% - 5px);
         }
@@ -291,7 +292,7 @@
             margin-left: 10px;
             margin-right: 10px;
             display: flex;
-            max-height: 390px;
+            max-height: 62.4vh;
             width: calc(50% - 5px);
             flex-direction: column;
         }
@@ -303,7 +304,7 @@
             font-weight: bold;
             height: clamp(60px, 40%, 120px);
             display: block;
-            font-size: 25px;
+            font-size: 1.5625rem;
             white-space: normal;
             word-break: break-word;
             overflow-wrap: break-word;
@@ -320,7 +321,7 @@
         }
 
         .ven-price {
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: bold;
             color: black;
         }
@@ -330,7 +331,7 @@
             background-color: #E9E9E9;
             border-radius: 5px;
             padding: 5px;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
         }
 
@@ -344,7 +345,7 @@
 
         .ven-icon span {
             margin-right: 5px;
-            font-size: 17px;
+            font-size: 1.0625rem;
             display: flex;
             align-items: center;
         }
@@ -382,7 +383,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding: 12px 40px;
             border-radius: 50px;
             cursor: pointer;
@@ -459,81 +460,7 @@
 
         .pagination button:hover {
             transform: scale(1.03);
-        }   
-        .serv-text {
-            color: #0097B2;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-size: 50px;
-            font-weight: bold;
-            text-align: center;
-        }  
-        .serv-block {           
-            margin-top: 50px;
-            display: flex;
-            justify-content: center; /* Расположение блоков с равным отступом между ними */
-            flex-wrap: wrap;
-            width: calc(100% - 0px);
-        }
-        .serv-block-1 { 
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin: 35px;
-            margin-top: 20px;
-            transition: transform 0.3s ease;  
-            width: 56vh;       
-            height: 72vh;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
-        }
-        .serv-block-1:hover {
-            transform: scale(1.02);
-            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
-        }    
-        .circle-image {               
-            display: inline-block;
-            margin-top: 0px;
-            border-radius: 50%;
-            overflow: hidden;
-            width: 220px;
-            height: 220px;
-        }
-        .circle-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .serv-h1 {
-            margin-bottom: auto;
-            transition: transform 0.3s ease;  
-            font-size: 25px;
-            font-weight: bold;
-            color: #0097B2;
-        }   
-        .serv-h2 {
-            margin-top: 5px;
-            margin-bottom: auto;
-            transition: transform 0.3s ease;  
-            font-size: 18px;
-        }
-        .cta1 {   
-            margin-bottom: auto;        
-        }
-        .cta1 a {
-            display: inline-block;
-            background-color: #29A3E2;
-            color: #FFFFFF;
-            padding: 10px 60px;
-            border-radius: 5px;
-            transition: transform 0.3s ease, background-color 0.3s ease;           
-        }  
-        .cta1 a:hover {
-            transform: scale(1.03);
-            background-color: green;
-        }         
+        }            
         /* Скрываем модальное окно по умолчанию */
         .modal {
             display: none;
