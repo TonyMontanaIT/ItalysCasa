@@ -69,7 +69,7 @@
         }           
         .vedi-map {
             position: absolute;
-            right: 40px;
+            right: 6.4vh;
             bottom: 1px;
             transition: transform 0.3s ease;
         } 
@@ -223,7 +223,8 @@
             margin-top: 10px;
             border-radius: 10px;
             margin-left: auto;
-            max-height: 64vh;
+            height: 40%;
+            max-height: 68vh;
             max-width: 160vh;
             width: 100%;
             display: flex;
@@ -239,7 +240,7 @@
 
         .carousel-container {
             overflow: hidden;
-            height: 64vh;
+            height: 100%;
             position: relative;
             width: calc(50% - 5px);
         }
