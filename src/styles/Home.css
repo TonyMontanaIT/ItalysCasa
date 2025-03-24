@@ -531,10 +531,10 @@
             padding: 20px;
         }        
         .recension-blok {
-            margin-bottom: 100px;
+            margin-bottom: 12.8vh;
         }    
         .reviews-block {
-            max-width: 600px;
+            max-width: 50%;
             margin-left: auto;
             padding: 20px;
             border-radius: 10px;
