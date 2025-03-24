@@ -223,7 +223,7 @@
             margin-top: 10px;
             border-radius: 10px;
             margin-left: auto;
-            height: 40%;
+            height: 60vh;
             max-height: 68vh;
             max-width: 160vh;
             width: 100%;
@@ -341,7 +341,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 1.6vh;
         }
 
         .ven-icon span {
@@ -360,11 +360,11 @@
         }
 
         .cta-container {
-            margin-left: 20px;
+            margin-left: 3.2vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: auto;
+            margin-top: 1.6vh;
             padding: 5px;
             box-sizing: border-box;
         }
