@@ -1061,3 +1061,16 @@
     }    
 
 }
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    /* Стили для нетбуков */
+    body {
+        font-size: 0.75rem;
+    }
+    .info-item p {
+        font-size: 0.75rem;
+    }
+    .info-item strong {
+         font-size: 0.875rem;
+    }     
+}
