@@ -15,11 +15,11 @@ window.addEventListener('load', function () { // Ждём полной загр�
     ];
 
     const mediaImages = [
-        '/Foto/HomeFoto/Home1med1.webp',
-        '/Foto/HomeFoto/Home2med1.webp',
-        '/Foto/HomeFoto/Home3med1.webp',
-        '/Foto/HomeFoto/Home4med1.webp',
-        '/Foto/HomeFoto/Home5med1.webp'
+        '/Foto/HomeFoto/Home1med.webp',
+        '/Foto/HomeFoto/Home2med.webp',
+        '/Foto/HomeFoto/Home3med.webp',
+        '/Foto/HomeFoto/Home4med.webp',
+        '/Foto/HomeFoto/Home5med.webp'
     ];
 
     function getCurrentImages() {
