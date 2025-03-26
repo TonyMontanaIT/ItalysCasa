@@ -1,9 +1,9 @@
 ---
 tipo: Perché noleggiare attrezzature edili dai professionisti?
 h1: Il noleggio di attrezzature edili è una soluzione conveniente ed efficiente
-  per qualsiasi progetto di costruzione. Se lavori a Scalea ,
-  https://scarfonesrl.it/  offre una vasta gamma di attrezzature moderne per
-  soddisfare tutte le tue esigenze.
+  per qualsiasi progetto di costruzione. Se lavori a Scalea ,[Scarfone
+  S.R.L.](https://scarfonesrl.it/).  offre una vasta gamma di attrezzature
+  moderne per soddisfare tutte le tue esigenze.
 text: >-
   I vantaggi del noleggio di attrezzature
 
@@ -21,7 +21,7 @@ text: >-
 
   Attrezzature specializzate per compiti complessi, come l'installazione di marmo o la costruzione di strutture in calcestruzzo.
 
-  Se hai bisogno di attrezzature per la costruzione o la ristrutturazione, rivolgiti ai professionisti di https://scarfonesrl.it/ . Ti forniranno tutto il necessario per il successo del tuo progetto!
+  Se hai bisogno di attrezzature per la costruzione o la ristrutturazione, rivolgiti ai professionisti di [Scarfone S.R.L.](https://scarfonesrl.it/). Ti forniranno tutto il necessario per il successo del tuo progetto!
 images:
   - Foto/Galeri/tehnica.webp
   - Foto/Galeri/stroitel.webp
