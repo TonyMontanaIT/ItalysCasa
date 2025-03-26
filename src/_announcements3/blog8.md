@@ -22,5 +22,6 @@ text: >-
   Attrezzature specializzate per compiti complessi, come l'installazione di marmo o la costruzione di strutture in calcestruzzo.
 
   Se hai bisogno di attrezzature per la costruzione o la ristrutturazione, rivolgiti ai professionisti di Scarfone S.R.L. . Ti forniranno tutto il necessario per il successo del tuo progetto!
-images: []
+images:
+  - Foto/Galeri/tehnica.webp
 ---
