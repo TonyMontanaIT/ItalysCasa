@@ -19,12 +19,7 @@ window.addEventListener('load', function () { // Ждём полной загр�
         '/Foto/HomeFoto/Home2med.webp',
         '/Foto/HomeFoto/Home3med.webp',
         '/Foto/HomeFoto/Home4med.webp',
-        '/Foto/HomeFoto/Home5med.webp',
-        '/Foto/HomeFoto/Home6med.webp',
-        '/Foto/HomeFoto/Home7med.webp',
-        '/Foto/HomeFoto/Home8med.webp',
-        '/Foto/HomeFoto/Home9med.webp',
-        '/Foto/HomeFoto/Home10med.webp'
+        '/Foto/HomeFoto/Home5med.webp'
     ];
 
     function getCurrentImages() {

@@ -69,7 +69,7 @@
         }           
         .vedi-map {
             position: absolute;
-            right: 40px;
+            right: 6.4vh;
             bottom: 1px;
             transition: transform 0.3s ease;
         } 
@@ -223,7 +223,8 @@
             margin-top: 10px;
             border-radius: 10px;
             margin-left: auto;
-            max-height: 64vh;
+            height: 60vh;
+            max-height: 68vh;
             max-width: 160vh;
             width: 100%;
             display: flex;
@@ -239,7 +240,7 @@
 
         .carousel-container {
             overflow: hidden;
-            height: 64vh;
+            height: 100%;
             position: relative;
             width: calc(50% - 5px);
         }
@@ -292,7 +293,7 @@
             margin-left: 10px;
             margin-right: 10px;
             display: flex;
-            max-height: 62.4vh;
+            height: 100%;
             width: calc(50% - 5px);
             flex-direction: column;
         }
@@ -340,7 +341,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 1.6vh;
         }
 
         .ven-icon span {
@@ -359,11 +360,11 @@
         }
 
         .cta-container {
-            margin-left: 20px;
+            margin-left: 3.2vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: auto;
+            margin-top: 1.6vh;
             padding: 5px;
             box-sizing: border-box;
         }
@@ -676,5 +677,46 @@
         
 
 }    
+@media (min-width: 1024px) and (max-width: 1300px) {
+    /* Стили для нетбуков */
+    body {
+        font-size: 0.75rem;
+    }
+    .ven-1 a {
+        font-size: 1rem;
+    }
+    .ven-price {    
+        font-size: 1.25rem;
+    }
+    .ven-rif {
+        font-size: 0.75rem;
+    }
+    .ven-icon span {
+        font-size: 0.6875rem;
+    }
+    .glass-button {
+        font-size: 0.6875rem;
+    }
+}
 
-
+@media (min-width: 1920px) {
+    /* Стили для больших мониторов */
+    body {
+        font-size: 1.25rem;
+    }
+    .ven-1 a {
+        font-size: 1.75rem;
+    }    
+    .ven-price {    
+        font-size: 2.1875rem;
+    }
+    .ven-rif {
+        font-size: 1.375rem;
+    }
+    .ven-icon span {
+        font-size: 1.25rem;
+    }
+    .glass-button {
+        font-size: 1.375rem;
+    }
+}
