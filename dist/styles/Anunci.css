@@ -5,7 +5,7 @@
             overflow-x: hidden;
         }
         .content-section {
-            margin-top: 80px;
+            margin-top: 12.8vh;
             margin-right: auto;
             display: flex;
             flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
@@ -17,7 +17,7 @@
         	align-items: center; /* Выравниваем элементы по центру вертикально */
         	justify-content: space-between; /* Добавляем пространство между блоками (опционально) */
         	width: 100%;
-        	height: 80px;
+        	height: 12.8vh;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         }
         .up-left { 	
@@ -49,7 +49,7 @@
         .up-left-down p {
             font-weight: bold;
             padding: 0px 20px;
-            font-size: 20px;
+            font-size: 1.25rem;
             margin: 0;
         }    
         .up-icon {
@@ -85,7 +85,7 @@
             margin-left: 10px;
         	color: black;
         	font-weight: bold;
-        	font-size: 18px;
+        	font-size: 1.125rem;
         }	
         .up-icon-right img {
         	width: 30px;
@@ -138,7 +138,7 @@
             transform: translateY(-50%);
             background-color: transparent;
             color: white;
-            font-size: 45px;
+            font-size: 2.8125rem;
             cursor: pointer;
             padding: 10px;
             border: none;
@@ -158,7 +158,7 @@
             top: 20px;
             right: 20px;
             color: white;
-            font-size: 60px;
+            font-size: 3.5rem;
             font-weight: bold;
             cursor: pointer;
         }
@@ -195,7 +195,7 @@
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             position: relative;
             width: 100%;
-            height: 500px; /* Высота блока */
+            height: 100%; /* Высота блока */
             overflow: hidden;
             border: 1px solid #ddd; /* Опционально: рамка для красоты */
             border-radius: 8px; /* Опционально: закруглённые углы */
@@ -226,7 +226,7 @@
             background-color: transparent;
             color: white;
             border: none;
-            font-size: 45px;
+            font-size: 2.8125rem;
             cursor: pointer;
             padding: 10px;
         }
@@ -265,11 +265,12 @@
         .center-center { 
             padding: 10px;
             width: 15%;
-            height: 100%;
+            height: 92%;
         } 
         .cen-info {
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             padding: 10px;
+            height: 100%;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
         }
         .caratter {
@@ -279,7 +280,7 @@
         }   
         .caratter p { 
             margin: 0;
-            font-size: 20px;  
+            font-size: 1.25rem;  
             font-weight: bold;
             color: #0097B2;
         }
@@ -288,7 +289,7 @@
             width: 20px;
         } 
         .property-info {
-            margin-top: 20px;
+            margin-top: 3.2vh;
             display: flex;
             flex-direction: column; /* Размещаем элементы вертикально */
             gap: 20px; /* Промежуток между элементами */
@@ -302,6 +303,7 @@
             color: #0097B2;
         }    
         .info-item p {
+            font-size: 1rem;
             margin: 0;
             font-weight: bold;
         }    
@@ -327,7 +329,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding: 12px 40px;
             border-radius: 50px;
             cursor: pointer;
@@ -368,7 +370,7 @@
         .center-right {
             padding: 10px;
         	width: 23%;
-        	height: 100%;
+        	height: 96%;
         }
         .mapp-container {
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -421,28 +423,24 @@
         .des-info-start img { 
             width: 50px;
             filter: invert(40%) sepia(30%) saturate(6000%) hue-rotate(180deg) brightness(85%) contrast(100%);
-        }    
-        .des-info-start h3 { 
-            color: #524E4E;
-            font-size: 25px;
-        }  
+        }      
         .des-info-text {
             padding: 0px 10px;
         }   
         .pclassH2 {
-            font-size: 18px;   
+            font-size: 1.125rem;   
             font-weight: bold;
             margin-bottom: 10px;
         } 
         .pclassText {
-            font-size: 14px;
+            font-size: 0.875rem;
         } 
         .pclassText1 {
             margin-top: 20px;
-            font-size: 14px;
+            font-size: 0.875rem;
         }         
         .telYelow {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
             color: #FFC300;
         }     
@@ -485,7 +483,7 @@
             background: linear-gradient(90deg, #0097B2 20%, #598EC8 40%, #8BBFF8 80%);
             color: white;
             margin-left: 10px;
-            font-size: 25px;
+            font-size: 1.5625rem;
             padding: 10px 30px;
             transition: transform 0.3s ease;
         }       
@@ -523,7 +521,7 @@
             border-radius: 10px; 
             color: white;
             margin-left: 5px;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             padding: 13px 30px;
             transition: transform 0.3s ease;                        
@@ -598,7 +596,7 @@
             resize: none;
             height: 100px; /* Высота поля ввода */
             padding: 10px; /* Внутренние отступы */
-            font-size: 16px; /* Размер шрифта */
+            font-size: 1rem; /* Размер шрифта */
             border: 1px solid #ccc; /* Граница */
             border-radius: 5px; /* Закругление углов */
             width: 100%; /* Ширина занимает всё доступное пространство */
@@ -629,7 +627,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding: 12px 60px;
             border-radius: 50px;
             cursor: pointer;
@@ -685,7 +683,7 @@
             color: #0097B2;
             margin-top: 30px;
             margin-bottom: 20px;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: bold;
             text-align: left;
             margin-left: 20px;
@@ -703,8 +701,8 @@
             margin: 15px;
             margin-top: 20px;
             transition: transform 0.3s ease;  
-            width: 250px;       
-            min-height: 380px;
+            width: 28%;       
+            min-height: 60.8vh;
             border-radius: 15px;
             align-items: center;
             background: #f0f0f0;
@@ -736,7 +734,7 @@
         }        
         .random-nome p {
             cursor: default;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             color: #0097B2;
         }       
@@ -1061,11 +1059,80 @@
 
 }
 
-@media (min-width: 1399px) {
+@media (min-width: 1499px) {
+   
+    .up-left-down p {
+        font-size: 1.5rem; 
+    }
+    .up-icon-right a { 
+        font-size: 1.375rem;
+    }
+    .caratter p { 
+        font-size: 1.5rem;
+    }
+    .info-item p {
+        font-size: 1.125rem;
+    }
+    .glass-button1 {
+        font-size: 1.125rem;
+    }
+    .pclassH2 {
+        font-size: 1.375rem;
+    }
+    .pclassText {
+        font-size: 1.125;
+    }
+    .pclassText1 {
+        font-size: 1.125;
+    }
+    .telYelow {
+        font-size: 1.25rem;
+    }
+    .serv-text {
+        font-size: 2.125rem;
+    }
+    .random-nome p {
+        font-size: 1.375rem;
+    }
 
 
-}    
+}  
+
 @media (max-width: 1299px) and (min-width: 768px) {
+
+    .up-left-down p {
+        font-size: 1rem; 
+    }
+    .up-icon-right a { 
+        font-size: 0.875rem;
+    }
+    .caratter p { 
+        font-size: 1rem;
+    }
+    .info-item p {
+        font-size: 0.75rem;
+    }
+    .glass-button1 {
+        font-size: 0.625rem;
+    }
+    .pclassH2 {
+        font-size: 0.875rem;
+    }
+    .pclassText {
+        font-size: 0.625rem;
+    }
+    .pclassText1 {
+        font-size: 0.625rem;
+    }
+    .telYelow {
+        font-size: 0.75rem;
+    }
+    .serv-text {
+        font-size: 1.625rem;
+    }
+    .random-nome p {
+        font-size: 0.875rem;
+    }
 
 
 } 

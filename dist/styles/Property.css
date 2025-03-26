@@ -519,7 +519,7 @@
             resize: none;
             height: 100px; /* Высота поля ввода */
             padding: 10px; /* Внутренние отступы */
-            font-size: 16px; /* Размер шрифта */
+            font-size: 1rem; /* Размер шрифта */
             border: 1px solid #ccc; /* Граница */
             border-radius: 5px; /* Закругление углов */
             width: 100%; /* Ширина занимает всё доступное пространство */
@@ -543,7 +543,7 @@
         .contact-form .submit-button {
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
             background: linear-gradient(140deg, #7ED957 20%, #007E50 70%);;
             color: white;
@@ -709,8 +709,16 @@
         font-size: 2.125rem;
     }
     .ven-rif {
-        font-size: ;
+        font-size: 1.25rem;
     }
+    .ven-icon span {
+        font-size: 1.3125rem;
+    }
+    .glass-button {
+        font-size: 1.125rem;
+    }
+
+
 
 
 
@@ -746,8 +754,16 @@
         font-size: 1.625rem;
     }
     .ven-rif {
-        font-size: ;
+        font-size: 0.75rem;
     }
+    .ven-icon span {
+        font-size: 0.8125rem;
+    }
+    .glass-button {
+        font-size: 0.625rem;
+    }
+
+
 
 
 
