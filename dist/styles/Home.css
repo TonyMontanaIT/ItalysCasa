@@ -147,7 +147,7 @@
             margin-left: 3.2vh;
             border: none;
             outline: none;
-            font-size: 3.2vh;
+            font-size: 1.25rem;
             color: #545454;
             flex: 1;
             background: transparent;
@@ -429,7 +429,7 @@
         .serv-h1 {
             margin-bottom: auto;
             transition: transform 0.3s ease;  
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-weight: bold;
             color: #0097B2;
         }   
@@ -438,7 +438,7 @@
             margin-top: 5px;
             margin-bottom: auto;
             transition: transform 0.3s ease;  
-            font-size: 18px;
+            font-size: 1.125rem;
         }
         .cta1 {   
             margin-bottom: auto;        
@@ -467,7 +467,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 15px;
+            font-size: 0.9375rem;
             padding: 12px 40px;
             border-radius: 50px;
             cursor: pointer;
@@ -506,14 +506,14 @@
             transform: scale(1.05);
         }   
         .content-scrol-2-3 .content-scrol-2 {
-            font-size: 22px;
+            font-size: 1.375rem;
             color: #0097B2;
             font-weight: bold;
             margin-bottom: 5px;
             margin-top: 5px;
         }   
         .content-scrol-3 {
-            font-size: 18px;
+            font-size: 1.125rem;
         }   
         .content-item {
             display: flex;
@@ -556,7 +556,7 @@
             font-weight: bold;
             color: #F6BB06;
             margin-left: 120px;
-            font-size: 50px;
+            font-size: 3rem;
         }    
         .reviews-block img {
             margin-top: -10px;
@@ -564,11 +564,11 @@
             height: 25px;
         }
         .reviews-block h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #333;
         }
         .reviews-block p {
-            font-size: 18px;
+            font-size: 1.125rem;
             color: #555;
         }
         .reviews-block a {
@@ -602,7 +602,7 @@
             background-color: red;
             border-radius: 10px;
             padding: 3px 8px;
-            font-size: 30px;
+            font-size: 1.875rem;
             cursor: pointer;
             display: none; /* Скрываем по умолчанию */
         }
@@ -743,11 +743,115 @@
 
 }      
 
-@media (min-width: 1399px) {
+@media (min-width: 1399px) {|
+
+    .search-bar-options span {
+        font-size: 1.25rem;
+    }
+    .search-bar input { 
+        font-size: 1.5rem;
+    }
+    .info-anunci { 
+        font-size: 1.375rem;
+    }
+    .bottom-block { 
+        font-size: 1.125rem;
+    }
+    .bottom-block .details span { 
+        font-size: 1.3125rem;
+    }
+    .bottom-block .price {
+        font-size: 1.8125rem;
+    }
+    .bottom-block .price .euro {
+        font-size: 1.5rem;
+    }
+    .bottom-block .price .rif {
+        font-size: 1rem;
+    }
+    .botom-anunci .anunci-cifre {
+        font-size: 1.375rem;
+    }
+    .button-anunci button {
+        font-size: 1.5rem;
+    }
+    .serv-text {
+        font-size: 3.25rem;
+    }
+    .serv-h1 {
+        font-size: 1.8125rem;
+    }
+    .serv-h2 { 
+        font-size: 1.375rem;
+    }
+    .dicono p {
+        font-size: 3.25rem;
+    }
+    .reviews-block h2 {
+        font-size: 1.75rem;
+    }
+    .reviews-block p {
+        font-size: 1.375rem;
+    }
+    .search-clear {
+        font-size: 2.125rem;
+    }
 
 
 }    
 @media (max-width: 1199px) and (min-width: 768px) {
+
+    .search-bar-options span {
+    font-size: 0.75rem;
+    }
+    .search-bar input { 
+        font-size: 1rem;
+    }
+    .info-anunci { 
+        font-size: 0.875rem;
+    }
+    .bottom-block { 
+        font-size: 0.625rem;
+    }
+    .bottom-block .details span { 
+        font-size: 0.8125rem;
+    }
+    .bottom-block .price {
+        font-size: 1.3125rem;
+    }
+    .bottom-block .price .euro {
+        font-size: 1rem;
+    }
+    .bottom-block .price .rif {
+        font-size: 0.5rem;
+    }
+    .botom-anunci .anunci-cifre {
+        font-size: 0.875rem;
+    }
+    .button-anunci button {
+        font-size: 1rem;
+    }
+    .serv-text {
+        font-size: 2.75rem;
+    }
+    .serv-h1 {
+        font-size: 1.3125rem;
+    }
+    .serv-h2 { 
+        font-size: 0.875rem;
+    }
+    .dicono p {
+        font-size: 2.75rem;
+    }
+    .reviews-block h2 {
+        font-size: 1.25rem;
+    }
+    .reviews-block p {
+        font-size: 0.875rem;
+    }
+    .search-clear {
+        font-size: 1.625rem;
+    }
 
 
 }    
