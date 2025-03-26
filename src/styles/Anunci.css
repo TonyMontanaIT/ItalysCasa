@@ -5,7 +5,7 @@
             overflow-x: hidden;
         }
         .content-section {
-            margin-top: 12.8vh;
+            margin-top: 80px;
             margin-right: auto;
             display: flex;
             flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
@@ -17,7 +17,7 @@
         	align-items: center; /* Выравниваем элементы по центру вертикально */
         	justify-content: space-between; /* Добавляем пространство между блоками (опционально) */
         	width: 100%;
-        	height: 12.8vh;
+        	height: 80px;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         }
         .up-left { 	
@@ -36,7 +36,7 @@
         }    
         .up-left-up h1 { 
             margin: 0;
-            margin-left: 3.2vh;
+            margin-left: 20px;
         }    
         .up-left-down {   
             justify-content: flex-start;
@@ -49,7 +49,7 @@
         .up-left-down p {
             font-weight: bold;
             padding: 0px 20px;
-            font-size: 1.25rem;
+            font-size: 20px;
             margin: 0;
         }    
         .up-icon {
@@ -85,7 +85,7 @@
             margin-left: 10px;
         	color: black;
         	font-weight: bold;
-        	font-size: 1.125rem;
+        	font-size: 18px;
         }	
         .up-icon-right img {
         	width: 30px;
@@ -138,7 +138,7 @@
             transform: translateY(-50%);
             background-color: transparent;
             color: white;
-            font-size: 2.8125rem;
+            font-size: 45px;
             cursor: pointer;
             padding: 10px;
             border: none;
@@ -155,10 +155,10 @@
         /* Закрытие модального окна */
         .close-modal {
             position: absolute;
-            top: 3.2vh;
-            right: 3.2vh;
+            top: 20px;
+            right: 20px;
             color: white;
-            font-size: 3.5rem;
+            font-size: 60px;
             font-weight: bold;
             cursor: pointer;
         }
@@ -195,7 +195,7 @@
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             position: relative;
             width: 100%;
-            height: 98%; /* Высота блока */
+            height: 500px; /* Высота блока */
             overflow: hidden;
             border: 1px solid #ddd; /* Опционально: рамка для красоты */
             border-radius: 8px; /* Опционально: закруглённые углы */
@@ -226,7 +226,7 @@
             background-color: transparent;
             color: white;
             border: none;
-            font-size: 2.8125rem;
+            font-size: 45px;
             cursor: pointer;
             padding: 10px;
         }
@@ -265,10 +265,9 @@
         .center-center { 
             padding: 10px;
             width: 15%;
-            height: 91%;
+            height: 100%;
         } 
         .cen-info {
-            height: 100%;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             padding: 10px;
             border-radius: 10px;
@@ -280,7 +279,7 @@
         }   
         .caratter p { 
             margin: 0;
-            font-size: 1.25rem;  
+            font-size: 20px;  
             font-weight: bold;
             color: #0097B2;
         }
@@ -328,7 +327,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 0.875rem;
+            font-size: 14px;
             padding: 12px 40px;
             border-radius: 50px;
             cursor: pointer;
@@ -369,7 +368,7 @@
         .center-right {
             padding: 10px;
         	width: 23%;
-        	height: 95%;
+        	height: 100%;
         }
         .mapp-container {
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -384,8 +383,8 @@
             z-index: 0;
         }        
         .dawn {
-            margin-top: 6.4vh;
-            margin-bottom: 3.2vh;
+            margin-top: 40px;
+            margin-bottom: 20px;
             width: 100%;
             min-height: 180vh;
             display: flex;
@@ -398,9 +397,9 @@
             gap: 20px; /* Пробел между блоками */
         }        
         .descrizione {
-            margin-left: 1.6vh;
+            margin-left: 10px;
             width: 100%;
-            min-height: 48vh;
+            min-height: 300px;
             display: flex;
             margin-bottom: 5px;
             border-radius: 10px;
@@ -425,22 +424,22 @@
         }    
         .des-info-start h3 { 
             color: #524E4E;
-            font-size: 1.5625rem;
+            font-size: 25px;
         }  
         .des-info-text {
             padding: 0px 10px;
         }   
         .pclassH2 {
-            font-size: 1.125rem;   
+            font-size: 18px;   
             font-weight: bold;
             margin-bottom: 10px;
         } 
         .pclassText {
-            font-size: 0.875rem;
+            font-size: 14px;
         } 
         .pclassText1 {
             margin-top: 20px;
-            font-size: 0.875rem;
+            font-size: 14px;
         }         
         .telYelow {
             font-size: 16px;
@@ -452,7 +451,7 @@
             margin-left: 10px;
             border-radius: 10px;
             width: 100%;
-            height: 48vh;
+            height: 300px;
             z-index: 0;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
         }     
@@ -486,7 +485,7 @@
             background: linear-gradient(90deg, #0097B2 20%, #598EC8 40%, #8BBFF8 80%);
             color: white;
             margin-left: 10px;
-            font-size: 1.5625rem;
+            font-size: 25px;
             padding: 10px 30px;
             transition: transform 0.3s ease;
         }       
@@ -524,7 +523,7 @@
             border-radius: 10px; 
             color: white;
             margin-left: 5px;
-            font-size: 1.125rem;
+            font-size: 18px;
             font-weight: bold;
             padding: 13px 30px;
             transition: transform 0.3s ease;                        
@@ -573,9 +572,9 @@
             width: 20px;
         }    
         .contact-form {
-            margin-right: 3.2vh;
-            height: 75.2vh;
-            top: 14.4vh;
+            margin-right: 20px;
+            height: 470px;
+            top: 90px;
             flex-basis: 30%;
             box-sizing: border-box;
             position: sticky; /* Убираем fixed */
@@ -597,9 +596,9 @@
         }
         #text {
             resize: none;
-            height: 16vh; /* Высота поля ввода */
+            height: 100px; /* Высота поля ввода */
             padding: 10px; /* Внутренние отступы */
-            font-size: 1rem; /* Размер шрифта */
+            font-size: 16px; /* Размер шрифта */
             border: 1px solid #ccc; /* Граница */
             border-radius: 5px; /* Закругление углов */
             width: 100%; /* Ширина занимает всё доступное пространство */
@@ -630,7 +629,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 0.875rem;
+            font-size: 14px;
             padding: 12px 60px;
             border-radius: 50px;
             cursor: pointer;
@@ -686,13 +685,13 @@
             color: #0097B2;
             margin-top: 30px;
             margin-bottom: 20px;
-            font-size: 1.875rem;
+            font-size: 30px;
             font-weight: bold;
             text-align: left;
             margin-left: 20px;
         }  
         .serv-block {           
-            margin-top: 8vh;
+            margin-top: 50px;
             display: flex;
             justify-content: center; /* Расположение блоков с равным отступом между ними */
             flex-wrap: wrap;
@@ -701,11 +700,11 @@
         .serv-block-1 { 
             display: flex;
             flex-direction: column;
-            margin: 10px;
+            margin: 15px;
             margin-top: 20px;
             transition: transform 0.3s ease;  
-            width: 30%;       
-            min-height: 60.8vh;
+            width: 250px;       
+            min-height: 380px;
             border-radius: 15px;
             align-items: center;
             background: #f0f0f0;
@@ -720,7 +719,7 @@
             display: inline-block;
             overflow: hidden;
             width: 100%;
-            height: 28.8vh;
+            height: 180px;
         }
         .circle-image img {
             border-radius: 15px 15px 0px 0px; 
@@ -737,7 +736,7 @@
         }        
         .random-nome p {
             cursor: default;
-            font-size: 1.125rem;
+            font-size: 18px;
             font-weight: bold;
             color: #0097B2;
         }       
@@ -750,7 +749,7 @@
             font-weight: bold;
             color: #00BF63;
             text-decoration: none;
-            font-size: 1.25rem;
+            font-size: 20px;
         }   
         .random-prezzo span {
             cursor: default;
@@ -758,7 +757,7 @@
             background-color: #FFF;
             border-radius: 5px;
             padding: 5px;
-            font-size: 0.9375rem;
+            font-size: 15px;
             font-weight: bold;
         }    
         .random-icon {
@@ -787,7 +786,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 0.75rem;
+            font-size: 12px;
             padding: 10px 30px;
             border-radius: 50px;
             cursor: pointer;
@@ -842,11 +841,11 @@
         }
 
         .modal-content1 {
-            min-height: 64vh;
+            min-height: 400px;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            max-width: 72vh;
+            max-width: 450px;
             width: 100%;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             display: flex;
@@ -875,7 +874,7 @@
         /* Закрывающая кнопка */
         .close-button {
             background-color: transparent;
-            font-size: 1.25rem;
+            font-size: 20px;
             color: black;
             border: none;
             cursor: pointer;
@@ -911,7 +910,7 @@
     }  
     .up-left-up,
     .up-left-down {
-        font-size: 0.875rem;
+        font-size: 14px;
         gap: 15px;
         width: 100%; /* Занимать всю ширину контейнера */
         padding: 0;
@@ -968,7 +967,7 @@
 
     .carousel-container {
         width: 100%;
-        height: 40vh;
+        height: 250px;
     }
 
     .ven-info {
@@ -984,7 +983,7 @@
 
     .glass-button {
         width: 100%;
-        font-size: 1rem;
+        font-size: 16px;
         padding: 10px;
     }
     .dawn {
@@ -1054,23 +1053,10 @@
     }
 
     .info-item1 p {
-        font-size: 0.8125rem;
+        font-size: 13px;
         margin: 5px 0;
         border-bottom: 1px solid #ccc; /* Полоса-разделитель */
         padding-bottom: 5px;
     }    
 
-}
-
-@media (min-width: 1024px) and (max-width: 1300px) {
-    /* Стили для нетбуков */
-    body {
-        font-size: 0.75rem;
-    }
-    .info-item p {
-        font-size: 0.75rem;
-    }
-    .info-item strong {
-         font-size: 0.875rem;
-    }     
 }

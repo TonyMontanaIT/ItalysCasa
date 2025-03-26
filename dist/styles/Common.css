@@ -46,7 +46,7 @@
             transition: transform 0.3s ease, color 0.3s ease;
         }
         header nav {
-            margin-right: 0.2vh;
+            margin-right: 4.8vh;
         }
         header.scrolled nav a {
             color: #fff;
