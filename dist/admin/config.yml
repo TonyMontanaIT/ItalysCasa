@@ -59,7 +59,7 @@ collections:
     create: true
     slug: "blog-{{fields.tipo}}"
     fields:
-      - { label: "Tipo", name: "tipo", widget: "html" }
-      - { label: "H1", name: "h1", widget: "html" }
-      - { label: "Text", name: "text", widget: "html" }
+      - { label: "Tipo", name: "tipo", widget: "text" }
+      - { label: "H1", name: "h1", widget: "text" }
+      - { label: "Text", name: "text", widget: "text" }
       - { label: "Imagine", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
