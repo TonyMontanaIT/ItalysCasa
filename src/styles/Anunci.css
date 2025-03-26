@@ -5,7 +5,7 @@
             overflow-x: hidden;
         }
         .content-section {
-            margin-top: 12.8vh;
+            margin-top: 80px;
             margin-right: auto;
             display: flex;
             flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
@@ -17,7 +17,7 @@
         	align-items: center; /* Выравниваем элементы по центру вертикально */
         	justify-content: space-between; /* Добавляем пространство между блоками (опционально) */
         	width: 100%;
-        	height: 12.8vh;
+        	height: 80px;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         }
         .up-left { 	
@@ -36,7 +36,7 @@
         }    
         .up-left-up h1 { 
             margin: 0;
-            margin-left: 3.2vh;
+            margin-left: 20px;
         }    
         .up-left-down {   
             justify-content: flex-start;
@@ -49,7 +49,7 @@
         .up-left-down p {
             font-weight: bold;
             padding: 0px 20px;
-            font-size: 1.25rem;
+            font-size: 20px;
             margin: 0;
         }    
         .up-icon {
@@ -85,7 +85,7 @@
             margin-left: 10px;
         	color: black;
         	font-weight: bold;
-        	font-size: 1.125rem;
+        	font-size: 18px;
         }	
         .up-icon-right img {
         	width: 30px;
@@ -138,7 +138,7 @@
             transform: translateY(-50%);
             background-color: transparent;
             color: white;
-            font-size: 2.8125rem;
+            font-size: 45px;
             cursor: pointer;
             padding: 10px;
             border: none;
@@ -155,10 +155,10 @@
         /* Закрытие модального окна */
         .close-modal {
             position: absolute;
-            top: 3.2vh;
-            right: 3.2vh;
+            top: 20px;
+            right: 20px;
             color: white;
-            font-size: 3.5rem;
+            font-size: 60px;
             font-weight: bold;
             cursor: pointer;
         }
@@ -195,7 +195,7 @@
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             position: relative;
             width: 100%;
-            height: 80vh; /* Высота блока */
+            height: 500px; /* Высота блока */
             overflow: hidden;
             border: 1px solid #ddd; /* Опционально: рамка для красоты */
             border-radius: 8px; /* Опционально: закруглённые углы */
@@ -226,7 +226,7 @@
             background-color: transparent;
             color: white;
             border: none;
-            font-size: 2.8125rem;
+            font-size: 45px;
             cursor: pointer;
             padding: 10px;
         }
@@ -279,7 +279,7 @@
         }   
         .caratter p { 
             margin: 0;
-            font-size: 1.25rem;  
+            font-size: 20px;  
             font-weight: bold;
             color: #0097B2;
         }
@@ -327,7 +327,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 0.875rem;
+            font-size: 14px;
             padding: 12px 40px;
             border-radius: 50px;
             cursor: pointer;
