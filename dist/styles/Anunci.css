@@ -747,7 +747,7 @@
             font-weight: bold;
             color: #00BF63;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 1.25rem;
         }   
         .random-prezzo span {
             cursor: default;
@@ -755,7 +755,7 @@
             background-color: #FFF;
             border-radius: 5px;
             padding: 5px;
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-weight: bold;
         }    
         .random-icon {
@@ -784,7 +784,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 12px;
+            font-size: 0.75rem;
             padding: 10px 30px;
             border-radius: 50px;
             cursor: pointer;
@@ -872,7 +872,7 @@
         /* Закрывающая кнопка */
         .close-button {
             background-color: transparent;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: black;
             border: none;
             cursor: pointer;
@@ -1094,6 +1094,15 @@
     .random-nome p {
         font-size: 1.375rem;
     }
+    .random-prezzo a {
+        font-size: 1.5rem;
+    }
+    .random-prezzo span {
+        font-size: 1.1875rem;
+    }
+
+
+
 
 
 }  
@@ -1133,6 +1142,15 @@
     .random-nome p {
         font-size: 0.875rem;
     }
+    .random-prezzo a {
+        font-size: 1rem;
+    }
+    .random-prezzo span {
+        font-size: 0.6875rem;
+    }
+
+
+
 
 
 } 
