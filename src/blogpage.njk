@@ -138,9 +138,9 @@ permalink: "/blogpage/{{ Blogs.fileSlug }}/index.html"
     </div>
 </div>
                 <div class="content-info">
-                    <h1>{{ Blogs.data.tipo | markdown }}</h1>
-                    <h2>{{ Blogs.data.h1 | markdown }}</h2>
-                    <h3>{{ Blogs.data.text | markdown }}</h3>
+                    <h1>{{ Blogs.data.tipo | safe }}</h1>
+                    <h2>{{ Blogs.data.h1 | safe }}</h2>
+                    <h3>{{ Blogs.data.text | safe }}</h3>
                 </div>
             <div class="cta1">
                 <a href="/blog">
