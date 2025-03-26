@@ -1,9 +1,26 @@
 ---
-tipo: "ESCURSIONI E AVVENTURE NELLA NATURA DELLA RIVIERA DEI CEDRI"
-h1: "Lorem ipsum dolor"
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis nisl in mauris volutpat ullamcorper. Nullam mattis orci ornare, volutpat neque quis, interdum tellus. Maecenas eget commodo enim. Sed turpis sapien, bibendum porttitor est at, commodo sagittis velit. Quisque hendrerit sit amet elit sit amet ornare. Morbi sollicitudin, est et semper congue, leo augue malesuada felis, a placerat purus nunc in augue. Sed tincidunt, ex a volutpat tincidunt, lectus magna tempus orci"
-images:
-  - "Foto/blog2.webp"
-  - "Foto/blog1.webp"
-  - "Foto/blog3.webp"
+tipo: Perché noleggiare attrezzature edili dai professionisti?
+h1: Il noleggio di attrezzature edili è una soluzione conveniente ed efficiente
+  per qualsiasi progetto di costruzione. Se lavori a Scalea , Scarfone S.R.L.
+  offre una vasta gamma di attrezzature moderne per soddisfare tutte le tue
+  esigenze.
+text: >-
+  I vantaggi del noleggio di attrezzature
+
+  Risparmio di tempo e denaro : Invece di acquistare costose attrezzature, puoi noleggiarle solo per il periodo necessario.
+
+  Qualità e affidabilità : Tutte le attrezzature sono regolarmente controllate e mantenute per garantire sicurezza ed efficienza.
+
+  Ampia scelta : Dai ponteggi alle piattaforme aeree, troverai tutto ciò di cui hai bisogno.
+
+  Quali servizi offre Scarfone S.R.L.?
+
+  Noleggio di ponteggi, utensili elettrici e macchinari per il trasporto.
+
+  Servizi di trasporto per materiali e attrezzature.
+
+  Attrezzature specializzate per compiti complessi, come l'installazione di marmo o la costruzione di strutture in calcestruzzo.
+
+  Se hai bisogno di attrezzature per la costruzione o la ristrutturazione, rivolgiti ai professionisti di Scarfone S.R.L. . Ti forniranno tutto il necessario per il successo del tuo progetto!
+images: []
 ---
