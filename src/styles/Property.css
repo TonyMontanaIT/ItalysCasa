@@ -216,6 +216,7 @@
             transform: scale(1.05);
         }
         .content-bottom {
+            width: 75%;
             margin: 0 auto;
             margin-top: 20px;
         }        
@@ -224,7 +225,6 @@
             border-radius: 10px;
             margin-left: auto;
             max-height: 64vh;
-            max-width: 160vh;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -677,4 +677,11 @@
 
 }    
 
+@media (min-width: 1399px) {
 
+
+}    
+@media (max-width: 1199px) and (min-width: 768px) {
+
+
+} 
