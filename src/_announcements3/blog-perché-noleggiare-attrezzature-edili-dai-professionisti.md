@@ -24,4 +24,6 @@ text: >-
   Se hai bisogno di attrezzature per la costruzione o la ristrutturazione, rivolgiti ai professionisti di https://scarfonesrl.it/ . Ti forniranno tutto il necessario per il successo del tuo progetto!
 images:
   - Foto/Galeri/tehnica.webp
+  - Foto/Galeri/stroitel.webp
+  - Foto/Galeri/stroitel1.webp
 ---
