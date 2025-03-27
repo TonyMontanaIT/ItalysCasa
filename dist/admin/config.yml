@@ -67,5 +67,11 @@ collections:
       - { label: "h2t2", name: "h2t2", widget: "text" }
       - { label: "text2", name: "text2", widget: "text" }
       - { label: "h2t3", name: "h2t3", widget: "text" }
-      - { label: "text3", name: "text3", widget: "text" }      
+      - { label: "text3", name: "text3", widget: "text" } 
+      - { label: "h2t4", name: "h2t4", widget: "text" }
+      - { label: "text4", name: "text4", widget: "text" }
+      - { label: "h2t5", name: "h2t5", widget: "text" }
+      - { label: "text5", name: "text5", widget: "text" }
+      - { label: "h2t6", name: "h2t6", widget: "text" }
+      - { label: "text6", name: "text6", widget: "text" }           
       - { label: "Imagine", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
