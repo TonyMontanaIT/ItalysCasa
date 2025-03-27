@@ -51,6 +51,52 @@ text3: >-
   Certificazione dei Lavori: Al termine dei lavori, ottieni la certificazione di conformità alle norme di efficienza energetica.
 
   Richiesta del Beneficio: Presenta la richiesta per ottenere il beneficio fiscale o il contributo.
+h2t4: |-
+  4. Esempi di Ristrutturazioni Ammissibili
+  Ecco alcuni esempi di interventi che possono beneficiare degli incentivi:
+text4: >-
+  Installazione di Impianti Fotovoltaici: Riduci i costi energetici e genera
+  entrate vendendo energia in eccesso alla rete.
+
+  Sostituzione di Caldaie: Passa a modelli a condensazione ad alta efficienza per ridurre il consumo di gas.
+
+  Isolamento Termico: Migliora l’isolamento delle pareti, dei tetti e dei pavimenti per ridurre le dispersioni di calore.
+
+  Sostituzione degli Infissi: Installa finestre a doppio o triplo vetro per migliorare l’isolamento termico e acustico.
+
+  Sistemi di Domotica: Adotta tecnologie smart per controllare gli impianti di riscaldamento, illuminazione e sicurezza.
+h2t5: |-
+  5. Perché Investire in Scalea e Dintorni?
+  Investire in Scalea e nei comuni vicini significa approfittare di:
+text5: >-
+  Costo della Vita Accessibile: Rispetto alle grandi città italiane, vivere in
+  questa zona è più economico.
+
+  Bellezze Naturali: Montagne, spiagge e parchi nazionali rendono questa regione un paradiso per gli amanti della natura.
+
+  Mercato Immobiliare in Crescita: Il valore delle proprietà in questa zona è in aumento, rendendo gli investimenti ancora più redditizi.
+h2t6: >-
+  6. Scarfone S.R.L.: Il Tuo Partner di Fiducia
+
+  Se hai bisogno di assistenza per accedere agli incentivi o per realizzare i tuoi progetti di ristrutturazione, rivolgiti a <a href="https://scarfonesrl.it/" target="_blank" class="custom-link">Scarfone S.R.L.</a>. Offriamo servizi completi, inclusi:
+text6: >-
+  Consulenza Professionale: Aiutiamo a navigare tra le varie opzioni di
+  incentivi e a massimizzare i benefici.
+
+  Noleggio di Attrezzature Edili: Forniamo una vasta gamma di attrezzature moderne per soddisfare tutte le tue esigenze.
+
+  Servizi di Trasporto: Trasportiamo materiali e attrezzature ovunque tu ne abbia bisogno.
+
+  Contattaci oggi stesso per scoprire come possiamo aiutarti a sfruttare al meglio gli incentivi per le ristrutturazioni edili nel 2024.
+
+
+  <a href="https://www.enea.it/" target="_blank" class="custom-link">Sito ufficiale dell’Agenzia Nazionale per l’Efficienza Energetica (ENEA)</a>
+
+
+  <a href="https://www.mimit.gov.it/" target="_blank" class="custom-link">Ministero dello Sviluppo Economico (MISE)</a>
+
+
+  <a href="https://www.agenziaentrate.gov.it/" target="_blank" class="custom-link">Agenzia delle Entrate</a>
 text: >-
   1. Scalea e i Comuni Vicini: Un’Area Ideale per Investimenti in Immobiliari
 
