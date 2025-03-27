@@ -23,4 +23,8 @@ text: >-
   Attrezzature specializzate per compiti complessi, come l'installazione di marmo o la costruzione di strutture in calcestruzzo.
 
   Se hai bisogno di attrezzature per la costruzione o la ristrutturazione, rivolgiti ai professionisti di <a href="https://scarfonesrl.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">Scarfone S.R.L. </a> . Ti forniranno tutto il necessario per il successo del tuo progetto!
+images:
+  - Foto/Galeri/tehnica.webp
+  - Foto/Galeri/stroitel1.webp
+  - Foto/Galeri/podreadcic.webp
 ---
