@@ -6,33 +6,26 @@ h1: Se stai pensando di ristrutturare la tua casa, migliorarne l'efficienza
   affidarsi a professionisti seri e competenti. Con l’incertezza sugli incentivi
   governativi nei prossimi anni, la chiave per un risultato di qualità sta nella
   scelta di partner affidabili e con esperienza consolidata.
-h2t1: " "
-text1: Italys Casa , in collaborazione con Scarfone S.R.L. , offre alla sua
+h2t1: " Italys Casa , in collaborazione con Scarfone S.R.L. , offre alla sua
   clientela un ventaglio completo di servizi edili, garantendo professionalità,
   precisione e qualità in ogni fase del lavoro. Con oltre 40 anni di esperienza
   sui cantieri edili , Scarfone S.R.L. rappresenta un punto di riferimento per
-  chi cerca soluzioni complete e personalizzate per ogni esigenza abitativa.
-h2t2: >-
+  chi cerca soluzioni complete e personalizzate per ogni esigenza abitativa."
+text1: >-
   Servizi offerti da Scarfone S.R.L.:
 
   La nostra azienda si distingue per la vasta gamma di servizi disponibili, tutti eseguiti con la massima cura e professionalità:
-text2: >-
+h2t2: |-
   Edilizia generale:
-
   Costruzione e ristrutturazione di case, appartamenti e ville.
-
   Realizzazione di nuovi spazi abitativi su misura.
-
   Restauro di edifici storici e conservazione del patrimonio architettonico.
-
   Installazioni e manutenzioni:
-
   Servizi idraulici di alta qualità per impianti moderni e funzionali.
-
   Impianti elettrici sicuri e conformi alle normative vigenti.
-
   Tinteggiature e imbiancature professionali per interni ed esterni.
-
+text2: >-
+  
   Noleggio attrezzature edili:
 
   Ampia disponibilità di macchinari moderni per soddisfare ogni esigenza di cantiere.
