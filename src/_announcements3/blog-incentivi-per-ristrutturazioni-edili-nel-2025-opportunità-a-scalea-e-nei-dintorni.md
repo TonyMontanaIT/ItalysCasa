@@ -78,7 +78,7 @@ text5: >-
 h2t6: >-
   6. Scarfone S.R.L.: Il Tuo Partner di Fiducia
 
-  Se hai bisogno di assistenza per accedere agli incentivi o per realizzare i tuoi progetti di ristrutturazione, rivolgiti a <a href="https://scarfonesrl.it/" target="_blank" class="custom-link">Scarfone S.R.L.</a>. Offriamo servizi completi, inclusi:
+  Se hai bisogno di assistenza per accedere agli incentivi o per realizzare i tuoi progetti di ristrutturazione, rivolgiti a <a href="https://scarfonesrl.it/" target="_blank" class="custom-link">Scarfone S.R.L.</a> Offriamo servizi completi, inclusi:
 text6: >-
   Consulenza Professionale: Aiutiamo a navigare tra le varie opzioni di
   incentivi e a massimizzare i benefici.
