@@ -79,4 +79,8 @@ text6: >-
 
 
   Prenota oggi stesso un appuntamento per fissare una consulenza e scoprire come possiamo aiutarti a realizzare il bagno dei tuoi sogni! +39 328 8325437 WhatsApp
+images:
+  - Foto/Galeri/widen_414_q90_2888672_54ba4359fb27239d588a2b697.webp
+  - Foto/Galeri/1679286053_design-pibig-info-p-skromnaya-vannaya-komnata-dizain-pinterest-1.webp
+  - Foto/Galeri/vannaja-2-1440x1080.webp
 ---
