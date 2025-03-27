@@ -78,7 +78,7 @@ text5: >-
 h2t6: " "
 text6: " "
 images:
+  - Foto/Galeri/67dae236440d66d6a04d840b9113bd01.webp
   - Foto/Galeri/images.webp
   - Foto/Galeri/images-1-.webp
-  - Foto/Galeri/67dae236440d66d6a04d840b9113bd01.webp
 ---
