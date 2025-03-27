@@ -77,4 +77,8 @@ text5: >-
   Contatta oggi stesso i professionisti di <a href="https://scarfonesrl.it/" target="_blank" class="custom-link">Scarfone S.R.L.</a> per scoprire come possiamo aiutarti a realizzare il tuo progetto immobiliare, garantendo qualità, affidabilità e risultati duraturi.
 h2t6: " "
 text6: " "
+images:
+  - Foto/Galeri/images.webp
+  - Foto/Galeri/images-1-.webp
+  - Foto/Galeri/67dae236440d66d6a04d840b9113bd01.webp
 ---
