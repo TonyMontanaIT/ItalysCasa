@@ -1,6 +1,5 @@
 ---
-tipo: "Incentivi per Ristrutturazioni Edili nel 2025: Opportunità a Scalea e nei
-  Dintorni"
+tipo: "Ristrutturazioni Edili nel 2025: Opportunità a Scalea e nei Dintorni"
 h1: Se stai cercando di ristrutturare la tua casa o migliorarne l'efficienza
   energetica, il 2025 offre numerose opportunità grazie agli incentivi
   governativi italiani. Questi incentivi sono particolarmente vantaggiosi per
