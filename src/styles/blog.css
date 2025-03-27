@@ -10,8 +10,8 @@
         .up-section {
         	position: relative;
         	margin-top: 80px;
-        	background-image: url(/Foto/test8.webp);
-        	background-position: bottom;
+        	background-image: url(/Foto/scalea-blog.webp);
+        	background-position: center;
         	background-repeat: no-repeat;
         	background-size: cover;
         	width: 100%;
@@ -206,7 +206,7 @@
         .center-section {
             background-position: center;
             background-attachment: fixed;            
-            background-image: url(/Foto/test6.webp);
+            background-image: url(/Foto/blog-fon.webp);
             object-fit: cover;
             background-repeat: no-repeat;
             display: flex;
@@ -216,7 +216,7 @@
 
         }    
         .center {      
-            background-color: white;    
+            background-color: rgba(255, 255, 255, 0.9);   
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
             width: 70%; /* Делаем блок 80% ширины */
             display: flex;
