@@ -87,7 +87,7 @@ text6: >-
 
   Servizi di Trasporto: Trasportiamo materiali e attrezzature ovunque tu ne abbia bisogno.
 
-  Contattaci oggi stesso per scoprire come possiamo aiutarti a sfruttare al meglio gli incentivi per le ristrutturazioni edili nel 2024.
+  Contattaci oggi stesso per scoprire come possiamo aiutarti a sfruttare al meglio gli incentivi per le ristrutturazioni edili.
 
 
   <a href="https://www.enea.it/" target="_blank" class="custom-link">Sito ufficiale dell’Agenzia Nazionale per l’Efficienza Energetica (ENEA)</a>
