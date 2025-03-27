@@ -88,4 +88,8 @@ text6: >-
   Chiama oggi stesso per fissare un appuntamento e scoprire come possiamo aiutarti a risolvere ogni problema elettrico!
 
   📞 Contattaci su WhatsApp: +39 328 8325437
+images:
+  - Foto/Galeri/unnamed.webp
+  - Foto/Galeri/70cf8e5240528446cb2009610a8232e4.webp
+  - Foto/Galeri/elektrik.webp
 ---
