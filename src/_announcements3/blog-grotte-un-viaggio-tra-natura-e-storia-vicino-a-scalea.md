@@ -46,4 +46,8 @@ text6: >-
   Grotte di San Giovanni:
 
   Queste grotte sono un mix di storia e natura, con affreschi antichi che decorano le pareti interne.
+images:
+  - Foto/Galeri/10678a0c-81ab-4a17-b910-8e2dc9d00f7a.webp
+  - Foto/Galeri/la-spiaggia-ajnella-a-scalea_ph-fondoambiente_it.webp
+  - Foto/Galeri/scogliera-dell-ajnella5.webp
 ---
