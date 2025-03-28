@@ -291,6 +291,10 @@
 
 @media (max-width: 768px) {
 
+
+    .up-section {
+        background-image: url(/Foto/affitticom-med.webp);
+    }
     .center-section {
         width: 100%;
         flex-direction: column;

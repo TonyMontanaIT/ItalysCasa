@@ -10,7 +10,7 @@
         .up-section {
         	position: relative;
         	margin-top: 80px;
-        	background-image: url(/Foto/HomeFoto/Home5.webp);
+        	background-image: url(/Foto/cerca.webp);
         	background-position: center;
         	background-repeat: no-repeat;
         	background-size: cover;
@@ -257,6 +257,9 @@
 
 @media (max-width: 768px) {
 
+    .up-section {
+        background-image: url(/Foto/cerca-med.webp);
+    }
     .center-section {
         width: 100%;
         flex-direction: column;
