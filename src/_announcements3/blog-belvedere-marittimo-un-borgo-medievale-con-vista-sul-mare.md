@@ -3,7 +3,7 @@ title: "Belvedere Marittimo: Un Borgo Medievale con Vista sul Mare"
 tipo: "Belvedere Marittimo: Un Borgo Medievale con Vista sul Mare"
 h1: Se stai cercando un luogo magico dove vivere o trascorrere le vacanze in
   Calabria, Belvedere Marittimo è una destinazione che ti lascerà senza fiato.
-  Situata a soli 35 km da Scalea , questa città offre una combinazione unica di
+  Situata a soli  da Scalea , questa città offre una combinazione unica di
   storia, natura e panorami mozzafiato sul Mar Tirreno. Scopriamo insieme perché
   Belvedere Marittimo è una gemma nascosta della Riviera dei Cedri !
 h2t1: Perché scegliere Belvedere Marittimo?
@@ -39,4 +39,8 @@ text6: Se sei interessato ad acquistare una casa o un appartamento a Belvedere
   proprietà in vendita, dalle case panoramiche con vista sul mare agli
   appartamenti moderni nel centro storico. Contattaci oggi stesso per scoprire
   le nostre offerte esclusive.
+images:
+  - Foto/Galeri/belvedere-marittimo_3.webp
+  - Foto/Galeri/comune-di-belvedere-primo-piano.webp
+  - Foto/Galeri/senza-titolo-10.webp
 ---
