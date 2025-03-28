@@ -45,4 +45,8 @@ text6: >-
   Accessibilità: San Nicola Arcella è ben collegato con Scalea, Praia a Mare e altri comuni limitrofi, rendendolo ideale per pendolari e turisti.
 
   Investimenti immobiliari: Grazie alla sua crescente popolarità tra i turisti e gli appassionati di storia e natura, San Nicola Arcella è un ottimo luogo per investire in proprietà residenziali o commerciali.
+images:
+  - Foto/Galeri/pexels-jessica-rossetti-5644242.webp
+  - Foto/Galeri/arcomagno.webp
+  - Foto/Galeri/san-nicola-arcella-e-arcomagno.webp
 ---
