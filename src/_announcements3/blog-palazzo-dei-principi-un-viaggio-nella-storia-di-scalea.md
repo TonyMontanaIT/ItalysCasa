@@ -39,4 +39,8 @@ text6: >-
   Posizione strategica: Il centro di Scalea è ben collegato con altre città della Riviera dei Cedri , rendendolo perfetto per pendolari e turisti.
 
   Investimenti immobiliari: Grazie alla crescente popolarità di Scalea tra i turisti, questa zona è un ottimo luogo per investire in proprietà residenziali o commerciali.
+images:
+  - Foto/Galeri/4-palais.webp
+  - Foto/Galeri/a7205851_2_337624-169314950081221.webp
+  - Foto/Galeri/palazzo-dei-principi-lanza.webp
 ---
