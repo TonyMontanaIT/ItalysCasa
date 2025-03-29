@@ -12,11 +12,7 @@ h1: >-
 h2t1: >-
   Bagno: 
 
-  Scalea, Santa Domenica Talao, San Nicola Arcella, Praia a Mare, Tortora, Maratea, Marcelina, Papasidero, Verbicaro, Santa Maria Del Cedro, Grisolia, Cirella, Diamante, Belvedere Marittimo, Sangineto, Fuscaldo, Maera, Citta' Del Capo, Cetraro, Guardia Piemontese, Paola Santuario di San Francesco.
-
-  Perché scegliere Scarfone S.R.L. per la ristrutturazione del tuo bagno?
-
-  Semplice 
+  Scalea, Santa Domenica Talao, San Nicola Arcella, Praia a Mare, Tortora, Maratea, Papasidero, Verbicaro, Santa Maria del Cedro, Grisolia, Cirella, Diamante, Belvedere Marittimo, Sangineto, Fuscaldo, Maierà, Cittadella del Capo, Cetraro, Guardia Piemontese, Paola (Santuario di San Francesco), Tropea, Capo Vaticano, Reggio Calabria, Soverato, Pizzo Calabro, Stilo, Le Castella (Crotone), Vibo Valentia Marina, Napoli, Salerno, Avellino, Battipaglia, Pompei, Scafati, Sorrento, Positano, Vietri sul Mare, Ravello, Minori e Maiori, Cetara, Vico Equense, Ischia, Capri, Procida, Polignano a Mare, Roma, Milano, Firenze, Pisa, Livorno, Chianti, Montalcino, Montepulciano, San Gimignano, Viareggio, Forte dei Marmi, Siena, Perugia, Assisi, Orvieto, Norcia, Gubbio, Cefalù, Sciacca, Favignana, Etna, Isola di Pantelleria, Noto, Venezia, Padova, Verona, Jesolo, Bologna, Rimini, Riccione, Cattolica, Torino, Porto Cervo, Costa Smeralda, Alghero, Baja Sardinia, La Maddalena, Pula (Chia), Palermo, Catania, Taormina, Portofino, Lago Maggiore, Lago di Como, Como, Genova, Ancona, Pesaro, Lecce, Porto Cesareo, Gallipoli, Ostuni, Santa Maria di Leuca, Monopoli, Polignano a Mare, Leuca, Elba, Costa Viola
 text1: >-
   Professionalità certificata: Tutti i nostri servizi sono eseguiti in
   conformità con le normative vigenti e le normative di conformita' necessarie.
