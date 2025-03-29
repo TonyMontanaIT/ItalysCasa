@@ -46,7 +46,7 @@ text6: >-
   Qualità della vita: La tranquillità e la bellezza del paese lo rendono
   perfetto per chi cerca pace e relax.
 
-  Accessibilità: San Nicola Arcella è ben collegato con Scalea, Praia a Mare e altri comuni limitrofi, rendendolo ideale per pendolari e turisti.
+  Accessibilità: San Nicola Arcella è ben collegato con Scalea, Praia a Mare e altri comuni limitrofi, rendendolo ideale per residenti e turisti.
 
   Investimenti immobiliari: Grazie alla sua crescente popolarità tra i turisti e gli appassionati di storia e natura, San Nicola Arcella è un ottimo luogo per investire in proprietà residenziali o commerciali, di lusso.
 images:
