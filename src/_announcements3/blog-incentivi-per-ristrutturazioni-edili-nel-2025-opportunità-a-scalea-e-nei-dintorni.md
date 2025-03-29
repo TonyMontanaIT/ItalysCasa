@@ -10,8 +10,13 @@ h1: >-
   standard più rigorosi.
 
   Scopri di più sulle nostre soluzioni su: <a href="https://scarfonesrl.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">scarfone.it</a>
-h2t1: Cosa Offriamo per la Tua Casa?
+h2t1: Scalea, Santa Domenica Talao, San Nicola Arcella, Praia a Mare, Tortora,
+  Maratea, Marcelina, Papasidero, Verbicaro, Santa Maria Del Cedro, Grisolia,
+  Cirella, Diamante, Belvedere Marittimo, Sangineto, Fuscaldo, Maera, Citta' Del
+  Capo, Cetraro, Guardia Piemontese, Paola Santuario di San Francesco.
 text1: >-
+  Cosa Offriamo per la Tua Casa?
+
   Ristrutturazioni Complete:
 
   Rinnova completamente la tua casa con i nostri servizi di ristrutturazione totale . Dal pavimento al soffitto, ci occupiamo di tutto: muratura, impianti idraulici, elettrici e finiture.
