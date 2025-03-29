@@ -1,13 +1,21 @@
 ---
 title: Ristrutturazione Bagno
 tipo: Ristrutturazione Bagno con Scarfone S.R.L.
-h1: Se stai pensando di rinnovare il tuo bagno, Scarfone S.R.L. è la solutione
-  ideale per realizzare i tuoi lavori. Con oltre 43 anni di esperienza nel
+h1: >-
+  Se stai pensando di rinnovare il tuo bagno, Scarfone S.R.L. è la solutione
+  ideale per realizzare i tuoi lavori. Con oltre 40 anni di esperienza nel
   settore edile, siamo specializzati nella ristrutturazione completa di bagni ,
   garantendo lavori a regola d'arte e conformi agli standard di qualità
   professionale.
-h2t1: |-
+
+  Nel nostro team ci sono professionisti idraulici specializzati, Piastrellisti, Muratori, Elettricisti, Imbianchini, Architetti.
+h2t1: >-
+  Bagno: 
+
+  Scalea, Santa Domenica Talao, San Nicola Arcella, Praia a Mare, Tortora, Maratea, Marcelina, Papasidero, Verbicaro, Santa Maria Del Cedro, Grisolia, Cirella, Diamante, Belvedere Marittimo, Sangineto, Fuscaldo, Maera, Citta' Del Capo, Cetraro, Guardia Piemontese, Paola Santuario di San Francesco.
+
   Perché scegliere Scarfone S.R.L. per la ristrutturazione del tuo bagno?
+
   Semplice 
 text1: >-
   Professionalità certificata: Tutti i nostri servizi sono eseguiti in
@@ -17,6 +25,8 @@ text1: >-
   Materiali di alta qualità: Collaboriamo solo con fornitori affidabili per garantire piastrelle, sanitari e accessori solo di prima scelta.
 
   Consulenza personalizzata: Offriamo consulenze per aiutarti a pianificare la ristrutturazione del tuo bagno, adattandola alle tue esigenze.
+
+  Servizio a pagamento.
 h2t2: >-
   I nostri servizi per la ristrutturazione del bagno
 
@@ -47,7 +57,7 @@ text2: >-
   Ogni bagno è unico, proprio come le esigenze dei nostri clienti. Ti offriamo soluzioni su misura, combinando estetica e praticità per creare uno spazio che rifletta il tuo stile.
 h2t3: Perché affidarsi a noi?
 text3: >-
-  Esperienza consolidata: Con oltre 43 anni di esperienza, Scarfone S.R.L. è
+  Esperienza consolidata: Con oltre 40 anni di esperienza, Scarfone S.R.L. è
   diventata una realta di riferimento per la ristrutturazione di bagni e non
   solo in Calabria e dintorni.
 
@@ -56,11 +66,18 @@ text3: >-
   Lavoro trasparente: Non ci sono sorprese con noi. Forniamo preventivi chiari e dettagliati, mantenendo sempre i nostri impegni nei tempi previsti.
 
   Supporto continuo: Dal primo incontro fino alla consegna finale, saremo al tuo fianco per rispondere a ogni domanda e guidarti attraverso ogni fase del progetto.
-h2t4: Consulenze per la tua ristrutturazione
-text4: Prima di iniziare qualsiasi lavoro, offriamo consulenze per aiutarti a
+
+  Servizio a pagmento
+h2t4: |-
+  Consulenze per la tua ristrutturazione
+  Servizio a pagamento
+text4: >-
+  Prima di iniziare qualsiasi lavoro, offriamo consulenze per aiutarti a
   pianificare la ristrutturazione del tuo bagno. I nostri esperti ti guideranno
   nella scelta dei materiali, dei colori e delle soluzioni più adatte alle tue
   esigenze. Vogliamo che tu sia soddisfatto al 100% del risultato finale!
+
+  Servizio a pagamento 
 h2t5: Esempi di lavori recenti
 text5: >-
   Progetto 1: Ristrutturazione completa di un bagno moderno con cabina doccia
@@ -69,7 +86,15 @@ text5: >-
   Progetto 2: Installazione di una vasca idromassaggio e sostituzione di tutti i sanitari in un appartamento storico.
 
   Progetto 3: Creazione di un bagno accessibile per persone con disabilità, con doccia a filo pavimento e maniglioni di sicurezza.
-h2t6: Contatta Scarfone S.R.L. oggi stesso!
+
+  Progetto  4: Bagno per disabile 
+
+  Progetto 5: Bagno di lusso 
+
+  Servizio a pagamento
+h2t6: |-
+  Contatta Scarfone S.R.L. oggi stesso!
+  In orario da ufficio 
 text6: >-
   Se desideri trasformare il tuo bagno in uno spazio moderno, funzionale e
   accogliente, non esitare a contattarci. <a href="https://scarfonesrl.it/"
@@ -78,7 +103,7 @@ text6: >-
   professionalità e risultati duraturi.
 
 
-  Prenota oggi stesso un appuntamento per fissare una consulenza e scoprire come possiamo aiutarti a realizzare il bagno dei tuoi sogni! +39 328 8325437 WhatsApp
+  Prenota oggi stesso un appuntamento per fissare una consulenza e scoprire come possiamo aiutarti a realizzare il bagno dei tuoi sogni, in orario da ufficio! +39 328 8325437 WhatsApp
 images:
   - Foto/Galeri/widen_414_q90_2888672_54ba4359fb27239d588a2b697.webp
   - Foto/Galeri/1679286053_design-pibig-info-p-skromnaya-vannaya-komnata-dizain-pinterest-1.webp
