@@ -22,7 +22,7 @@ text2: >-
 h2t3: "Eventi culturali:"
 text3: Oggi, Palazzo dei Principi ospita mostre, concerti e manifestazioni
   culturali che celebrano l’arte e la tradizione locale. È un luogo ideale per
-  appassionati di storia, arte e cultura.
+  appassionati di storia, arte, musica e cultura.
 h2t4: "Vista panoramica sul mare:"
 text4: Il palazzo si trova su una collina che domina Scalea, offrendo viste
   panoramiche spettacolari sul Mar Tirreno. Una passeggiata nei suoi giardini ti
@@ -36,9 +36,9 @@ text6: >-
   Accesso alla cultura: Vivere vicino al palazzo ti permette di partecipare
   facilmente a eventi culturali e manifestazioni locali.
 
-  Posizione strategica: Il centro di Scalea è ben collegato con altre città della Riviera dei Cedri , rendendolo perfetto per pendolari e turisti.
+  Posizione strategica: Il centro storico di Scalea è ben collegato con altre città della Riviera dei Cedri , rendendolo perfetto per pendolari e turisti.
 
-  Investimenti immobiliari: Grazie alla crescente popolarità di Scalea tra i turisti, questa zona è un ottimo luogo per investire in proprietà residenziali o commerciali.
+  Investimenti immobiliari: Grazie alla crescente popolarità di Scalea tra i turisti, questa zona è un ottimo luogo per investire in proprietà residenziali ville di luso, ville con piscina, palazzi storici, o commerciali.
 images:
   - Foto/Galeri/4-palais.webp
   - Foto/Galeri/a7205851_2_337624-169314950081221.webp
