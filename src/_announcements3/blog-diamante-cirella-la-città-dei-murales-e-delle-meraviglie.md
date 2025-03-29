@@ -45,4 +45,8 @@ text6: Se sei interessato ad acquistare una casa o un appartamento a Diamante,
   vendita, dalle case panoramiche con vista sul mare agli appartamenti moderni
   nel centro storico. Contattaci oggi stesso per scoprire le nostre offerte
   esclusive
+images:
+  - Foto/Galeri/sagra-festa-peperoncino-piccante-780x405-1.webp
+  - Foto/Galeri/diamante-nduja-e-piante.webp
+  - Foto/Galeri/diamante.webp
 ---
