@@ -27,8 +27,13 @@ module.exports = function (eleventyConfig) {
     // Коллекции
     eleventyConfig.addCollection('announcements', function (collection) {
         return collection.getFilteredByGlob('./src/_announcements/*.md')
-            .sort((a, b) => b.data.riferimento - a.data.riferimento);
+            .sort((a, b) => {
+                let priceA = parseFloat(a.data.prezzo.replace(/\D/g, "")) || 0;
+                let priceB = parseFloat(b.data.prezzo.replace(/\D/g, "")) || 0;
+                return priceB - priceA; // Сортировка от самого дорогого к дешевому
+            });
     });
+
 
     eleventyConfig.addCollection('blog', function (collection) {
         return collection.getFilteredByGlob('./src/_announcements3/*.md')

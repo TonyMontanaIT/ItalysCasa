@@ -352,7 +352,7 @@
           /*Пагинация*/
 
         .button-anunci {
-            margin-left: 44.8vh;
+            margin-left: 40vh;
             display: flex;
             justify-content: center;
             gap: 10px;
@@ -360,12 +360,13 @@
         }
 
         .button-anunci button {
+            font-weight: bold;
             box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
-            font-size: 1.25rem;
-            padding: 10px 20px;
+            font-size: 1.375rem;
+            padding: 15px 20px;
             border-radius: 50px;
-            background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8));
-            color: white;
+            background: linear-gradient(270deg, rgba(246, 187, 6, 0.8), rgba(255, 215, 0, 0.8));
+            color: #15264d;
             border: none;
             cursor: pointer;
             transition: transform 0.3s ease;
@@ -373,7 +374,7 @@
         }
 
         .button-anunci button:hover {
-            color: #FFC300;
+            color: #15264d;
             border-color: #F5D76E;
             box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
                         0 8px 28px rgba(89, 142, 200, 0.5);
