@@ -10,10 +10,24 @@ h1: >-
   standard più rigorosi.
 
   Scopri di più sulle nostre soluzioni su: <a href="https://scarfonesrl.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">scarfone.it</a>
+
+  Servizio a pagamento.
 h2t1: Scalea, Santa Domenica Talao, San Nicola Arcella, Praia a Mare, Tortora,
-  Maratea, Marcelina, Papasidero, Verbicaro, Santa Maria Del Cedro, Grisolia,
-  Cirella, Diamante, Belvedere Marittimo, Sangineto, Fuscaldo, Maera, Citta' Del
-  Capo, Cetraro, Guardia Piemontese, Paola Santuario di San Francesco.
+  Maratea, Papasidero, Verbicaro, Santa Maria del Cedro, Grisolia, Cirella,
+  Diamante, Belvedere Marittimo, Sangineto, Fuscaldo, Maierà, Cittadella del
+  Capo, Cetraro, Guardia Piemontese, Paola (Santuario di San Francesco), Tropea,
+  Capo Vaticano, Reggio Calabria, Soverato, Pizzo Calabro, Stilo, Le Castella
+  (Crotone), Vibo Valentia Marina, Napoli, Salerno, Avellino, Battipaglia,
+  Pompei, Scafati, Sorrento, Positano, Vietri sul Mare, Ravello, Minori e
+  Maiori, Cetara, Vico Equense, Ischia, Capri, Procida, Polignano a Mare, Roma,
+  Milano, Firenze, Pisa, Livorno, Chianti, Montalcino, Montepulciano, San
+  Gimignano, Viareggio, Forte dei Marmi, Siena, Perugia, Assisi, Orvieto,
+  Norcia, Gubbio, Cefalù, Sciacca, Favignana, Etna, Isola di Pantelleria, Noto,
+  Venezia, Padova, Verona, Jesolo, Bologna, Rimini, Riccione, Cattolica, Torino,
+  Porto Cervo, Costa Smeralda, Alghero, Baja Sardinia, La Maddalena, Pula
+  (Chia), Palermo, Catania, Taormina, Portofino, Lago Maggiore, Lago di Como,
+  Como, Genova, Ancona, Pesaro, Lecce, Porto Cesareo, Gallipoli, Ostuni, Santa
+  Maria di Leuca, Monopoli, Polignano a Mare, Leuca, Elba, Costa Viola
 text1: >-
   Cosa Offriamo per la Tua Casa?
 
@@ -21,23 +35,35 @@ text1: >-
 
   Rinnova completamente la tua casa con i nostri servizi di ristrutturazione totale . Dal pavimento al soffitto, ci occupiamo di tutto: muratura, impianti idraulici, elettrici e finiture.
 
-  Parole chiave: ristrutturazione casa Scalea, ristrutturazione appartamenti Calabria.
+  Servizio a pagamento.
 h2t2: "Bagno Moderno e Funzionale:"
-text2: Il bagno è uno degli ambienti più importanti della casa. Progettiamo e
+text2: >-
+  Il bagno è uno degli ambienti più importanti della casa. Progettiamo e
   realizziamo bagni moderni e funzionali, con installazione di sanitari, cabine
   doccia, vasche idromassaggio e piastrelle di design.
+
+  Servizio a pagamento.
 h2t3: "Impianti Idraulici ed Elettrici:"
-text3: I nostri tecnici certificati garantiscono l’installazione e la
-  manutenzione di impianti idraulici ed elettrici sicuri ed efficienti.
-  Risolviamo anche guasti urgenti con interventi rapidi.
+text3: >-
+  I nostri tecnici certificati garantiscono l’installazione e la manutenzione di
+  impianti idraulici ed elettrici sicuri ed efficienti. Risolviamo anche guasti
+  urgenti con interventi rapidi.
+
+  Servizio a pagamento.
 h2t4: "Tinteggiature e Decorazioni:"
-text4: Dai nuova vita alle tue pareti con le nostre tinteggiature professionali
-  . Utilizziamo vernici di alta qualità e creiamo effetti decorativi unici, come
+text4: >-
+  Dai nuova vita alle tue pareti con le nostre tinteggiature professionali .
+  Utilizziamo vernici di alta qualità e creiamo effetti decorativi unici, come
   stucchi veneziani e spatolati.
+
+  Servizio a pagamento.
 h2t5: "Installazione Porte e Finestre:"
-text5: Migliora l’estetica e l’efficienza energetica della tua casa con porte e
+text5: >-
+  Migliora l’estetica e l’efficienza energetica della tua casa con porte e
   finestre moderne. Installiamo infissi in PVC, legno e alluminio, garantendo
   isolamento termico e acustico.
+
+  Servizio a pagamento.
 h2t6: >-
   Perché Scegliere Scarfone S.R.L.?
 
@@ -48,10 +74,14 @@ h2t6: >-
   Lavoro Certificato: Tutti i nostri servizi sono eseguiti in conformità con le normative vigenti e le licenze necessarie.
 
   Supporto Continuo: Siamo sempre disponibili per consulenze e assistenza post-intervento.
-text6: >
+
+  Servizio a pagamento.
+text6: >-
   Contattaci Oggi Stesso!
 
-  Vuoi scoprire come possiamo trasformare la tua casa? Scarfone S.R.L. è pronta ad aiutarti con soluzioni su misura per ogni esigenza. Visita il nostro sito: scarfone.it o contattaci direttamente per una consulenza. Chiama ora: +39 328 8325437 WhatsApp
+  Vuoi scoprire come possiamo trasformare la tua casa? Scarfone S.R.L. è pronta ad aiutarti con soluzioni su misura per ogni esigenza. In orario da ufficio. Visita il nostro sito: scarfone.it o contattaci direttamente per una consulenza. Chiama ora: +39 328 8325437 WhatsApp
+
+  Servizio a pagamento.
 text: >-
   1. Scalea e i Comuni Vicini: Un’Area Ideale per Investimenti in Immobiliari
 
