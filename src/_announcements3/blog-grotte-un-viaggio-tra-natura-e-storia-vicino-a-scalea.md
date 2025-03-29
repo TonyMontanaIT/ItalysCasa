@@ -2,12 +2,11 @@
 title: "Grotte: Un Viaggio tra Natura e Storia a Scalea"
 tipo: "Grotte: Un Viaggio tra Natura e Storia a Scalea"
 h1: Se sei un amante della natura, immersione subacquee per vedere uno
-  spettacolo della natura e vivere delle avventure all’aria aperta,
-  nelle  grotte a Scalea sono una destinazione imperdibile. Queste meraviglie
-  naturali ti porteranno in un mondo sotterraneo di stalattiti, stalagmiti e
-  paesaggi mozzafiato. Scopriamo insieme perché le grotte della zona sono un
-  vero tesoro, grotta della Pecora trasi jiesci la spiaggetta e tanto altro
-  della Calabria !
+  spettacolo della natura e vivere delle avventure all’aria aperta, le grotte a
+  Scalea sono una destinazione imperdibile. Queste meraviglie naturali ti
+  porteranno in un mondo sotterraneo di stalattiti, stalagmiti e paesaggi
+  mozzafiato. Scopriamo insieme perché le grotte della zona sono un vero tesoro,
+  grotta della Pecora trasi jiesci la spiaggetta e tanto altro della Calabria !
 h2t1: |
   Perché visitare le grotte a Scalea?
 text1: >-
@@ -48,6 +47,10 @@ text6: >-
   Grotte di San Giovanni:
 
   Queste grotte sono un mix di storia e natura, con affreschi antichi che decorano le pareti interne.
+
+  Grotta del Romito: 
+
+  e un sito risalente al Paleolitico superiore contenente una delle più antiche testimonianze dell'arte preistorica in Italia, e una delle più importanti a livello europeo, situata in località Nuppolara nel comune di Papasidero, in Calabria, provincia di Cosenza.
 images:
   - Foto/Galeri/10678a0c-81ab-4a17-b910-8e2dc9d00f7a.webp
   - Foto/Galeri/la-spiaggia-ajnella-a-scalea_ph-fondoambiente_it.webp
