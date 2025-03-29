@@ -1,6 +1,6 @@
 ---
 title: Elettricista Professionale a Scalea e Dintorni
-tipo: "Elettricista Professionale a Scalea: Affidati a Scarfone S.R.L."
+tipo: "Elettricista Professionista a Scalea: Affidati a Scarfone S.R.L."
 h1: Se stai cercando un elettricista professionale affidabile per la tua casa,
   villa, azienda, per nuovi progetti edile, Scarfone S.R.L. è la solutione
   ideale per te. Con oltre 40 anni di esperienza nel settore, siamo
