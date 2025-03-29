@@ -1,12 +1,10 @@
 ---
 title: Impresa edile
-tipo: "Ristrutturazioni Edilizia: Scopri a Scalea e Riviera dei Cedri "
+tipo: Ristrutturazioni Edilizia
 h1: Se stai cercando di ristrutturare la tua casa o migliorarne l'efficienza
-  energetica, la nostra azienda offre numerose opportunità grazie agli incentivi
-  governativi italiani. Questi incentivi sono particolarmente vantaggiosi per
-  chi vive in zone come Scalea e i suoi dintorni, situati nella splendida
-  Riviera dei Cedri . Scopriamo insieme quali sono i benefici disponibili, come
-  accedervi e perché investire in questa regione Calabria è una ottima scelta.
+  energetica, la nostra azienda offre numerose opportunità. Per chi vive nella
+  zona come Scalea e le citta, paesi vicini, situati nella splendida Riviera dei
+  Cedri.
 h2t1: >-
   1. Scalea e i Comuni Vicini: Un’Area Ideale per Investimenti Immobiliari
 
