@@ -82,7 +82,9 @@ text5: Prima di iniziare qualsiasi lavoro, offriamo consulenze per aiutarti a
   pianificare i tuoi progetti elettrici. I nostri esperti ti guideranno nella
   scelta delle soluzioni più adatte alle tue esigenze, garantendo un risultato
   finale che supera le tue aspettative.
-h2t6: Contatta Scarfone S.R.L. oggi stesso!
+h2t6: |-
+  Contatta Scarfone S.R.L. oggi stesso!
+  In orario da ufficio.
 text6: >-
   Se hai bisogno di un elettricista professionista a Scalea o nei dintorni, non
   esitare a contattarci. <a href="https://scarfonesrl.it/" target="_blank"
