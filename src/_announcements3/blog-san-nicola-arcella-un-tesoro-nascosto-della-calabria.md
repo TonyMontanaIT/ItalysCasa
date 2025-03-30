@@ -11,7 +11,7 @@ text1: >-
   Un paese ricco di storia e tradizioni:
 
   San Nicola Arcella è un borgo antico che risale al Medioevo. Le sue stradine strette, le chiese storiche e l’atmosfera autentica ti faranno immergere nella cultura calabrese. Il centro storico è un labirinto di vicoli da visitare che raccontano storie di secoli passati con amore.
-h2t2: "Larcomagnio: Un sito UNESCO di rara bellezza unico al mondo."
+h2t2: "Larcomagno: Un sito UNESCO di rara bellezza unico al mondo."
 text2: >-
   A pochi minuti dal centro del paese si trova Larcomagno , un complesso
   rupestre di grande importanza storica e culturale. Questo sito è stato
