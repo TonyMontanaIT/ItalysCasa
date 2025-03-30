@@ -1,6 +1,6 @@
 ---
-title: "San Nicola Arcella: Un Tesoro Nascosto della Calabria"
-tipo: "San Nicola Arcella: Un Tesoro Unico in Calabria"
+title: "Arcomagno San Nicola Arcella: Un Tesoro Nascosto della Calabria"
+tipo: "Arcomagno San Nicola Arcella: Un Tesoro Unico in Calabria"
 h1: Se stai cercando un luogo incantevole dove vivere o trascorrere le vacanze
   in Calabria, San Nicola Arcella è una destinazione da non perdere. Questo
   pittoresco paese, situato a poci km da Scalea , ti conquisterà con la sua
