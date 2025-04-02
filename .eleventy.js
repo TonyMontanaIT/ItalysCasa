@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/Foto'); // Изображения
     eleventyConfig.addPassthroughCopy({ 
         "src/robots.txt": "robots.txt",
-        "src/your-key.txt": "your-key.txt",
+        "src/4422ff404fd54a40afc4d0ddca7a3596.txt": "4422ff404fd54a40afc4d0ddca7a3596.txt",
         "src/sitemap.xml": "sitemap.xml" });    
 
     // Фильтр для преобразования пути в slug (чистый URL)
