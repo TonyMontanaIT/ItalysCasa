@@ -5,6 +5,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/styles'); // Стили
     eleventyConfig.addPassthroughCopy('src/script'); // Скрипты
     eleventyConfig.addPassthroughCopy('src/Foto'); // Изображения
+    eleventyConfig.addPassthroughCopy({ 
+        "src/robots.txt": "robots.txt",
+        "src/sitemap.xml": "sitemap.xml" });    
 
     // Фильтр для преобразования пути в slug (чистый URL)
     eleventyConfig.addFilter("slugify", function (value) {
