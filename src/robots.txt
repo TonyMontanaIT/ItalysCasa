@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://italyscasa.com/sitemap.xml
