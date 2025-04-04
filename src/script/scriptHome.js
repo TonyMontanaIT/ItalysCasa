@@ -351,3 +351,4 @@ document.addEventListener("scroll", function () {
         icons.style.bottom = "10px"; // Возвращаем исходное положение
     }
 });
+
