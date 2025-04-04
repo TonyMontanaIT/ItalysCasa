@@ -99,7 +99,8 @@ text6: >-
   professionalità e risultati duraturi.
 
 
-  Prenota oggi stesso un appuntamento per fissare una consulenza e scoprire come possiamo aiutarti a realizzare il bagno dei tuoi sogni, in orario da ufficio! +39 328 8325437 WhatsApp
+  Prenota oggi stesso un appuntamento per fissare una consulenza e scoprire come possiamo aiutarti a realizzare il bagno dei tuoi sogni, in orario da ufficio! 
+phone: +39 328 8325437 WhatsApp
 images:
   - Foto/Galeri/widen_414_q90_2888672_54ba4359fb27239d588a2b697.webp
   - Foto/Galeri/1679286053_design-pibig-info-p-skromnaya-vannaya-komnata-dizain-pinterest-1.webp
