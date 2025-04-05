@@ -92,7 +92,8 @@ text6: >-
   risultati duraturi.
 
 
-  Chiama oggi stesso per fissare un appuntamento e scoprire come possiamo aiutarti a risolvere ogni problema idraulico! +39 328 8325437 WhatsApp
+  Chiama oggi stesso per fissare un appuntamento e scoprire come possiamo aiutarti a risolvere ogni problema idraulico!  
+phone: WhatsApp +39 328 8325437
 images:
   - Foto/Galeri/idraulico-porta-romana-milano.webp
   - Foto/Galeri/impianto-idraulico.webp
