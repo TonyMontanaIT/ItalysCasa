@@ -79,7 +79,7 @@ h2t6: >-
 text6: >-
   Contattaci Oggi Stesso!
 
-  Vuoi scoprire come possiamo trasformare la tua casa? Scarfone S.R.L. è pronta ad aiutarti con soluzioni su misura per ogni esigenza. In orario da ufficio. Visita il nostro sito: scarfone.it o contattaci direttamente per una consulenza. Chiama ora: +39 328 8325437 WhatsApp
+  Vuoi scoprire come possiamo trasformare la tua casa? Scarfone S.R.L. è pronta ad aiutarti con soluzioni su misura per ogni esigenza. In orario da ufficio. Visita il nostro sito: scarfone.it o contattaci direttamente per una consulenza. 
 
   Servizio a pagamento.
 text: >-
@@ -178,6 +178,7 @@ text: >-
   <a href="https://dati.mise.gov.it/" target="_blank" class="custom-link">Ministero dello Sviluppo Economico (MISE)</a>
 
   <a href="https://www.agenziaentrate.gov.it/" target="_blank" class="custom-link">Agenzia delle Entrate</a>
+phone: " WhatsApp +39 328 8325437 "
 images:
   - Foto/Galeri/23232.webp
   - Foto/Galeri/close-up-yellow-helmet-on-table-desk.webp
