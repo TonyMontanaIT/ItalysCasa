@@ -76,8 +76,8 @@ text5: >-
 
   Contatta oggi stesso i professionisti di <a href="https://scarfonesrl.it/" target="_blank" class="custom-link">Scarfone S.R.L.</a> per scoprire come possiamo aiutarti a realizzare il tuo progetto immobiliare, garantendo qualità, affidabilità e risultati duraturi.
 h2t6: " "
-text6: "  "
-phone: " WhatsApp  +39 328 8325437 "
+text6: "WhatsApp  "
+phone: "328 8325437 "
 images:
   - Foto/Galeri/67dae236440d66d6a04d840b9113bd01.webp
   - Foto/Galeri/images.webp
