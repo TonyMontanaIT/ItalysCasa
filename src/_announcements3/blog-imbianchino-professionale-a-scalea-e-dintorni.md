@@ -100,7 +100,8 @@ text6: >-
 
   Chiama oggi stesso in orario da ufficio per fissare un appuntamento e scoprire come possiamo aiutarti a rinnovare il tuo spazio!
 
-  📞 Contattaci su WhatsApp: +39 328 8325437
+  Contattaci 
+phone: "WhatsApp: +39 328 8325437"
 images:
   - Foto/Galeri/imbiancatura-bologna-ferrara-modena-imola.webp
   - Foto/Galeri/5-trucchi-per-essere-limbianchino-perfetto-shutterstock_311547491-mod.webp
