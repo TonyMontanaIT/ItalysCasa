@@ -94,9 +94,9 @@ text6: >-
 
   Chiama oggi stesso per fissare un appuntamento e scoprire come possiamo aiutarti a risolvere ogni problema elettrico! 
 
-  Servizio a pagamento.
+  Servizio a pagamento. 
 
-  📞 Contattaci su WhatsApp: +39 328 8325437
+  Contattaci 
 phone: "WhatsApp: +39 328 8325437"
 images:
   - Foto/Galeri/unnamed.webp
