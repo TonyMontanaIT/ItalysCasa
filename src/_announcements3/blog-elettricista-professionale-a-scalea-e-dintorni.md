@@ -97,7 +97,9 @@ text6: >-
   Servizio a pagamento. 
 
   Contattaci 
-phone: "WhatsApp: +39 328 8325437"
+
+  WhatsApp:
+phone: 328 8325437
 images:
   - Foto/Galeri/unnamed.webp
   - Foto/Galeri/70cf8e5240528446cb2009610a8232e4.webp
