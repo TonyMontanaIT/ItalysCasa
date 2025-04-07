@@ -81,7 +81,7 @@
 .language-selector {
     position: relative;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 8vh;
 }
 
 /* Скрываем стандартный селектор, но оставляем его рабочим */
@@ -335,8 +335,32 @@
     }
 
     .language-selector {
-        display: none; /* Убираем выбор языка */
+        margin-left: 0; /* Убираем отступ справа */
+        margin-right: auto; /* Выравниваем по левому краю */
+        display: block; /* Убедимся, что элемент занимает блочное пространство */
+        text-align: left; /* Текст внутри контейнера выравнивается влево */
     }
+
+    /* Стилизация выпадающего списка */
+    .goog-te-combo {
+        width: 14vh; /* Ширина выпадающего списка */
+        max-height: 10vh; /* Максимальная высота */
+        overflow-y: auto; /* Добавляем прокрутку, если содержимое не помещается */
+        background-color: #007E50; /* Цвет фона */
+        color: white; /* Цвет текста */
+        border-radius: 5px; /* Закругление углов */
+        font-size: 12px; /* Размер шрифта */
+        padding: 5px; /* Внутренние отступы */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+    }
+
+    /* Стилизация опций внутри выпадающего списка */
+    .goog-te-combo option {
+        background-color: #007E50; /* Цвет фона для опций */
+        color: white; /* Цвет текста для опций */
+        padding: 5px; /* Отступы для каждой опции */
+    }    
+
     header.scrolled .burger-menu div {
         background: white;
     }    
