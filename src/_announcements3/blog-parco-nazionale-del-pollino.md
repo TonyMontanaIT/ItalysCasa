@@ -21,7 +21,7 @@ text1: >-
 
   Biodiversità unica:
 
-  Il parco è famoso per la presenza del pino loricato , un albero simbolo del territorio che cresce solo a quote elevate. Inoltre, qui vivono specie protette come il lupo appenninico e l’aquila reale. Scopri di più sulla flora e fauna del parco <a href="https://www.parconazionaledelpollino.it" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
+  Il parco è famoso per la presenza del pino loricato , un albero simbolo del territorio che cresce solo a quote elevate. Inoltre, qui vivono specie protette come il lupo appenninico e l’aquila reale. Scopri di più sulla flora e fauna del parco <a href="https://parconazionalepollino.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 
   Sentieri escursionistici:
 
@@ -30,7 +30,7 @@ h2t2: Cosa vedere nel Parco Nazionale del Pollino?
 text2: >-
   I Pini Loricati:
 
-  Questi alberi secolari, con forme uniche e contorte, sono un simbolo del parco. Sono considerati i "guardiani" delle montagne e rappresentano la forza e la resilienza della natura. Per saperne di più sui pini loricati, visita il sito ufficiale del parco <a href="https://www.parconazionaledelpollino.it/pino-loricato" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
+  Questi alberi secolari, con forme uniche e contorte, sono un simbolo del parco. Sono considerati i "guardiani" delle montagne e rappresentano la forza e la resilienza della natura. Per saperne di più sui pini loricati, visita il sito ufficiale del parco <a href="https://parconazionalepollino.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 
   Il Santuario di San Francesco di Paola:
 
@@ -66,7 +66,7 @@ text5: >-
   Calabria!
 
 
-  Per ulteriori informazioni sul parco e le sue attrazioni, visita il sito ufficiale <a href="https://www.parconazionaledelpollino.it" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a> o scopri le nostre proprietà in vendita nella zona <a href="https://italyscasa.com" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
+  Per ulteriori informazioni sul parco e le sue attrazioni, visita il sito ufficiale <a href="https://parconazionalepollino.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a> 
 h2t6: " "
 text6: " "
 phone: " "
