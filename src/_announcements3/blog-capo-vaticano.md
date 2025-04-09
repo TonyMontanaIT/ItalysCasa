@@ -76,4 +76,8 @@ text5: >-
 h2t6: " "
 text6: " "
 phone: " "
+images:
+  - Foto/Galeri/capo1.webp
+  - Foto/Galeri/capo2.webp
+  - Foto/Galeri/capo3.webp
 ---

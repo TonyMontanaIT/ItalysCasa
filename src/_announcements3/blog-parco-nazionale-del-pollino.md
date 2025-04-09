@@ -71,4 +71,8 @@ text5: >-
 h2t6: " "
 text6: " "
 phone: " "
+images:
+  - Foto/Galeri/polino1.webp
+  - Foto/Galeri/polino2.webp
+  - Foto/Galeri/polino3.webp
 ---

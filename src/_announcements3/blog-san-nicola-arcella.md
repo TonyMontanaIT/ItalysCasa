@@ -68,4 +68,8 @@ text5: >-
 h2t6: " "
 text6: " "
 phone: " "
+images:
+  - Foto/Galeri/arcela1.webp
+  - Foto/Galeri/arcela2.webp
+  - Foto/Galeri/arcela3.webp
 ---

@@ -69,4 +69,8 @@ text5: >-
 h2t6: " "
 text6: " "
 phone: " "
+images:
+  - Foto/Galeri/Piedigrotta1.webp
+  - Foto/Galeri/Piedigrotta2.webp
+  - Foto/Galeri/Piedigrotta3.webp
 ---

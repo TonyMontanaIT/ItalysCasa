@@ -69,4 +69,8 @@ text5: >-
 h2t6: " "
 text6: " "
 phone: " "
+images:
+  - Foto/Galeri/isola1.webp
+  - Foto/Galeri/isola2.webp
+  - Foto/Galeri/isola3.webp
 ---
