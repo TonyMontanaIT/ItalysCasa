@@ -74,14 +74,12 @@ text4: >-
 
   Ogni piatto riflette l’amore per il cibo e la volontà di preservare le tradizioni locali.
 h2t5: Conclusione
-text5: >-
+text5: >+
   La cucina calabrese è un trionfo di sapori autentici, ingredienti genuini e
   tradizioni millenarie. Che tu sia un amante del piccante, dei formaggi
   pregiati o dei dolci artigianali, la Calabria ha qualcosa per soddisfare ogni
   palato.
 
-
-  Per ulteriori informazioni sui prodotti tipici della Calabria, visita <a href="https://www.calabriaportal.com/cucina-calabrese.html" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">questo sito</a> o scopri le nostre proprietà nella regione <a href="https://italyscasa.com" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 h2t6: " "
 text6: " "
 phone: " "
