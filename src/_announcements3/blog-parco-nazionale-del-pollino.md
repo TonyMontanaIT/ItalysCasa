@@ -73,6 +73,6 @@ text6: " "
 phone: " "
 images:
   - Foto/Galeri/1280px-bosco_magnano_pollino_2.jpg
-  - Foto/Galeri/polino2.webp
+  - Foto/Galeri/poll.jpg
   - Foto/Galeri/pollinopn.jpg
 ---
