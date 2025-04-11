@@ -87,4 +87,6 @@ text6: " "
 phone: " "
 images:
   - Foto/Galeri/_0002_calabria_nduja.jpg
+  - Foto/Galeri/c154bdab91ffe71e1399dd577874f449-768x512.jpg
+  - Foto/Galeri/l227451748552_tml2901973907201_7920178389_172131294073283.jpg
 ---
