@@ -58,14 +58,12 @@ text4: >-
 
   Le statue all’interno della grotta furono scolpite nel XIX secolo da artigiani locali, che utilizzarono le rocce naturali come tela per le loro opere.
 h2t5: Conclusione
-text5: >-
+text5: >+
   La Grotta della Piedigrotta è un luogo magico, dove la natura e l’arte si
   incontrano in un’unica esperienza indimenticabile. Che tu sia interessato alla
   storia, alla fotografia o semplicemente al relax, questa grotta ti lascerà
   senza parole.
 
-
-  Per ulteriori informazioni sulla grotta e le attività intorno a Pizzo Calabro, visita <a href="https://www.calabriaportal.com/pizzo-calabro.html" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">questo sito</a> o scopri le meraviglie della zona <a href="https://www.vibo-valentia.info/pizzo-calabro" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 h2t6: " "
 text6: " "
 phone: " 3791080060"
