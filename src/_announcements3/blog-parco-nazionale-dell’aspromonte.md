@@ -76,5 +76,5 @@ phone: " "
 images:
   - Foto/Galeri/aspro1.webp
   - Foto/Galeri/aspro2.webp
-  - Foto/Galeri/aspro3.webp
+  - Foto/Galeri/aspr.webp
 ---
