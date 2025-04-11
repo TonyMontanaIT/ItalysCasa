@@ -75,6 +75,6 @@ text6: " "
 phone: " "
 images:
   - Foto/Galeri/aspro1.webp
-  - Foto/Galeri/aspro2.webp
+  - Foto/Galeri/cas.jpg
   - Foto/Galeri/aspr.webp
 ---
