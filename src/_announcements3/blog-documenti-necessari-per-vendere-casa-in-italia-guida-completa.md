@@ -59,13 +59,13 @@ text5: >-
 
   Con noi, puoi stare tranquillo sapendo che tutto sarà gestito in modo professionale e senza stress.
 h2t6: >-
-  Curiosità sulla vendita di immobili in Italia
-
-  In media, il processo di vendita di un immobile in Italia richiede tra 3 e 6 mesi, a seconda della complessità della documentazione e del mercato locale.
+  Curiosità sulla vendita di immobili in Italia: in media, il processo di
+  vendita di un immobile in Italia richiede tra 3 e 6 mesi, a seconda della
+  complessità della documentazione e del mercato locale.
 
   Un immobile con tutti i documenti in regola ha maggiori probabilità di essere venduto rapidamente e a un prezzo migliore.
 
-  Per ulteriori informazioni sui documenti necessari per la vendita di immobili, visita <a href="https://www.casa.it/vendere-casa" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">questo articolo</a> o scopri come possiamo aiutarti <a href="https://italyscasa.com" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
+  Scopri come possiamo aiutarti <a href="https://italyscasa.com" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 text6: >-
   Conclusione
 
