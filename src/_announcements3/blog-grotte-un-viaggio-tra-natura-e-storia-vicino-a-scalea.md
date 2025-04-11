@@ -1,12 +1,12 @@
 ---
 title: "Grotte: Un Viaggio tra Natura e Storia a Scalea"
 tipo: "Grotte: Un Viaggio tra Natura e Storia a Scalea"
-h1: Se sei un amante della natura, immersione subacquee per vedere uno
-  spettacolo della natura e vivere delle avventure all’aria aperta, le grotte a
-  Scalea sono una destinazione imperdibile. Queste meraviglie naturali ti
-  porteranno in un mondo sotterraneo di stalattiti, stalagmiti e paesaggi
-  mozzafiato. Scopriamo insieme perché le grotte della zona sono un vero tesoro,
-  grotta della Pecora trasi jiesci la spiaggetta e tanto altro della Calabria !
+h1: Se sei un amante della natura e di immersione subacquee le grotte a Scalea
+  sono una destinazione imperdibile. Queste meraviglie naturali ti porteranno in
+  un mondo sotterraneo di stalattiti, stalagmiti e paesaggi mozzafiato.
+  Scopriamo insieme perché le grotte della zona sono un vero tesoro! La grotta
+  della Pecora, del trasi jiesci (dialetto Scaleoto), la spiaggetta e tanto
+  altro di Scalea!
 h2t1: |
   Perché visitare le grotte a Scalea?
 text1: >-
@@ -25,7 +25,7 @@ text2: >-
 h2t3: "Percorsi escursionistici:"
 text3: Molti sentieri escursionistici conducono alle grotte, offrendo viste
   panoramiche spettacolari lungo il percorso. È un’opportunità perfetta per
-  immergersi nella natura incontaminata della Riviera dei Cedri .
+  immergersi nella natura incontaminata della Riviera dei Cedri.
 h2t4: "Un legame con la storia:"
 text4: Alcune grotte sono state utilizzate fin dall’antichità come rifugi o
   luoghi di culto. Esplorando queste cavità, potrai scoprire tracce di civiltà
@@ -51,6 +51,7 @@ text6: >-
   Grotta del Romito: 
 
   e un sito risalente al Paleolitico superiore contenente una delle più antiche testimonianze dell'arte preistorica in Italia, e una delle più importanti a livello europeo, situata in località Nuppolara nel comune di Papasidero, in Calabria, provincia di Cosenza.
+phone: "3791080060"
 images:
   - Foto/Galeri/10678a0c-81ab-4a17-b910-8e2dc9d00f7a.webp
   - Foto/Galeri/la-spiaggia-ajnella-a-scalea_ph-fondoambiente_it.webp
