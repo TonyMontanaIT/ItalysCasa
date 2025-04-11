@@ -20,7 +20,7 @@ text1: >-
 
   Statue scolpite nella roccia:
 
-  All’interno della grotta si trovano statue religiose, tra cui una rappresentazione della Madonna, scolpite direttamente nella pietra dagli abitanti del luogo. Queste opere d’arte sono un omaggio alla fede e alla tradizione locale. Per scoprire di più sulla storia delle statue, visita <a href="https://www.calabriaportal.com/pizzo-calabro.html" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">questo articolo</a>.
+  All’interno della grotta si trovano statue religiose, tra cui una rappresentazione della Madonna, scolpite direttamente nella pietra dagli abitanti del luogo. Queste opere d’arte sono un omaggio alla fede e alla tradizione locale. 
 
   Accesso suggestivo:
 
