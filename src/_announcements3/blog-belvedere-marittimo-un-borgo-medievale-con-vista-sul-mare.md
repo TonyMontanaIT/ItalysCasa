@@ -81,5 +81,5 @@ phone: "3791080060"
 images:
   - Foto/Galeri/immagine-2025-04-11-173251.png
   - Foto/Galeri/comune-di-belvedere-primo-piano.webp
-  - Foto/Galeri/senza-titolo-10.webp
+  - Foto/Galeri/belv.webp
 ---
