@@ -17,7 +17,7 @@ text1: >-
 
   Le spiagge di Capo Vaticano sono famose per la loro sabbia bianca e l’acqua cristallina. Tra le più belle ci sono:
 
-  Baia di Riaci: Una piccola baia nascosta, perfetta per chi ama la tranquillità.
+  Baia di Riaci: una piccola baia nascosta, perfetta per chi ama la tranquillità.
 
   Grotta del Mazzaforno: Una grotta naturale che si affaccia sul mare, accessibile solo via mare o tramite sentieri panoramici.
 
