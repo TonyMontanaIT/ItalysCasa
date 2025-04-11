@@ -76,4 +76,6 @@ text6: >-
 phone: " "
 images:
   - Foto/Galeri/immagine-2025-04-11-175612.png
+  - Foto/Galeri/screenshot-2025-04-11-175746.png
+  - Foto/Galeri/euroarchivi-distruzione-documenti.jpg
 ---
