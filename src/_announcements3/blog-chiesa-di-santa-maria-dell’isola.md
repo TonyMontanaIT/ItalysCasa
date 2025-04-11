@@ -72,5 +72,5 @@ phone: " "
 images:
   - Foto/Galeri/isola1.webp
   - Foto/Galeri/isola2.webp
-  - Foto/Galeri/isola3.webp
+  - Foto/Galeri/360_f_266978493_pe02qqvapivpuixwyy1zxsqlf4i2n9cd-copia.jpg
 ---
