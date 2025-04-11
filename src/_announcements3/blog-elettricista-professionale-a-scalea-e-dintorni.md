@@ -2,10 +2,10 @@
 title: Elettricista Professionale a Scalea e Dintorni
 tipo: "Elettricista Professionista a Scalea: Affidati a Scarfone S.R.L."
 h1: Se stai cercando un elettricista professionale affidabile per la tua casa,
-  villa, azienda, per nuovi progetti edile, Scarfone S.R.L. è la solutione
-  ideale per te. Con oltre 40 anni di esperienza nel settore, siamo
-  specializzati e offriamo servizi elettrici di alta qualità in tutta la riviera
-  dei cedri con ufficio a Scalea e nei comuni limitrofi, garantendo risultati
+  la tua villa, la tua azienda o per nuovi progetti edili, Scarfone S.R.L. è la
+  solutione ideale per te. Con oltre 40 anni di esperienza nel settore, siamo
+  specializzati e offriamo servizi elettrici di alta qualità in tutta la Riviera
+  dei Cedri con ufficio a Scalea e nei comuni limitrofi, garantendo risultati
   impeccabili e duraturi.
 h2t1: Perché scegliere Scarfone S.R.L. per i tuoi servizi elettrici?
 text1: >-
@@ -15,13 +15,13 @@ text1: >-
 
   Lavori certificati come per legge: Tutti i nostri interventi sono eseguiti in conformità con gli standard di sicurezza più rigorosi e le normative vigenti.
 
-  Soluzioni personalizzate: Ogni progetto è unico, e noi ci adattiamo alle tue esigenze specifiche, garantendo soluzioni su misura per ogni abitazione che sia Villa, rudere, fabbricati.
+  Soluzioni personalizzate: Ogni progetto è unico, e noi ci adattiamo alle tue esigenze specifiche, garantendo soluzioni su misura per ogni abitazione che sia una villa, un rudere o un fabbricato.
 h2t2: >-
   I nostri servizi elettrici
 
   La nostra azienda offre una vasta gamma di servizi elettrici, coprendo ogni aspetto delle tue richieste:
 text2: >-
-  Realizzatione nuovi impianti elettrici.
+  Realizzatione di nuovi impianti elettrici.
 
   Installazione e manutenzione di impianti elettrici:
 
@@ -33,9 +33,7 @@ text2: >-
 
   Interventi rapidi ed efficienti per risolvere problemi come cortocircuiti, blackout o malfunzionamenti.
 
-  Bagno nuovi impianti elettrici.
-
-  Piscine nuovi impianti elettrici.
+  Nuovi impianti elettrici per il bagno o piscina.
 
   Video Sorveglianza interna, esterno.
 
@@ -73,8 +71,6 @@ text4: >-
   Materiali di alta qualità: Utilizziamo solo materiali certificati e di prima classe.
 
   Supporto continuo: Siamo sempre reperibili per consulenze e assistenza post-intervento.
-
-  Servizio a pagamento.
 h2t5: |
   Consulenze personalizzate
 text5: Prima di iniziare qualsiasi lavoro, offriamo consulenze per aiutarti a
