@@ -74,4 +74,6 @@ text6: >-
 
   Per ulteriori domande o per iniziare il processo di vendita, contatta i nostri specialisti oggi stesso!
 phone: " "
+images:
+  - Foto/Galeri/immagine-2025-04-11-175612.png
 ---
