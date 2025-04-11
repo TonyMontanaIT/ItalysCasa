@@ -1,5 +1,5 @@
 ---
-title: Diamante, Cirella  La Città dei Murales e delle Meraviglie
+title: Diamante, Cirella La Città dei Murales e delle Meraviglie
 tipo: Diamante, Cirella La Città dei Murales e delle Meraviglie
 h1: Se stai cercando un luogo incantevole dove vivere o trascorrere le vacanze
   in Calabria, Diamante è la scelta perfetta. Situata a soli 30 km da Scalea ,
