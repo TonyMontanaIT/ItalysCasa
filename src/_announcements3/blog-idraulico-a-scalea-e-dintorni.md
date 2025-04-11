@@ -2,11 +2,12 @@
 title: Idraulico a Scalea e Dintorni
 tipo: "Idraulico Professionista a Scalea e Dintorni: Affidati a Scarfone S.R.L."
 h1: >
-  Se stai cercando un idraulico professionista affidabile per la tua casa,
-  Villa, fabbricato, palazzina, azienda o nuovo progetto edile, Scarfone S.R.L.
-  è la soluzione ideale per te. Con oltre 40 anni di esperienza nel settore,
-  siamo orgogliosi di offrire servizi idraulici di alta qualità. Scalea e i
-  comuni limitrofi, garantendo risultati professionali e duraturi
+  Se stai cercando un idraulico professionista affidabile per la tua casa, la
+  tua villa, il tuo fabbricato fabbricato o palazzina, la tua azienda o nuovo
+  progetto edile, Scarfone S.R.L. è la soluzione ideale per te. Con oltre 40
+  anni di esperienza nel settore, siamo orgogliosi di offrire servizi idraulici
+  di alta qualità. Scalea e i comuni limitrofi, garantendo risultati
+  professionali e duraturi
 h2t1: Perché scegliere Scarfone S.R.L. per i tuoi servizi idraulici?
 text1: >-
   Esperti specializzati: Il nostro team è composto da professionisti altamente
@@ -23,7 +24,7 @@ h2t2: >-
 text2: >-
   Nuovi impianti idraulici
 
-  Bagno nuovo impianto idraulico
+  Ristrutturazione bagno con nuovo impianto idraulico.
 
   Installazione e manutenzione di impianti idraulici:
 
@@ -74,13 +75,11 @@ text4: >-
 h2t5: |
   Consulenze personalizzate
   Servizio a pagamento
-text5: >-
+text5: >
   Prima di iniziare qualsiasi lavoro, offriamo consulenze per aiutarti a
   pianificare i tuoi progetti idraulici. I nostri esperti ti guideranno nella
   scelta delle soluzioni più adatte alle tue esigenze, garantendo un risultato
   finale che supera le tue aspettative.
-
-  Servizio a pagamento
 h2t6: |-
   Contatta Scarfone S.R.L. oggi stesso!
   In orario da ufficio
