@@ -69,7 +69,7 @@ text5: >-
   per chi cerca relax, avventura e connessione con la natura.
 
 
-  Per ulteriori informazioni sul parco e le sue attrazioni, visita il sito ufficiale <a href="https://www.parcoaspromonte.it" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a> 
+  Per ulteriori informazioni sul parco e le sue attrazioni, visita il sito ufficiale <a href="https://www.parcoaspromonte.it" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 h2t6: " "
 text6: " "
 phone: " "
