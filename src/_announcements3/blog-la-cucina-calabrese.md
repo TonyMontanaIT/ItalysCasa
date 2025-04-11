@@ -85,4 +85,6 @@ text5: >-
 h2t6: " "
 text6: " "
 phone: " "
+images:
+  - Foto/Galeri/_0002_calabria_nduja.jpg
 ---
