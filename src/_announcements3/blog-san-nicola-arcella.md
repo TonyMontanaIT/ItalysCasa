@@ -71,5 +71,5 @@ phone: " "
 images:
   - Foto/Galeri/sna_paese_2.jpg
   - Foto/Galeri/arcela2.webp
-  - Foto/Galeri/arcela3.webp
+  - Foto/Galeri/2-torre-crawford-in-san-nicola-arcella-peter-adams.jpg
 ---
