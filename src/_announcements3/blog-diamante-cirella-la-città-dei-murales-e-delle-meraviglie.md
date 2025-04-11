@@ -52,7 +52,7 @@ text6: Se sei interessato ad acquistare una casa o un appartamento a Diamante,
   per scoprire le nostre offerte esclusive
 phone: "3791080060"
 images:
-  - Foto/Galeri/sagra-festa-peperoncino-piccante-780x405-1.webp
+  - Foto/Galeri/immagine-2025-04-11-175348.png
   - Foto/Galeri/diamante-nduja-e-piante.webp
-  - Foto/Galeri/diamante.webp
+  - Foto/Galeri/screenshot-2025-04-11-175208.png
 ---
