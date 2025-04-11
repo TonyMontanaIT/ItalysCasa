@@ -79,7 +79,7 @@ text6: Se sei interessato ad acquistare una casa o un appartamento a Belvedere
   le nostre offerte con ville esclusive.
 phone: "3791080060"
 images:
-  - Foto/Galeri/belvedere-marittimo_3.webp
+  - Foto/Galeri/immagine-2025-04-11-173251.png
   - Foto/Galeri/comune-di-belvedere-primo-piano.webp
   - Foto/Galeri/senza-titolo-10.webp
 ---
