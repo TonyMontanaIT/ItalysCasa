@@ -68,7 +68,7 @@ text5: >-
   Per ulteriori informazioni sulla grotta e le attività intorno a Pizzo Calabro, visita <a href="https://www.calabriaportal.com/pizzo-calabro.html" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">questo sito</a> o scopri le meraviglie della zona <a href="https://www.vibo-valentia.info/pizzo-calabro" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 h2t6: " "
 text6: " "
-phone: " "
+phone: " 3791080060"
 images:
   - Foto/Galeri/Piedigrotta1.webp
   - Foto/Galeri/Piedigrotta2.webp
