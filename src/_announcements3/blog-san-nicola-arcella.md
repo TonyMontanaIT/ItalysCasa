@@ -69,7 +69,7 @@ h2t6: " "
 text6: " "
 phone: " "
 images:
-  - Foto/Galeri/arcela1.webp
+  - Foto/Galeri/sna_paese_2.jpg
   - Foto/Galeri/arcela2.webp
   - Foto/Galeri/arcela3.webp
 ---
