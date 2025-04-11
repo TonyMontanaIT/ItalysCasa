@@ -3,7 +3,7 @@ title: Capo Vaticano
 tipo: "Capo Vaticano: Un Angolo di Paradiso in Calabria"
 h1: Se hai mai sognato un luogo dove il mare cristallino incontra scogliere
   mozzafiato e paesaggi da cartolina, Capo Vaticano è la destinazione che fa per
-  te. Situato nella provincia di Vibo Valentia , questo promontorio sulla costa
+  te. Situato nella provincia di Vibo Valentia, questo promontorio sulla costa
   tirrenica della Calabria è famoso per le sue spiagge incontaminate, acque
   turchesi e panorami spettacolari. Scopriamo insieme perché Capo Vaticano è
   considerato uno dei luoghi più belli d’Italia.
