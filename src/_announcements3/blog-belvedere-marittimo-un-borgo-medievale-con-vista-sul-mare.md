@@ -1,17 +1,17 @@
 ---
 title: "Belvedere Marittimo: Un Borgo Medievale con Vista sul Mare"
 tipo: "Belvedere Marittimo: Un Borgo Medievale con Vista sul Mare"
-h1: >-
-  Se stai cercando un luogo magico dove vivere o trascorrere le vacanze in
+h1: Se stai cercando un luogo magico dove vivere o trascorrere le vacanze in
   Calabria, Belvedere Marittimo è una destinazione che ti lascerà senza fiato.
-  Situata a soli  po
-
-  chi kilometri da  Scalea , questa bella città offre una combinazione unica di storia, natura paesaggi e panorami mozzafiato sul Mar Tirreno, dove si trova un porto turistico. Scopriamo insieme perché Belvedere Marittimo è una gemma nascosta della Riviera dei Cedri !
+  Situata a soli  pochi chilometri da Scalea, questa stupenda città offre una
+  combinazione unica di storia, natura, paesaggi e panorami mozzafiato sul Mar
+  Tirreno. Scopriamo insieme perché Belvedere Marittimo è una gemma nascosta
+  della Riviera dei Cedri!
 h2t1: Perché scegliere Belvedere Marittimo?
 text1: >-
   Un borgo medievale incantato:
 
-  Il centro storico di Belvedere Marittimo si trova su una collina che domina il mare, offrendo viste panoramiche spettacolari. Le sue stradine strette, le piazzette pittoresche e le antiche mura e il castello medievali,  ti trasporteranno indietro nel tempo.
+  Il centro storico di Belvedere Marittimo si trova su una collina che domina il mare, offrendo viste panoramiche e spettacolari. Le sue stradine strette, le piazzette pittoresche, le antiche mura e il castello medievale,  ti trasporteranno indietro nel tempo.
 h2t2: "Castello Normanno-Svevo:"
 text2: >-
   Uno dei simboli di Belvedere Marittimo è il Castello Normanno-Svevo , una
@@ -28,7 +28,7 @@ text4: >-
   Belvedere Marittimo: Tradizioni, Cultura e Porto Turistico
 
 
-  Belvedere Marittimo, affacciato sul mare Tirreno, è un’incantevole meta calabrese che unisce natura, tradizione e eventi unici.
+  Belvedere Marittimo, affacciato sul mar Tirreno, è un’incantevole meta calabrese che unisce natura, tradizione e eventi unici.
 
 
   Il Porto Turistico
@@ -53,7 +53,7 @@ text4: >-
   Eventi e Spettacoli
 
 
-  Oltre ai fuochi d’artificio, il paese ospita eventi come il Carnevale, con sfilate e balli, e spettacoli folkloristici durante l’estate.
+  Oltre ai fuochi d’artificio, il paese ospita eventi come il Carnevale, con sfilate e balli, e spettacoli folcloristici durante l’estate.
 
 
   Cucina
@@ -73,10 +73,11 @@ text5: Il territorio di Belvedere Marittimo è circondato da una natura
   paradiso per gli amanti del trekking e della fotografia naturalistica.
 h2t6: Dove investire a Belvedere Marittimo?
 text6: Se sei interessato ad acquistare una casa o un appartamento a Belvedere
-  Marittimo, ItalysCasa è il tuo partner ideale. Offriamo una vasta gamma di
+  Marittimo, Italys Casa è il tuo partner ideale. Offriamo una vasta gamma di
   proprietà in vendita, dalle case panoramiche con vista sul mare agli
   appartamenti moderni nel centro storico. Contattaci oggi stesso per scoprire
   le nostre offerte con ville esclusive.
+phone: "3791080060"
 images:
   - Foto/Galeri/belvedere-marittimo_3.webp
   - Foto/Galeri/comune-di-belvedere-primo-piano.webp
