@@ -19,14 +19,14 @@ text1: >-
 
   <a href="https://calabriastraordinaria.it/en/events/diamante-peperoncino-festival" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">Scopri di più sui murales di Diamante →</a>
 h2t2: "Spiagge paradisiache:"
-text2: Le spiagge di Diamante sono tra le più belle della Riviera dei Cedri .
+text2: Le spiagge di Diamante sono tra le più belle della Riviera dei Cedri.
   L’acqua cristallina e la sabbia dorata attirano turisti da tutto il mondo. Tra
   le spiagge più famose ci sono sabbia D'oro, Marina di Diamante e Cirella ,
   ideali per rilassarsi o praticare sport acquatici.
 h2t3: "Festival del Peperoncino:"
 text3: >
-  Ogni anno, a settembre, Diamante ospita il famoso Festival del Peperoncino ,
-  un evento unico al mondo che celebra il peperoncino in tutte le sue forme.
+  Ogni anno, a Settembre, Diamante ospita il famoso Festival del Peperoncino, un
+  evento unico al mondo che celebra il peperoncino in tutte le sue forme.
   Durante il festival, puoi assaggiare piatti piccanti, partecipare a concorsi
   culinari e scoprire l’importanza del peperoncino nella cucina calabrese.
 
@@ -38,18 +38,19 @@ text4: Diamante non è solo arte e natura, ma anche storia. Il centro storico
   simboli della città, il lungo mare ideale per fare una passegiata in famiglia.
 h2t5: Vantaggi di vivere a Diamante
 text5: >-
-  Qualità della vita: Diamante offre un ambiente tranquillo discreto e' in
-  sicurezza e accogliente, ideale per chi cerca pace e relax.
+  Qualità della vita: Diamante offre un ambiente tranquillo e accogliente,
+  ideale per chi cerca pace e relax.
 
   Accessibilità: La città è ben collegata con Scalea, Paola e altri comuni limitrofi, rendendola perfetta per residenti e turisti.
 
   Investimenti immobiliari: Grazie alla sua crescente popolarità, Diamante è un ottimo luogo per investire in proprietà residenziali uso turistico o commerciali.
 h2t6: Dove investire a Diamante?
 text6: Se sei interessato ad acquistare una casa o un appartamento a Diamante,
-  ItalysCasa è il tuo partner ideale. Offriamo una vasta gamma di proprietà in
+  Italys Casa è il tuo partner ideale. Offriamo una vasta gamma di proprietà in
   vendita, dalle case panoramiche con vista sul mare agli appartamenti moderni
-  nel centro storico, Ville esclusive con piscina. Contattaci oggi stesso per
-  scoprire le nostre offerte esclusive
+  nel centro storico e alle Ville esclusive con piscina. Contattaci oggi stesso
+  per scoprire le nostre offerte esclusive
+phone: "3791080060"
 images:
   - Foto/Galeri/sagra-festa-peperoncino-piccante-780x405-1.webp
   - Foto/Galeri/diamante-nduja-e-piante.webp
