@@ -74,5 +74,5 @@ phone: " "
 images:
   - Foto/Galeri/1280px-bosco_magnano_pollino_2.jpg
   - Foto/Galeri/polino2.webp
-  - Foto/Galeri/polino3.webp
+  - Foto/Galeri/pollinopn.jpg
 ---
