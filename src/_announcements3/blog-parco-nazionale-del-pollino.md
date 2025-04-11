@@ -30,7 +30,7 @@ h2t2: Cosa vedere nel Parco Nazionale del Pollino?
 text2: >-
   I Pini Loricati:
 
-  Questi alberi secolari, con forme uniche e contorte, sono un simbolo del parco. Sono considerati i "guardiani" delle montagne e rappresentano la forza e la resilienza della natura. Per saperne di più sui pini loricati, visita il sito ufficiale del parco <a href="https://parconazionalepollino.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
+  Questi alberi secolari, con forme uniche e contorte, sono un simbolo del parco sono considerati i "guardiani" delle montagne e rappresentano la forza e la resilienza della natura. Per saperne di più sui pini loricati, visita il sito ufficiale del parco <a href="https://parconazionalepollino.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a>.
 
   Il Santuario di San Francesco di Paola:
 
@@ -38,7 +38,7 @@ text2: >-
 
   I Borghi Storici:
 
-  All’interno del parco si trovano numerosi borghi medievali, come Rotonda e Castrovillari , Verbicaro, OrsoMarso, che raccontano la storia e la cultura della regione. Questi luoghi sono perfetti per chi vuole combinare natura e tradizione.
+  All’interno del parco si trovano numerosi borghi medievali, come Rotonda e Castrovillari , Verbicaro e Orsomarso, che raccontano la storia e la cultura della regione. Questi luoghi sono perfetti per chi vuole combinare natura e tradizione.
 h2t3: Attività nel Parco Nazionale del Pollino
 text3: >-
   Il Parco Nazionale del Pollino offre numerose attività per tutti i gusti:
@@ -52,8 +52,8 @@ text3: >-
 
   Birdwatching: Osserva le specie rare di uccelli che popolano il parco, come l’aquila reale e il falco pellegrino, e tanto altro ancora da scoprire.
 h2t4: Dove soggiornare vicino al Parco Nazionale del Pollino?
-text4: Se desideri vivere un’esperienza autentica immersa nella natura,
-  ItalysCasa ti offre una vasta selezione di proprietà del Parco Nazionale del
+text4: Se desideri vivere un’esperienza autentica immersa nella natura, Italys
+  Casa ti offre una vasta selezione di proprietà del Parco Nazionale del
   Pollino. Dalle case panoramiche ai rustici, ruderi storici, ville,
   appartamenti nei borghi storici, troverai sicuramente la soluzione perfetta
   per le tue vacanze. Contattaci oggi stesso per scoprire le nostre offerte
@@ -70,7 +70,7 @@ text5: >-
   Per ulteriori informazioni sul parco e le sue attrazioni, visita il sito ufficiale <a href="https://parconazionalepollino.it/" target="_blank" style="color: rgba(41, 163, 226, 0.7); text-decoration: none;">qui</a> 
 h2t6: " "
 text6: " "
-phone: " "
+phone: " 3791080060"
 images:
   - Foto/Galeri/1280px-bosco_magnano_pollino_2.jpg
   - Foto/Galeri/poll.jpg
