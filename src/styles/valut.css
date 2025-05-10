@@ -1,0 +1,256 @@
+<style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            margin-top: 80px;
+        }
+        .hero-section {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent), url(/Foto/valutazioni.webp);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;           
+        }
+        .block-left {
+            margin-left: 6.4vh;
+            margin-top: 8vh;
+        }    
+        .valut-info {
+            flex-basis: 60%;
+            box-sizing: border-box;
+            padding: 15px;
+        }  
+        .valut-info1 {
+            width: 72vh;
+            margin-top: 16vh;
+            border-radius: 10px;
+            background-color: rgba(41, 163, 226, 0.7);
+        } 
+        .valut-info2 {
+            width: 80vh;
+            margin-top: 8vh;
+            border-radius: 10px;
+            background-color: rgba(41, 163, 226, 0.7);
+        }                
+        .valut-info1 h1 {
+            font-size: 3rem;
+            padding: 20px 20px;
+            color: white;
+        } 
+        .valut-info2 h2 {
+            font-size: 2.1875rem;
+            padding: 20px 20px;
+            color: white;            
+        }
+        .block-right { 
+            margin-top: 16vh;
+            margin-bottom: 6.4vh;
+            margin-right: 8vh;
+        }    
+        .contact-form {
+            width: 64vh;
+            margin-right: 20px;
+            top: 14.4vh;
+            box-sizing: border-box;
+            background-color: rgba(41, 163, 226, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .contact-form h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        .contact-form label {
+            color: white;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #text {
+            resize: none;
+            height: 16vh; /* Высота поля ввода */
+            padding: 10px; /* Внутренние отступы */
+            font-size: 1rem; /* Размер шрифта */
+            border: 1px solid #ccc; /* Граница */
+            border-radius: 5px; /* Закругление углов */
+            width: 100%; /* Ширина занимает всё доступное пространство */
+            box-sizing: border-box; /* Учитываем padding и border в размерах */
+            transition: box-shadow 0.3s ease; /* Эффект при фокусе */
+        }
+        input:focus, 
+        select:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(41, 163, 226, 0.7);
+        }                       
+        .contact-form input, .contact-form select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .labtime input, .labtime select {
+            width: 50%;
+        }
+        .icons1 img {
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 60px;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-icon1 {
+            border-radius: 50px;
+            padding: 10px 40px; 
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.9), 0 8px 28px rgba(126, 217, 87, 0.9);            
+            background: linear-gradient(140deg, #FAF000 20%, #FF8019 90%); 
+        }         
+        .icons1 img:hover {
+            transform: scale(1.03);
+        }        
+        .button-container {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .submit-button {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            background: linear-gradient(270deg, rgba(126, 217, 87, 1), rgba(0, 126, 80, 1)); /* Сделаем градиент более плотным */
+            background-clip: padding-box; /* Обеспечиваем, чтобы градиент не выходил за пределы кнопки */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 0.875rem;
+            padding: 12px 60px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(126, 217, 87, 0.5);
+        }
+
+        /* Эффект блика */
+        .submit-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%; /* Начинаем за пределами кнопки */
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            transform: skewX(-45deg);
+            transition: left 0.9s ease, width 0.9s ease;
+        }
+
+        /* При наведении */
+        .submit-button:hover::before {
+            left: 100%;
+            width: 100%;
+        }
+
+        /* Фикс теней */
+        .submit-button:hover {
+            color: #FFC300;
+            border-color: #F5D76E;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(126, 217, 87, 0.5);
+            transform: scale(1.05);
+        }        
+
+              /* Стили для блока благодарности */
+        .thank-you-message {
+            text-align: center;
+            display: none; /* Блок благодарности изначально скрыт */
+            margin-top: 20px;
+        }
+        .thank-you-message h3 {
+            color: white;
+        }    
+        .thank-you-message p {
+            color: white;
+        } 
+
+        .media-info {
+            display: none;
+        } 
+
+@media (max-width: 768px) { 
+
+    .block-left {
+        display: none;
+    }
+
+    .block-right {
+        width: 90%; /* Занимает 90% ширины экрана */
+        margin: 100px auto 0; /* Убираем отступы и центрируем */
+        margin-bottom: 20px;
+    }
+    .media-info {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        background-color: rgba(41, 163, 226, 0.7); 
+        padding: 5px 0;  
+        margin-bottom: 10px;     
+    } 
+    .contact-form {
+        width: 100%; /* Форма занимает всю ширину блока */
+        margin: 0 auto; /* Центрируем форму внутри .block-right */
+    }
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Кнопка слева, иконка справа */
+        gap: 10px; /* Расстояние между элементами */
+        margin-top: 20px; /* Отступ сверху */
+    }
+
+    /* Для кнопки "Invia" */
+    .submit-button {
+        width: auto; /* Ширина по содержимому */
+        padding: 12px 50px; /* Уменьшаем padding для мобильных */
+        font-size: 1rem; /* Меньший шрифт */
+    }
+
+    /* Для блока с иконкой WhatsApp */
+    .icons1 {
+        position: static !important; /* Отменяем fixed-позиционирование */
+        display: flex;
+        align-items: center;
+        margin-left: auto; /* Прижимаем к правому краю */
+    }
+
+    .whatsapp-icon1 {
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(126, 217, 87, 0.9), 0 4px 20px rgba(0, 126, 80, 0.9);           
+        background: linear-gradient(140deg, #7ED957 20%, #007E50 70%); 
+    }  
+    .icons1 img {
+        width: 30px;
+    }     
+    .thank-you-message {
+        width: 90%;
+        margin: 20px auto 0; /* Центрируем блок */
+    }
+       
+}
+
+</style>        

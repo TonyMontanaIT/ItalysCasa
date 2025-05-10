@@ -1,0 +1,125 @@
+---
+layout: layout.njk
+title: Blogpage
+permalink: "/blogpage/{{ Blogs.fileSlug }}/index.html"
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/blog.css">
+<meta name="description" content="">
+<section class="hero-section1">
+        <div class="offscreen">
+            <!-- italia -->
+            <h2>Tabacchini in vendita</h2>
+            <ul>
+                <li>Ristorante</li>
+                <li>Struturre balneari</li>
+                <li>Discoteca</li>
+                <li>Investire in Calabria</li>
+                <li>Proprieta al mare Calabria</li>
+                <li>Case vista mare Calabria</li>
+                <li>Immobili turistici Calabria</li>
+                <li>Tropea immobili</li>
+                <li>Praia a mare</li>
+                <li>Maratea, Sapri, Scario, Marina di camerota</li>
+            </ul>
+            <!-- England -->
+            <h2>Apartments in Rome</h2>
+            <ul>
+                <li>Houses in Venice</li>
+                <li>Public transportation in Italy</li>
+                <li>Shopping in Italy</li>
+                <li>Hiking in the Italian mountains</li>
+                <li>Cycling routes in Italy</li>
+                <li>Olive groves and vineyards</li>
+                <li>Best places to buy property in Italy</li>
+                <li>Cheapest regions to buy a home in Italy</li>
+                <li>Benefits of owning a home in Italy</li>
+                <li>Legal documents needed to buy property</li>
+            </ul>
+            <!-- Germania -->
+            <h2>Jahressteuern für Immobilien</h2>
+            <ul>
+                <li>Einkaufen in Italien</li>
+                <li>Strandleben in Italien</li>
+                <li>Wandern in den italienischen Bergen</li>
+                <li>Radwege in Italien</li>
+                <li>Italienische Küche</li>
+                <li>Olivenhaine und Weinberge</li>
+                <li>Ruhestand in Italien</li>
+                <li>Beste Orte zum Immobilienkauf in Italien</li>
+                <li>Welche Dokumente werden zum Immobilienkauf benötigt?</li>
+                <li>Lebenshaltungskosten in Italien für Eigentümer</li>
+            </ul>
+            <!-- Russia -->
+            <h2>Походы в итальянских горах</h2>
+            <ul>
+                <li>Оливковые рощи и виноградники</li>
+                <li>Велосипедные маршруты в Италии</li>
+                <li>Итальянская кухня</li>
+                <li>Исторические достопримечательности</li>
+                <li>Общественная жизнь в Италии</li>
+                <li>Здравоохранение в Италии</li>
+                <li>Образовательная система в Италии</li>
+                <li>Страхование недвижимости в Италии</li>
+                <li>Ежегодные налоги на недвижимость</li>
+                <li>Процесс проверки (Due Diligence)</li>
+            </ul>
+            <!-- Ireland -->
+            <h2>Athchóiriú ar theach tuaithe</h2>
+            <ul>
+                <li>Praghsanna maistreachtaí in Iodáil</li>
+                <li>Tithe i ngceantar ciúin</li>
+                <li>Cistin fairsing le radharc</li>
+                <li>Teach dhá thráth ar shiúlóid</li>
+                <li>Dara teach stíl</li>
+                <li>Árasáin i mbaile</li>
+                <li>Sráid chiuin</li>
+                <li>Suíomh tírdhreach</li>
+                <li>Tithe gar do sheirbhísí poiblí</li>
+                <li>Cóiríocht maistreachtaí</li>
+            </ul>
+            <!-- Denmark -->
+            <h2>Vedligeholdelse af ejendomme</h2>
+            <ul>
+                <li>Hjem tæt på offentlige faciliteter</li>
+                <li>Landskabsposition</li>
+                <li>Stille kvarter</li>
+                <li>Lejligheder i byen</li>
+                <li>Elegant dobbelthus</li>
+                <li>Toetagers sommerhus</li>
+                <li>Rummelig køkken med udsigt</li>
+                <li>Huse i rolige områder</li>
+                <li>Priser på fast ejendom i Italien</li>
+                <li>Renovering af landhuse</li>
+            </ul>                                                                                    
+        </div>
+        <div class="up-section">
+        <div class="blur-box1"></div>
+        <div class="blur-box"></div>
+        <h1 data-i18n="blog_h1">Blog</h1>
+        <h3 data-i18n="blog_h3">To discover Italy and its beauties</h3>
+    </div>
+        <div class="center-section">
+            <div class="center">
+              <div id="blog-detail"></div>
+        <div class="cta1">
+        <a href="/blog"><button class="glass-button" data-i18n="blog_retBut">Return to Blog</button></a>
+        </div>
+            </div>
+        </div>
+<!-- Модальное окно -->
+<div id="imageModal" class="modal">
+    <span id="closeModal" class="close">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Regione Calabria Foto">
+    </div>
+    <div class="modal-navigation">
+        <button id="modalPrev">❮</button>
+        <button id="modalNext">❯</button>
+    </div>
+    <div id="modalThumbnails" class="modal-thumbnails"></div>
+</div>
+
+</section>
+
+<script src="/script/blog-detail.js" defer></script>

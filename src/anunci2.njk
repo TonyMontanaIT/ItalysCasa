@@ -1,0 +1,473 @@
+---
+layout: layout.njk
+permalink: "/anunci/dynamic/index.html"
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/anunci.css">
+<link rel="icon" href="/Foto/Icon/favicon.svg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<script async src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+
+<meta name="description" content="">
+
+<div class="content-section">
+        <div class="offscreen">
+            <!-- italia -->
+            <h2>Ville in vendita</h2>
+            <ul>
+                <li>Investire in immobili</li>
+                <li>Proprieta commerciali</li>
+                <li>Centro storico di Scalea</li>
+                <li>Case con vista mozzafiato</li>
+                <li>Appartemente da restaurare</li>
+                <li>Ville con giardino </li>
+                <li>Affitto lungo termine</li>
+                <li>Vendere casa senza agenzia</li>
+                <li>Finanziamento per aquisto casa</li>
+                <li>Prezzo di mercato</li>
+            </ul>
+            <!-- England -->
+            <h2>Italian real estate market</h2>
+            <ul>
+                <li>Villas in Italy</li>
+                <li>Real estate agency in Italy</li>
+                <li>Luxury homes in Italy</li>
+                <li>Mortgage options in Italy</li>
+                <li>Italian real estate trends</li>
+                <li>Off-plan properties in Italy</li>
+                <li>Villas in Cosenza</li>
+                <li>Investment opportunities in Southern Italy</li>
+                <li>Villas in Florence</li>
+                <li>Property in Milan</li>
+            </ul>
+            <!-- Germania -->
+            <h2>Immobilienmarkt in Italien</h2>
+            <ul>
+                <li>Immobilienpreise in Italien</li>
+                <li>Rechtliche Aspekte beim Immobilienerwerb</li>
+                <li>Wohnungen mit Meerblick</li>
+                <li>Villen in Cosenza</li>
+                <li>Immobilien mit Panoramablick</li>
+                <li>Immobilien an der Amalfiküste</li>
+                <li>Villen auf Sardinien</li>
+                <li>Villa</li>
+                <li>Moderne Villa</li>
+                <li>Studio-Wohnung</li>
+            </ul>
+            <!-- Russia -->
+            <h2>Дома на продажу в Италии</h2>
+            <ul>
+                <li>Жизнь в Италии</li>
+                <li>Оценка недвижимости в Италии</li>
+                <li>Аренда в Италии</li>
+                <li>Пляжная недвижимость в Калабрии</li>
+                <li>Недвижимость у моря</li>
+                <li>Виллы на Сардинии</li>
+                <li>Квартира на последнем этаже</li>
+                <li>Вид на горы</li>
+                <li>Меблированный</li>
+                <li>Высокие потолки</li>
+            </ul>
+            <!-- Finlandia -->
+            <h2>Asuntojen myynti Italiassa</h2>
+            <ul>
+                <li>Arvokkaat kiinteistöt Italiassa</li>
+                <li>Maaseutualueet Italiassa</li>
+                <li>Rantakahvilat Tropea</li>
+                <li>Villat Kosenzassa</li>
+                <li>Kerrostalo</li>
+                <li>Puutarha</li>
+                <li>Autotalli</li>
+                <li>Kiinteistöarviointi</li>
+                <li>Airbnb-kiinteistöt</li>
+                <li>Parveke</li>
+            </ul>
+            <!-- Chechia -->
+            <h2>Prodej nemovitostí v Itálii</h2>
+            <ul>
+                <li>Vily v Itálii</li>
+                <li>Vily v Reggio Calabria</li>
+                <li>Jih Itálie</li>
+                <li>Historická budova</li>
+                <li>Zahrada</li>
+                <li>Daňové povinnosti</li>
+                <li>Právní poradenství</li>
+                <li>Pronájem bytu v Itálii</li>
+                <li>Moderní vybavení</li>
+                <li>Byt</li>
+            </ul>
+            <!-- Polonia -->
+            <h2>Sprzedaż nieruchomości we Włoszech</h2>
+            <ul>
+                <li>Wille we Włoszech</li>
+                <li>Ceny nieruchomości</li>
+                <li>Życie we Włoszech</li>
+                <li>Południowe Włochy</li>
+                <li>Apartament</li>
+                <li>Budynki historyczne</li>
+                <li>Taras</li>
+                <li>Krótkoterminowy wynajem</li>
+                <li>Podatki od nieruchomości</li>
+                <li>Garaż</li>
+            </ul>
+            <!-- Lituania -->
+            <h2>Vilos Italijoje</h2>
+            <ul>
+                <li>Gyvenimas Italijoje</li>
+                <li>Turto vertės įvertinimas</li>
+                <li>Istorinis pastatas</li>
+                <li>Moderni villa</li>
+                <li>Sodas</li>
+                <li>Jūros vaizdas</li>
+                <li>Garažas</li>
+                <li>Oro kondicionierius</li>
+                <li>Paskolos užsieniečiams</li>
+                <li>Mokesčiai Italijoje</li>
+            </ul>                                                                                    
+        </div>
+<div class="up-section">
+  <div class="up-left">
+    <div class="up-left-up">
+      <div class="street-rif">
+        <h1 id="upNomeAnunci"></h1>
+      </div>
+      <div class="street-viale">
+        <h1 id="upNomeZona"></h1>
+      </div>                      
+    </div>
+    <div class="up-left-down">
+      <p><strong data-i18n="form_city">City:</strong> <span id="upCitta"></span></p> 
+      <p><strong data-i18n="cerca_avenu">Avenue:</strong> <span id="upVia"></span></p>
+    </div>
+  </div>
+  <div class="up-icon">
+    <div class="up-icon-left">
+      <div class="street-rif">
+        <h3>RIF: <span id="upRif"></span></h3>
+      </div>
+      <div class="street-viale1">
+        <h1>€<span id="upPrezzo"></span></h1>
+      </div>                         
+    </div>
+    <div class="up-icon-right">
+      <a href="/property" data-i18n="list_anun">List of Announcements</a>
+      <a href="#" id="copyLinkButton" class="share-link">
+        <img src="/Foto/Icon/share.svg" alt="Invia bellissimi immobili">
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div class="center-section">
+<div class="center-left">
+  <!-- Карусель -->
+<div class="carousel-container">
+  <!-- Картинки карусели будут добавлены через JS -->
+  <div id="carouselImagesContainer"></div>
+
+  <!-- Иконки -->
+  <div class="icon-container">
+    <a href="#" class="open-modal" data-index="0">
+      <img src="/Foto/Icon/cameraFoto.svg" alt="Foto" class="anunci-icon">
+    </a>
+    <a href="#" id="carouselVideoLink">
+      <img src="/Foto/Icon/cameraVideo.svg" alt="Video" class="anunci-icon">
+    </a>
+    <a href="#" id="carousel360Link">
+      <img src="/Foto/Icon/camera360.svg" alt="Video 360" class="anunci-icon">
+    </a>
+    <a href="#" id="scrollToMapButton">
+      <img src="/Foto/Icon/geomappa.svg" alt="Mappa" class="anunci-icon">
+    </a>
+  </div>
+
+  <!-- Стрелки -->
+<button class="carousel-btn prev" id="carouselPrev">&#10094;</button>
+<button class="carousel-btn next" id="carouselNext">&#10095;</button>
+</div>
+
+</div>
+
+
+<!-- Модальное окно для просмотра изображений -->
+<div class="modal" id="imageModal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <button class="modal-btn prev" id="modalPrev">&#10094;</button>
+    <img alt="Una foto della villa" src="" id="modalImage">
+    <button class="modal-btn next" id="modalNext">&#10095;</button>
+  </div>
+  <div class="modal-thumbnails" id="modalThumbnails">
+    <!-- Превью подгрузятся через JS -->
+  </div>
+</div>
+
+
+
+<div class="center-center">
+  <div class="cen-info">
+    <div class="caratter">
+      <img alt="immobiliare verificato" src="/Foto/Icon/caracter.svg">
+      <p data-i18n="character">Characteristics:</p>
+    </div>
+    <div class="property-info">
+<div class="info-item">
+  <p><strong>RIF:</strong> <span id="rifInfo"></span></p>
+  <p><strong data-i18n="type">Type:</strong> <span id="tipoInfo"></span></p>
+  <p><strong data-i18n="bedro">Bedrooms:</strong> <span id="roomsInfo"></span></p>
+  <p><strong data-i18n="local">Locals:</strong> <span id="totalRoomsInfo"></span></p>
+  <p><strong data-i18n="barhr">Bathrooms:</strong> <span id="bagniInfo"></span></p>
+  <p><strong data-i18n="comerc">Commercial:</strong> <span id="zonam2Info"></span></p>
+  <p><strong data-i18n="floor">Floor:</strong> <span id="floorInfo"></span></p>
+  <p><strong data-i18n="elevator">Elevator:</strong> <span id="elevatorInfo"></span></p>
+  <p><strong data-i18n="terazzo">Terrace:</strong> <span id="terrazzoInfo"></span></p>
+  <p><strong data-i18n="garden">Garden:</strong> <span id="giardinoInfo"></span></p>
+  <p><strong data-i18n="garage">Garage Box:</strong> <span id="garageInfo"></span></p>
+  <p><strong data-i18n="price">Price: €</strong> <span id="prezzoInfo"></span></p>
+</div>
+      <div class="info-window">
+        <a href="#" id="openModalButton" class="glass-link">
+          <button class="glass-button1" data-i18n="see_but">See all</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="center-right">
+            <div class="mapp-container">
+                <div id="map-small" class="map"></div>
+            </div>
+        </div>
+    </div>
+            <div class="dawn">
+              <div class="content-block">
+<div class="descrizione">
+  <div class="des-info">
+    <div class="des-info-start">
+      <img alt="informazioni sugli immobili" src="/Foto/Icon/description.svg">
+      <h1 id="descrizioneTitle"></h1>
+    </div>
+    <div class="des-info-text">
+      <p class="pclassH2" id="h2t1"></p>
+      <p class="pclassText" id="text1"></p>
+      <p class="pclassH2" id="h2t2"></p>
+      <p class="pclassText" id="text2"></p>
+      <p class="pclassH2" id="h2t3"></p>
+      <p class="pclassText" id="text3"></p>
+      <p class="pclassH2" id="h2t4"></p>
+      <p class="pclassText" id="text4"></p>
+      <p class="pclassH2" id="h2t5"></p>
+      <p class="pclassText" id="text5"></p>
+      <p class="pclassH2" id="h2t6"></p>
+      <p class="pclassText" id="text6"></p>
+      <p class="pclassH2" data-i18n="ask_price">Asking price: €<span id="prezzoDescrizione"></span></p>
+      <p class="pclassText1">
+        <span class="pclassH2" data-i18n="cont_us">Contact us</span> <span data-i18n="to_the_numb"> to the number</span>
+        <a href="tel:+393791080060" class="telYelow">393791080060</a> <span data-i18n="visit_sito"> or visit our website</span>
+        <a href="#" class="telYelow">italyscasa.com</a>
+      </p>
+      <p class="pclassText1" data-i18n="visit_page">Visit our pages:</p>
+      <p class="pclassText1">
+        Instagram:
+        <a href="https://www.instagram.com/italyscasa/" class="telYelow">italyscasa,</a>
+        Facebook:
+        <a href="https://www.facebook.com/profile.php?id=61551668563870" class="telYelow">Italys casa,</a>
+        YouTube:
+        <a href="https://www.youtube.com/@ItalysCasa" class="telYelow">italyscasa</a>
+        And TikTok:
+        <a href="https://www.tiktok.com/@italyscasa1" class="telYelow">italyscasa1.</a>
+      </p>
+    </div>
+  </div>
+</div>
+  
+         <div class="map-big" id="mapBig">
+             <div id="map-big" class="map"></div>
+         </div>         
+<div class="button-video">
+  <!-- Кнопка для обычного видео -->
+  <a href="#" target="_blank" class="video-button" id="videoButton" style="display: none;">
+    <button>
+      <span class="VideoSu">Video about</span>
+      <span class="you">You</span><span class="tube">Tube</span>
+    </button>
+  </a>
+
+  <!-- Кнопка для видео 360 -->
+  <a href="#" target="_blank" class="video360-button" id="video360Button" style="display: none;">
+    <button>
+      <span class="virtual">Virtual Tour </span><span class="gradus">360°</span>
+    </button>
+  </a>
+
+  <a href="tel:+393791080060" class="abuttel">
+    <img src="/Foto/Icon/tel.svg" alt="Phone" class="iconphone" data-i18n="call"> Call
+  </a>
+
+  <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="awhats">
+    WhatsApp
+  </a>
+</div>
+
+
+<section id="random">
+  <div class="serv-info">
+    <div class="serv-text" data-i18n="proposals">
+      Proposals selected for you!
+    </div>  
+    <div class="serv-block">
+      <!-- Карточка 1 -->
+      <div class="serv-block-1" id="random1">
+        <span class="circle-image">
+          <img src="" alt="Service Image" id="randomImg1">
+        </span>
+        <div class="random-info">
+          <div class="random-nome">
+            <p class="serv-h1" id="randomNome1"></p>
+          </div>
+          <div class="random-prezzo">
+            <a href="#" id="randomPrezzoLink1"></a>
+            <span id="randomRIF1"></span>
+          </div>
+          <div class="random-icon">
+            <span><img src="/Foto/Icon/bagno.svg" alt="Bagno"> <span id="randomBagni1"></span></span>
+            <span><img src="/Foto/Icon/mq.svg" alt="Metri quadrati"> <span id="randomMq1"></span></span>
+            <span><img src="/Foto/Icon/locale.svg" alt="Locale"> <span id="randomRooms1"></span></span>
+            <span><img src="/Foto/Icon/terazza.svg" alt="Terazza"> <span id="randomTerrazzo1"></span></span>
+          </div>
+        </div>
+        <div class="cta1">
+          <a href="#" id="randomButtonLink1">
+            <button class="glass-button" data-i18n="serv_button">Find out more</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+            <div class="serv-block-1" id="random2">
+        <span class="circle-image">
+          <img src="" alt="Service Image" id="randomImg2">
+        </span>
+        <div class="random-info">
+          <div class="random-nome">
+            <p class="serv-h1" id="randomNome2"></p>
+          </div>
+          <div class="random-prezzo">
+            <a href="#" id="randomPrezzoLink2"></a>
+            <span id="randomRIF2"></span>
+          </div>
+          <div class="random-icon">
+            <span><img src="/Foto/Icon/bagno.svg" alt="Bagno"> <span id="randomBagni2"></span></span>
+            <span><img src="/Foto/Icon/mq.svg" alt="Metri quadrati"> <span id="randomMq2"></span></span>
+            <span><img src="/Foto/Icon/locale.svg" alt="Locale"> <span id="randomRooms2"></span></span>
+            <span><img src="/Foto/Icon/terazza.svg" alt="Terazza"> <span id="randomTerrazzo2"></span></span>
+          </div>
+        </div>
+        <div class="cta1">
+          <a href="#" id="randomButtonLink2">
+            <button class="glass-button" data-i18n="serv_button">Find out more</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+            <div class="serv-block-1" id="random3">
+        <span class="circle-image">
+          <img src="" alt="Service Image" id="randomImg3">
+        </span>
+        <div class="random-info">
+          <div class="random-nome">
+            <p class="serv-h1" id="randomNome3"></p>
+          </div>
+          <div class="random-prezzo">
+            <a href="#" id="randomPrezzoLink3"></a>
+            <span id="randomRIF3"></span>
+          </div>
+          <div class="random-icon">
+            <span><img src="/Foto/Icon/bagno.svg" alt="Bagno"> <span id="randomBagni3"></span></span>
+            <span><img src="/Foto/Icon/mq.svg" alt="Metri quadrati"> <span id="randomMq3"></span></span>
+            <span><img src="/Foto/Icon/locale.svg" alt="Locale"> <span id="randomRooms3"></span></span>
+            <span><img src="/Foto/Icon/terazza.svg" alt="Terazza"> <span id="randomTerrazzo3"></span></span>
+          </div>
+        </div>
+        <div class="cta1">
+          <a href="#" id="randomButtonLink3">
+            <button class="glass-button" data-i18n="serv_button">Find out more</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+          </div>
+
+<!-- Модальное окно -->
+<div class="modal-overlay" id="modalOverlay" style="display: none;">
+  <div class="modal-content1">
+    <button class="close-button" id="closeModalButton">X</button>
+    <div class="info-items">
+      <div class="info-item1">
+        <p><strong>RIF:</strong> <span id="modalRif"></span></p>
+        <p><strong data-i18n="type">Type:</strong> <span id="modalTipo"></span></p>
+        <p><strong data-i18n="bedro">Bedrooms:</strong> <span id="modalRooms"></span></p>
+        <p><strong data-i18n="local">Locals:</strong> <span id="modalTotalRooms"></span></p>
+        <p><strong data-i18n="barhr">Bathrooms:</strong> <span id="modalBagni"></span></p>
+        <p><strong data-i18n="comerc">Commercial sqm:</strong> <span id="modalMq"></span></p>
+        <p><strong data-i18n="floor">Floor:</strong> <span id="modalFloor"></span></p>
+        <p><strong data-i18n="elevator">Elevator:</strong> <span id="modalElevator"></span></p>
+        <p><strong data-i18n="terazzo">Terrace:</strong> <span id="modalTerrazzo"></span></p>
+        <p><strong data-i18n="price">Price: €</strong> <span id="modalPrezzo"></span></p>
+      </div>
+      <div class="info-item1">
+        <p><strong data-i18n="form_city">City:</strong> <span id="modalCity"></span></p>
+        <p><strong data-i18n="title">Title:</strong> <span id="modalNome"></span></p>
+        <p><strong data-i18n="area">Area:</strong> <span id="modalZona"></span></p>
+        <p><strong data-i18n="cerca_avenu">Avenue:</strong> <span id="modalStreet"></span></p>
+        <p><strong data-i18n="furnich">Furnishings:</strong> <span id="modalArredi"></span></p>
+        <p><strong data-i18n="garage">Garage Box:</strong> <span id="modalGarage"></span></p>
+        <p><strong data-i18n="garden">Garden sqm:</strong> <span id="modalGiardino"></span></p>
+        <p><strong data-i18n="patio">Patio sqm:</strong> <span id="modalPatio"></span></p>
+        <p><strong data-i18n="extern">External sqm:</strong> <span id="modalCorte"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          <!-- Форма обратной связи -->
+            <div class="contact-form" id="contactForm">
+                         <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3 data-i18n="form_h3">Ask us a question</h3>
+            <label for="name" data-i18n="form_name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname" data-i18n="form_surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="phone" data-i18n="form_tel">Telephone:</label>
+            <input type="tel" id="phone" name="phone" required>
+             
+            <label for="text" data-i18n="form_text">Text</label>
+            <textarea id="text" name="text" required></textarea>
+            
+
+            <button class="submit-button" id="submitButton" type="button" data-i18n="form_butt">Send</button>
+        </div>
+
+                  <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3 data-i18n="form_thank">Thank you for your request!</h3>
+                <p data-i18n="form_thank_p">Our manager will contact you shortly for a more detailed consultation..</p>
+            </div>
+           </div>
+         </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="/script/anunci.js"></script> 

@@ -1,0 +1,335 @@
+<styles>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            margin-top: 80px;
+        }
+        .up-section {
+        	position: relative;
+        	margin-top: 80px;
+        	background-image: url(/Foto/affitticom.webp);
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	width: 100%;
+        	height: 150px;
+        	text-align: center;
+        	color: white;
+        	padding: 40px 0px;
+        }
+        .up-section h1 {
+        	margin-top: 80px;
+        	font-size: 30px;
+        }        
+        .center-section { 
+        	margin-top: 20px;
+        	justify-content: space-between;
+        	display: flex;
+        	flex-direction: row;
+        	margin-bottom: 20px;
+        }
+        .bloclf {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            flex-basis: 60%;
+            height: auto; /* Изменяем высоту на адаптивную */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            gap: 15px;
+            margin-left: 15px;
+        }
+
+        .sopra {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row; /* Исправляем опечатку: "raw" -> "row" */
+            gap: 20px;
+        }
+
+        .sopra-left {
+            width: 400px;
+            height: 250px;
+        }
+
+        .sopra-left img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .sopra-right {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .right-img {
+	        width: 150px;
+	        height: 150px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row; /* Исправляем опечатку: "raw" -> "row" */
+            gap: 10px;
+        }
+
+        .right-img img {
+	        object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-text {
+            width: 270px;
+            color: white;
+            background-color: rgba(41, 163, 226, 0.7);
+            border-radius: 10px;
+            padding: 5px 20px;
+        }
+
+        .right-text h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .right-text h3 {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        .sotto {
+            background-color: rgba(41, 163, 226, 0.7);
+            width: 80%;
+            border-radius: 10px;
+            padding: 0px 20px;
+            color: white;
+            margin-top: auto;
+        }
+
+        .sotto h3 {
+            font-size: 18px;
+        }
+
+        .affbut {
+            display: flex;
+            justify-content: right;
+            margin-right: 140px;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        /* Обертка ссылки */
+        .glass-link {
+            display: inline-block; /* Чтобы button корректно работал внутри */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        /* Основная кнопка */
+        .glass-button {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8)); /* Сделаем градиент более насыщенным */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 18px;
+            padding: 12px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
+        }
+
+        /* Эффект блика */
+        .glass-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%; /* Начинаем за пределами кнопки */
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            transform: skewX(-45deg);
+            transition: left 0.9s ease, width 0.9s ease;
+        }
+
+        /* При наведении */
+        .glass-button:hover::before {
+            left: 100%;
+            width: 100%;
+        }
+
+        /* Фикс теней */
+        .glass-button:hover {
+            color: #FFC300;
+            border-color: #F5D76E;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(89, 142, 200, 0.5);
+            transform: scale(1.05);
+        }
+
+
+        .right {	
+        	min-height: 550px;
+        	width: 35%;
+        }
+        .contact-form {
+            width: 400px;
+            margin-left: 20px;
+            top: 90px;
+            box-sizing: border-box;
+            background-color: rgba(41, 163, 226, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .contact-form h3 {
+        	margin: 0;
+        	font-size: 22px;
+        	padding: 20px 0px;
+            color: white;
+        }
+        .contact-form label {
+            color: white;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input:focus, 
+        select:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(41, 163, 226, 0.7);
+        }                        
+        .contact-form input, .contact-form select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .labtime input, .labtime select {
+            width: 50%;
+        }
+
+        .submit-button {
+            margin-bottom: 30px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            background: linear-gradient(270deg, rgba(126, 217, 87, 1), rgba(0, 126, 80, 1)); /* Сделаем градиент более плотным */
+            background-clip: padding-box; /* Обеспечиваем, чтобы градиент не выходил за пределы кнопки */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 14px;
+            padding: 12px 60px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(126, 217, 87, 0.5);
+        }
+
+        /* Эффект блика */
+        .submit-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%; /* Начинаем за пределами кнопки */
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            transform: skewX(-45deg);
+            transition: left 0.9s ease, width 0.9s ease;
+        }
+
+        /* При наведении */
+        .submit-button:hover::before {
+            left: 100%;
+            width: 100%;
+        }
+
+        /* Фикс теней */
+        .submit-button:hover {
+            color: #FFC300;
+            border-color: #F5D76E;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(126, 217, 87, 0.5);
+            transform: scale(1.05);
+        }       
+
+              /* Стили для блока благодарности */
+        .thank-you-message {
+            text-align: center;
+            display: none; /* Блок благодарности изначально скрыт */
+            margin-top: 20px;
+        }
+        .thank-you-message h3 {
+            color: white;
+        }    
+        .thank-you-message p {
+            color: white;
+        }         	        
+
+@media (max-width: 768px) {
+
+
+    .up-section {
+        background-image: url(/Foto/affitticom-med.webp);
+    }
+    .center-section {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sopra {
+        display: flex;
+        align-items: center;        
+        width: 100%;
+        flex-direction: column;       
+    }
+    .left {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .bloclf {
+        margin: 0;
+        width: 90%;
+    }
+    .sopra-left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .contact-form {
+        margin-top: 20px;
+        width: 90%;
+        margin-bottom: 20px;
+    }   
+    .thank-you-message {
+        width: 90%;
+        margin: 20px auto 0; /* Центрируем блок */
+    }
+     
+}    
+</styles>

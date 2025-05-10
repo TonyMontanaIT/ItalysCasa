@@ -1,0 +1,247 @@
+---
+title: Home
+layout: layout.njk
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/Home.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<script async src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
+<meta name="description" content="">
+
+<div class="hero-section">
+<div class="offscreen">
+<!-- italia -->
+<h2>Vendita immobili</h2>
+<ul>
+<li>Acquisto casa</li>    
+<li>Notaio immobiliare</li> 
+<li>Appartamenti economici in Italia</li> 
+<li>Case in vendita a Scalea con vista mare</li> 
+<li>Case in vendita Calabria</li> 
+<li>Prezzi immobiliari</li> 
+<li>Annunci immobiliari</li> 
+<li>Portali immobiliariTerreni edificabili in vendita a Cosenza</li> 
+<li>Terreni edificabili in vendita a Cosenza</li> 
+<li>Consulenza immobiliare</li> 
+<li>Compra Prima o Seconda casa</li> 
+<li>Riviera del cedri</li>
+<li>Parco del pollino</li>
+<li>Fiume Lao Scalea</li>
+<li>Vendo casa</li>
+<li>Agibilita casa scalea</li>
+<li>Calabria sue scalea</li>
+<li>Certificazione per agibilita</li>
+<li>Certificazione APE</li>
+<li>Energetica</li>
+<li>La migliore agenzia immobiliare</li>
+</ul>
+<!-- England -->
+<h2>Real estate in Italy</h2>
+<ul>
+<li>Real estate in Calabria</li>    
+<li>Coastal homes in Italy</li> 
+<li>Traditional Italian homes</li> 
+<li>Studio apartments</li> 
+<li>Buy-to-let properties</li> 
+<li>Holiday homes in Italy</li> 
+<li>Vacation rentals in Italy</li> 
+<li>Real estate in Scalea</li> 
+<li>Coastal properties in Calabria</li> 
+<li>Properties near airports in Italy</li> 
+</ul>
+<!-- Germania -->
+<h2>Immobilien in Italien</h2>
+<ul>
+<li>Wohnung kaufen in Italien</li>    
+<li>Immobilienbewertung in Italien</li> 
+<li>Haus kaufen in Scalea</li> 
+<li>Immobilien in Kalabrien</li> 
+<li>Sanierungsbedürftige Häuser</li> 
+<li>Traditionelles italienisches Haus</li> 
+<li>Kurzzeitmieteinnahmen</li> 
+<li>Rendite auf italienische Immobilien</li> 
+<li>Wie finde ich eine zuverlässige Immobilienagentur in Italien?</li> 
+<li>Vor- und Nachteile des Hauskaufs in Italien</li> 
+</ul>
+<!-- Russia -->
+<h2>Недвижимость в Италии</h2>
+<ul>
+<li>Продажа недвижимости в Италии</li>    
+<li>Доступное жилье в Италии</li> 
+<li>Недвижимость в Калабрии</li> 
+<li>Прибрежные дома в Италии</li> 
+<li>Вид на море</li> 
+<li>Инвестиции в недвижимость в Италии</li> 
+<li>Доход от краткосрочной аренды в Италии</li> 
+<li>Лучшие места для покупки недвижимости в Италии</li> 
+<li>Недвижимость в Скалея</li> 
+<li>Квартиры рядом с туристическими достопримечательностями</li> 
+</ul>
+<!-- Finlandia -->
+<h2>Kiinteistöt Italiassa</h2>
+<ul>
+<li>Investointi Italiassa</li>    
+<li>Omakotitalo Scalea</li> 
+<li>Villa</li> 
+<li>Yksityinen uima-allas</li> 
+<li>Uudelleenrakennettu koti</li> 
+<li>Ilmastointi</li> 
+<li>Vuokrattavat asunnot Italiassa</li> 
+<li>Verotus Italiassa</li> 
+<li>Vuokratulot Italiassa</li> 
+<li>Lyhytaikainen vuokraus</li> 
+</ul>
+<!-- Chechia -->
+<h2>Nemovitosti v Itálii</h2>
+<ul>
+<li>Byty k prodeji v Itálii</li>    
+<li>Reálné ceny nemovitostí</li> 
+<li>Moderní dům</li> 
+<li>Soukromý bazén</li> 
+<li>Nákupní smlouva</li> 
+<li>Registrace nemovitosti</li> 
+<li>Dlouhodobý pronájem</li> 
+<li>Krátkodobý pronájem</li> 
+<li>Domy v Scalea</li> 
+<li>Život v Itálii</li> 
+</ul>
+<!-- Polonia -->
+<h2>Nieruchomości we Włoszech</h2>
+<ul>
+<li>Inwestycje we Włoszech</li>    
+<li>Domy w Scalea</li> 
+<li>Nieruchomości w Kalabrii</li> 
+<li>Dom jednorodzinny</li> 
+<li>Nowoczesna willa</li> 
+<li>Prywatny basen</li> 
+<li>Ogród</li> 
+<li>Umowa kupna-sprzedaży</li> 
+<li>Wynajem mieszkań</li> 
+<li>Wiejski dom</li> 
+</ul>
+<!-- Lituania -->
+<h2>Nekilnojamasis turtas Italijoje</h2>
+<ul>
+<li>Nekilnojamasis turtas Italijoje</li>    
+<li>Namas Scalea mieste</li> 
+<li>Nekilnojamasis turtas Kalabrijoje</li> 
+<li>Atskiras namas</li> 
+<li>Privatus baseinas</li> 
+<li>Pirkimo-pardavimo sutartis</li> 
+<li>Nuomos pajamos Italijoje</li> 
+<li>Trumpalaikė nuoma</li> 
+<li>Kaimo sodyba</li> 
+<li>Butas</li> 
+</ul>
+</div>
+
+    <div class="search-bar-container">
+        <div class="search-bar-options" id="searchBarOptions">
+            <span id="searchTrigger" data-i18n="nav_search1" data-i18n-value="nav_search_phrase">SALE</span>
+            <a href="/valut">
+            <span data-i18n="nav_search2">ASSESSMENT</span>
+            </a>
+            <a href="/affitti">
+            <span data-i18n="nav_search3">RENT</span>
+            </a>
+            <div class="active-underline"></div>
+            <div class="static-underline"></div>
+        </div>
+        <div class="search-bar" style="position: relative;">
+            <img alt="All'agenzia immobiliare" src="/Foto/Icon/Home.svg" alt="Home Icon" class="icon">
+            <input type="text" id="searchInput" placeholder="Province, Municipality, Area, RIF" data-i18n-placeholder="search_placeholder">
+            <button id="clearSearch" class="search-clear">×</button>
+            <img alt="Ricerca immobili" src="/Foto/Icon/Search.svg" alt="Search Icon" class="icon">
+        </div>
+    </div>
+</div>
+
+<section id="about">
+  <div class="content-section"> 
+    <div class="mapp-container">
+      <div id="map" class="map"></div>
+    </div>
+
+    <div class="content-bottom" id="announcementsContainer">
+      <!-- ЗДЕСЬ ВСТАВЛЯЮТСЯ ОБЪЯВЛЕНИЯ ЧЕРЕЗ JS -->
+                          <div class="icons1">
+                <a href="https://api.whatsapp.com/send?phone=393791080060&text=Salve%20Da%20Sito" target="_blank" class="whatsapp-icon">
+                    <img alt="Contatto diretto con l'agenzia" src="/Foto/Icon/whats.svg" class="icon whatsapp-icon1">
+                </a>
+                <a href="tel:+393791080060">
+                   <img alt="Numero dell'agenzia immobiliare" src="/Foto/Icon/tel.svg" class="icon1">
+                </a>
+            </div>
+    </div>
+  </div>
+
+  <div class="map-media">
+    <div id="mapMedia" class="mapMed"></div>
+  </div>
+</section>
+
+    <section id="services">
+<div class="serv-info">
+  <div class="serv-text" data-i18n="serv_prev">
+    Why choose our Agency
+  </div>  
+  <div class="serv-block">
+    <div class="serv-block-1">
+      <span class="circle-image">
+        <img src="/Foto/Blog/BlogHome1.webp" alt="Servizio 1">
+      </span>
+      <p class="serv-h1" data-i18n="serv1_h1">Visit in Comfort</p>
+      <p class="serv-h2"data-i18n="serv1_h2">You will be able to make an initial visit to the property from the comfort of your home</p>
+      <div class="cta1">
+        <a href="/cerca" class="glass-link">
+          <button class="glass-button" data-i18n="serv_button">Find out more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="serv-block-1">
+      <span class="circle-image">
+        <img src="/Foto/Blog/BlogHome2.webp" alt="Servizio 2">
+      </span>
+      <p class="serv-h1" data-i18n="serv2_h1">Property Value</p>
+      <p class="serv-h2" data-i18n="serv2_h2">For free today you can have an evaluation of your property without wasting precious time</p>
+      <div class="cta1">
+        <a href="/valut" class="glass-link">
+          <button class="glass-button" data-i18n="serv_button">Find out more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="serv-block-1">
+      <span class="circle-image">
+        <img src="/Foto/Blog/BlogHome3.webp" alt="Servizio 3">
+      </span>
+      <p class="serv-h1" data-i18n="serv3_h1">Work with us</p>
+      <p class="serv-h2" data-i18n="serv3_h3">Would you like to work in a real estate agency?</p>
+      <div class="cta1">
+        <a href="/lavoro" class="glass-link">
+          <button class="glass-button" data-i18n="serv_button">Find out more</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+             <div class="recension-blok">
+             <div class="dicono"><p data-i18n="recens_prev">They say about us</p> <hr class="dicono-line" >
+                          <div class="block-recens">
+                          </div> 
+                          </div>
+
+                <div class="reviews-block" id="reviews-block">               
+                <h2 data-i18n="recens_h2">EXCELLENT</h2>
+                <img alt="La migliore agenzia immobiliare a Scalea" src="/Foto/Icon/star-recen.svg"> <img alt="Recensioni migliori" src="/Foto/Icon/star-recen.svg"> <img alt="Proprietà verificata" src="/Foto/Icon/star-recen.svg"> <img alt="Un'agenzia con una reputazione" src="/Foto/Icon/star-recen.svg"> <img alt="Recensioni oneste" src="/Foto/Icon/star-recen.svg">
+                <p data-i18n="recens_p">All Reviews <span id="rating"></span></p>
+                <a href="https://maps.app.goo.gl/F5eXGqaAkS7DsU41A?g_st=awb" data-i18n="recens_button">View all reviews on Google Maps</a>
+                </div>
+             </div> 
+    </section>
+<script src="/script/scriptHome.js" defer></script>
+
+

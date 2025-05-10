@@ -1,0 +1,481 @@
+<style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            margin-top: 80px;
+        }
+        .up-section {
+        	position: relative;
+        	margin-top: 80px;
+        	background-image: url(/Foto/scalea-blog.webp);
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	width: 100%;
+        	height: 150px;
+        	text-align: center;
+        	color: white;
+        	padding: 40px 0px;
+        }
+        .blur-box, .blur-box1 {
+        	position: absolute;
+            background: rgba(0, 0, 0, 0.4); /* Прозрачный фон */
+            backdrop-filter: blur(10px); /* Размытие */
+            transform: translate(-50%, -50%); /* Центрирование */
+            z-index: 0; /* Уводим назад, чтобы текст был сверху */
+            border-radius: 10px; /* Скруглённые углы */        	
+        }	
+        .blur-box1 {
+            top: 42%;
+            left: 50%;
+            width: 10%; /* Ширина размытия */
+            height: 60px; /* Высота размытия */
+        }
+        .blur-box {
+            top: 72%;
+            left: 50%;
+            width: 35%; /* Ширина размытия */
+            height: 40px; /* Высота размытия */
+        }        
+        .up-section h1 {	
+        	position: relative;
+        	z-index: 1;
+        	font-size: 40px;
+        }	
+        .up-section h3 {	
+        	position: relative;
+        	z-index: 1;
+        	font-size: 25px;
+        }	         
+        .serv-block {          
+            margin-top: 50px;
+            display: flex;
+            justify-content: center; 
+            flex-wrap: wrap;
+            width: calc(100% - 0px);
+        }
+        .serv-block-1 { 
+        	background-color: rgba(41, 163, 226, 0.7);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 15px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;  
+            width: 56vh;
+            min-height: 600px;       
+            border-radius: 15px 15px 0px 0px ;
+            text-align: center;
+            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+        }
+        .serv-block-1:hover {
+            transform: scale(1.01);
+            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+        }    
+        .circle-image {       
+            border-radius: 15px 15px 0px 0px;        
+            overflow: hidden;
+            width: 100%;
+            height: 250px;
+        }
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .serv-content {
+        	text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }      
+        .serv-block-1 h1 {
+        	padding: 20px 0px 0px 0px;
+        	display: flex;
+        	margin: 0;
+            transition: transform 0.3s ease;  
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }   
+        .serv-block-1 h3 {
+        	max-width: 80%;
+        	padding: 20px 0px;
+            margin: 0;
+            transition: transform 0.3s ease;  
+            font-size: 14px;
+            color: white;
+        }   
+        .cta1 {    
+            margin-top: 25px;  
+            margin-bottom: 15px;     
+        }    
+        .glass-link1 {
+            display: inline-block; /* Чтобы button корректно работал внутри */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+        .glass-button1 {
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            background: linear-gradient(270deg, rgba(126, 217, 87, 1), rgba(0, 126, 80, 1)); /* Сделаем градиент более плотным */
+            background-clip: padding-box; /* Обеспечиваем, чтобы градиент не выходил за пределы кнопки */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 14px;
+            padding: 12px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(126, 217, 87, 0.5);
+        }
+
+        /* Эффект блика */
+        .glass-button1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%; /* Начинаем за пределами кнопки */
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            transform: skewX(-45deg);
+            transition: left 0.9s ease, width 0.9s ease;
+        }
+
+        /* При наведении */
+        .glass-button1:hover::before {
+            left: 100%;
+            width: 100%;
+        }
+
+        /* Фикс теней */
+        .glass-button1:hover {
+            color: #FFC300;
+            border-color: #F5D76E;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(126, 217, 87, 0.5);
+            transform: scale(1.05);
+        }             
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .pagination button {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #29A3E2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .pagination button.active {
+            background-color: #FF9700;
+        }
+
+        .pagination button:hover {
+            transform: scale(1.03);
+        } 
+
+
+              //*BlogPage*//
+        .hero-section1 {
+            width: 100%; /* Растягиваем на всю ширину экрана */
+            display: flex;
+            flex-direction: column; /* Всё идёт в столбик */
+            align-items: center; /* Центрируем контент */           
+        }
+        .center-section {
+            background-position: center;
+            background-attachment: fixed;            
+            background-image: url(/Foto/blog-fon.webp);
+            object-fit: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0px;
+
+        }    
+        .center {      
+            background-color: rgba(255, 255, 255, 0.9);   
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            width: 70%; /* Делаем блок 80% ширины */
+            display: flex;
+            flex-direction: column; /* Выстраиваем в столбик */
+            align-items: center; /* Центрируем содержимое */
+            padding: 20px; /* Добавляем немного отступов */
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .content-foto {
+            justify-content: center;
+            gap: 10px;
+            width: 100%; /* Растягиваем на всю ширину родителя */
+            display: flex;
+            align-items: center;
+            height: auto; /* Делаем высоту авто */
+        }
+        .content-foto img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }    
+        .content-foto img:hover {
+            transform: scale(1.02);
+        }    
+        .foto-big {
+            display: flex;
+            height: 300px;
+            width: 50%;
+        }    
+        .foto-smal {
+            display: flex;
+            justify-content: space-between;            
+            flex-direction: column;
+            width: 30%; /* Немного отступов по краям */
+            height: 300px; /* Высоту можно регулировать */
+        }
+        .smal-1,
+        .smal-2 {
+            display: flex;
+            border-radius: 15px;
+            width: 100%;
+            height: 49%;
+        }          
+        .content-info {
+            width: 100%; /* Растягиваем на всю ширину родителя */
+            display: flex;
+            flex-direction: column; /* Текст тоже в столбик */
+            text-align: left; /* Выравниваем текст по левому краю */
+            padding: 20px;
+        }
+        .info-prev {
+            align-items: center;
+            text-align: left; /* Выравниваем текст по левому краю */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .info-prev h1,
+        .info-prev h2 {
+            margin: 0;
+            cursor: default;
+            max-width: 90%; /* Ограничиваем ширину текста */
+            margin-bottom: 20px;
+        }   
+        .info-prev h1 {
+            text-align: center;
+            margin-top: 10px;
+            background-color: rgba(41, 163, 226, 0.7);
+            padding: 10px 15px;
+            border-radius: 15px;
+            color: white;
+            width: 80%;
+        }   
+        .content-info p {
+            align-items: left;
+            text-align: left;
+        }
+        .pclassH2 {
+            max-width: 90%;
+            font-size: 1.125rem;   
+            font-weight: bold;
+            margin-bottom: 10px;
+        } 
+        .pclassText {
+            max-width: 90%;
+            font-size: 0.875rem;
+        }        
+
+        /* Стили для модального окна */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            display: flex; /* Используем Flexbox для центрирования */
+            justify-content: center; /* Центрируем по горизонтали */
+            align-items: center; /* Центрируем по вертикали */
+            height: 80%; /* Занимаем всю высоту модального окна */
+        }
+        .modal-content img {
+            max-width: 80%; /* Максимальная ширина изображения */
+            max-height: 80%; /* Максимальная высота изображения */
+            width: auto; /* Сохраняем пропорции */
+            height: auto; /* Сохраняем пропорции */
+            border-radius: 10px; /* Добавляем скругление углов (опционально) */
+        }    
+
+        .modal-thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-thumbnail {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .modal-thumbnail.active {
+            border-color: #fff;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .modal-navigation button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        #modalPrev {
+            left: 20px;
+        }
+
+        #modalNext {
+            right: 20px;
+        }
+
+        .modal-open {
+            overflow: hidden; /* Блокируем скролл при открытом модальном окне */
+        } 
+
+        /* Основная кнопка */
+        .glass-button {
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            background: linear-gradient(270deg, rgba(0, 151, 178, 0.8), rgba(89, 142, 200, 0.8)); /* Сделаем градиент более насыщенным */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 14px;
+            padding: 12px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
+        }
+
+        /* Эффект блика */
+        .glass-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%; /* Начинаем за пределами кнопки */
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            transform: skewX(-45deg);
+            transition: left 0.9s ease, width 0.9s ease;
+        }
+
+        /* При наведении */
+        .glass-button:hover::before {
+            left: 100%;
+            width: 100%;
+        }
+
+        /* Фикс теней */
+        .glass-button:hover {
+            color: #FFC300;
+            border-color: #F5D76E;
+            box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                        0 8px 28px rgba(89, 142, 200, 0.5);
+            transform: scale(1.05);
+        } 
+        .phoneblog {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+@media (max-width: 768px) {
+    .blur-box,
+    .blur-box1 {
+        display: none;
+    } 
+    .center {
+        width: 85%;
+    } 
+    .content-foto {
+        flex-direction: column;
+    } 
+    .foto-big {
+        flex-direction: row;
+        width: 100%;
+    } 
+    .foto-smal {
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+    } 
+    .smal-1,
+    .smal-2 {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }  
+    .content-info h1 {
+        font-size: 18px;
+    }   
+    .content-info h3 {
+        text-align: left;
+    }      
+}
+
+
+</style>

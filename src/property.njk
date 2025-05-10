@@ -1,0 +1,221 @@
+---
+layout: layout.njk
+title: Property Page
+---
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/Property.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<script async src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+<meta name="description" content="">
+       
+        <section class="hero-section">
+        <div class="offscreen">
+            <!-- italia -->
+            <h2>Appartamenti in vendita</h2>
+            <ul>
+                <li>Ville di lusso</li>
+                <li>Affari casa a Scalea</li>
+                <li>Case nel centro storico</li>
+                <li>Casa albergo </li>
+                <li>Appartamenti in affitto </li>
+                <li>Affitto villa con piscina</li>
+                <li>Vendita casa privato</li>
+                <li>Vendere casa da soli</li>
+                <li>Quadrilocale</li>
+                <li>Terreno edificabile</li>
+            </ul>
+            <!-- England -->
+            <h2>Buy property in Italy</h2>
+            <ul>
+                <li>Houses for sale in Italy</li>
+                <li>Buying a home in Italy</li>
+                <li>Property taxes in Italy</li>
+                <li>Houses for sale in Tropea</li>
+                <li>Countryside houses in Italy</li>
+                <li>Homes in Amalfi Coast</li>
+                <li>Apartments for sale</li>
+                <li>Rustic properties</li>
+                <li>Renovated properties</li>
+                <li>Two-bedroom apartments</li>
+            </ul>
+            <!-- Germania -->
+            <h2>Haus kaufen in Italien</h2>
+            <ul>
+                <li>Häuser zum Verkauf in Italien</li>
+                <li>Immobilieninvestitionen in Italien</li>
+                <li>Hypotheken in Italien</li>
+                <li>Appartements in Reggio Calabria</li>
+                <li>Küstenhäuser in Italien</li>
+                <li>Wohnungen am Comer See</li>
+                <li>Einfamilienhaus</li>
+                <li>Rustikale Immobilie</li>
+                <li>Renovierte Immobilien</li>
+                <li>Privatpool</li>
+            </ul>
+            <!-- Russia -->
+            <h2>Рынок недвижимости в Италии</h2>
+            <ul>
+                <li>Инвестиции в недвижимость в Италии</li>
+                <li>Цены на недвижимость в Италии</li>
+                <li>Налоги на недвижимость в Италии</li>
+                <li>Дома в Скалея</li>
+                <li>Апартаменты в Реджо-ди-Калабрия</li>
+                <li>Недвижимость с видом на Море</li>
+                <li>Дома у озера Комо</li>
+                <li>Отремонтированные дома</li>
+                <li>Трехкомнатный дом</li>
+                <li>Квартира на первом этаже</li>
+            </ul>
+            <!-- Finlandia -->
+            <h2>Talon ostaminen Italiassa</h2>
+            <ul>
+                <li>Italiassa sijaitsevat talot</li>
+                <li>Asunto Reggio Calabriassa</li>
+                <li>Kalabrian rannikko</li>
+                <li>Erillistalo</li>
+                <li>Merinäkymä</li>
+                <li>Takka</li>
+                <li>Lainat ulkomaalaisille</li>
+                <li>Pitkäaikainen vuokraus</li>
+                <li>Oikeusasiat</li>
+                <li>Kiinteistön ostosopimus</li>
+            </ul>
+            <!-- Chechia -->
+            <h2>Koupě domu v Itálii</h2>
+            <ul>
+                <li>Investice do nemovitostí v Itálii</li>
+                <li>Byty v Tropea</li>
+                <li>Nemovitosti v Kalábrii</li>
+                <li>Renovovaný dům</li>
+                <li>Airbnb v Itálii</li>
+                <li>Hypotéky pro cizince</li>
+                <li>Garáž</li>
+                <li>Balkón</li>
+                <li>Výhled na moře</li>
+                <li>Venkovský dům</li>
+            </ul>
+            <!-- Polonia -->
+            <h2>Kupno domu we Włoszech</h2>
+            <ul>
+                <li>Mieszkania na sprzedaż we Włoszech</li>
+                <li>Mieszkania w Tropea</li>
+                <li>Wille w Reggio Calabria</li>
+                <li>Airbnb we Włoszech</li>
+                <li>Długoterminowy wynajem</li>
+                <li>Doradztwo prawne</li>
+                <li>Doradztwo prawne</li>
+                <li>Klimatyzacja</li>
+                <li>Hipoteka dla cudzoziemców</li>
+                <li>Rejestracja nieruchomości</li>
+            </ul>
+            <!-- Lituania -->
+            <h2>Namų pardavimas Italijoje</h2>
+            <ul>
+                <li>Investicijos į nekilnojamąjį turtą Italijoje</li>
+                <li>Ilgalaikė nuoma</li>
+                <li>Turto registravimas</li>
+                <li>Turto registravimas</li>
+                <li>Pietų Italija</li>
+                <li>Butai Tropea mieste</li>
+                <li>Vilos Reggio Calabria regione</li>
+                <li>Airbnb Italijoje</li>
+                <li>Teisinė konsultacija</li>
+                <li>Garažas</li>
+            </ul>                                                                                    
+        </div>
+   <div class="text-but-top">
+    <a href="/index" data-i18n="prop_text1">ItalysCasa</a>
+    <a href="#" data-i18n="prop_text2">Province of Cosenza</a>
+    <a href="#" data-i18n="prop_text3">Scalea</a>
+    <div class="counter">
+      <p data-i18n="prop_text4">Houses for sale</p>
+    </div>
+    <div class="salva-ricerca">
+      <p data-i18n="prop_text5">New ads in your email</p>
+      <a href="#" id="saveSearch" class="glass-link">
+        <button class="glass-button1" data-i18n="prop_but1">Save Search</button>
+      </a>
+    </div>
+  </div>
+
+  <div id="mapModal" class="modal1">
+    <div class="modal-content1">
+      <span class="close-btn1">&times;</span>
+      <div id="mapPopup"></div>
+    </div>
+  </div>
+
+  <div class="vedi-map">
+    <a href="#" class="glass-link">
+      <button class="glass-button2" data-i18n="prop_but2">See on map</button>
+    </a>
+  </div>
+  <div class="ven-afit">
+    <a href="#" data-i18n="prop_but3">Sale</a>
+    <a href="/affitti" data-i18n="prop_but4">Rent</a>
+    <a href="/valut" data-i18n="prop_but5">Sold</a>
+  </div>
+</section>
+
+        <section id="about">
+  <div class="content-section">
+    <div class="mapp-container">
+      <div id="map" class="map"></div>
+      <div class="cerca-form">
+        <p data-i18n="prop_text6">Haven't found a suitable property?</p>
+        <a href="#" id="openModal" class="glass-link">
+          <button class="glass-button1" data-i18n="prop_but6">Write to us</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="content-bottom" id="announcementsContainer">
+      <!-- Карточки добавляются через JS -->
+    </div>
+
+    <div class="map-media">
+      <div id="mapMedia" class="mapMed"></div>
+    </div>
+  </div>
+
+          <!-- Форма обратной связи -->
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- Форма обратной связи -->
+        <div class="contact-form" id="contactForm">
+            <!-- Блок ввода данных -->
+            <div class="form-content" id="inputForm">
+                <h3 data-i18n="form_h3">Ask us a question</h3>
+                <label for="name" data-i18n="form_name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname" data-i18n="form_surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="phone" data-i18n="form_tel">Telephone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="text" data-i18n="form_text">Text</label>
+                <textarea id="text" name="text" required></textarea>
+
+                <button class="submit-button" id="submitButton" type="button" data-i18n="form_butt">Send</button>
+            </div>
+
+            <!-- Блок благодарности -->
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <h3 data-i18n="form_thank">Thank you for your request!</h3>
+                <p data-i18n="form_thank_p">Our manager will contact you shortly for a more detailed consultation.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<script src="/script/property.js"></script>  
+

@@ -1,0 +1,69 @@
+<styles>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            margin-top: 80px;
+        }       
+        .up-section {
+        	background-image: url(/Foto/test5.webp);
+       	    position: relative;
+        	margin-top: 80px;
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	width: 100%;
+        	min-height: 100px;
+        	text-align: center;
+        	color: white;
+        	padding: 40px 0px;
+        } 	
+        .center {
+            display: flex;
+            justify-content: center; /* Центрирует по горизонтали */
+            align-items: center; /* Центрирует по вертикали */
+            min-height: 100vh; /* Или задай конкретную высоту */
+        } 
+        .info-cookie {
+        	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+            justify-content: center; /* Центрирует по горизонтали */
+            align-items: center;        	
+        	border-radius: 15px 15px 0px 0px;
+        	display: flex;
+        	width: 80%;
+        	min-height: 700px;
+        }	
+        .cookie-block {
+            width: 95%;
+            min-height: 500px;
+            max-height: 500px; /* Ограничиваем высоту */
+            overflow: auto; /* Включаем прокрутку */
+            padding: 20px; /* Добавляем отступы */
+        }
+
+        /* Стилизация скролла (для WebKit-браузеров: Chrome, Safari) */
+        .cookie-block::-webkit-scrollbar {
+            width: 8px; /* Ширина скроллбара */
+        }
+
+        .cookie-block::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Цвет фона скроллбара */
+            border-radius: 10px;
+        }
+
+        .cookie-block::-webkit-scrollbar-thumb {
+            background: #888; /* Цвет ползунка */
+            border-radius: 10px;
+        }
+
+        .cookie-block::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Цвет ползунка при наведении */
+        }	
+        .cookie-block h1 {
+        	margin: 0;
+        }	
+</styles>
