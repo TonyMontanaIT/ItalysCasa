@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/script'); // Скрипты
     eleventyConfig.addPassthroughCopy('src/Foto'); // Фото
     eleventyConfig.addPassthroughCopy('src/admin');
+    eleventyConfig.addPassthroughCopy("src/favicon.ico");
     eleventyConfig.addPassthroughCopy({ 
         "src/robots.txt": "robots.txt",
         "src/4422ff404fd54a40afc4d0ddca7a3596.txt": "4422ff404fd54a40afc4d0ddca7a3596.txt",

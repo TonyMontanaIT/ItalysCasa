@@ -483,22 +483,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener("scroll", function () {
-    const icons = document.querySelector(".icons1");
-    const stopPosition = 200; // Высота от низа страницы, где кнопки должны остановиться
+  const icons = document.querySelector(".icons1");
+  if (!icons) return; // ← 💥 вот защита от ошибки
 
-    // Получаем текущую позицию скролла
-    const scrollPosition = window.innerHeight + window.scrollY;
-    const pageHeight = document.documentElement.scrollHeight;
+  const stopPosition = 200; // Высота от низа страницы, где кнопки должны остановиться
 
-    // Если достигнута заданная высота от низа страницы
-    if (scrollPosition >= pageHeight - stopPosition) {
-        icons.style.position = "absolute";
-        icons.style.bottom = `${stopPosition}px`;
-    } else {
-        icons.style.position = "fixed";
-        icons.style.bottom = "10px"; // Возвращаем исходное положение
-    }
+  const scrollPosition = window.innerHeight + window.scrollY;
+  const pageHeight = document.documentElement.scrollHeight;
+
+  if (scrollPosition >= pageHeight - stopPosition) {
+    icons.style.position = "absolute";
+    icons.style.bottom = `${stopPosition}px`;
+  } else {
+    icons.style.position = "fixed";
+    icons.style.bottom = "10px";
+  }
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const reviews = [

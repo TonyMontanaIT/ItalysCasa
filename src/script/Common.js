@@ -26,10 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const hostname = window.location.hostname;
   const currentLang = domainLangMap[hostname] || "en";
 
-  if (localStorage.getItem("lang") !== currentLang) {
-    localStorage.setItem("lang", currentLang);
-    window.dispatchEvent(new Event("languageChanged"));
-  }
+ if (!localStorage.getItem("lang")) {
+  localStorage.setItem("lang", currentLang);
+  window.dispatchEvent(new Event("languageChanged"));
+}
+
 
   // hreflang + canonical
   const path = window.location.pathname;
