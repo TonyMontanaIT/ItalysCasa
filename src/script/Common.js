@@ -1,4 +1,60 @@
-          
+ 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const domainLangMap = {
+    "italyscasa.com": "en",
+    "italyscasa.it": "it",
+    "italyscasa.de": "de",
+    "italyscasa.pl": "pl",
+    "italyscasa.fr": "fr",
+    "italyscasa.lv": "lv",
+    "italyscasa.us": "en",
+    "italyscasa.uk": "en"
+  };
+
+  const langs = {
+    en: "italyscasa.com",
+    it: "italyscasa.it",
+    de: "italyscasa.de",
+    pl: "italyscasa.pl",
+    fr: "italyscasa.fr",
+    lv: "italyscasa.lv",
+    us: "italyscasa.us",
+    uk: "italyscasa.uk"
+  };
+
+  const hostname = window.location.hostname;
+  const currentLang = domainLangMap[hostname] || "en";
+
+  if (localStorage.getItem("lang") !== currentLang) {
+    localStorage.setItem("lang", currentLang);
+    window.dispatchEvent(new Event("languageChanged"));
+  }
+
+  // hreflang + canonical
+  const path = window.location.pathname;
+  const head = document.querySelector("head");
+
+  const canonical = document.createElement("link");
+  canonical.rel = "canonical";
+  canonical.href = `https://${langs["en"]}${path}`;
+  head.appendChild(canonical);
+
+  Object.entries(langs).forEach(([lang, domain]) => {
+    const link = document.createElement("link");
+    link.rel = "alternate";
+    link.hreflang = lang;
+    link.href = `https://${domain}${path}`;
+    head.appendChild(link);
+  });
+});
+
+
+
+
+
+
+
                         //скрол шапки//
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
