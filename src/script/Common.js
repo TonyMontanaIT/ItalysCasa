@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const canonical = document.createElement("link");
   canonical.rel = "canonical";
-  canonical.href = `https://${langs["en"]}${path}`;
+  canonical.href = `https://${hostname}${path}`;
   head.appendChild(canonical);
 
   Object.entries(langs).forEach(([lang, domain]) => {
