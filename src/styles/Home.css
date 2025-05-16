@@ -16,6 +16,8 @@
             position: relative;
             overflow: hidden;
             transition: background-image 0.5s ease-in-out;
+            width: 100%;
+            aspect-ratio: 16 / 9; /* 🔥 добавлено сюда — всегда */
         }
         .content-section {
             margin-right: auto;
@@ -58,9 +60,7 @@
         .hero-section.switch::after {
             opacity: 1; /* Показать следующее изображение */
         }
-        .hero-section.switch {
-            aspect-ratio: 16/9; /* или задаёшь height вручную */
-        }
+
         .search-bar-container {
             width: 40%;
             z-index: 5;
@@ -137,7 +137,7 @@
         .search-bar::before {
             content: '';
             position: absolute;
-            left: 8vh;
+            left: 6vh;
             top: 50%;
             transform: translateY(-50%);
             height: 4.4vh;

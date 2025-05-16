@@ -167,6 +167,9 @@
             border-color: #29A3E2;
             box-shadow: 0 0 0 2px rgba(41, 163, 226, 0.3);
         }
+        .hero-section {
+            aspect-ratio: 16 / 9;
+        }
 
 
         footer {

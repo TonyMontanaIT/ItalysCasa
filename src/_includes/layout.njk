@@ -9,6 +9,11 @@
 {% else %}
   <meta name="description" content="ItalysCasa - Agenzia immobiliare in Calabria, vendita, affitto, consulenza.">
 {% endif %}
+{% if page.fileSlug == "index" %}
+<link rel="preload" as="image" href="/Foto/HomeFoto/Home1.webp" type="image/webp" media="(min-width: 769px)">
+<link rel="preload" as="image" href="/Foto/HomeFoto/Home1med.webp" type="image/webp" media="(max-width: 768px)">
+{% endif %}
+
   <title>{% if page.title %}{{ page.title }} | ItalysCasa{% else %}ItalysCasa{% endif %}</title>
   <link rel="stylesheet" href="/styles/Common.css">
   {% if page.fileSlug.startsWith('anunci') %}
@@ -25,12 +30,13 @@
 <link rel="icon" href="/Foto/Icon/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="/Foto/Icon/favicon.svg" type="image/x-icon">
 
-  <!-- Google Tag Manager -->
+<!-- Google Tag Manager (lazy load) -->
 <script>
   window.addEventListener('load', () => {
     const loadGTM = () => {
       const script = document.createElement('script');
       script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5M3T97HB';
+      script.async = true;
       document.head.appendChild(script);
     };
 
@@ -41,15 +47,13 @@
     }
   });
 </script>
+<!-- End Google Tag Manager -->
+
 
  
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M3T97HB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     {% include "header.njk" %}
     <main>
         {{ content | safe }}
