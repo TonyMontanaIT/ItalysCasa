@@ -4,19 +4,19 @@
             padding: 0;
             overflow-x: hidden;
         }
-.hero-section {
-    background-color: #FFF;
-    background-image: url('/Foto/HomeFoto/Home1.webp'); /* Фоновое изображение для мгновенной загрузки */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: background-image 0.5s ease-in-out;
-}
+        .hero-section {
+            background-color: #FFF;
+            background-image: url('/Foto/HomeFoto/Home1.webp'); /* Фоновое изображение для мгновенной загрузки */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: background-image 0.5s ease-in-out;
+        }
         .content-section {
             margin-right: auto;
             display: flex;
@@ -25,40 +25,42 @@
             box-sizing: border-box;
         }         
 
-.hero-section::before,
-.hero-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-  z-index: 1;
-}
+        .hero-section::before,
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            z-index: 1;
+        }
 
-.hero-section::before {
-  background-image: var(--current-image); /* Текущее изображение */
-  opacity: 1;
-  z-index: 2;
-}
+        .hero-section::before {
+            background-image: var(--current-image); /* Текущее изображение */
+            opacity: 1;
+            z-index: 2;
+        }
 
-.hero-section::after {
-  background-image: var(--next-image); /* Следующее изображение */
-  z-index: 1;
-}
+        .hero-section::after {
+            background-image: var(--next-image); /* Следующее изображение */
+            z-index: 1;
+        }
 
-.hero-section.switch::before {
-  opacity: 0; /* Скрыть текущее изображение */
-}
+        .hero-section.switch::before {
+            opacity: 0; /* Скрыть текущее изображение */
+        }
 
-.hero-section.switch::after {
-  opacity: 1; /* Показать следующее изображение */
-}
-
+        .hero-section.switch::after {
+            opacity: 1; /* Показать следующее изображение */
+        }
+        .hero-section.switch {
+            aspect-ratio: 16/9; /* или задаёшь height вручную */
+        }
         .search-bar-container {
             width: 40%;
             z-index: 5;
@@ -167,29 +169,29 @@
             cursor: pointer;
         }
 
-.autocomplete-box {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  border: 1px solid #ccc;
-  border-top: none;
-  z-index: 99;
-  max-height: 200px;
-  overflow-y: auto;
-  border-radius: 0 0 8px 8px;
-}
+        .autocomplete-box {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #ffffff;
+          border: 1px solid #ccc;
+          border-top: none;
+          z-index: 99;
+          max-height: 200px;
+          overflow-y: auto;
+          border-radius: 0 0 8px 8px;
+        }
 
-.autocomplete-item {
-  padding: 10px;
-  cursor: pointer;
-  color: #333;
-}
+        .autocomplete-item {
+          padding: 10px;
+          cursor: pointer;
+          color: #333;
+        }
 
-.autocomplete-item:hover {
-  background-color: #f2f2f2;
-}
+        .autocomplete-item:hover {
+          background-color: #f2f2f2;
+        }
 
         
         .mapp-container {
@@ -333,19 +335,19 @@
             height: 100%;
         }   
 
-.carousel-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-}
-.carousel-container:hover .carousel-image.active {
-    transform: scale(1.02);
-}
+        .carousel-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .carousel-container:hover .carousel-image.active {
+            transform: scale(1.02);
+        }
 
         .carousel-image.active {
             opacity: 1; /* Активное изображение видно */
@@ -376,36 +378,36 @@
         }
 
           /*Пагинация*/
-.button-anunci {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  max-height: 70px; /* Не даст ей растягиваться */
-}
+        .button-anunci {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-top: 40px;
+          margin-bottom: 20px;
+          max-height: 70px; /* Не даст ей растягиваться */
+        }
 
-#loadMoreButton {
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
-  font-size: 1.375rem;
-  padding: 15px 20px;
-  border-radius: 50px;
-  background: linear-gradient(270deg, rgba(246, 187, 6, 0.8), rgba(255, 215, 0, 0.8));
-  color: #15264d;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
+        #loadMoreButton {
+          font-weight: bold;
+          box-shadow: 0 4px 10px rgba(0, 151, 178, 0.6), 0 4px 20px rgba(89, 142, 200, 0.7);
+          font-size: 1.375rem;
+          padding: 15px 20px;
+          border-radius: 50px;
+          background: linear-gradient(270deg, rgba(246, 187, 6, 0.8), rgba(255, 215, 0, 0.8));
+          color: #15264d;
+          border: none;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+        }
 
-#loadMoreButton:hover {
-  color: #15264d;
-  border-color: #F5D76E;
-  box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
-              0 8px 28px rgba(89, 142, 200, 0.5);
-  transform: scale(1.03);
-}
+        #loadMoreButton:hover {
+          color: #15264d;
+          border-color: #F5D76E;
+          box-shadow: 0 6px 18px rgba(255, 195, 0, 0.6), 
+                      0 8px 28px rgba(89, 142, 200, 0.5);
+          transform: scale(1.03);
+        }
         
         .serv-text {
             color: #0097B2;
@@ -621,63 +623,63 @@
             background: linear-gradient(90deg, #0097B2 20%, #598EC8 40%, #8BBFF8 100%);
         }   
 
-.block-recens {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-}
+        .block-recens {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
 
-.recens-carousel {
-    display: flex;
-    width: max-content;
-    animation: scrollReviews 150s linear infinite;
-}
+        .recens-carousel {
+            display: flex;
+            width: max-content;
+            animation: scrollReviews 150s linear infinite;
+        }
 
-.recens-card {
-    flex: 0 0 300px; /* ширина одной карточки */
-    margin-right: 30px;
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        .recens-card {
+            flex: 0 0 300px; /* ширина одной карточки */
+            margin-right: 30px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-.recens-stars {
-    font-size: 1.3rem;
-    color: #FFD700;
-    margin-bottom: 10px;
-}
+        .recens-stars {
+            font-size: 1.3rem;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
 
-.recens-name {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: #333;
-}
+        .recens-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
 
-.recens-date {
-    font-size: 0.95rem;
-    color: #888;
-    margin-bottom: 15px;
-}
+        .recens-date {
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
 
-.recens-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #444;
-}
+        .recens-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #444;
+        }
 
-@keyframes scrollReviews {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
+        @keyframes scrollReviews {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
         .map-media {
             display: none;
@@ -717,6 +719,7 @@
         margin-top: 6.4vh;
         align-items: center;
         height: 48vh;
+        min-height: 300px;
         margin-bottom: 10px;     
     }  
     .mapMed {

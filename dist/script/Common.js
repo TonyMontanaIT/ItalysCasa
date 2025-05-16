@@ -1,38 +1,52 @@
- 
-
 document.addEventListener("DOMContentLoaded", () => {
   const domainLangMap = {
     "italyscasa.com": "en",
     "italyscasa.it": "it",
+    "italyscasa.ru": "ru",
     "italyscasa.de": "de",
     "italyscasa.pl": "pl",
     "italyscasa.fr": "fr",
     "italyscasa.lv": "lv",
+    "italyscasa.cz": "cs",
+    "italyscasa.ch": "fr",
     "italyscasa.us": "en",
-    "italyscasa.uk": "en"
+    "italyscasa.uk": "en",
+    "italyscasa.lt": "lt",
+    "italyscasa.fi": "fi",
+    "italyscasa.sv": "sv",
+    "italyscasa.es": "es",
+    "italyscasa.ar": "ar",
+    "italyscasa.zh": "zh"
   };
 
   const langs = {
     en: "italyscasa.com",
+    "en-us": "italyscasa.us",
+    "en-gb": "italyscasa.uk",
     it: "italyscasa.it",
+    ru: "italyscasa.ru",
     de: "italyscasa.de",
     pl: "italyscasa.pl",
     fr: "italyscasa.fr",
+    "fr-ch": "italyscasa.ch",
     lv: "italyscasa.lv",
-    us: "italyscasa.us",
-    uk: "italyscasa.uk"
+    cs: "italyscasa.cz",
+    lt: "italyscasa.lt",
+    fi: "italyscasa.fi",
+    sv: "italyscasa.sv",
+    es: "italyscasa.es",
+    ar: "italyscasa.ar",
+    zh: "italyscasa.zh"
   };
 
   const hostname = window.location.hostname;
   const currentLang = domainLangMap[hostname] || "en";
 
- if (!localStorage.getItem("lang")) {
-  localStorage.setItem("lang", currentLang);
-  window.dispatchEvent(new Event("languageChanged"));
-}
+  if (!localStorage.getItem("lang")) {
+    localStorage.setItem("lang", currentLang);
+    window.dispatchEvent(new Event("languageChanged"));
+  }
 
-
-  // hreflang + canonical
   const path = window.location.pathname;
   const head = document.querySelector("head");
 
@@ -49,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     head.appendChild(link);
   });
 });
+
 
 
 

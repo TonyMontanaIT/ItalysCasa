@@ -1,7 +1,3 @@
 User-agent: *
 Allow: /
-<<<<<<< HEAD
 Sitemap: https://italyscasa.com/sitemap-new.xml
-=======
-Sitemap: https://italyscasa.com/sitemap-new.xml
->>>>>>> b86cd69f6776e55f458ad1440c8b537007326c43

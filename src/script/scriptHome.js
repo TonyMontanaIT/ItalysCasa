@@ -84,7 +84,6 @@ const staticAgencies = [
   { lat: 40.8518, lng: 14.2681, name: "Real Estate Agency in Naples", phone: "3791080060" }
 ];
 
-// 🔥 Динамические маркеры через кэшированный fetch
 async function addDynamicMarkers(map) {
   try {
     const data = await fetchAnnouncementsData();
@@ -102,7 +101,6 @@ async function addDynamicMarkers(map) {
       const nomeAnunci = announcement.nomeAnunci;
       const prezzo = announcement.prezzo;
       const riferimento = announcement.rif1 || announcement.riferimento;
-      const slug = riferimento;
 
       if (!isNaN(latitude) && !isNaN(longitude)) {
         const popupContent = `
@@ -128,7 +126,6 @@ async function addDynamicMarkers(map) {
   }
 }
 
-// 📌 Статические маркеры — без изменений
 function addStaticMarkers(map, agencies) {
   const redIcon = L.icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -151,37 +148,50 @@ function addStaticMarkers(map, agencies) {
   });
 }
 
-// 💥 Подключаем карты при загрузке DOM
-function waitForLeafletAndInitMap() {
-  if (typeof L === 'undefined') {
-    setTimeout(waitForLeafletAndInitMap, 100); // пробуем снова через 100 мс
-    return;
-  }
+function initMapById(id) {
+  const element = document.getElementById(id);
+  if (!element || typeof L === 'undefined') return;
 
-  const mapSmallElement = document.getElementById('map');
-  if (mapSmallElement) {
-    const mapSmall = L.map('map').setView([39.8060500, 15.7963500], 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(mapSmall);
-    addDynamicMarkers(mapSmall);
-    addStaticMarkers(mapSmall, staticAgencies);
-  }
+  const map = L.map(id).setView([39.8060500, 15.7963500], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
 
-  const mapBigElement = document.getElementById('mapMedia');
-  if (mapBigElement) {
-    const mapBig = L.map('mapMedia').setView([39.8060500, 15.7963500], 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(mapBig);
-    addDynamicMarkers(mapBig);
-    addStaticMarkers(mapBig, staticAgencies);
-  }
+  addDynamicMarkers(map);
+  addStaticMarkers(map, staticAgencies);
 }
 
-document.addEventListener('DOMContentLoaded', waitForLeafletAndInitMap);
+function lazyLoadMaps() {
+  const targets = ['map', 'mapMedia'];
+  targets.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      if (entries[0].isIntersecting) {
+        initMapById(id);
+        observer.unobserve(el);
+      }
+    }, { threshold: 0.1 });
+
+    observer.observe(el);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof L === 'undefined') {
+    const checkLeaflet = setInterval(() => {
+      if (typeof L !== 'undefined') {
+        clearInterval(checkLeaflet);
+        lazyLoadMaps();
+      }
+    }, 100);
+  } else {
+    lazyLoadMaps();
+  }
+});
+
 
 
 

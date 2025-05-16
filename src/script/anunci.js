@@ -49,7 +49,7 @@ function renderAnnouncement(announcement, lang) {
     setText("text5", translated.text5 || announcement.text5);
     setText("h2t6", translated.h2t6 || announcement.h2t6);
     setText("text6", translated.text6 || announcement.text6);
-    setText("prezzoDescrizione", announcement.prezzo);
+    setText("prezzoDescrizione", announcement.prezzoDescrizione);
 
     setText("modalRif", announcement.riferimento);
     setText("modalTipo", translated.tipo || announcement.tipo);
