@@ -137,7 +137,7 @@
         .search-bar::before {
             content: '';
             position: absolute;
-            left: 6vh;
+            left: 8vh;
             top: 50%;
             transform: translateY(-50%);
             height: 4.4vh;
@@ -753,6 +753,9 @@
         right: 20%;
     }   
 
+    .search-bar::before {
+        left: 6vh;
+    }
     /* Блоки объявлений по одному в ряд */
     .content-bottom {
         flex-direction: column;

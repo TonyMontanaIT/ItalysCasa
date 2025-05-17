@@ -44,9 +44,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!localStorage.getItem("lang")) {
     localStorage.setItem("lang", currentLang);
-    window.dispatchEvent(new Event("languageChanged"));
   }
 
+  // 💡 Обновляем селектор языка
+  const savedLang = localStorage.getItem("lang");
+  const langSelector = document.getElementById("lang-switcher");
+  if (langSelector && savedLang) {
+    langSelector.value = savedLang;
+  }
+
+  // 🌐 hreflang и canonical
   const path = window.location.pathname;
   const head = document.querySelector("head");
 
@@ -63,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     head.appendChild(link);
   });
 });
+
 
 
 
