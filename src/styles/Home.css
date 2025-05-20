@@ -617,10 +617,10 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease;
         }
         .reviews-block a:hover {
-            background: linear-gradient(90deg, #0097B2 20%, #598EC8 40%, #8BBFF8 100%);
+            transform: scale(1.03);
         }   
 
         .block-recens {
@@ -702,6 +702,15 @@
             cursor: pointer;
             display: none; /* Скрываем по умолчанию */
         }
+
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px; width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap;
+        }
+
 
 @media (max-width: 768px) {
 

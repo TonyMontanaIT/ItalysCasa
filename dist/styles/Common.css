@@ -226,13 +226,13 @@
             margin: 0;
             font-size: 18px;
             font-weight: bold;
-            color: #0097B2;
+            color: #F6BB06;
             transition: transform 0.2s linear;
         }    
 
         .fot-cent h1:hover {
             cursor: pointer;
-            color: #F6BB06;
+            color: #0097B2;
             transform: scale(1.03);
         }    
         .fot-cent .h2 { 
@@ -247,13 +247,13 @@
             margin: 0;
             font-size: 18px;
             font-weight: bold;
-            color: #0097B2;
+            color: #F6BB06;
             transition: transform 0.2s linear;
         }    
 
         .fot-cent1 .h1:hover {
             cursor: pointer;
-            color: #F6BB06;
+            color: #0097B2;
             transform: scale(1.03);
         }        
         .fot-cent1 .h2 { 
