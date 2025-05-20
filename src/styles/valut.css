@@ -1,11 +1,8 @@
-<style>
-
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            margin-top: 80px;
         }
         .hero-section {
             justify-content: space-between;
@@ -26,13 +23,13 @@
             padding: 15px;
         }  
         .valut-info1 {
-            width: 72vh;
+            width: 450px;
             margin-top: 16vh;
             border-radius: 10px;
             background-color: rgba(41, 163, 226, 0.7);
         } 
         .valut-info2 {
-            width: 80vh;
+            width: 500px;
             margin-top: 8vh;
             border-radius: 10px;
             background-color: rgba(41, 163, 226, 0.7);
@@ -49,11 +46,10 @@
         }
         .block-right { 
             margin-top: 16vh;
-            margin-bottom: 6.4vh;
             margin-right: 8vh;
         }    
         .contact-form {
-            width: 64vh;
+            width: 400px;
             margin-right: 20px;
             top: 14.4vh;
             box-sizing: border-box;
@@ -190,6 +186,11 @@
 
 @media (max-width: 768px) { 
 
+    .hero-section {
+        display: block;
+        padding: 20px 0px;
+    }
+
     .block-left {
         display: none;
     }
@@ -197,7 +198,6 @@
     .block-right {
         width: 90%; /* Занимает 90% ширины экрана */
         margin: 100px auto 0; /* Убираем отступы и центрируем */
-        margin-bottom: 20px;
     }
     .media-info {
         display: block;
@@ -252,5 +252,4 @@
     }
        
 }
-
-</style>        
+       

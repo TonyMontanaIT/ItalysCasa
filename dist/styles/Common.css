@@ -82,8 +82,7 @@
 
         .section-push nav {
             display: flex;
-            align-items: center;
-            gap: 15px; /* по желанию, можно spacing между кнопками */
+            gap: 10px; /* по желанию, можно spacing между кнопками */
         }
         .icons {
             display: flex;
@@ -399,7 +398,7 @@
         flex-direction: column;
         position: absolute;
         top: 9.6vh;
-        right: 0;
+        right: 15px;
         background: rgba(30, 30, 30, 0.9);
         padding: 10px 20px;
         border-radius: 10px;
@@ -409,7 +408,7 @@
 
     .section-push nav.nav-active a {
         color: white;
-        text-align: right;
+        text-align: left;
         display: block;
         padding: 10px 0;
         font-size: 18px;
