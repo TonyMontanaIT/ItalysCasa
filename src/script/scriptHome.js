@@ -1,3 +1,13 @@
+function isSlowConnection() {
+  const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  if (!conn) return false;
+  return conn.saveData || ['slow-2g', '2g', '3g'].includes(conn.effectiveType);
+}
+
+const isSlow = isSlowConnection();
+
+
+
 async function fetchAnnouncementsData() {
   const res = await fetch("https://tonymontanait.github.io/italyscasa-content/anunci/index2_translated.json");
   return await res.json();
@@ -60,8 +70,8 @@ window.addEventListener('load', function () { // Ждём полной загр�
     }, 100); // Через 100мс после загрузки, можно увеличить
 
     // Запускаем смену фона через 4 секунды
-    setTimeout(changeBackgroundImage, 4000);
-    setInterval(changeBackgroundImage, 4000);
+    if (!isSlow) setTimeout(changeBackgroundImage, 4000);
+    if (!isSlow) setInterval(changeBackgroundImage, 4000);
 
     // Следим за изменением ширины экрана и обновляем массив изображений
     window.addEventListener("resize", () => {
@@ -332,6 +342,7 @@ function addLoadMoreButton(lang) {
 
 // Карусель
 function initializeCarousels() {
+  if (isSlow) return; // отключаем карусель на слабом соединении
   document.querySelectorAll('.carousel-container').forEach(container => {
     const images = container.querySelectorAll('.carousel-image');
     const prevBtn = container.querySelector('.carousel-btn.prev');
@@ -510,7 +521,7 @@ document.addEventListener("scroll", function () {
   }
 });
 
-
+if (!isSlow) {
 document.addEventListener("DOMContentLoaded", function () {
     const reviews = [
         { name: "Luca Bianchi", stars: 5, date: "03 Aprile 2025", text: "Servizio eccellente, ho trovato casa in pochissimo tempo. Agenzia molto professionale!" },
@@ -554,7 +565,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     container.appendChild(carousel);
 });
-
+};
 async function injectStructuredDataForHomePage() {
   const head = document.head;
   const existing = document.getElementById("structured-annunci-json");
@@ -606,3 +617,19 @@ window.addEventListener("languageChanged", () => {
 });
 
 
+window.addEventListener("load", () => {
+  if (!isSlow) {
+    const blogImages = [
+      { src: "/Foto/Blog/BlogHome1.webp", alt: "Servizio 1" },
+      { src: "/Foto/Blog/BlogHome2.webp", alt: "Servizio 2" },
+      { src: "/Foto/Blog/BlogHome3.webp", alt: "Servizio 3" }
+    ];
+    blogImages.forEach(({ src, alt }) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = alt;
+      img.loading = "lazy";
+      document.body.appendChild(img); // Можно вставить в нужный контейнер
+    });
+  }
+});
