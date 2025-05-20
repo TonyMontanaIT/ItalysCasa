@@ -615,21 +615,3 @@ window.addEventListener("languageChanged", () => {
   currentIndex = 0;
   renderPage(lang);
 });
-
-
-window.addEventListener("load", () => {
-  if (!isSlow) {
-    const blogImages = [
-      { src: "/Foto/Blog/BlogHome1.webp", alt: "Servizio 1" },
-      { src: "/Foto/Blog/BlogHome2.webp", alt: "Servizio 2" },
-      { src: "/Foto/Blog/BlogHome3.webp", alt: "Servizio 3" }
-    ];
-    blogImages.forEach(({ src, alt }) => {
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = alt;
-      img.loading = "lazy";
-      document.body.appendChild(img); // Можно вставить в нужный контейнер
-    });
-  }
-});
