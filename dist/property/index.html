@@ -41,6 +41,32 @@
   });
 </script>
 <!-- End Google Tag Manager -->
+<!-- Google Analytics (lazy load) -->
+<script>
+  window.addEventListener('load', () => {
+    const loadGA = () => {
+      const gtagScript = document.createElement('script');
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4CBXHFDGK4';
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
+
+      gtagScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-4CBXHFDGK4');
+      };
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGA);
+    } else {
+      setTimeout(loadGA, 2000);
+    }
+  });
+</script>
+<!-- End Google Analytics -->
 
 
  
@@ -126,6 +152,11 @@
                 <li>Vendere casa da soli</li>
                 <li>Quadrilocale</li>
                 <li>Terreno edificabile</li>
+                <li>Notaio</li>
+                <li>Geometra</li>
+                <li>Architetto</li>
+                <li>Bungalow</li>
+                <li>Lago</li>
             </ul>
             <!-- England -->
             <h2>Buy property in Italy</h2>
@@ -231,7 +262,10 @@
     <a href="#" data-i18n="prop_text2">Province of Cosenza</a>
     <a href="#" data-i18n="prop_text3">Scalea</a>
     <div class="counter">
-      <p data-i18n="prop_text4">Houses for sale</p>
+    <p class="counter-line">
+    <span id="announcementCounter"></span>
+    <span data-i18n="prop_text4">Houses for sale</span>
+    </p>
     </div>
     <div class="salva-ricerca">
       <p data-i18n="prop_text5">New ads in your email</p>

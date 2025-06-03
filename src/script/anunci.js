@@ -247,15 +247,11 @@ if (carousel && modalThumbs && announcement.images?.length) {
     }
 
     // 🎥 Видео кнопки
-    if (announcement.video) {
-        const videoBtn = document.getElementById("videoButton");
-        if (videoBtn) {
-            videoBtn.href = announcement.video;
-            videoBtn.style.display = "inline-block";
-        }
-        const vidIcon = document.getElementById("carouselVideoLink");
-        if (vidIcon) vidIcon.href = announcement.video;
-    }
+// 🎥 Видео кнопка — открывает модалку
+if (announcement.video) {
+    initYoutubeModal(announcement.video);
+}
+
 
     if (announcement.video360) {
         const video360Btn = document.getElementById("video360Button");
@@ -598,3 +594,53 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Error loading or generating structured data ad:", err);
   }
 });
+
+
+function initYoutubeModal(videoUrl) {
+  const videoId = extractYoutubeID(videoUrl);
+
+  const modal = document.getElementById("videoModal5");
+  const videoButton = document.getElementById("videoButton");
+  const closeBtn = document.querySelector(".modal5 .close");
+  const previewImg = document.getElementById("videoPreview");
+  const videoContainer = document.getElementById("videoContainer");
+  const previewWrapper = document.querySelector(".video-preview");
+
+  if (!videoId || !modal || !videoButton) return;
+
+  videoButton.style.display = "inline-block";
+
+  videoButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    modal.style.display = "flex";
+    previewImg.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  });
+
+  previewWrapper.addEventListener("click", function () {
+    videoContainer.innerHTML = `<iframe width="100%" height="400" 
+      src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" 
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>`;
+    previewWrapper.style.display = "none";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    previewWrapper.style.display = "block";
+    videoContainer.innerHTML = "";
+  });
+
+  window.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      previewWrapper.style.display = "block";
+      videoContainer.innerHTML = "";
+    }
+  });
+}
+
+function extractYoutubeID(url) {
+  const regex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/;
+  const match = url.match(regex);
+  return match ? match[1] : null;
+}

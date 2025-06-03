@@ -48,6 +48,32 @@
   });
 </script>
 <!-- End Google Tag Manager -->
+<!-- Google Analytics (lazy load) -->
+<script>
+  window.addEventListener('load', () => {
+    const loadGA = () => {
+      const gtagScript = document.createElement('script');
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4CBXHFDGK4';
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
+
+      gtagScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-4CBXHFDGK4');
+      };
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGA);
+    } else {
+      setTimeout(loadGA, 2000);
+    }
+  });
+</script>
+<!-- End Google Analytics -->
 
 
  

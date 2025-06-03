@@ -388,3 +388,22 @@ async function injectStructuredDataForPropertyPage() {
 document.addEventListener("DOMContentLoaded", injectStructuredDataForPropertyPage);
 
 
+async function updateAnnouncementCount() {
+  try {
+    const response = await fetch("https://tonymontanait.github.io/italyscasa-content/anunci/index2.json");
+    const data = await response.json();
+
+    // Объявления — это массив
+    const count = Array.isArray(data) ? data.length : 0;
+
+    const counterEl = document.getElementById('announcementCounter');
+    if (counterEl) {
+      const originalText = counterEl.textContent;
+      counterEl.textContent = `${count} ${originalText}`;
+    }
+  } catch (error) {
+    console.error('Ошибка загрузки объявлений:', error);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', updateAnnouncementCount);

@@ -892,6 +892,37 @@
         }
 
 
+.modal5 {
+  position: fixed;
+  z-index: 10000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal5-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+.modal5 .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #000;
+}
+.play-button {
+  filter: drop-shadow(0 0 5px #000);
+}
+
+
+
 @media (max-width: 768px) {
 
     .content-section {

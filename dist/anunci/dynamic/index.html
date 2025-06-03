@@ -43,6 +43,32 @@
   });
 </script>
 <!-- End Google Tag Manager -->
+<!-- Google Analytics (lazy load) -->
+<script>
+  window.addEventListener('load', () => {
+    const loadGA = () => {
+      const gtagScript = document.createElement('script');
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4CBXHFDGK4';
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
+
+      gtagScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-4CBXHFDGK4');
+      };
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGA);
+    } else {
+      setTimeout(loadGA, 2000);
+    }
+  });
+</script>
+<!-- End Google Analytics -->
 
 
  
@@ -131,6 +157,11 @@
                 <li>Vendere casa senza agenzia</li>
                 <li>Finanziamento per aquisto casa</li>
                 <li>Prezzo di mercato</li>
+                <li>Fiume</li>
+                <li>In Riva al Mare</li>
+                <li>Scogliera</li>
+                <li>AerioPorto</li>
+                <li>Hospedali</li>
             </ul>
             <!-- England -->
             <h2>Italian real estate market</h2>
@@ -572,6 +603,18 @@
          </div>
 
 </div>
+
+<div id="videoModal5" class="modal5" style="display:none;">
+  <div class="modal5-content">
+    <span class="close" style="cursor:pointer;">&times;</span>
+    <div class="video-preview" style="position:relative;cursor:pointer;">
+      <img id="videoPreview" src="" alt="Video Preview" style="width:100%; height:auto;">
+      <img src="/Foto/Icon/playbut.svg" class="play-button" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;">
+    </div>
+    <div id="videoContainer" style="margin-top:20px;"></div>
+  </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script src="/script/anunci.js"></script> 
 
