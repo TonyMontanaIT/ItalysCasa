@@ -684,10 +684,10 @@
         .map-media {
             display: none;
         } 
+
         .icons1 {
             display: none;
-        } 
-
+        }
         .search-clear {
             position: absolute;
             right: 10%;
@@ -705,11 +705,14 @@
 
 
 @media (max-width: 768px) {
-
-    .hero-section {     
+   
+    .hero-section {
+        background-image: url('/Foto/HomeFoto/Home9med.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 50vh;
-        background-image: url('/Foto/HomeFoto/Home1med.webp');
-    }       
+    }   
     .mapp-container {
         display: none;
     }
@@ -824,8 +827,9 @@
         display: none;   
     }    
     .icons1 {
-        z-index: 1001;
-        display: flex;
+        transition: all 0.3s ease-in-out;
+        z-index: 9999;
+        display: flex !important;
         position: fixed;
         bottom: 10px;
         right: 10px;

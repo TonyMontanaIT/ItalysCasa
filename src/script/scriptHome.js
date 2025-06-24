@@ -16,73 +16,61 @@ async function fetchAnnouncementsData() {
 
 
 
-window.addEventListener('load', function () { // Ждём полной загрузки страницы
-    const heroSection = document.querySelector('.hero-section');
+// Определяем, мобильное ли устройство
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-    const desktopImages = [
-        '/Foto/HomeFoto/Home1.webp',
-        '/Foto/HomeFoto/Home2.webp',
-        '/Foto/HomeFoto/Home3.webp',
-        '/Foto/HomeFoto/Home4.webp',
-        '/Foto/HomeFoto/Home5.webp',
-        '/Foto/HomeFoto/Home6.webp',
-        '/Foto/HomeFoto/Home7.webp',
-        '/Foto/HomeFoto/Home8.webp',
-        '/Foto/HomeFoto/Home9.webp',
-        '/Foto/HomeFoto/Home10.webp'
-    ];
+window.addEventListener('load', function () {
+  const heroSection = document.querySelector('.hero-section');
 
-    const mediaImages = [
-        '/Foto/HomeFoto/Home1med.webp',
-        '/Foto/HomeFoto/Home2med.webp',
-        '/Foto/HomeFoto/Home3med.webp',
-        '/Foto/HomeFoto/Home4med.webp',
-        '/Foto/HomeFoto/Home5med.webp'
-    ];
+  // Если это мобильное устройство — ничего не делаем, фон через CSS
+  if (isMobile) {
+    return;
+  }
 
-    function getCurrentImages() {
-        return window.matchMedia("(max-width: 768px)").matches ? mediaImages : desktopImages;
-    }
+  // Десктоп — работаем как раньше
+  const desktopImages = [
+    '/Foto/HomeFoto/Home1.webp',
+    '/Foto/HomeFoto/Home2.webp',
+    '/Foto/HomeFoto/Home3.webp',
+    '/Foto/HomeFoto/Home4.webp',
+    '/Foto/HomeFoto/Home5.webp',
+    '/Foto/HomeFoto/Home6.webp',
+    '/Foto/HomeFoto/Home7.webp',
+    '/Foto/HomeFoto/Home8.webp',
+    '/Foto/HomeFoto/Home9.webp',
+    '/Foto/HomeFoto/Home10.webp'
+  ];
 
-    let images = getCurrentImages();
-    let currentIndex = 0;
+  let images = desktopImages;
+  let currentIndex = 0;
 
-    function changeBackgroundImage() {
-        const nextIndex = (currentIndex + 1) % images.length;
+  function changeBackgroundImage() {
+    const nextIndex = (currentIndex + 1) % images.length;
 
-        heroSection.style.setProperty('--next-image', `url('${images[nextIndex]}')`);
-        heroSection.classList.add('switch');
+    heroSection.style.setProperty('--next-image', `url('${images[nextIndex]}')`);
+    heroSection.classList.add('switch');
 
-        setTimeout(() => {
-            heroSection.style.setProperty('--current-image', `url('${images[nextIndex]}')`);
-            heroSection.classList.remove('switch');
-            currentIndex = nextIndex;
-        }, 2000);
-    }
-
-    // После полной загрузки меняем фон через JS
-    heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
-    heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
-
-    // Убираем фоновое изображение
     setTimeout(() => {
-        heroSection.style.backgroundImage = 'none';
-    }, 100); // Через 100мс после загрузки, можно увеличить
+      heroSection.style.setProperty('--current-image', `url('${images[nextIndex]}')`);
+      heroSection.classList.remove('switch');
+      currentIndex = nextIndex;
+    }, 2000);
+  }
 
-    // Запускаем смену фона через 4 секунды
-    if (!isSlow) setTimeout(changeBackgroundImage, 4000);
-    if (!isSlow) setInterval(changeBackgroundImage, 4000);
+  // После полной загрузки меняем фон через JS
+  heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
+  heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
 
-    // Следим за изменением ширины экрана и обновляем массив изображений
-    window.addEventListener("resize", () => {
-        const newImages = getCurrentImages();
-        if (newImages !== images) {
-            images = newImages;
-            currentIndex = 0;
-            heroSection.style.setProperty('--current-image', `url('${images[0]}')`);
-            heroSection.style.setProperty('--next-image', `url('${images[1]}')`);
-        }
-    });
+  // Убираем фоновое изображение
+  setTimeout(() => {
+    heroSection.style.backgroundImage = 'none';
+  }, 100);
+
+  // Запускаем смену фона через 4 секунды
+  if (!isSlow) {
+    setTimeout(changeBackgroundImage, 4000);
+    setInterval(changeBackgroundImage, 4000);
+  }
 });
 
 
@@ -505,19 +493,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener("scroll", function () {
   const icons = document.querySelector(".icons1");
-  if (!icons) return; // ← 💥 вот защита от ошибки
+  if (!icons) return;
 
-  const stopPosition = 200; // Высота от низа страницы, где кнопки должны остановиться
-
-  const scrollPosition = window.innerHeight + window.scrollY;
+  const stopPosition = 280;
+  const scrollPosition= window.innerHeight + window.scrollY;
   const pageHeight = document.documentElement.scrollHeight;
 
+  // Если пользователь почти в самом низу — прижимаем кнопки чуть выше подвала
   if (scrollPosition >= pageHeight - stopPosition) {
-    icons.style.position = "absolute";
-    icons.style.bottom = `${stopPosition}px`;
+    icons.style.position = "fixed";
+    icons.style.bottom = `${stopPosition}px`; // Не исчезают, просто поднимаются чуть выше
   } else {
     icons.style.position = "fixed";
-    icons.style.bottom = "10px";
+    icons.style.bottom = "10px"; // Обычное положение
   }
 });
 
