@@ -187,6 +187,13 @@ async function loadTranslations() {
   }
 }
 
+function getTranslatedValue(entry, key, lang) {
+  const value = entry?.translations?.[lang]?.[key];
+  if (value && value.trim()) return value;
+  return entry?.original?.[key] || "";
+}
+
+
 function applyTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');

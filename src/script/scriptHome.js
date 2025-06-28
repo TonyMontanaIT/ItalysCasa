@@ -234,9 +234,9 @@ function renderPage(lang = "it") {
   currentIndex = items.length;
 
   items.forEach((announcement, idx) => {
-    const translated = announcement.translations?.[lang] || {};
-    const nomeAnunci = translated.nomeAnunci || announcement.nomeAnunci;
-    const tipo = translated.tipo || announcement.tipo;
+    const nomeAnunci = getTranslatedValue(announcement, "nomeAnunci", lang);
+    const tipo = getTranslatedValue(announcement, "tipo", lang);
+
 
     console.log(`📄 [${idx}] Название:`, nomeAnunci);
 
