@@ -60,21 +60,32 @@ document.addEventListener("DOMContentLoaded", async () => {
     injectStructuredDataForCurrentPage(page);
   }
 
-  function renderPagination() {
-    paginationContainer.innerHTML = "";
-    const totalPages = Math.ceil(blogs.length / blogsPerPage);
+function renderPagination() {
+  paginationContainer.innerHTML = "";
+  const totalPages = Math.ceil(blogs.length / blogsPerPage);
 
-    for (let i = 1; i <= totalPages; i++) {
-      const btn = document.createElement("button");
-      btn.innerText = i;
-      if (i === currentPage) btn.classList.add("active");
-      btn.addEventListener("click", () => {
-        currentPage = i;
-        renderPage(currentPage);
-      });
-      paginationContainer.appendChild(btn);
-    }
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.innerText = i;
+    if (i === currentPage) btn.classList.add("active");
+
+    btn.addEventListener("click", () => {
+      currentPage = i;
+      renderPage(currentPage);
+
+      // 🟠 Обновляем активную кнопку
+      const allButtons = paginationContainer.querySelectorAll("button");
+      allButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      // 🟢 Скроллим наверх
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    paginationContainer.appendChild(btn);
   }
+}
+
 
   // Подгрузка JSON-LD и meta description
   async function injectStructuredDataForCurrentPage(page) {
